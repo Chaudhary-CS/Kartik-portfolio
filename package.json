@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-    "deploy": "git config user.email \"samilmelhem@gmail.com\" && git config user.name \"Sami Melhem\" && gh-pages -d out"
+    "deploy": "git config user.email \"SamiISaboss23@gmail.com\" && git config user.name \"Sami Melhem\" && gh-pages -d out && -r https://x-access-token:${GH_TOKEN}@github.com/samimelhem/samimelhem.github.io.git"
   },
   "dependencies": {
     "@mdx-js/react": "^3.1.0",
