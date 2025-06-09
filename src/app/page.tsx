@@ -1,4 +1,5 @@
 // src/app/page.tsx
+import React from 'react';
 import Hero from '../../components/Hero';
 import AboutPreview from '../../components/AboutPreview';
 import ProjectCard from '../../components/ProjectCard';
