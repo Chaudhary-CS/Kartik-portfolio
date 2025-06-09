@@ -10,7 +10,9 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   pageExtensions: ['ts','tsx','js','jsx','md','mdx'],
   output: 'export',          // ← add this
-  // any other flags you had…
+  images: {
+    unoptimized: true,    // ← add this
+  },
 }
 
 export default withMdx(nextConfig)
