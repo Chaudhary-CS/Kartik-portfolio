@@ -1,0 +1,51 @@
+name: 🚀 Build & Deploy Next.js Portfolio
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read      # for actions/checkout
+  pages: write        # to publish to Pages
+  id-token: write     # for OIDC if you ever need it
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1) Check out your code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2) Set up Node.js and cache npm installs
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      # 3) Install your dependencies
+      - name: Install dependencies
+        run: npm ci
+
+      # 4) Build your Next.js site
+      #    Your next.config.ts should include:
+      #      - withMDX({ extension: /\.mdx?$/ })
+      #      - output: 'export'
+      #      - images: { unoptimized: true }
+      - name: Build
+        run: npm run build
+
+      # 5) Upload the static output directory (out/) to the Pages artifact
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+      # 6) Deploy to GitHub Pages using the official action
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
+        # no need for GH_TOKEN or git identity here; the action handles authentication
+
