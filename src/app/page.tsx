@@ -43,22 +43,24 @@ export default function Home() {
     <>
       <Hero />
       <AboutPreview />
-      <section className="py-12">
-        <h2 className="text-3xl font-semibold mb-6">Featured Projects</h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          {featured.map(proj => (
-            <ProjectCard key={proj.slug} {...proj} />
-          ))}
-        </div>
-      </section>
-      <section className="py-12">
-        <h2 className="text-3xl font-semibold mb-6">Latest Posts</h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          {posts.map(post => (
-            <BlogCard key={post.slug} slug={post.slug} title={post.title} date={post.date} excerpt={post.excerpt} />
-          ))}
-        </div>
-      </section>
+      <div className="max-w-4xl mx-auto px-4 text-white">
+        <section className="py-12">
+          <h2 className="text-3xl font-semibold mb-6">Featured Projects</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {featured.map(proj => (
+              <ProjectCard key={proj.slug} {...proj} />
+            ))}
+          </div>
+        </section>
+        <section className="py-12">
+          <h2 className="text-3xl font-semibold mb-6">Latest Posts</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {posts.map(post => (
+              <BlogCard key={post.slug} slug={post.slug} title={post.title} date={post.date} excerpt={post.excerpt} />
+            ))}
+          </div>
+        </section>
+      </div>
     </>
   );
 }

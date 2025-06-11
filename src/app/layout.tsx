@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import VantaNet from "../../components/VantaNet";
 
 export const metadata = {
   title: "Sami Melhem Portfolio",
@@ -9,9 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="pt-16 bg-white text-gray-900">
+      <body className="text-white">
+        <VantaNet />
         <Navbar />
-        <main className="max-w-4xl mx-auto px-4">{children}</main>
+        <main className="pt-16">{children}</main>
         <Footer />
       </body>
     </html>

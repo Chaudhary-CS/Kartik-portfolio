@@ -1,30 +1,58 @@
 // components/Navbar.tsx
-'use client';
+'use client'
 
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { useState, useEffect } from 'react'
 
 export default function Navbar() {
-  const path = usePathname();
+  const path = usePathname()
+  const [scrolled, setScrolled] = useState(false)
+
+  // On mount, listen for window scroll and update `scrolled`
+  useEffect(() => {
+    const handleScroll = () => {
+      // when Y offset > 50px, mark as scrolled
+      setScrolled(window.scrollY > 50)
+    }
+    window.addEventListener('scroll', handleScroll)
+    handleScroll() // initialize immediately
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   const links = [
     { href: '/', label: 'Home' },
     { href: '/projects', label: 'Projects' },
     { href: '/blog', label: 'Blog' },
-    // optional: { href: '/about', label: 'About' },
-  ];
+    { href: '/contact', label: 'Contact' },
+  ]
 
   return (
-    <nav className="fixed w-full bg-white/80 backdrop-blur-sm z-50">
-      <div className="max-w-4xl mx-auto flex items-center justify-between px-4 py-3">
-        <Link href="/" className="text-xl font-bold">Sami Melhem</Link>
+    <nav
+      className={`
+        fixed top-0 left-0 right-0 z-50
+        transition-colors duration-300 ease-in-out
+        ${scrolled 
+          ? 'bg-black/50 backdrop-blur-md'
+          : ''}
+      `}
+    >
+      <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+        <Link href="/" className="text-xl font-bold text-white">
+          Sami Melhem 
+        </Link>
         <ul className="flex space-x-6">
-          {links.map(link => (
+          {links.map((link) => (
             <li key={link.href}>
               <Link
                 href={link.href}
-                className={`hover:underline ${
-                  path === link.href ? 'font-semibold' : 'text-gray-600'
-                }`}
+                className={`
+                  px-2 py-1 transition-colors
+                  ${path === link.href
+                    ? 'text-white font-semibold'
+                    : 'text-gray-200 hover:text-white'
+                  }
+                `}
               >
                 {link.label}
               </Link>
@@ -33,5 +61,5 @@ export default function Navbar() {
         </ul>
       </div>
     </nav>
-  );
+  )
 }

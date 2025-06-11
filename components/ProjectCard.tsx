@@ -33,16 +33,16 @@ export default function ProjectCard({
         </div>
       )}
       <div className="p-6">
-        <h3 className="text-2xl font-semibold mb-2 group-hover:text-blue-600 transition-colors">
+        <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-600 transition-colors">
           {title}
         </h3>
-        <p className="text-gray-700 mb-4">{description}</p>
+        <p className="text-gray-100 mb-4">{description}</p>
         {techs.length > 0 && (
           <div className="flex flex-wrap gap-2">
             {techs.map((tech) => (
               <span
                 key={tech}
-                className="bg-gray-100 text-gray-800 text-xs font-medium px-2 py-1 rounded-full"
+                className="bg-gray-700 text-gray-200 px-2 py-1 rounded-full text-sm"
               >
                 {tech}
               </span>

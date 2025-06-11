@@ -11,11 +11,11 @@ export interface BlogCardProps {
 export default function BlogCard({ slug, title, date, excerpt }: BlogCardProps) {
   return (
     <Link href={`/blog/${slug}`}>
-      <article className="block p-6 border rounded-lg hover:shadow-lg transition-shadow">
-        <h2 className="text-2xl font-semibold">{title}</h2>
-        <time className="text-sm text-gray-500">{date}</time>
-        {excerpt && <p className="mt-2 text-gray-700">{excerpt}</p>}
-      </article>
+      <div className="border border-gray-700 rounded-lg p-6 hover:bg-gray-800 transition-colors">
+        <h3 className="text-xl font-semibold mb-2">{title}</h3>
+        <p className="text-sm text-gray-200 mb-3">{new Date(date).toLocaleDateString()}</p>
+        <p className="text-gray-100">{excerpt}</p>
+      </div>
     </Link>
   );
 }
