@@ -41,23 +41,39 @@ export default function Navbar() {
         <Link href="/" className="text-xl font-bold text-white">
           Sami Melhem 
         </Link>
-        <ul className="flex space-x-6">
-          {links.map((link) => (
-            <li key={link.href}>
-              <Link
-                href={link.href}
-                className={`
-                  px-2 py-1 transition-colors
-                  ${path === link.href
-                    ? 'text-white font-semibold'
-                    : 'text-gray-200 hover:text-white'
-                  }
-                `}
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
+        <ul className="flex space-x-8">
+          {links.map(({ href, label }) => {
+            const isActive = path === href
+            return (
+              <li key={href} className="relative group">
+                <Link
+                  href={href}
+                  className={`
+                    px-1 pb-1 transition-colors duration-200
+                    ${isActive
+                      ? 'font-semibold text-white'
+                      : scrolled
+                        ? 'text-gray-200 hover:text-white'
+                        : 'text-white hover:text-gray-300'
+                    }
+                  `}
+                >
+                  {label}
+                  {/* underline */}
+                  <span
+                    className={`
+                      absolute left-0 -bottom-[2px] h-[2px]
+                      bg-white transition-all duration-200
+                      ${isActive
+                        ? 'w-full'
+                        : 'w-0 group-hover:w-full'
+                      }
+                    `}
+                  />
+                </Link>
+              </li>
+            )
+          })}
         </ul>
       </div>
     </nav>
