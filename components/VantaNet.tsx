@@ -5,8 +5,12 @@ import { useState, useRef, useEffect } from 'react'
 import NET from 'vanta/dist/vanta.net.min'
 import * as THREE from 'three'
 
+type VantaNetEffect = {
+  destroy: () => void
+}
+
 export default function VantaNet() {
-  const [vantaEffect, setVantaEffect] = useState<any>(null)
+  const [vantaEffect, setVantaEffect] = useState<VantaNetEffect | null>(null)
   const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
