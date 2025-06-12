@@ -75,7 +75,8 @@ export default function ContactPage() {
                 </span>
                 {/* underline effect */}
                 <span className="absolute left-0 bottom-0 h-0.5 bg-teal-400 w-full transform scale-x-0
-                group-hover:scale-x-100 transition-transform duration-200 origin-left"/>              </div>
+                group-hover:scale-x-100 transition-transform duration-200 origin-left"/>              
+              </div>
             </Link>
           ))}
         </div>

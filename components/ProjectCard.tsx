@@ -20,7 +20,7 @@ export default function ProjectCard({
   return (
     <Link
       href={href}
-      className="group block border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
+      className="block h-full flex flex-col transition-transform group-hover:scale-[1.02]"
     >
       {image && (
         <div className="relative h-48 w-full">
@@ -28,17 +28,17 @@ export default function ProjectCard({
             src={image}
             alt={title}
             fill
-            className="object-cover group-hover:scale-105 transition-transform"
+            className="object-cover"
           />
         </div>
       )}
-      <div className="p-6">
-        <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-600 transition-colors">
+      <div className="p-6 flex flex-col flex-1 justify-between">
+        <h3 className="text-xl font-semibold mb-2 group-hover:text-teal-400 transition-colors">
           {title}
         </h3>
-        <p className="text-gray-100 mb-4">{description}</p>
+        <p className="text-gray-100 mb-4 grow">{description}</p>
         {techs.length > 0 && (
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 mt-auto">
             {techs.map((tech) => (
               <span
                 key={tech}
