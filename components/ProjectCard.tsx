@@ -40,12 +40,17 @@ export default function ProjectCard({
         {techs.length > 0 && (
           <div className="flex flex-wrap gap-2 mt-auto">
             {techs.map((tech) => (
-              <span
+              <Link
                 key={tech}
-                className="bg-gray-700 text-gray-200 px-2 py-1 rounded-full text-sm"
+                href={`/skills/${encodeURIComponent(tech.toLowerCase())}`}
+                className={
+                  "bg-gray-700 text-white px-2 py-1 rounded-full text-sm \
+                   border border-white hover:border-teal-400 \
+                   transition-colors duration-200"
+                }
               >
                 {tech}
-              </span>
+              </Link>
             ))}
           </div>
         )}

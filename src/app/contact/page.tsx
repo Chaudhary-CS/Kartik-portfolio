@@ -1,7 +1,8 @@
 // src/app/contact/page.tsx
 'use client'
+
 import Link from 'next/link'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 import { MdEmail, MdPhone } from 'react-icons/md'
 import { SiLinkedin, SiGithub, SiInstagram } from 'react-icons/si'
 
@@ -41,7 +42,7 @@ export default function ContactPage() {
 
 
   return (
-    <main className="relative min-h-screen flex flex-col items-center justify-center text-white pt-24 pb-16 px-4">      
+    <main className="relative min-h-screen flex flex-col items-center justify-center text-white pb-32 px-4">      
       {/* Dark overlay */}
       <div className="fixed inset-0 bg-black/50" />
 
@@ -52,7 +53,7 @@ export default function ContactPage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
       >
-        <h1 className="text-4xl md:text-6xl font-bold">
+        <h1 className="text-5xl md:text-6xl text-center font-bold mb-12 underline">
             {`Contact Me`}
         </h1>
         <p className="text-lg text-gray-300 max-w-xl">
