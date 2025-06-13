@@ -1,6 +1,8 @@
 // components/ProjectCard.tsx
+'use client'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 
 export interface ProjectCardProps {
   title: string
@@ -17,6 +19,8 @@ export default function ProjectCard({
   image,
   techs = [],
 }: ProjectCardProps) {
+  const router = useRouter()
+  
   return (
     <Link
       href={href}
@@ -37,21 +41,28 @@ export default function ProjectCard({
           {title}
         </h3>
         <p className="text-gray-100 mb-4 grow">{description}</p>
+
         {techs.length > 0 && (
           <div className="flex flex-wrap gap-2 mt-auto">
-            {techs.map((tech) => (
-              <Link
-                key={tech}
-                href={`/skills/${encodeURIComponent(tech.toLowerCase())}`}
-                className={
-                  "bg-gray-700 text-white px-2 py-1 rounded-full text-sm \
-                   border border-white hover:border-teal-400 \
-                   transition-colors duration-200"
-                }
-              >
-                {tech}
-              </Link>
-            ))}
+            {techs.map((tech) => {
+              const slug = encodeURIComponent(tech.toLowerCase())
+              return (
+                <span
+                  key={tech}
+                  onClick={(e) => {
+                    e.stopPropagation()
+                    router.push(`/skills/${slug}`)
+                  }}
+                  className={
+                    "cursor-pointer bg-gray-700 text-white px-2 py-1 rounded-full text-sm \
+                    border border-white hover:border-teal-400 \
+                    transition-colors duration-200"
+                  }
+                >
+                  {tech}
+                </span>
+              )
+            })}
           </div>
         )}
       </div>

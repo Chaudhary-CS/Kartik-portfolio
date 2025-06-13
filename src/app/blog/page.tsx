@@ -2,13 +2,14 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import BlogCard from "../../../components/BlogCard";
+import BlogListClient from "../../../components/BlogListClient";
 
 interface PostMeta {
   slug: string;
   title: string;
   date: string;
   excerpt?: string;
+  image?: string;
 }
 
 export default function BlogIndex() {
@@ -21,25 +22,18 @@ export default function BlogIndex() {
     const fullPath = path.join(blogDir, filename);
     const source = fs.readFileSync(fullPath, "utf8");
     const { data } = matter(source);
+
     return {
       slug: filename.replace(/\.mdx$/, ""),
       title: String(data.title),
       date: String(data.date),
       excerpt: data.excerpt ? String(data.excerpt) : undefined,
+      image: data.image ? String(data.image) : undefined,
     };
   });
 
   // 3. Sort posts by date (newest first)
   posts.sort((a, b) => (a.date > b.date ? -1 : 1));
 
-  return (
-    <main className="max-w-3xl mx-auto py-12 px-4 space-y-8">
-      <h1 className="text-4xl font-bold">Blog</h1>
-      <div className="grid gap-6 md:grid-cols-2">
-        {posts.map((post) => (
-          <BlogCard key={post.slug} {...post} />
-        ))}
-      </div>
-    </main>
-  );
+  return <BlogListClient posts={posts} />;
 }
