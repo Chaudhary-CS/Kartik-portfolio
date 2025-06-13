@@ -27,8 +27,6 @@ export default function Navbar() {
     { href: '/contact', label: 'Contact' },
   ]
 
-  const isHome = path === '/'
-
   return (
     <nav
       className={`

@@ -9,9 +9,9 @@ const withMdx = withMDX({
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   pageExtensions: ['ts','tsx','js','jsx','md','mdx'],
-  output: 'export',          // ← add this
+  output: 'export',
   images: {
-    unoptimized: true,    // ← add this
+    unoptimized: true,
   },
 }
 

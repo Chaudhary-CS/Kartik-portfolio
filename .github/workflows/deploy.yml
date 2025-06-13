@@ -13,39 +13,44 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      NEXT_TELEMETRY_DISABLED: 1
     steps:
       # 1) Check out your code
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 2) Set up Node.js and cache npm installs
+      # 2) Build Cache to save time on rebuilds
+      - name: Cache Next.js build output
+        uses: actions/cache@v4
+        with:
+          path: .next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json','**/yarn.lock') }}-${{ hashFiles('**/*.ts','**/*.tsx') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json','**/yarn.lock') }}-
+
+      # 3) Set up Node.js and cache npm installs
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
 
-      # 3) Install your dependencies
+      # 4) Install your dependencies
       - name: Install dependencies
         run: npm ci
 
-      # 4) Build your Next.js site
-      #    Your next.config.ts should include:
-      #      - withMDX({ extension: /\.mdx?$/ })
-      #      - output: 'export'
-      #      - images: { unoptimized: true }
+      # 5) Build your Next.js site
       - name: Build
         run: npm run build
 
-      # 5) Upload the static output directory (out/) to the Pages artifact
+      # 6) Upload the static output directory (out/) to the Pages artifact
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: out
 
-      # 6) Deploy to GitHub Pages using the official action
+      # 7) Deploy to GitHub Pages using the official action
       - name: Deploy to GitHub Pages
         id: deploy
         uses: actions/deploy-pages@v4
-        # no need for GH_TOKEN or git identity here; the action handles authentication
-
