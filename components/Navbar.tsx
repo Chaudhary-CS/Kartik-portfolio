@@ -53,8 +53,8 @@ export default function Navbar() {
                     ${isActive
                       ? 'font-semibold text-white'
                       : scrolled
-                        ? 'text-gray-200 hover:text-white'
-                        : 'text-white hover:text-gray-300'
+                        ? 'text-gray-200 hover:text-teal-400'
+                        : 'text-white hover:text-teal-400'
                     }
                   `}
                 >
