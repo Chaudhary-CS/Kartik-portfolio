@@ -27,6 +27,8 @@ export default function Navbar() {
     { href: '/contact', label: 'Contact' },
   ]
 
+  const isHome = path === '/'
+
   return (
     <nav
       className={`
@@ -38,8 +40,17 @@ export default function Navbar() {
       `}
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-        <Link href="/" className="text-xl font-bold text-white">
-          Sami Melhem 
+        <Link href="/" className="relative group">
+          <span className="text-xl font-bold text-white transition-colors duration-200">
+            Sami Melhem
+          </span>
+          {/* teal underline */}
+          <span
+            className={`
+              absolute left-0 -bottom-[2px] h-[2px] bg-teal-400
+              transition-all duration-200 w-0 group-hover:w-full
+            `}
+          />
         </Link>
         <ul className="flex space-x-8">
           {links.map(({ href, label }) => {
@@ -53,8 +64,8 @@ export default function Navbar() {
                     ${isActive
                       ? 'font-semibold text-white'
                       : scrolled
-                        ? 'text-gray-200 hover:text-teal-400'
-                        : 'text-white hover:text-teal-400'
+                        ? 'text-gray-200 hover:text-white'
+                        : 'text-white hover:text-white'
                     }
                   `}
                 >
@@ -63,7 +74,7 @@ export default function Navbar() {
                   <span
                     className={`
                       absolute left-0 -bottom-[2px] h-[2px]
-                      bg-white transition-all duration-200
+                      bg-teal-400 transition-all duration-200
                       ${isActive
                         ? 'w-full'
                         : 'w-0 group-hover:w-full'

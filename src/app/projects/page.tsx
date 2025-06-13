@@ -18,7 +18,7 @@ export default function ProjectsPage() {
       
       <div className="relative z-10 flex-1 max-w-4xl mx-auto py-12 px-4">
         <motion.h1
-            className="text-5xl md:text-6xl text-center font-bold mb-12 underline"
+            className="text-5xl md:text-6xl text-center font-bold mb-12 underline decoration-teal-400"
             initial="hidden"
             whileInView="visible"
             viewport={{once: true, amount: 0.5}}

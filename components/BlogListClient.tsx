@@ -25,7 +25,7 @@ export default function BlogListClient({ posts }: { posts: PostMeta[] }) {
             <div className="relative z-10 flex-1 max-w-4xl mx-auto py-12 px-4">
                 {/* animated, underlined title */}
                 <motion.h1
-                    className="text-5xl md:text-6xl font-bold text-center mb-12 underline underline-offset-8 decoration-teal-400"
+                    className="text-5xl md:text-6xl font-bold text-center mb-12 underline decoration-teal-400"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}

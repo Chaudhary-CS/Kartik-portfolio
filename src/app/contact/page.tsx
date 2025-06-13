@@ -53,7 +53,7 @@ export default function ContactPage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
       >
-        <h1 className="text-5xl md:text-6xl text-center font-bold mb-12 underline">
+        <h1 className="text-5xl md:text-6xl text-center font-bold mb-12 underline decoration-teal-400">
             {`Contact Me`}
         </h1>
         <p className="text-lg text-gray-300 max-w-xl">
