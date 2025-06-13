@@ -10,49 +10,59 @@ permissions:
   pages: write        # to publish to Pages
   id-token: write     # for OIDC if you ever need it
 
+env:
+  NEXT_TELEMETRY_DISABLED: 1
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    env:
-      NEXT_TELEMETRY_DISABLED: 1
+
     steps:
       # 1) Check out your code
       - name: Checkout code
         uses: actions/checkout@v4
+      
+      # 2) Configure Pages (injects GITHUB_TOKEN into the Pages environment)
+      - name: Configure Pages
+      - uses: actions/configure-pages@v5
 
-      # 2) Build Cache to save time on rebuilds
+      # 3) Cache npm and Next.js build cache 
       - name: Cache Next.js build output
         uses: actions/cache@v4
         with:
           path: |
             ~/.npm
-            ${{ github.workspace }}/.next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
+            .next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.js', '**/*.ts', '**/*.tsx') }}
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
 
-      # 3) Set up Node.js and cache npm installs
+      # 4) Set up Node.js and cache npm installs
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
 
-      # 4) Install your dependencies
+      # 5) Install your dependencies
       - name: Install dependencies
         run: npm ci
 
-      # 5) Build your Next.js site
+      # 6) Build your Next.js site
       - name: Build
         run: npm run build
 
-      # 6) Upload the static output directory (out/) to the Pages artifact
+      # 7) Export your static site
+      - name: Export
+        run: npm run export
+
+      # 8) Upload the static output directory (out/) to the Pages artifact
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: out
 
-      # 7) Deploy to GitHub Pages using the official action
+      # 9) Deploy to GitHub Pages using the official action
       - name: Deploy to GitHub Pages
         id: deploy
         uses: actions/deploy-pages@v4
