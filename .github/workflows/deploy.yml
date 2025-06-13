@@ -52,17 +52,13 @@ jobs:
       - name: Build
         run: npm run build
 
-      # 7) Export your static site
-      - name: Export
-        run: npm run export
-
-      # 8) Upload the static output directory (out/) to the Pages artifact
+      # 7) Upload the static output directory (out/) to the Pages artifact
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: out
 
-      # 9) Deploy to GitHub Pages using the official action
+      # 8) Deploy to GitHub Pages using the official action
       - name: Deploy to GitHub Pages
         id: deploy
         uses: actions/deploy-pages@v4
