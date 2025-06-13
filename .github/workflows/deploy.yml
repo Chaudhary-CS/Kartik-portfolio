@@ -10,13 +10,13 @@ permissions:
   pages: write        # to publish to Pages
   id-token: write     # for OIDC if you ever need it
 
-env:
-  NEXT_TELEMETRY_DISABLED: 1
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
+    
+    env:
+      NEXT_TELEMETRY_DISABLED: 1
+    
     steps:
       # 1) Check out your code
       - name: Checkout code
@@ -24,7 +24,7 @@ jobs:
       
       # 2) Configure Pages (injects GITHUB_TOKEN into the Pages environment)
       - name: Configure Pages
-      - uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v5
 
       # 3) Cache npm and Next.js build cache 
       - name: Cache Next.js build output
