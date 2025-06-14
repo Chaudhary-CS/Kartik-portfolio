@@ -29,7 +29,7 @@ export default function ProjectsPage() {
           </motion.h1>
         
         <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
-          {projects.map((p, i) => (
+          {projects.map((p) => (
             <div
               key={p.slug}
               className="

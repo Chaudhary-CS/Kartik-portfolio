@@ -43,7 +43,7 @@ export default function FeaturedAndBlog({
             Featured Projects
           </motion.h2>
           <div className="grid md:grid-cols-2 gap-6">
-            {featured.map((proj, i) => (
+            {featured.map((proj) => (
               <div
                 key={proj.slug}
                 className="group relative rounded-xl overflow-hidden cursor-pointer
@@ -81,7 +81,7 @@ export default function FeaturedAndBlog({
             Latest Posts
           </motion.h2>
           <div className="grid md:grid-cols-2 gap-6">
-            {posts.map((post, i) => (
+            {posts.map((post) => (
               <div
                 key={post.slug}
                 className="group relative rounded-xl overflow-hidden cursor-pointer

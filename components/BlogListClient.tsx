@@ -36,7 +36,7 @@ export default function BlogListClient({ posts }: { posts: PostMeta[] }) {
                 </motion.h1>
 
                 <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
-                    {posts.map((post, i) => (
+                    {posts.map((post) => (
                         <div
                             key={post.slug}
                             className="group relative rounded-xl overflow-hidden cursor-pointer
