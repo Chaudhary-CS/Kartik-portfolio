@@ -28,29 +28,23 @@ export default function BlogListClient({ posts }: { posts: PostMeta[] }) {
                 <motion.h1
                     className="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-8 sm:mb-12 underline decoration-teal-400"
                     initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
+                    animate="visible"
                     variants={cardVariants}
-                    transition={{ duration: 0.6 }}
+                    transition={{ duration: 0.6, delay: 0.3 }}
                 >
                     Blog
                 </motion.h1>
 
                 <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
                     {posts.map((post, i) => (
-                        <motion.div
+                        <div
                             key={post.slug}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true, amount: 0.3 }}
-                            variants={cardVariants}
-                            transition={{ delay: 0.1 * i, duration: 0.5 }}
                             className="group relative rounded-xl overflow-hidden cursor-pointer
                                        shadow-[0_0_10px_rgba(20,184,166,0.3)] hover:shadow-[0_0_20px_rgba(20,184,166,0.6)]
                                        border border-white hover:border-teal-400 transition-all duration-300"
                         >
                             <BlogCard {...post}/>
-                        </motion.div>
+                        </div>
                     ))}
                 </div>
             </div>

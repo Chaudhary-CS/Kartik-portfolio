@@ -21,23 +21,17 @@ export default function ProjectsPage() {
         <motion.h1
             className="text-4xl sm:text-5xl md:text-6xl text-center font-bold mb-8 sm:mb-12 underline decoration-teal-400"
             initial="hidden"
-            whileInView="visible"
-            viewport={{once: true, amount: 0.5}}
+            animate="visible"
             variants={cardVariants}
-            transition={{duration: 0.6}}
+            transition={{duration: 0.6, delay: 0.3}}
           >
             Projects
           </motion.h1>
         
         <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
           {projects.map((p, i) => (
-            <motion.div
+            <div
               key={p.slug}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{once: true, amount: 0.3}}
-              variants={cardVariants}
-              transition={{delay: i * 0.1, duration: 0.5}}
               className="
                 group relative rounded-xl overflow-hidden cursor-pointer 
                 shadow-[0_0_10px_rgba(20,184,166,0.3)] 
@@ -53,7 +47,7 @@ export default function ProjectsPage() {
                 image={p.image}
                 techs={p.techs}
               />
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

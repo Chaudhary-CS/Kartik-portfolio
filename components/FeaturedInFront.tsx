@@ -29,7 +29,7 @@ export default function FeaturedAndBlog({
           style={{ color: '#ffffff' }}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
         >
           <motion.h2
@@ -37,25 +37,21 @@ export default function FeaturedAndBlog({
             style={{ color: '#ffffff' }}
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.4 }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.4 }}
           >
             Featured Projects
           </motion.h2>
           <div className="grid md:grid-cols-2 gap-6">
             {featured.map((proj, i) => (
-              <motion.div
+              <div
                 key={proj.slug}
                 className="group relative rounded-xl overflow-hidden cursor-pointer
                            shadow-[0_0_10px_rgba(20,184,166,0.3)] hover:shadow-[0_0_20px_rgba(20,184,166,0.6)]
                            border border-white hover:border-teal-400 transition-all duration-300"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.4 }}
-                transition={{ delay: i * 0.1, duration: 0.5 }}
               >
                 <ProjectCard {...proj} />
-              </motion.div>
+              </div>
             ))}
           </div>
         </motion.div>
@@ -71,7 +67,7 @@ export default function FeaturedAndBlog({
           style={{ color: '#ffffff' }}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.4 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <motion.h2
@@ -79,25 +75,21 @@ export default function FeaturedAndBlog({
             style={{ color: '#ffffff' }}
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.4 }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.4 }}
           >
             Latest Posts
           </motion.h2>
           <div className="grid md:grid-cols-2 gap-6">
             {posts.map((post, i) => (
-              <motion.div
+              <div
                 key={post.slug}
                 className="group relative rounded-xl overflow-hidden cursor-pointer
                            shadow-[0_0_10px_rgba(20,184,166,0.3)] hover:shadow-[0_0_20px_rgba(20,184,166,0.6)]
                            border border-white hover:border-teal-400 transition-all duration-300"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ delay: i * 0.1, duration: 0.5 }}
               >
                 <BlogCard {...post} />
-              </motion.div>
+              </div>
             ))}
           </div>
         </motion.div>
