@@ -13,7 +13,8 @@ export async function GET() {
       const { data } = matter(src);
       return { 
         slug: fname.replace(/\.mdx$/, ''),
-        ...data 
+        date: String(data.date),
+        title: String(data.title)
       };
     })
     .sort((a, b) => b.date.localeCompare(a.date))
