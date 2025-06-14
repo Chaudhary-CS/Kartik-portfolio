@@ -15,13 +15,12 @@ export default function BlogCard({ slug, title, date, excerpt, image }: BlogCard
     <Link 
         href={`/blog/${slug}`} 
         className="
-            group block overflow-hidden rounded-xl border border-white/30
-            transition-all hover:border-teal-400
-            hover:shadow-[0_0_20px_rgba(20,184,166,0.6)]
+            group block h-full w-full
+            transition-all hover:scale-[1.02]
         "
     >
       {image && (
-        <div className="relative h-40 w-full">
+        <div className="relative h-40 w-full flex-shrink-0">
           <Image
             src={image}
             alt={title}
@@ -31,12 +30,12 @@ export default function BlogCard({ slug, title, date, excerpt, image }: BlogCard
         </div>
       )}
 
-      <div className="p-6 bg-gray-900/50">
+      <div className="p-6 flex flex-col flex-1 min-h-0 bg-gray-900/70">
         <h3 className="text-2xl font-semibold mb-1 group-hover:text-teal-400 transition-colors">
             {title}
         </h3>
         <time className="block text-sm text-gray-300 mb-3">{date}</time>
-        {excerpt && <p className="text-gray-200 mb-4">{excerpt}</p>}
+        {excerpt && <p className="text-gray-200 mb-4 flex-1">{excerpt}</p>}
       </div>
     </Link>
   );

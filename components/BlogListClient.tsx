@@ -45,6 +45,9 @@ export default function BlogListClient({ posts }: { posts: PostMeta[] }) {
                             viewport={{ once: true, amount: 0.3 }}
                             variants={cardVariants}
                             transition={{ delay: 0.1 * i, duration: 0.5 }}
+                            className="group relative rounded-xl overflow-hidden cursor-pointer
+                                       shadow-[0_0_10px_rgba(20,184,166,0.3)] hover:shadow-[0_0_20px_rgba(20,184,166,0.6)]
+                                       border border-white hover:border-teal-400 transition-all duration-300"
                         >
                             <BlogCard {...post}/>
                         </motion.div>

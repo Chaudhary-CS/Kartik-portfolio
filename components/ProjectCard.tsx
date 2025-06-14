@@ -24,10 +24,10 @@ export default function ProjectCard({
   return (
     <Link
       href={href}
-      className="block h-full flex flex-col transition-transform group-hover:scale-[1.02]"
+      className="block h-full w-full flex flex-col transition-transform group-hover:scale-[1.02]"
     >
       {image && (
-        <div className="relative h-48 w-full">
+        <div className="relative h-48 w-full flex-shrink-0">
           <Image
             src={image}
             alt={title}
@@ -36,14 +36,16 @@ export default function ProjectCard({
           />
         </div>
       )}
-      <div className="p-6 flex flex-col flex-1 justify-between">
-        <h3 className="text-xl font-semibold mb-2 group-hover:text-teal-400 transition-colors">
-          {title}
-        </h3>
-        <p className="text-gray-100 mb-4 grow">{description}</p>
+      <div className="p-6 flex flex-col flex-1 justify-between min-h-0 bg-gray-900/70">
+        <div className="flex-1">
+          <h3 className="text-xl font-semibold mb-2 group-hover:text-teal-400 transition-colors">
+            {title}
+          </h3>
+          <p className="text-gray-100 mb-4 flex-1">{description}</p>
+        </div>
 
         {techs.length > 0 && (
-          <div className="flex flex-wrap gap-2 mt-auto">
+          <div className="flex flex-wrap gap-2 mt-auto pt-2">
             {techs.map((tech) => {
               const slug = encodeURIComponent(tech.toLowerCase())
               return (

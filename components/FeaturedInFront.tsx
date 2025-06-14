@@ -46,9 +46,9 @@ export default function FeaturedAndBlog({
             {featured.map((proj, i) => (
               <motion.div
                 key={proj.slug}
-                className="group relative rounded-xl overflow-hidden p-6 cursor-pointer
+                className="group relative rounded-xl overflow-hidden cursor-pointer
                            shadow-[0_0_10px_rgba(20,184,166,0.3)] hover:shadow-[0_0_20px_rgba(20,184,166,0.6)]
-                           border border-transparent hover:border-teal-400 transition-shadow"
+                           border border-white hover:border-teal-400 transition-all duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.4 }}
@@ -88,9 +88,9 @@ export default function FeaturedAndBlog({
             {posts.map((post, i) => (
               <motion.div
                 key={post.slug}
-                className="group relative rounded-xl overflow-hidden p-6 cursor-pointer
+                className="group relative rounded-xl overflow-hidden cursor-pointer
                            shadow-[0_0_10px_rgba(20,184,166,0.3)] hover:shadow-[0_0_20px_rgba(20,184,166,0.6)]
-                           border border-transparent hover:border-teal-400 transition-shadow"
+                           border border-white hover:border-teal-400 transition-all duration-300"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
