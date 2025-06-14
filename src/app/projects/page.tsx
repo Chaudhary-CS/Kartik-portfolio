@@ -39,11 +39,11 @@ export default function ProjectsPage() {
               variants={cardVariants}
               transition={{delay: i * 0.1, duration: 0.5}}
               className="
-                group relative rounded-xl overflow-hidden p-4 sm:p-6 cursor-pointer 
+                group relative rounded-xl overflow-hidden cursor-pointer 
                 shadow-[0_0_10px_rgba(20,184,166,0.3)] 
                 hover:shadow-[0_0_20px_rgba(20,184,166,0.6)]
                 border border-white hover:border-teal-400
-                transition-shadow
+                transition-all duration-300
               "
             >
               <ProjectCard
