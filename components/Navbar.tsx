@@ -4,10 +4,12 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 
 export default function Navbar() {
   const path = usePathname()
   const [scrolled, setScrolled] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   // On mount, listen for window scroll and update `scrolled`
   useEffect(() => {
@@ -20,6 +22,23 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setMobileMenuOpen(false)
+  }, [path])
+
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+    return () => {
+      document.body.style.overflow = 'unset'
+    }
+  }, [mobileMenuOpen])
+
   const links = [
     { href: '/', label: 'Home' },
     { href: '/projects', label: 'Projects' },
@@ -28,63 +47,156 @@ export default function Navbar() {
   ]
 
   return (
-    <nav
-      className={`
-        fixed top-0 left-0 right-0 z-50
-        transition-colors duration-300 ease-in-out
-        ${scrolled 
-          ? 'bg-black/50 backdrop-blur-md'
-          : ''}
-      `}
-    >
-      <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-        <Link href="/" className="relative group">
-          <span className="text-xl font-bold text-white transition-colors duration-200">
-            Sami Melhem
-          </span>
-          {/* teal underline */}
-          <span
-            className={`
-              absolute left-0 -bottom-[2px] h-[2px] bg-teal-400
-              transition-all duration-200 w-0 group-hover:w-full
-            `}
-          />
-        </Link>
-        <ul className="flex space-x-8">
-          {links.map(({ href, label }) => {
-            const isActive = path === href
-            return (
-              <li key={href} className="relative group">
-                <Link
-                  href={href}
-                  className={`
-                    px-1 pb-1 transition-colors duration-200
-                    ${isActive
-                      ? 'font-semibold text-white'
-                      : scrolled
-                        ? 'text-gray-200 hover:text-white'
-                        : 'text-white hover:text-white'
-                    }
-                  `}
-                >
-                  {label}
-                  {/* underline */}
-                  <span
+    <>
+      <nav
+        className={`
+          fixed top-0 left-0 right-0 z-50
+          transition-colors duration-300 ease-in-out
+          ${scrolled 
+            ? 'bg-black/50 backdrop-blur-md'
+            : ''}
+        `}
+      >
+        <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+          <Link href="/" className="relative group">
+            <span className="text-xl font-bold text-white transition-colors duration-200">
+              Sami Melhem
+            </span>
+            {/* teal underline */}
+            <span
+              className={`
+                absolute left-0 -bottom-[2px] h-[2px] bg-teal-400
+                transition-all duration-200 w-0 group-hover:w-full
+              `}
+            />
+          </Link>
+
+          {/* Desktop Navigation */}
+          <ul className="hidden md:flex space-x-8">
+            {links.map(({ href, label }) => {
+              const isActive = path === href
+              return (
+                <li key={href} className="relative group">
+                  <Link
+                    href={href}
                     className={`
-                      absolute left-0 -bottom-[2px] h-[2px]
-                      bg-teal-400 transition-all duration-200
+                      px-1 pb-1 transition-colors duration-200
                       ${isActive
-                        ? 'w-full'
-                        : 'w-0 group-hover:w-full'
+                        ? 'font-semibold text-white'
+                        : scrolled
+                          ? 'text-gray-200 hover:text-white'
+                          : 'text-white hover:text-white'
                       }
                     `}
-                  />
-                </Link>
-              </li>
-            )
-          })}
-        </ul>
-      </div>
-    </nav>
+                  >
+                    {label}
+                    {/* underline */}
+                    <span
+                      className={`
+                        absolute left-0 -bottom-[2px] h-[2px]
+                        bg-teal-400 transition-all duration-200
+                        ${isActive
+                          ? 'w-full'
+                          : 'w-0 group-hover:w-full'
+                        }
+                      `}
+                    />
+                  </Link>
+                </li>
+              )
+            })}
+          </ul>
+
+          {/* Mobile Hamburger Button */}
+          <button
+            className="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1.5 z-50"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle mobile menu"
+          >
+            <motion.span
+              className="w-6 h-0.5 bg-white transition-all duration-300"
+              animate={mobileMenuOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
+            />
+            <motion.span
+              className="w-6 h-0.5 bg-white transition-all duration-300"
+              animate={mobileMenuOpen ? { opacity: 0 } : { opacity: 1 }}
+            />
+            <motion.span
+              className="w-6 h-0.5 bg-white transition-all duration-300"
+              animate={mobileMenuOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
+            />
+          </button>
+        </div>
+      </nav>
+
+      {/* Mobile Menu Overlay */}
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.div
+            className="fixed inset-0 z-40 md:hidden"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            {/* Backdrop */}
+            <div 
+              className="absolute inset-0 bg-black/80 backdrop-blur-md"
+              onClick={() => setMobileMenuOpen(false)}
+            />
+            
+            {/* Menu Content */}
+            <motion.div
+              className="relative z-50 flex flex-col items-center justify-center h-full"
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ duration: 0.3, delay: 0.1 }}
+            >
+              <ul className="flex flex-col space-y-8 text-center">
+                {links.map(({ href, label }, index) => {
+                  const isActive = path === href
+                  return (
+                    <motion.li
+                      key={href}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 20 }}
+                      transition={{ duration: 0.3, delay: 0.1 + index * 0.1 }}
+                      className="relative group"
+                    >
+                      <Link
+                        href={href}
+                        className={`
+                          text-2xl font-medium transition-colors duration-200
+                          ${isActive
+                            ? 'text-teal-400 font-semibold'
+                            : 'text-white hover:text-teal-400'
+                          }
+                        `}
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {label}
+                        {/* underline */}
+                        <span
+                          className={`
+                            absolute left-1/2 -translate-x-1/2 -bottom-[4px] h-[2px]
+                            bg-teal-400 transition-all duration-200
+                            ${isActive
+                              ? 'w-full'
+                              : 'w-0 group-hover:w-full'
+                            }
+                          `}
+                        />
+                      </Link>
+                    </motion.li>
+                  )
+                })}
+              </ul>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   )
 }

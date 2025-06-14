@@ -23,10 +23,10 @@ export default function BlogListClient({ posts }: { posts: PostMeta[] }) {
             {/* dark overlay */}
             <div className="fixed inset-0 bg-black/50" />
 
-            <div className="relative z-10 flex-1 max-w-4xl mx-auto py-12 px-4">
+            <div className="relative z-10 flex-1 max-w-4xl mx-auto py-8 sm:py-12 px-4">
                 {/* animated, underlined title */}
                 <motion.h1
-                    className="text-5xl md:text-6xl font-bold text-center mb-12 underline decoration-teal-400"
+                    className="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-8 sm:mb-12 underline decoration-teal-400"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.5 }}
@@ -36,7 +36,7 @@ export default function BlogListClient({ posts }: { posts: PostMeta[] }) {
                     Blog
                 </motion.h1>
 
-                <div className="grid gap-8 md:grid-cols-2">
+                <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
                     {posts.map((post, i) => (
                         <motion.div
                             key={post.slug}
