@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import BlogCard from "./BlogCard";
 import ContactIcons from "./ContactIcons";
 
@@ -12,30 +12,26 @@ interface PostMeta {
     image?: string;
 }
 
-const cardVariants: Variants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
-};
-
 export default function BlogListClient({ posts }: { posts: PostMeta[] }) {
     return (
         <main className="relative min-h-screen flex flex-col text-white">
-            {/* dark overlay */}
-            <div className="fixed inset-0 bg-black/50" />
-
             <div className="relative z-10 flex-1 max-w-4xl mx-auto py-8 sm:py-12 px-4">
                 {/* animated, underlined title */}
                 <motion.h1
                     className="text-4xl sm:text-5xl md:text-6xl font-bold text-center mb-8 sm:mb-12 underline decoration-teal-400"
-                    initial="hidden"
-                    animate="visible"
-                    variants={cardVariants}
-                    transition={{ duration: 0.6, delay: 0.3 }}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.2 }}
                 >
                     Blog
                 </motion.h1>
 
-                <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
+                <motion.div 
+                    className="grid gap-6 sm:gap-8 md:grid-cols-2"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: 0.6 }}
+                >
                     {posts.map((post) => (
                         <div
                             key={post.slug}
@@ -46,7 +42,7 @@ export default function BlogListClient({ posts }: { posts: PostMeta[] }) {
                             <BlogCard {...post}/>
                         </div>
                     ))}
-                </div>
+                </motion.div>
             </div>
             
             <ContactIcons />

@@ -7,9 +7,6 @@ import { motion } from 'framer-motion'
 export default function Hero() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* 1) Dark Overlay */}
-      <div className="fixed inset-0 bg-black/50" />
-
       {/* 2) Content */}
       <motion.div 
         className="relative z-10 flex flex-col items-center justify-center text-center px-4 space-y-8"

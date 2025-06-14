@@ -21,16 +21,13 @@ export default function FeaturedAndBlog({
   return (
     <div className="max-w-4xl mx-auto px-4" style={{ color: '#ffffff' }}>
       <section className="relative">
-        {/* Dark overlay */}
-        <div className="absolute inset-0 pointer-events-none" />
-        
         <motion.div
           className="relative z-10 py-12"
           style={{ color: '#ffffff' }}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.4 }}
         >
           <motion.h2
             className="text-3xl font-semibold mb-6 underline decoration-teal-400 underline-offset-4 text-center"
@@ -38,7 +35,7 @@ export default function FeaturedAndBlog({
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.4 }}
+            transition={{ duration: 0.3 }}
           >
             Featured Projects
           </motion.h2>
@@ -59,16 +56,13 @@ export default function FeaturedAndBlog({
 
       {/* Latest Posts */}
       <section className="relative">
-        {/* Dark overlay */}
-        <div className="absolute inset-0 pointer-events-none" />
-        
         <motion.div
           className="relative z-10 py-12"
           style={{ color: '#ffffff' }}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
         >
           <motion.h2
             className="text-3xl font-semibold mb-6 underline decoration-teal-400 underline-offset-4 text-center"
@@ -76,7 +70,7 @@ export default function FeaturedAndBlog({
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.4 }}
+            transition={{ duration: 0.3 }}
           >
             Latest Posts
           </motion.h2>

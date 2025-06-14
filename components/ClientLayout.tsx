@@ -12,11 +12,12 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
   return (
     <>
       <VantaNet />
+      <div className="fixed inset-0 bg-black/50 pointer-events-none" />
       <Navbar />
       <AnimatePresence mode="wait">
         <motion.main
           key={pathname}
-          className="pt-16"
+          className="pt-16 relative z-10"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}

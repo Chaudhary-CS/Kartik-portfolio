@@ -6,9 +6,6 @@ import { motion } from 'framer-motion'
 export default function AboutPreview() {
   return (
     <section className="relative">
-      {/* Dark overlay */}
-      <div className="absolute inset-0 pointer-events-none" />
-      
       <motion.div
         className="relative z-10 max-w-4xl mx-auto px-4 py-16"
         style={{ color: '#ffffff' }}

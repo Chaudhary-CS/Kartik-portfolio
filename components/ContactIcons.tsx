@@ -16,9 +16,6 @@ export default function ContactIcons() {
 
   return (
     <section className="relative">
-      {/* Dark overlay */}
-      <div className="absolute inset-0 pointer-events-none" />
-      
       <motion.div
         className="relative z-10 py-8 px-4"
         style={{ color: '#ffffff' }}
