@@ -1,9 +1,9 @@
 // src/app/page.tsx
-import React from 'react';
 import Hero from '../../components/Hero';
 import AboutPreview from '../../components/AboutPreview';
-import ProjectCard from '../../components/ProjectCard';
-import BlogCard from '../../components/BlogCard';
+import FeaturedInFront from '../../components/FeaturedInFront';
+import ContactIcons from '../../components/ContactIcons';
+
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -16,7 +16,7 @@ interface BlogPost {
 }
 
 export default function Home() {
-  // load featured projects (you'll create a data file next)
+  // ---- data loading stays here on the server ----
   const featured = [
     {
       title: 'Autonomous Vehicle Simulator',
@@ -26,12 +26,19 @@ export default function Home() {
       techs: ['Python', 'TensorFlow', 'CARLA'],
       slug: 'av-simulator'
     },
+    {
+      title: 'StudyPrime Learning App',
+      description: 'A learning-system app using priming & active-recall techniques.',
+      href: '/projects/studyprime',
+      image: '/images/studyprime.png',
+      techs: ['React', 'Firebase', 'Tailwind'],
+      slug: 'studyprime',
+    },
   ];
 
   // load latest blog posts
   const blogDir = path.join(process.cwd(), 'content/blog');
-  const files = fs.readdirSync(blogDir).filter((f) => f.endsWith('.mdx'));
-  const posts = files.map((fname) => {
+  const posts = fs.readdirSync(blogDir).map((fname) => {
     const src = fs.readFileSync(path.join(blogDir, fname), 'utf-8');
     const { data } = matter(src);
     return { slug: fname.replace(/\.mdx$/, ''), ...data } as BlogPost;
@@ -43,24 +50,8 @@ export default function Home() {
     <>
       <Hero />
       <AboutPreview />
-      <div className="max-w-4xl mx-auto px-4 text-white">
-        <section className="py-12">
-          <h2 className="text-3xl font-semibold mb-6">Featured Projects</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {featured.map(proj => (
-              <ProjectCard key={proj.slug} {...proj} />
-            ))}
-          </div>
-        </section>
-        <section className="py-12">
-          <h2 className="text-3xl font-semibold mb-6">Latest Posts</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {posts.map(post => (
-              <BlogCard key={post.slug} slug={post.slug} title={post.title} date={post.date} excerpt={post.excerpt} />
-            ))}
-          </div>
-        </section>
-      </div>
+      <FeaturedInFront featured={featured} posts={posts} />
+      <ContactIcons />
     </>
   );
 }

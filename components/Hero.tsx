@@ -46,7 +46,7 @@ export default function Hero() {
                 {label}
                 <span
                     className="
-                        absolute left-0 -bottom-[2px] h-[2px] bg-white
+                        absolute left-0 -bottom-[2px] h-[2px] bg-teal-400
                         w-0 group-hover:w-full transition-all duration-200
                     "
                 />

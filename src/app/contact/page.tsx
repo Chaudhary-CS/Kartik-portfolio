@@ -3,7 +3,7 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { MdEmail, MdPhone } from 'react-icons/md'
+import { MdEmail } from 'react-icons/md'
 import { SiLinkedin, SiGithub, SiInstagram } from 'react-icons/si'
 
 export default function ContactPage() {
@@ -26,11 +26,6 @@ export default function ContactPage() {
         href: 'mailto:samilmelhem23@gmail.com',
         label: 'samilmelhem23@gmail.com',
         Icon: MdEmail,
-    },
-    {
-        href: '',
-        label: '+1 (512) 713-9742',
-        Icon: MdPhone,
     },
     {
         href: 'https://www.instagram.com/samimelhem__/',
