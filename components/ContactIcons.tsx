@@ -20,57 +20,35 @@ export default function ContactIcons() {
       <div className="absolute inset-0 pointer-events-none" />
       
       <motion.div
-        className="relative z-10 py-12"
+        className="relative z-10 py-8"
         style={{ color: '#ffffff' }}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.4 }}
-        transition={{ duration: 0.6, delay: 0.4 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
       >
-        <motion.h2
-          className="text-3xl font-semibold mb-6 underline decoration-teal-400 underline-offset-4 text-center"
-          style={{ color: '#ffffff' }}
-          initial={{ opacity: 0, y: -10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{ duration: 0.5 }}
-        >
-          Contact
-        </motion.h2>
-
-        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-6">
-          {contacts.map(({ href, Icon, label }) => {
-            const isPhone = label === 'Phone'
-
-            const inner = (
-              <>
-                <Icon className="mb-2 text-teal-400" size={36} />
-                <span className="relative inline-block pb-1">
-                  <span className="text-lg font-medium" style={{ color: '#ffffff' }}>{label}</span>
-                  <span className="absolute left-0 -bottom-[2px] h-[2px] bg-teal-400 w-0
-                                   group-hover:w-full transition-all duration-200 origin-left" />
-                </span>
-              </>
-            )
-
-            return isPhone ? (
-              <div
-                key={label}
-                className="group flex flex-col items-center p-6 bg-gray-800/70 rounded-lg hover:bg-gray-700/70 transition-colors"
-              >
-                {inner}
-              </div>
-            ) : (
+        <div className="flex justify-center gap-6">
+          {contacts.map(({ href, Icon, label }, index) => (
+            <motion.div
+              key={label}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true, amount: 0.4 }}
+              transition={{ delay: index * 0.1, duration: 0.3 }}
+            >
               <Link
-                key={label}
                 href={href}
                 target="_blank"
-                className="group flex flex-col items-center p-6 bg-gray-800/70 rounded-lg hover:bg-gray-700/70 transition-colors"
+                className="group flex items-center justify-center w-12 h-12 bg-gray-800/60 rounded-full hover:bg-teal-400/20 transition-all duration-300 hover:scale-110"
+                aria-label={label}
               >
-                {inner}
+                <Icon 
+                  className="text-teal-400 group-hover:text-white transition-colors duration-300" 
+                  size={24} 
+                />
               </Link>
-            )
-          })}
+            </motion.div>
+          ))}
         </div>
       </motion.div>
     </section>

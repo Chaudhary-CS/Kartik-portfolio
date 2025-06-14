@@ -4,6 +4,7 @@
 import {motion, Variants} from 'framer-motion'
 import projects from '../../../data/projects'
 import ProjectCard from '../../../components/ProjectCard'
+import ContactIcons from '../../../components/ContactIcons'
 
 const cardVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
@@ -56,6 +57,8 @@ export default function ProjectsPage() {
           ))}
         </div>
       </div>
+      
+      <ContactIcons />
     </main>
   )
 }

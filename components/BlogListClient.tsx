@@ -2,6 +2,7 @@
 
 import { motion, Variants } from "framer-motion";
 import BlogCard from "./BlogCard";
+import ContactIcons from "./ContactIcons";
 
 interface PostMeta {
     slug: string;
@@ -50,6 +51,8 @@ export default function BlogListClient({ posts }: { posts: PostMeta[] }) {
                     ))}
                 </div>
             </div>
+            
+            <ContactIcons />
         </main>
     );
 }
