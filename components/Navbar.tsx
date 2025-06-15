@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { FaDownload } from 'react-icons/fa'
 
 export default function Navbar() {
   const path = usePathname()
@@ -41,9 +42,15 @@ export default function Navbar() {
 
   const links = [
     { href: '/', label: 'Home' },
+    { href: '/about', label: 'About' },
     { href: '/projects', label: 'Projects' },
     { href: '/blog', label: 'Blog' },
     { href: '/contact', label: 'Contact' },
+  ]
+
+  const documentLinks = [
+    { href: '/documents/sami_melhem.pdf', label: 'Resume' },
+    { href: '/documents/sami_melhem_cv.pdf', label: 'CV' },
   ]
 
   return (
@@ -72,40 +79,71 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <ul className="hidden md:flex space-x-8">
-            {links.map(({ href, label }) => {
-              const isActive = path === href
-              return (
-                <li key={href} className="relative group">
-                  <Link
-                    href={href}
-                    className={`
-                      px-1 pb-1 transition-colors duration-200
-                      ${isActive
-                        ? 'font-semibold text-white'
-                        : scrolled
-                          ? 'text-gray-200 hover:text-white'
-                          : 'text-white hover:text-white'
-                      }
-                    `}
-                  >
-                    {label}
-                    {/* underline */}
-                    <span
+          <div className="hidden md:flex items-center space-x-8">
+            <ul className="flex space-x-8">
+              {links.map(({ href, label }) => {
+                const isActive = path === href
+                return (
+                  <li key={href} className="relative group">
+                    <Link
+                      href={href}
                       className={`
-                        absolute left-0 -bottom-[2px] h-[2px]
-                        bg-teal-400 transition-all duration-200
+                        px-1 pb-1 transition-colors duration-200
                         ${isActive
-                          ? 'w-full'
-                          : 'w-0 group-hover:w-full'
+                          ? 'font-semibold text-white'
+                          : scrolled
+                            ? 'text-gray-200 hover:text-white'
+                            : 'text-white hover:text-white'
                         }
                       `}
-                    />
-                  </Link>
-                </li>
-              )
-            })}
-          </ul>
+                    >
+                      {label}
+                      {/* underline */}
+                      <span
+                        className={`
+                          absolute left-0 -bottom-[2px] h-[2px]
+                          bg-teal-400 transition-all duration-200
+                          ${isActive
+                            ? 'w-full'
+                            : 'w-0 group-hover:w-full'
+                          }
+                        `}
+                      />
+                    </Link>
+                  </li>
+                )
+              })}
+            </ul>
+            
+            {/* Resume/CV Downloads */}
+            <div className="flex space-x-4 ml-4 pl-4 border-l border-gray-600">
+              {documentLinks.map(({ href, label }) => (
+                <a
+                  key={href}
+                  href={href}
+                  download
+                  className={`
+                    relative group flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-medium
+                    transition-colors duration-200
+                    ${scrolled
+                      ? 'text-gray-200 hover:text-white hover:bg-white/10'
+                      : 'text-white hover:text-white hover:bg-white/10'
+                    }
+                  `}
+                >
+                  <FaDownload className="text-xs" />
+                  {label}
+                  {/* teal underline */}
+                  <span
+                    className={`
+                      absolute left-0 -bottom-[2px] h-[2px] bg-teal-400
+                      transition-all duration-200 w-0 group-hover:w-full
+                    `}
+                  />
+                </a>
+              ))}
+            </div>
+          </div>
 
           {/* Mobile Hamburger Button */}
           <button
@@ -192,6 +230,42 @@ export default function Navbar() {
                     </motion.li>
                   )
                 })}
+                
+                {/* Mobile Resume/CV Downloads */}
+                <motion.li
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 20 }}
+                  transition={{ duration: 0.3, delay: 0.1 + links.length * 0.1 }}
+                  className="pt-4 border-t border-gray-600"
+                >
+                  <div className="flex flex-col space-y-4">
+                    {documentLinks.map(({ href, label }, index) => (
+                      <motion.div
+                        key={href}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 20 }}
+                        transition={{ duration: 0.3, delay: 0.1 + (links.length + 1) * 0.1 + index * 0.1 }}
+                        className="relative group"
+                      >
+                        <a
+                          href={href}
+                          download
+                          className="flex items-center justify-center gap-2 text-lg font-medium text-white hover:text-teal-400 transition-colors duration-200 pb-1"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          <FaDownload className="text-sm" />
+                          {label}
+                        </a>
+                        {/* teal underline */}
+                        <span
+                          className="absolute left-1/2 -translate-x-1/2 bottom-0 h-[2px] bg-teal-400 transition-all duration-200 w-0 group-hover:w-full"
+                        />
+                      </motion.div>
+                    ))}
+                  </div>
+                </motion.li>
               </ul>
             </motion.div>
           </motion.div>
