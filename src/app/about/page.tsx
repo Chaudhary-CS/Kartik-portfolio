@@ -33,7 +33,7 @@ export default function AboutPage() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.4, delay: 0.2 }}
             >
-              Hello, I'm Sami Melhem
+              Hello, I am Sami Melhem
             </motion.h2>
             <motion.p 
               className="text-base sm:text-lg text-gray-300 leading-relaxed mb-6"
@@ -42,7 +42,7 @@ export default function AboutPage() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              I'm a passionate software developer and AI enthusiast with a strong background in computer science. 
+              I&apos;m a passionate software developer and AI enthusiast with a strong background in computer science. 
               I love building innovative solutions that combine cutting-edge technology with practical applications, 
               particularly in the fields of artificial intelligence, machine learning, and web development.
             </motion.p>
@@ -237,7 +237,7 @@ export default function AboutPage() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              I've conducted research in artificial intelligence and machine learning, exploring innovative approaches 
+              I&apos;ve conducted research in artificial intelligence and machine learning, exploring innovative approaches 
               to complex problems. Below you can find my research paper that delves into cutting-edge AI methodologies 
               and their practical applications.
             </motion.p>
@@ -287,7 +287,7 @@ export default function AboutPage() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              When I'm not coding, I enjoy exploring the latest developments in AI research, 
+              When I&apos;m not coding, I enjoy exploring the latest developments in AI research, 
               contributing to open-source projects, and sharing knowledge with the developer community. 
               I believe in the power of technology to solve real-world problems and make a positive impact on society.
             </motion.p>
