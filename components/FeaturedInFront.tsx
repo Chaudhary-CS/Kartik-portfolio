@@ -30,23 +30,28 @@ export default function FeaturedAndBlog({
     if (!scrollContainerRef.current) return;
     
     const container = scrollContainerRef.current;
+    const containerWidth = container.clientWidth;
     const cardWidth = container.children[0]?.clientWidth || 0;
-    const gap = 24; // 6 * 4px (gap-6)
-    const scrollAmount = cardWidth + gap;
+    const gap = 32; // 8 * 4px (gap-8)
+    
+    // Calculate scroll position to center the card
+    const cardOffset = (containerWidth - cardWidth) / 2;
     
     if (direction === 'left') {
       const newIndex = Math.max(0, currentIndex - 1);
       setCurrentIndex(newIndex);
+      const scrollLeft = newIndex * (cardWidth + gap) - cardOffset;
       container.scrollTo({
-        left: newIndex * scrollAmount,
+        left: Math.max(0, scrollLeft),
         behavior: 'smooth'
       });
     } else {
       const maxIndex = Math.max(0, featured.length - 1);
       const newIndex = Math.min(maxIndex, currentIndex + 1);
       setCurrentIndex(newIndex);
+      const scrollLeft = newIndex * (cardWidth + gap) - cardOffset;
       container.scrollTo({
-        left: newIndex * scrollAmount,
+        left: Math.max(0, scrollLeft),
         behavior: 'smooth'
       });
     }
@@ -98,15 +103,16 @@ export default function FeaturedAndBlog({
             {/* Projects Slider */}
             <div 
               ref={scrollContainerRef}
-              className="flex gap-6 overflow-x-hidden scroll-smooth"
+              className="flex gap-8 overflow-x-hidden scroll-smooth px-4 md:px-0"
               style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
               {featured.map((proj) => (
                 <div
                   key={proj.slug}
-                  className="individual-project-card relative rounded-xl overflow-hidden cursor-pointer flex-shrink-0 w-[400px]
-                             shadow-[0_0_10px_rgba(20,184,166,0.3)] hover:shadow-[0_0_20px_rgba(20,184,166,0.6)]
-                             border border-white hover:border-teal-400 transition-all duration-300"
+                  className="individual-project-card relative rounded-xl overflow-hidden cursor-pointer flex-shrink-0 
+                           w-[calc(100vw-2rem)] max-w-[400px] sm:w-[350px] md:w-[380px] lg:w-[400px]
+                           shadow-[0_0_10px_rgba(20,184,166,0.3)] hover:shadow-[0_0_20px_rgba(20,184,166,0.6)]
+                           border border-white hover:border-teal-400 transition-all duration-300"
                 >
                   <ProjectCard {...proj} />
                 </div>
@@ -122,11 +128,13 @@ export default function FeaturedAndBlog({
                     setCurrentIndex(index);
                     if (scrollContainerRef.current) {
                       const container = scrollContainerRef.current;
+                      const containerWidth = container.clientWidth;
                       const cardWidth = container.children[0]?.clientWidth || 0;
-                      const gap = 24;
-                      const scrollAmount = cardWidth + gap;
+                      const gap = 32;
+                      const cardOffset = (containerWidth - cardWidth) / 2;
+                      const scrollLeft = index * (cardWidth + gap) - cardOffset;
                       container.scrollTo({
-                        left: index * scrollAmount,
+                        left: Math.max(0, scrollLeft),
                         behavior: 'smooth'
                       });
                     }

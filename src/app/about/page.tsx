@@ -1,7 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FaDownload, FaGraduationCap, FaCode, FaBrain, FaFileAlt, FaMusic } from 'react-icons/fa'
+import { FaDownload, FaGraduationCap, FaCode, FaBrain, FaFileAlt, FaMusic, FaDumbbell, FaPlane, FaMapMarkerAlt } from 'react-icons/fa'
+import { GiTennisRacket } from 'react-icons/gi'
 import ContactIcons from '../../../components/ContactIcons'
 
 export default function AboutPage() {
@@ -315,7 +316,7 @@ export default function AboutPage() {
             </motion.div>
           </motion.section>
 
-          {/* Personal Touch */}
+          {/* Beyond Code - Personal Interests */}
           <motion.section 
             className="bg-gray-800/70 rounded-xl p-6 sm:p-8"
             initial={{ opacity: 0, y: 20 }}
@@ -324,7 +325,7 @@ export default function AboutPage() {
             transition={{ duration: 0.6, delay: 0.5 }}
           >
             <motion.h2 
-              className="text-2xl sm:text-3xl font-semibold mb-4 text-teal-400"
+              className="text-2xl sm:text-3xl font-semibold mb-8 text-teal-400 text-center"
               initial={{ opacity: 0, y: -10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
@@ -332,27 +333,126 @@ export default function AboutPage() {
             >
               Beyond Code
             </motion.h2>
-            <motion.p 
-              className="text-base sm:text-lg text-gray-300 leading-relaxed mb-4"
+            
+            {/* Interest Cards Grid */}
+            <motion.div 
+              className="grid grid-cols-2 lg:grid-cols-4 gap-6"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              My personal interests are in music (where I&apos;m the Principal Clarinet for both the TAMU Wind Symphony and Chamber Orchestra), 
-              weightlifting, playing pickleball on the weekends with friends, and traveling. I recently went to Cancun, Mexico, Arkansas, 
-              and Spain all within the past year, including a performance tour with the TAMU Wind Symphony across Spain.
-            </motion.p>
+              {/* Music */}
+              <motion.div 
+                className="group bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-xl p-6 text-center hover:from-purple-500/30 hover:to-pink-500/30 transition-all duration-300 border border-purple-500/30 hover:border-purple-400/60 hover:scale-105"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.4, delay: 0.4 }}
+              >
+                <div className="mb-4">
+                  <FaMusic className="text-4xl text-purple-400 mx-auto group-hover:text-purple-300 transition-colors duration-300" />
+                </div>
+                <h3 className="text-lg font-semibold text-white mb-2">Music</h3>
+                <p className="text-sm text-gray-300 leading-relaxed">
+                  Principal Clarinet at TAMU Wind Symphony & Chamber Orchestra
+                </p>
+              </motion.div>
+
+              {/* Fitness */}
+              <motion.div 
+                className="group bg-gradient-to-br from-red-500/20 to-orange-500/20 rounded-xl p-6 text-center hover:from-red-500/30 hover:to-orange-500/30 transition-all duration-300 border border-red-500/30 hover:border-red-400/60 hover:scale-105"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.4, delay: 0.5 }}
+              >
+                <div className="mb-4">
+                  <FaDumbbell className="text-4xl text-red-400 mx-auto group-hover:text-red-300 transition-colors duration-300" />
+                </div>
+                <h3 className="text-lg font-semibold text-white mb-2">Fitness</h3>
+                <p className="text-sm text-gray-300 leading-relaxed">
+                  Weightlifting enthusiast & strength training
+                </p>
+              </motion.div>
+
+              {/* Pickleball */}
+              <motion.div 
+                className="group bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-xl p-6 text-center hover:from-green-500/30 hover:to-emerald-500/30 transition-all duration-300 border border-green-500/30 hover:border-green-400/60 hover:scale-105"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.4, delay: 0.6 }}
+              >
+                <div className="mb-4">
+                  <GiTennisRacket className="text-4xl text-green-400 mx-auto group-hover:text-green-300 transition-colors duration-300" />
+                </div>
+                <h3 className="text-lg font-semibold text-white mb-2">Pickleball</h3>
+                <p className="text-sm text-gray-300 leading-relaxed">
+                  Weekend warrior on the courts with friends
+                </p>
+              </motion.div>
+
+              {/* Travel */}
+              <motion.div 
+                className="group bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-xl p-6 text-center hover:from-blue-500/30 hover:to-cyan-500/30 transition-all duration-300 border border-blue-500/30 hover:border-blue-400/60 hover:scale-105"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.4, delay: 0.7 }}
+              >
+                <div className="mb-4">
+                  <FaPlane className="text-4xl text-blue-400 mx-auto group-hover:text-blue-300 transition-colors duration-300" />
+                </div>
+                <h3 className="text-lg font-semibold text-white mb-2">Travel</h3>
+                <p className="text-sm text-gray-300 leading-relaxed">
+                  Recent adventures: Spain, Mexico, Arkansas
+                </p>
+              </motion.div>
+            </motion.div>
+
+            {/* Recent Travel Highlights */}
+            <motion.div 
+              className="mt-8 bg-gray-700/30 rounded-lg p-6 border border-gray-600/50"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <FaMapMarkerAlt className="text-teal-400 text-xl" />
+                <h3 className="text-lg font-semibold text-white">Recent Adventures</h3>
+              </div>
+              <div className="grid sm:grid-cols-3 gap-4 text-center">
+                <div className="bg-gray-800/50 rounded-lg p-4">
+                  <div className="text-2xl mb-2">🇪🇸</div>
+                  <p className="text-white font-medium">Spain</p>
+                  <p className="text-xs text-gray-400">Performance Tour</p>
+                </div>
+                <div className="bg-gray-800/50 rounded-lg p-4">
+                  <div className="text-2xl mb-2">🇲🇽</div>
+                  <p className="text-white font-medium">Cancun</p>
+                  <p className="text-xs text-gray-400">Beach Getaway</p>
+                </div>
+                <div className="bg-gray-800/50 rounded-lg p-4">
+                  <div className="text-2xl mb-2">🏔️</div>
+                  <p className="text-white font-medium">Arkansas</p>
+                  <p className="text-xs text-gray-400">Nature and State Exploration</p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Philosophy */}
             <motion.p 
-              className="text-base sm:text-lg text-gray-300 leading-relaxed"
+              className="text-center text-gray-300 leading-relaxed mt-8 italic"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
+              transition={{ duration: 0.5, delay: 0.9 }}
             >
-              I believe in the power of technology to solve real-world problems and make a positive impact on society. 
+              "I believe in the power of technology to solve real-world problems and make a positive impact on society. 
               Through my work with startups, research labs, and various projects, I strive to create solutions that 
-              not only improve productivity but also help others improve their life situations.
+              not only improve productivity but also help others improve their life situations."
             </motion.p>
           </motion.section>
         </div>
