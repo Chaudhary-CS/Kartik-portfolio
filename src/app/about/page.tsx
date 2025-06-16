@@ -344,14 +344,27 @@ export default function AboutPage() {
             >
               {/* Music */}
               <motion.div 
-                className="group bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-xl p-6 text-center hover:from-purple-500/30 hover:to-pink-500/30 transition-all duration-300 border border-purple-500/30 hover:border-purple-400/60 hover:scale-105"
+                className="group bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-xl p-6 text-center border border-purple-500/30"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.4, delay: 0.4 }}
+                whileHover={{ 
+                  scale: 1.05,
+                  background: "linear-gradient(135deg, rgba(168, 85, 247, 0.3) 0%, rgba(236, 72, 153, 0.3) 100%)",
+                  borderColor: "rgba(168, 85, 247, 0.6)",
+                  transition: { duration: 0.3, ease: "easeInOut" }
+                }}
               >
                 <div className="mb-4">
-                  <FaMusic className="text-4xl text-purple-400 mx-auto group-hover:text-purple-300 transition-colors duration-300" />
+                  <motion.div
+                    whileHover={{ 
+                      color: "rgb(196, 181, 253)",
+                      transition: { duration: 0.3, ease: "easeInOut" }
+                    }}
+                  >
+                    <FaMusic className="text-4xl text-purple-400 mx-auto" />
+                  </motion.div>
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2">Music</h3>
                 <p className="text-sm text-gray-300 leading-relaxed">
@@ -361,14 +374,27 @@ export default function AboutPage() {
 
               {/* Fitness */}
               <motion.div 
-                className="group bg-gradient-to-br from-red-500/20 to-orange-500/20 rounded-xl p-6 text-center hover:from-red-500/30 hover:to-orange-500/30 transition-all duration-300 border border-red-500/30 hover:border-red-400/60 hover:scale-105"
+                className="group bg-gradient-to-br from-red-500/20 to-orange-500/20 rounded-xl p-6 text-center border border-red-500/30"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.4, delay: 0.5 }}
+                whileHover={{ 
+                  scale: 1.05,
+                  background: "linear-gradient(135deg, rgba(239, 68, 68, 0.3) 0%, rgba(249, 115, 22, 0.3) 100%)",
+                  borderColor: "rgba(239, 68, 68, 0.6)",
+                  transition: { duration: 0.3, ease: "easeInOut" }
+                }}
               >
                 <div className="mb-4">
-                  <FaDumbbell className="text-4xl text-red-400 mx-auto group-hover:text-red-300 transition-colors duration-300" />
+                  <motion.div
+                    whileHover={{ 
+                      color: "rgb(252, 165, 165)",
+                      transition: { duration: 0.3, ease: "easeInOut" }
+                    }}
+                  >
+                    <FaDumbbell className="text-4xl text-red-400 mx-auto" />
+                  </motion.div>
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2">Fitness</h3>
                 <p className="text-sm text-gray-300 leading-relaxed">
@@ -378,14 +404,27 @@ export default function AboutPage() {
 
               {/* Pickleball */}
               <motion.div 
-                className="group bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-xl p-6 text-center hover:from-green-500/30 hover:to-emerald-500/30 transition-all duration-300 border border-green-500/30 hover:border-green-400/60 hover:scale-105"
+                className="group bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-xl p-6 text-center border border-green-500/30"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.4, delay: 0.6 }}
+                whileHover={{ 
+                  scale: 1.05,
+                  background: "linear-gradient(135deg, rgba(34, 197, 94, 0.3) 0%, rgba(16, 185, 129, 0.3) 100%)",
+                  borderColor: "rgba(34, 197, 94, 0.6)",
+                  transition: { duration: 0.3, ease: "easeInOut" }
+                }}
               >
                 <div className="mb-4">
-                  <GiTennisRacket className="text-4xl text-green-400 mx-auto group-hover:text-green-300 transition-colors duration-300" />
+                  <motion.div
+                    whileHover={{ 
+                      color: "rgb(134, 239, 172)",
+                      transition: { duration: 0.3, ease: "easeInOut" }
+                    }}
+                  >
+                    <GiTennisRacket className="text-4xl text-green-400 mx-auto" />
+                  </motion.div>
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2">Pickleball</h3>
                 <p className="text-sm text-gray-300 leading-relaxed">
@@ -395,14 +434,27 @@ export default function AboutPage() {
 
               {/* Travel */}
               <motion.div 
-                className="group bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-xl p-6 text-center hover:from-blue-500/30 hover:to-cyan-500/30 transition-all duration-300 border border-blue-500/30 hover:border-blue-400/60 hover:scale-105"
+                className="group bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-xl p-6 text-center border border-blue-500/30"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.4, delay: 0.7 }}
+                whileHover={{ 
+                  scale: 1.05,
+                  background: "linear-gradient(135deg, rgba(59, 130, 246, 0.3) 0%, rgba(6, 182, 212, 0.3) 100%)",
+                  borderColor: "rgba(59, 130, 246, 0.6)",
+                  transition: { duration: 0.3, ease: "easeInOut" }
+                }}
               >
                 <div className="mb-4">
-                  <FaPlane className="text-4xl text-blue-400 mx-auto group-hover:text-blue-300 transition-colors duration-300" />
+                  <motion.div
+                    whileHover={{ 
+                      color: "rgb(147, 197, 253)",
+                      transition: { duration: 0.3, ease: "easeInOut" }
+                    }}
+                  >
+                    <FaPlane className="text-4xl text-blue-400 mx-auto" />
+                  </motion.div>
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2">Travel</h3>
                 <p className="text-sm text-gray-300 leading-relaxed">

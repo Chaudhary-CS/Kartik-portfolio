@@ -3,7 +3,7 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import { MdEmail, MdSend, MdContentCopy, MdCheck, MdArrowDropDown } from 'react-icons/md'
 import { SiLinkedin, SiGithub, SiInstagram, SiGmail, SiApple } from 'react-icons/si'
 import { FaUser, FaBuilding, FaEnvelope, FaComment, FaExternalLinkAlt, FaYahoo } from 'react-icons/fa'
@@ -22,6 +22,24 @@ export default function ContactPage() {
     const [dropdownPosition, setDropdownPosition] = useState<'down' | 'up'>('down')
     const dropdownRef = useRef<HTMLDivElement>(null)
     const buttonRef = useRef<HTMLButtonElement>(null)
+
+    // Calculate dropdown position to avoid going off-screen
+    const calculateDropdownPosition = useCallback(() => {
+        if (!buttonRef.current) return
+
+        const buttonRect = buttonRef.current.getBoundingClientRect()
+        const viewportHeight = window.innerHeight
+        const dropdownHeight = 250 // Approximate height of dropdown
+        const spaceBelow = viewportHeight - buttonRect.bottom
+        const spaceAbove = buttonRect.top
+
+        // If there's not enough space below but enough space above, position upward
+        if (spaceBelow < dropdownHeight && spaceAbove > dropdownHeight) {
+            setDropdownPosition('up')
+        } else {
+            setDropdownPosition('down')
+        }
+    }, [])
 
     // Close dropdown when clicking outside and handle window resize
     useEffect(() => {
@@ -44,25 +62,7 @@ export default function ContactPage() {
             document.removeEventListener('mousedown', handleClickOutside)
             window.removeEventListener('resize', handleResize)
         }
-    }, [showEmailOptions])
-
-    // Calculate dropdown position to avoid going off-screen
-    const calculateDropdownPosition = () => {
-        if (!buttonRef.current) return
-
-        const buttonRect = buttonRef.current.getBoundingClientRect()
-        const viewportHeight = window.innerHeight
-        const dropdownHeight = 250 // Approximate height of dropdown
-        const spaceBelow = viewportHeight - buttonRect.bottom
-        const spaceAbove = buttonRect.top
-
-        // If there's not enough space below but enough space above, position upward
-        if (spaceBelow < dropdownHeight && spaceAbove > dropdownHeight) {
-            setDropdownPosition('up')
-        } else {
-            setDropdownPosition('down')
-        }
-    }
+    }, [showEmailOptions, calculateDropdownPosition])
 
     const inquiryTypes = [
         { value: 'job', label: 'Job Opportunity' },
@@ -86,14 +86,19 @@ export default function ContactPage() {
             icon: MdEmail,
             color: 'text-blue-500',
             getUrl: (subject: string, body: string) => 
-                `https://outlook.live.com/mail/0/deeplink/compose?to=samilmelhem23@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+                `ms-outlook://compose?to=samilmelhem23@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
         },
         {
             name: 'Apple Mail',
             icon: SiApple,
             color: 'text-gray-300',
             getUrl: (subject: string, body: string) => 
-                `mailto:samilmelhem23@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+                `mailto:samilmelhem23@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`,
+            isAvailable: () => {
+                // Check if running on Mac or iOS
+                const userAgent = navigator.userAgent.toLowerCase()
+                return userAgent.includes('mac') || userAgent.includes('iphone') || userAgent.includes('ipad')
+            }
         },
         {
             name: 'Yahoo Mail',
@@ -142,7 +147,24 @@ ${formData.email}`
     const handleEmailServiceClick = (service: typeof emailServices[0]) => {
         const { subject, body } = generateEmailContent()
         const url = service.getUrl(subject, body)
-        window.open(url, '_blank')
+        
+        // Special handling for Outlook Desktop - fallback to web if desktop app not available
+        if (service.name === 'Outlook Desktop') {
+            // Try to open desktop app first
+            const desktopUrl = url
+            const webUrl = `https://outlook.live.com/mail/0/deeplink/compose?to=samilmelhem23@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+            
+            // Attempt to open desktop app
+            window.location.href = desktopUrl
+            
+            // Fallback to web version after a short delay if desktop app doesn't respond
+            setTimeout(() => {
+                window.open(webUrl, '_blank')
+            }, 1000)
+        } else {
+            window.open(url, '_blank')
+        }
+        
         setShowEmailOptions(false)
     }
 
@@ -344,7 +366,7 @@ ${body}`
                         ? 'bottom-full mb-2' 
                         : 'top-full mt-2'
                     }`} style={{ zIndex: 99999 }}>
-                      {emailServices.map((service, index) => (
+                      {emailServices.filter(service => !service.isAvailable || service.isAvailable()).map((service, index) => (
                         <button
                           key={service.name}
                           type="button"
