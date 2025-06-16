@@ -40,7 +40,7 @@ export default function AboutPage() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.7 }}
             >
-              Hi, I&apos;m Sami Melhem, I&apos;m entering my senior year at Texas A&M majoring in Computer Science, with an emphasis in Data Science, and a minor in Cybersecurity. During my time at A&M academically, I focused on machine learning, big-data analytics, and AI workflows where I&apos;ve worked with 2 different startups on AI workflow products and recyclable battery material optimization pipelines.
+              Hi, I'm Sami Melhem, I'm entering my senior year at Texas A&M majoring in Computer Science, with an emphasis in Data Science, and a minor in Cybersecurity. During my time at A&M academically, I focused on machine learning, big-data analytics, and AI workflows where I've worked with 2 different startups on AI workflow products and recyclable battery material optimization pipelines.
             </motion.p>
             <motion.p 
               className="text-base sm:text-lg text-gray-300 leading-relaxed"
@@ -285,7 +285,7 @@ export default function AboutPage() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              I&apos;ve conducted research in artificial intelligence and machine learning, particularly focusing on 
+              I've conducted research in artificial intelligence and machine learning, particularly focusing on 
               Large Language Models and their applications in engineering education. My research has been accepted 
               for presentation at major academic conferences.
             </motion.p>
@@ -302,8 +302,8 @@ export default function AboutPage() {
               </p>
               <p className="text-gray-300 text-sm mb-4">
                 Co-authored with Dr. Rujun Gao, Hillary E. Merzdorf, Xiaosu Guo, Dr. Kristi J. Shryock, and Prof. Arun R Srinivasa. 
-                This research evaluates ChatGPT-4o&apos;s performance on mechanical engineering concept inventories, 
-                examining AI&apos;s potential and limitations in engineering education support.
+                This research evaluates ChatGPT-4o's performance on mechanical engineering concept inventories, 
+                examining AI's potential and limitations in engineering education support.
               </p>
               <a
                 href="/documents/sami_melhem_research_paper_1.pdf"
@@ -502,9 +502,9 @@ export default function AboutPage() {
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, delay: 0.9 }}
             >
-              "I believe in the power of technology to solve real-world problems and make a positive impact on society. 
+              &quot;I believe in the power of technology to solve real-world problems and make a positive impact on society. 
               Through my work with startups, research labs, and various projects, I strive to create solutions that 
-              not only improve productivity but also help others improve their life situations."
+              not only improve productivity but also help others improve their life situations.&quot;
             </motion.p>
           </motion.section>
         </div>

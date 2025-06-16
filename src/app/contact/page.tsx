@@ -233,7 +233,7 @@ ${body}`
             </div>
             
             <p className="text-gray-300 mb-8">
-              Whether you're a recruiter, fellow developer, or have any questions about my work, I'd love to hear from you!
+              Whether you&apos;re a recruiter, fellow developer, or have any questions about my work, I&apos;d love to hear from you!
             </p>
 
             <form className="space-y-6">
