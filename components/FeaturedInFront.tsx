@@ -101,7 +101,7 @@ export default function FeaturedAndBlog({
               className="flex gap-6 overflow-x-hidden scroll-smooth"
               style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
-              {featured.map((proj, index) => (
+              {featured.map((proj) => (
                 <div
                   key={proj.slug}
                   className="individual-project-card relative rounded-xl overflow-hidden cursor-pointer flex-shrink-0 w-[400px]
