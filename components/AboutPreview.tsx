@@ -33,7 +33,7 @@ export default function AboutPreview() {
           viewport={{ once: true, amount: 0.4 }}
           transition={{ delay: 0.3, duration: 0.5 }}
         >
-          {`I'm a junior at Texas A&amp;M University majoring in Computer Science with a passion for data engineering, ML, and clarinet performance. I've interned at INTERA Inc., led projects for the Aggie Data Science Club, and performed internationally with TAMU ensembles.`}
+          {`I'm entering my senior year at Texas A&M majoring in Computer Science, with an emphasis in Data Science, and a minor in Cybersecurity. I focus on machine learning, big-data analytics, and AI workflows, working with startups and research labs. I also serve as Principal Clarinet for both the TAMU Wind Symphony and Chamber Orchestra.`}
         </motion.p>
 
         <motion.div

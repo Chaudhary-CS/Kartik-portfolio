@@ -206,10 +206,10 @@ export default function Navbar() {
                       <Link
                         href={href}
                         className={`
-                          text-2xl font-medium transition-colors duration-200
+                          text-2xl transition-colors duration-200
                           ${isActive
-                            ? 'text-teal-400 font-semibold'
-                            : 'text-white hover:text-teal-400'
+                            ? 'text-white font-bold'
+                            : 'text-white font-medium hover:text-teal-400'
                           }
                         `}
                         onClick={() => setMobileMenuOpen(false)}
