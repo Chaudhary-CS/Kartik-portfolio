@@ -7,6 +7,11 @@ import ProjectCard from '../../../components/ProjectCard'
 import ContactIcons from '../../../components/ContactIcons'
 
 export default function ProjectsPage() {
+  // Calculate project statistics
+  const totalProjects = projects.length
+  const featuredProjects = projects.filter(p => p.featured).length
+  const uniqueTechs = [...new Set(projects.flatMap(p => p.techs || []))].length
+
   return (
     <main className="relative min-h-screen flex flex-col text-white">
       <div className="relative z-10 flex-1 max-w-4xl mx-auto py-8 sm:py-12 px-4">
@@ -18,6 +23,24 @@ export default function ProjectsPage() {
           >
             Projects
           </motion.h1>
+
+        {/* Project Summary */}
+        <motion.div 
+          className="text-center mb-8 sm:mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.4 }}
+        >
+          <p className="text-lg text-gray-300 mb-4">
+            A collection of {totalProjects} projects showcasing my skills in software development, 
+            AI/ML, and full-stack web applications.
+          </p>
+          <div className="flex justify-center gap-8 text-sm text-gray-400">
+            <span>{totalProjects} Total Projects</span>
+            <span>{featuredProjects} Featured</span>
+            <span>{uniqueTechs}+ Technologies</span>
+          </div>
+        </motion.div>
         
         <motion.div 
           className="grid gap-6 sm:gap-8 md:grid-cols-2"
@@ -42,6 +65,9 @@ export default function ProjectsPage() {
                 href={p.href ?? `/projects/${p.slug}`}
                 image={p.image}
                 techs={p.techs}
+                github={p.github}
+                liveDemo={p.liveDemo}
+                date={p.date}
               />
             </div>
           ))}
