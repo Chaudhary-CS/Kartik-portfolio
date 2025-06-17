@@ -8,10 +8,10 @@ import { SiLinkedin, SiGithub, SiInstagram } from 'react-icons/si'
 
 export default function ContactIcons() {
   const contacts = [
-    { href: 'https://linkedin.com/in/sami-melhem', Icon: SiLinkedin, label: 'LinkedIn' },
-    { href: 'https://github.com/SamiMelhem',   Icon: SiGithub,   label: 'GitHub'   },
-    { href: 'mailto:samilmelhem23@gmail.com',   Icon: MdEmail,    label: 'Email'    },
-    { href: 'https://instagram.com/samimelhem__', Icon: SiInstagram, label: 'Instagram' },
+    { href: 'https://linkedin.com/in/sami-melhem', Icon: SiLinkedin, label: 'LinkedIn', external: true },
+    { href: 'https://github.com/SamiMelhem',   Icon: SiGithub,   label: 'GitHub', external: true   },
+    { href: '/contact',   Icon: MdEmail,    label: 'Email', external: false    },
+    { href: 'https://instagram.com/samimelhem__', Icon: SiInstagram, label: 'Instagram', external: true },
   ]
 
   return (
@@ -25,7 +25,7 @@ export default function ContactIcons() {
         transition={{ duration: 0.6, delay: 0.2 }}
       >
         <div className="flex justify-center gap-4 sm:gap-6">
-          {contacts.map(({ href, Icon, label }, index) => (
+          {contacts.map(({ href, Icon, label, external }, index) => (
             <motion.div
               key={label}
               initial={{ opacity: 0, scale: 0.8 }}
@@ -35,7 +35,7 @@ export default function ContactIcons() {
             >
               <Link
                 href={href}
-                target="_blank"
+                {...(external ? { target: '_blank' } : {})}
                 className="group flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 bg-gray-800/60 rounded-full hover:bg-teal-400/20 transition-all duration-300 hover:scale-110"
                 aria-label={label}
               >

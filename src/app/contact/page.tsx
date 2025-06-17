@@ -85,8 +85,15 @@ export default function ContactPage() {
             name: 'Outlook',
             icon: MdEmail,
             color: 'text-blue-500',
-            getUrl: (subject: string, body: string) => 
-                `ms-outlook://compose?to=samilmelhem23@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+            getUrl: (subject: string, body: string) => {
+                const userAgent = navigator.userAgent.toLowerCase()
+                // On Windows, try desktop app first
+                if (userAgent.includes('windows')) {
+                    return `ms-outlook://compose?to=samilmelhem23@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+                }
+                // On Mac/iOS, use web version (desktop app uses different protocol)
+                return `https://outlook.live.com/mail/0/deeplink/compose?to=samilmelhem23@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+            }
         },
         {
             name: 'Apple Mail',
@@ -106,13 +113,6 @@ export default function ContactPage() {
             color: 'text-purple-400',
             getUrl: (subject: string, body: string) => 
                 `https://compose.mail.yahoo.com/?to=samilmelhem23@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
-        },
-        {
-            name: 'Default Email App',
-            icon: MdEmail,
-            color: 'text-gray-400',
-            getUrl: (subject: string, body: string) => 
-                `mailto:samilmelhem23@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
         }
     ]
 
@@ -148,8 +148,8 @@ ${formData.email}`
         const { subject, body } = generateEmailContent()
         const url = service.getUrl(subject, body)
         
-        // Special handling for Outlook Desktop - fallback to web if desktop app not available
-        if (service.name === 'Outlook Desktop') {
+        // Special handling for Outlook on Windows - fallback to web if desktop app not available
+        if (service.name === 'Outlook' && navigator.userAgent.toLowerCase().includes('windows')) {
             // Try to open desktop app first
             const desktopUrl = url
             const webUrl = `https://outlook.live.com/mail/0/deeplink/compose?to=samilmelhem23@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
