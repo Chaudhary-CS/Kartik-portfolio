@@ -1,0 +1,30 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="gradient1" cx="0.2" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#06b6d4" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.4"/>
+    </radialGradient>
+    <radialGradient id="gradient2" cx="0.8" cy="0.7" r="0.6">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1e293b" stop-opacity="0.3"/>
+    </radialGradient>
+    <radialGradient id="gradient3" cx="0.5" cy="0.1" r="0.9">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#ef4444" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.4"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Base background -->
+  <rect width="1200" height="630" fill="url(#gradient1)"/>
+  
+  <!-- Overlapping shapes for depth -->
+  <ellipse cx="300" cy="200" rx="400" ry="300" fill="url(#gradient2)" transform="rotate(-15 300 200)"/>
+  <ellipse cx="900" cy="400" rx="350" ry="250" fill="url(#gradient3)" transform="rotate(25 900 400)"/>
+  
+  <!-- Additional flowing elements -->
+  <path d="M0,400 Q300,200 600,350 T1200,300 L1200,630 L0,630 Z" fill="url(#gradient2)" opacity="0.4"/>
+  <path d="M0,100 Q400,300 800,150 T1200,200 L1200,0 L0,0 Z" fill="url(#gradient3)" opacity="0.3"/>
+</svg> 

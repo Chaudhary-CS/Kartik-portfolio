@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <!-- Light gradient background -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    <style>
+      .title { font: bold 16px sans-serif; text-anchor: middle; fill: #334155; }
+      .label { font: 12px sans-serif; text-anchor: middle; fill: #475569; }
+      .small-label { font: 10px sans-serif; text-anchor: middle; fill: #64748b; }
+      .client-box { fill: #dbeafe; stroke: #3b82f6; stroke-width: 1.5; opacity: 0.8; }
+      .server-box { fill: #fae8ff; stroke: #a855f7; stroke-width: 1.5; opacity: 0.8; }
+      .network-box { fill: #ecfeff; stroke: #06b6d4; stroke-width: 1.5; opacity: 0.8; }
+      .component-box { fill: #dcfce7; stroke: #22c55e; stroke-width: 1.5; opacity: 0.8; }
+      .buffer-box { fill: #fef3c7; stroke: #f59e0b; stroke-width: 1.5; opacity: 0.8; }
+      .data-box { fill: #fce7f3; stroke: #ec4899; stroke-width: 1.5; opacity: 0.8; }
+      .arrow { stroke: #64748b; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); opacity: 0.7; }
+      .bi-arrow { stroke: #64748b; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); marker-start: url(#arrowhead); opacity: 0.7; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b" />
+    </marker>
+  </defs>
+  
+  <!-- Light background -->
+  <rect width="100%" height="100%" fill="url(#bgGradient)"/>
+  
+  <!-- Network Layer -->
+  <rect x="450" y="50" width="300" height="80" class="network-box" rx="10"/>
+  <text x="600" y="75" class="title">Network Layer</text>
+  <ellipse cx="600" cy="105" rx="120" ry="20" class="network-box"/>
+  <text x="600" y="108" class="label">TCP/IP Protocol</text>
+  
+  <!-- Client Side -->
+  <rect x="50" y="180" width="280" height="200" class="client-box" rx="10"/>
+  <text x="190" y="205" class="title">Client Side</text>
+  
+  <rect x="70" y="220" width="80" height="50" class="client-box" rx="5"/>
+  <text x="110" y="240" class="small-label">Client 1</text>
+  <text x="110" y="255" class="small-label">(client.cpp)</text>
+  
+  <rect x="170" y="220" width="80" height="50" class="client-box" rx="5"/>
+  <text x="210" y="240" class="small-label">Client 2</text>
+  <text x="210" y="255" class="small-label">(client.cpp)</text>
+  
+  <rect x="270" y="220" width="80" height="50" class="client-box" rx="5"/>
+  <text x="310" y="240" class="small-label">Client N</text>
+  <text x="310" y="255" class="small-label">(client.cpp)</text>
+  
+  <!-- Request Labels -->
+  <text x="110" y="295" class="small-label">Data Point</text>
+  <text x="110" y="310" class="small-label">Requests</text>
+  
+  <text x="210" y="295" class="small-label">File Transfer</text>
+  <text x="210" y="310" class="small-label">Requests</text>
+  
+  <text x="310" y="295" class="small-label">Multiple</text>
+  <text x="310" y="310" class="small-label">Request Types</text>
+  
+  <!-- Server Side -->
+  <rect x="870" y="180" width="280" height="550" class="server-box" rx="10"/>
+  <text x="1010" y="205" class="title">Server Side</text>
+  
+  <!-- Main Server -->
+  <rect x="890" y="220" width="120" height="50" class="server-box" rx="5"/>
+  <text x="950" y="240" class="small-label">Main Server</text>
+  <text x="950" y="255" class="small-label">(server.cpp)</text>
+  
+  <!-- Threading Layer -->
+  <rect x="890" y="290" width="240" height="120" class="component-box" rx="5"/>
+  <text x="1010" y="310" class="label">Threading Layer</text>
+  
+  <rect x="900" y="325" width="70" height="30" class="component-box" rx="3"/>
+  <text x="935" y="343" class="small-label">Thread 1</text>
+  
+  <rect x="980" y="325" width="70" height="30" class="component-box" rx="3"/>
+  <text x="1015" y="343" class="small-label">Thread 2</text>
+  
+  <rect x="1060" y="325" width="70" height="30" class="component-box" rx="3"/>
+  <text x="1095" y="343" class="small-label">Thread N</text>
+  
+  <!-- Communication Management -->
+  <rect x="890" y="430" width="240" height="100" class="component-box" rx="5"/>
+  <text x="1010" y="450" class="label">Communication Management</text>
+  
+  <rect x="900" y="465" width="100" height="30" class="component-box" rx="3"/>
+  <text x="950" y="483" class="small-label">TCP Request Channel</text>
+  
+  <rect x="1020" y="465" width="100" height="30" class="buffer-box" rx="3"/>
+  <text x="1070" y="483" class="small-label">Bounded Buffer</text>
+  
+  <!-- Data Processing -->
+  <rect x="890" y="550" width="240" height="80" class="data-box" rx="5"/>
+  <text x="1010" y="570" class="label">Data Processing</text>
+  
+  <rect x="900" y="585" width="70" height="30" class="data-box" rx="3"/>
+  <text x="935" y="603" class="small-label">Histogram</text>
+  
+  <rect x="1000" y="585" width="120" height="30" class="data-box" rx="3"/>
+  <text x="1060" y="603" class="small-label">Histogram Collection</text>
+  
+  <!-- Data Storage -->
+  <rect x="890" y="650" width="240" height="60" class="data-box" rx="5"/>
+  <text x="1010" y="670" class="label">Data Storage</text>
+  
+  <ellipse cx="950" cy="690" rx="40" ry="15" class="data-box"/>
+  <text x="950" y="694" class="small-label">Data Points</text>
+  
+  <ellipse cx="1070" cy="690" rx="40" ry="15" class="data-box"/>
+  <text x="1070" y="694" class="small-label">File System</text>
+  
+  <!-- Arrows -->
+  <!-- Clients to Network -->
+  <line x1="150" y1="270" x2="500" y2="130" class="arrow"/>
+  <line x1="250" y1="270" x2="550" y2="130" class="arrow"/>
+  <line x1="350" y1="270" x2="600" y2="130" class="arrow"/>
+  
+  <!-- Network to Server -->
+  <line x1="700" y1="105" x2="890" y2="245" class="arrow"/>
+  
+  <!-- Server to Threads -->
+  <line x1="950" y1="270" x2="935" y2="325" class="arrow"/>
+  <line x1="950" y1="270" x2="1015" y2="325" class="arrow"/>
+  <line x1="950" y1="270" x2="1095" y2="325" class="arrow"/>
+  
+  <!-- Threads to Communication -->
+  <line x1="935" y1="355" x2="950" y2="465" class="arrow"/>
+  <line x1="1015" y1="355" x2="950" y2="465" class="arrow"/>
+  <line x1="1095" y1="355" x2="950" y2="465" class="arrow"/>
+  
+  <!-- Communication to Data Processing -->
+  <line x1="950" y1="495" x2="935" y2="585" class="arrow"/>
+  <line x1="1070" y1="495" x2="1060" y2="585" class="arrow"/>
+  
+  <!-- Communication to Storage -->
+  <line x1="950" y1="495" x2="950" y2="675" class="arrow"/>
+  <line x1="950" y1="495" x2="1070" y2="675" class="arrow"/>
+  
+  <!-- Return paths -->
+  <line x1="950" y1="675" x2="600" y2="125" class="arrow"/>
+  <line x1="1070" y1="675" x2="650" y2="125" class="arrow"/>
+</svg> 

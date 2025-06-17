@@ -1,0 +1,33 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="cool1" cx="0.3" cy="0.4" r="0.9">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#1e40af" stop-opacity="0.5"/>
+    </radialGradient>
+    <radialGradient id="cool2" cx="0.7" cy="0.2" r="0.6">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#059669" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0891b2" stop-opacity="0.4"/>
+    </radialGradient>
+    <radialGradient id="cool3" cx="0.1" cy="0.8" r="0.7">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.3"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Base background -->
+  <rect width="1200" height="630" fill="url(#cool1)"/>
+  
+  <!-- Organic flowing shapes -->
+  <ellipse cx="400" cy="150" rx="350" ry="250" fill="url(#cool2)" transform="rotate(15 400 150)"/>
+  <ellipse cx="800" cy="500" rx="400" ry="200" fill="url(#cool3)" transform="rotate(-30 800 500)"/>
+  
+  <!-- Smooth wave-like paths -->
+  <path d="M0,200 Q300,50 600,200 Q900,350 1200,200 L1200,0 L0,0 Z" fill="url(#cool2)" opacity="0.6"/>
+  <path d="M0,630 Q200,450 400,550 Q600,650 800,500 Q1000,350 1200,500 L1200,630 Z" fill="url(#cool3)" opacity="0.5"/>
+  
+  <!-- Central flowing element -->
+  <ellipse cx="600" cy="315" rx="200" ry="300" fill="url(#cool1)" opacity="0.4" transform="rotate(60 600 315)"/>
+</svg> 

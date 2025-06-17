@@ -1,0 +1,33 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="warm1" cx="0.1" cy="0.2" r="0.7">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#ec4899" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.5"/>
+    </radialGradient>
+    <radialGradient id="warm2" cx="0.9" cy="0.8" r="0.6">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#f59e0b" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#dc2626" stop-opacity="0.4"/>
+    </radialGradient>
+    <radialGradient id="warm3" cx="0.6" cy="0.1" r="0.8">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#ec4899" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0.3"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Base background -->
+  <rect width="1200" height="630" fill="url(#warm1)"/>
+  
+  <!-- Flowing organic shapes -->
+  <ellipse cx="200" cy="400" rx="300" ry="400" fill="url(#warm2)" transform="rotate(30 200 400)"/>
+  <ellipse cx="1000" cy="200" rx="400" ry="300" fill="url(#warm3)" transform="rotate(-20 1000 200)"/>
+  
+  <!-- Smooth flowing paths -->
+  <path d="M0,300 Q200,100 400,250 Q600,400 800,200 Q1000,0 1200,150 L1200,0 L0,0 Z" fill="url(#warm3)" opacity="0.5"/>
+  <path d="M0,630 Q300,400 600,500 Q900,600 1200,450 L1200,630 Z" fill="url(#warm2)" opacity="0.4"/>
+  
+  <!-- Additional organic blob -->
+  <ellipse cx="600" cy="450" rx="250" ry="180" fill="url(#warm1)" opacity="0.3" transform="rotate(45 600 450)"/>
+</svg> 

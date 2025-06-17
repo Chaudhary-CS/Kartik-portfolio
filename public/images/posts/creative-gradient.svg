@@ -1,0 +1,34 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="creative1" cx="0.4" cy="0.6" r="0.8">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#06b6d4" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.5"/>
+    </radialGradient>
+    <radialGradient id="creative2" cx="0.8" cy="0.3" r="0.7">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.4"/>
+    </radialGradient>
+    <radialGradient id="creative3" cx="0.2" cy="0.1" r="0.6">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#ec4899" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.3"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Base background -->
+  <rect width="1200" height="630" fill="url(#creative1)"/>
+  
+  <!-- Dynamic organic shapes -->
+  <ellipse cx="250" cy="300" rx="300" ry="400" fill="url(#creative2)" transform="rotate(45 250 300)"/>
+  <ellipse cx="950" cy="350" rx="350" ry="250" fill="url(#creative3)" transform="rotate(-25 950 350)"/>
+  
+  <!-- Flowing abstract elements -->
+  <path d="M0,150 Q400,300 800,100 Q1000,0 1200,200 L1200,0 L0,0 Z" fill="url(#creative3)" opacity="0.6"/>
+  <path d="M0,630 Q300,350 600,550 Q900,750 1200,400 L1200,630 Z" fill="url(#creative2)" opacity="0.5"/>
+  
+  <!-- Central artistic blob -->
+  <ellipse cx="600" cy="200" rx="180" ry="280" fill="url(#creative1)" opacity="0.4" transform="rotate(75 600 200)"/>
+  <ellipse cx="400" cy="500" rx="220" ry="160" fill="url(#creative3)" opacity="0.3" transform="rotate(-15 400 500)"/>
+</svg> 
