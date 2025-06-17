@@ -62,7 +62,7 @@ export default function ProjectCard({
 
           {techs.length > 0 && (
             <div className="flex flex-wrap gap-1.5 sm:gap-2 mt-auto pt-2">
-              {techs.slice(0, 6).map((tech) => {
+              {techs.map((tech) => {
                 const slug = encodeURIComponent(tech.toLowerCase())
                 return (
                   <span
@@ -81,11 +81,6 @@ export default function ProjectCard({
                   </span>
                 )
               })}
-              {techs.length > 6 && (
-                <span className="text-xs text-gray-400 px-2 py-1">
-                  +{techs.length - 6} more
-                </span>
-              )}
             </div>
           )}
         </div>

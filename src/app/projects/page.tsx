@@ -1,12 +1,23 @@
 // src/app/projects/page.tsx
 'use client';
 
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
+import { useState, useEffect } from 'react'
 import projects from '../../../data/projects'
 import ProjectCard from '../../../components/ProjectCard'
 import ContactIcons from '../../../components/ContactIcons'
 
 export default function ProjectsPage() {
+  const [isMobile, setIsMobile] = useState(false)
+  
+  // Check if mobile on mount and resize
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768)
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
+
   // Calculate project statistics
   const totalProjects = projects.length
   const featuredProjects = projects.filter(p => p.featured).length
@@ -43,7 +54,10 @@ export default function ProjectsPage() {
         </motion.div>
         
         <motion.div 
-          className="grid gap-6 sm:gap-8 md:grid-cols-2"
+          className={isMobile 
+            ? "flex flex-col items-center gap-6" 
+            : "grid gap-6 sm:gap-8 md:grid-cols-2"
+          }
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.6 }}
@@ -51,13 +65,17 @@ export default function ProjectsPage() {
           {projects.map((p) => (
             <div
               key={p.slug}
-              className="
+              className={`
                 group relative rounded-xl overflow-hidden cursor-pointer 
                 shadow-[0_0_10px_rgba(20,184,166,0.3)] 
                 hover:shadow-[0_0_20px_rgba(20,184,166,0.6)]
                 border border-white hover:border-teal-400
                 transition-all duration-300
-              "
+                ${isMobile 
+                  ? 'w-[calc(100vw-2rem)] max-w-[350px]' 
+                  : ''
+                }
+              `}
             >
               <ProjectCard
                 title={p.title}
