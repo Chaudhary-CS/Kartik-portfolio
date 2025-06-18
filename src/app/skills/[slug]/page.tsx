@@ -1,5 +1,4 @@
 import { notFound } from 'next/navigation'
-import Link from 'next/link'
 import { getSkillBySlug, skills } from '../../../../data/skills'
 import projects from '../../../../data/projects'
 import SkillPageClient from './SkillPageClient'

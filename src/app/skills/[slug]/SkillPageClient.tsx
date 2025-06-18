@@ -133,7 +133,7 @@ export default function SkillPageClient({ skill, relatedProjects }: SkillPageCli
                 <em>This section will contain your detailed, human-written analysis of your experience with {skill.name}.</em>
               </p>
               <p className="text-gray-400 text-sm">
-                You can add specific examples, challenges you've overcome, best practices you've learned, 
+                You can add specific examples, challenges you&apos;ve overcome, best practices you&apos;ve learned, 
                 and how this technology fits into your overall development philosophy. This is where you 
                 can showcase your deep understanding and practical experience.
               </p>

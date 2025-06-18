@@ -55,8 +55,8 @@ export default function SkillsPage() {
           transition={{ duration: 0.4, delay: 0.4 }}
         >
           <p className="text-lg text-gray-300 mb-4 max-w-3xl mx-auto">
-            Here's a comprehensive overview of my technical skills and expertise. Each technology represents 
-            hands-on experience from real projects, with detailed insights into how I've applied them.
+            Here&apos;s a comprehensive overview of my technical skills and expertise. Each technology represents 
+            hands-on experience from real projects, with detailed insights into how I&apos;ve applied them.
           </p>
           <div className="flex justify-center gap-8 text-sm text-gray-400">
             <span>{skills.length} Technologies</span>
