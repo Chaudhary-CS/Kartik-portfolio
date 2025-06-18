@@ -35,11 +35,12 @@ import { BsRouterFill } from 'react-icons/bs'
 import { IoBookOutline, IoBusiness } from 'react-icons/io5'
 import { TbNeedleThread } from 'react-icons/tb'
 import { ComponentType } from 'react'
+import React from 'react'
 import ConvexIcon from './ConvexIcon'
 import CarlaIcon from './CarlaIcon'
 
 // Static import Simple Icons
-const iconComponents: Record<string, ComponentType<any>> = {
+const iconComponents: Record<string, ComponentType<{ size?: number; className?: string; style?: React.CSSProperties }>> = {
   SiPython,
   SiTypescript,
   SiCplusplus,
