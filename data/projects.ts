@@ -126,7 +126,7 @@ const projects: Project[] = [
     description: 'Custom GPT bot helping students prepare for courses using the "Priming" method, featured in AI x Education newsletter.',
     longDescription: 'An expert academic guide for mastering any class, tailored to specific course details. Created a custom GPT bot called "Class Primer" to help students prepare for courses by generating personalized "primers" weeks before classes start, integrating the "Priming" method.',
     image: '/images/projects/class_primer.png',
-    techs: ['Prompt Engineering', 'GPT Agent Creation', 'AI/ML', 'Educational Technology'],
+    techs: ['Prompt Engineering', 'GPT Agent Creation', 'Educational Technology'],
     liveDemo: 'https://chatgpt.com/g/g-LbbPjuL7W-class-primer',
     date: 'February 2024 - April 2024',
     achievements: [

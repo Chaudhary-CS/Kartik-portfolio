@@ -216,7 +216,7 @@ ${body}`
         >
           Contact Me
         </motion.h1>
-
+        
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Contact Form */}
           <motion.div
@@ -403,10 +403,10 @@ ${body}`
                 </button>
               </div>
             </form>
-          </motion.div>
+        </motion.div>
 
           {/* Social Links */}
-          <motion.div
+        <motion.div 
             className="space-y-8"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -424,26 +424,26 @@ ${body}`
             {/* Social Links Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {contacts.map(({ href, label, Icon, external }, i) => (
-                <motion.div
-                  key={label}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
+            <motion.div
+              key={label}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 + i * 0.1, duration: 0.4 }}
-                >
-                  <Link
-                    href={href}
-                    {...(external ? { target: '_blank' } : {})}
+            >
+              <Link
+                href={href}
+                {...(external ? { target: '_blank' } : {})}
                     className="group flex flex-col items-center p-4 sm:p-6 bg-gray-800/70 rounded-lg hover:bg-gray-700/70 transition-all duration-300 hover:scale-105 border border-gray-700/50 hover:border-teal-400/50"
-                  >
+              >
                     <Icon className="mb-3 text-teal-400 group-hover:text-teal-300 transition-colors duration-300" size={32} />
                     <span className="text-sm font-medium text-white text-center">
-                        {label}
-                    </span>
-                  </Link>
-                </motion.div>
-              ))}
+                      {label}
+                  </span>
+              </Link>
+            </motion.div>
+          ))}
             </div>
-          </motion.div>
+        </motion.div>
         </div>
       </div>
     </main>
