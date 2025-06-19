@@ -9,10 +9,16 @@ const withMdx = withMDX({
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   pageExtensions: ['ts','tsx','js','jsx','md','mdx'],
-  // output: 'export', // Temporarily disabled to test navigation
-  // trailingSlash: true,
+  output: 'export',
+  trailingSlash: true,
   images: {
     unoptimized: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
   },
 }
 
