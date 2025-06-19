@@ -436,7 +436,7 @@ export const skills: Skill[] = [
     slug: 'power-bi',
     category: 'Tools & Platforms',
     proficiency: 'Intermediate',
-    description: 'Microsoft&apos;s business analytics tool for creating reports and dashboards from various data sources. Used at Pivotal Research Inc. across 1 internship for large-scale data analysis and business intelligence reporting.',
+    description: 'Microsoft\'s business analytics tool for creating reports and dashboards from various data sources. Used at Pivotal Research Inc. across 1 internship for large-scale data analysis and business intelligence reporting.',
     experience: '1+ years',
     projects: ['av-simulator'],
     icon: 'IoBusiness',
