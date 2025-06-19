@@ -2,6 +2,9 @@ import {
   SiPython,
   SiTypescript,
   SiCplusplus,
+  SiJavascript,
+  SiHtml5,
+  SiMysql,
   SiReact,
   SiNextdotjs,
   SiNodedotjs,
@@ -10,8 +13,13 @@ import {
   SiPytorch,
   SiElectron,
   SiExpress,
+  SiFlask,
+  SiFastapi,
+  SiSqlalchemy,
+  SiSelenium,
   SiPostgresql,
   SiVercel,
+  SiFirebase,
   SiVite,
   SiLinux,
   SiTableau,
@@ -26,6 +34,7 @@ import {
   SiRadixui,
   SiLucide,
   SiSocketdotio,
+  SiAdobeacrobatreader,
 } from 'react-icons/si'
 import { FaYahoo } from 'react-icons/fa'
 import { FcScatterPlot } from 'react-icons/fc'
@@ -33,7 +42,7 @@ import { BiSolidDashboard } from 'react-icons/bi'
 import { PiMicrosoftExcelLogoFill } from 'react-icons/pi'
 import { BsRouterFill } from 'react-icons/bs'
 import { IoBookOutline, IoBusiness } from 'react-icons/io5'
-import { TbNeedleThread } from 'react-icons/tb'
+import { TbNeedleThread, TbLayoutNavbar } from 'react-icons/tb'
 import { ComponentType } from 'react'
 import React from 'react'
 import ConvexIcon from './ConvexIcon'
@@ -44,6 +53,9 @@ const iconComponents: Record<string, ComponentType<{ size?: number; className?: 
   SiPython,
   SiTypescript,
   SiCplusplus,
+  SiJavascript,
+  SiHtml5,
+  SiMysql,
   SiReact,
   SiNextdotjs,
   SiNodedotjs,
@@ -52,8 +64,13 @@ const iconComponents: Record<string, ComponentType<{ size?: number; className?: 
   SiPytorch,
   SiElectron,
   SiExpress,
+  SiFlask,
+  SiFastapi,
+  SiSqlalchemy,
+  SiSelenium,
   SiPostgresql,
   SiVercel,
+  SiFirebase,
   SiVite,
   SiLinux,
   SiTableau,
@@ -69,12 +86,14 @@ const iconComponents: Record<string, ComponentType<{ size?: number; className?: 
   SiRadixui,
   SiLucide,
   SiSocketdotio,
+  SiAdobeacrobatreader,
   BiSolidDashboard,
   PiMicrosoftExcelLogoFill,
   BsRouterFill,
   FcScatterPlot,
   IoBusiness,
   TbNeedleThread,
+  TbLayoutNavbar,
   ConvexIcon,
   CarlaIcon,
   IoBookOutline,

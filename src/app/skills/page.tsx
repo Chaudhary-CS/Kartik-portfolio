@@ -152,26 +152,63 @@ export default function SkillsPage() {
                     </p>
                   </div>
 
-                  {/* Projects Used In */}
+                  {/* Statistics */}
                   <div className="px-6 pb-6">
-                    <div className="text-xs text-gray-400 mb-2">
-                      Used in {skill.projects.length} project{skill.projects.length !== 1 ? 's' : ''}
-                    </div>
-                    <div className="flex flex-wrap gap-1">
-                      {skill.projects.slice(0, 3).map((project) => (
-                        <span
-                          key={project}
-                          className="px-2 py-1 bg-gray-800/60 text-xs text-gray-300 rounded-full"
-                        >
-                          {project}
+                    <div className="flex flex-wrap gap-2 mb-3">
+                      {skill.projects.length > 0 && (
+                        <span className="px-2 py-1 bg-gray-800/60 text-xs text-gray-300 rounded-full">
+                          {skill.projects.length} project{skill.projects.length !== 1 ? 's' : ''}
                         </span>
-                      ))}
-                      {skill.projects.length > 3 && (
-                        <span className="px-2 py-1 text-xs text-gray-400">
-                          +{skill.projects.length - 3} more
+                      )}
+                      {skill.internships && skill.internships > 0 && (
+                        <span className="px-2 py-1 bg-teal-900/40 text-xs text-teal-300 rounded-full border border-teal-400/30">
+                          {skill.internships} internship{skill.internships !== 1 ? 's' : ''}
+                        </span>
+                      )}
+                      {skill.jobs && skill.jobs > 0 && (
+                        <span className="px-2 py-1 bg-green-900/40 text-xs text-green-300 rounded-full border border-green-400/30">
+                          {skill.jobs} job{skill.jobs !== 1 ? 's' : ''}
+                        </span>
+                      )}
+                      {skill.researchRoles && skill.researchRoles > 0 && (
+                        <span className="px-2 py-1 bg-indigo-900/40 text-xs text-indigo-300 rounded-full border border-indigo-400/30">
+                          {skill.researchRoles} research
+                        </span>
+                      )}
+                      {skill.teachingRoles && skill.teachingRoles > 0 && (
+                        <span className="px-2 py-1 bg-amber-900/40 text-xs text-amber-300 rounded-full border border-amber-400/30">
+                          {skill.teachingRoles} teaching
+                        </span>
+                      )}
+                      {skill.certifications && skill.certifications > 0 && (
+                        <span className="px-2 py-1 bg-blue-900/40 text-xs text-blue-300 rounded-full border border-blue-400/30">
+                          {skill.certifications} cert{skill.certifications !== 1 ? 's' : ''}
+                        </span>
+                      )}
+                      {skill.publications && skill.publications > 0 && (
+                        <span className="px-2 py-1 bg-purple-900/40 text-xs text-purple-300 rounded-full border border-purple-400/30">
+                          {skill.publications} pub{skill.publications !== 1 ? 's' : ''}
                         </span>
                       )}
                     </div>
+                    
+                    {skill.projects.length > 0 && (
+                      <div className="flex flex-wrap gap-1">
+                        {skill.projects.slice(0, 3).map((project) => (
+                          <span
+                            key={project}
+                            className="px-2 py-1 bg-gray-700/40 text-xs text-gray-400 rounded-full"
+                          >
+                            {project}
+                          </span>
+                        ))}
+                        {skill.projects.length > 3 && (
+                          <span className="px-2 py-1 text-xs text-gray-500">
+                            +{skill.projects.length - 3} more
+                          </span>
+                        )}
+                      </div>
+                    )}
                   </div>
 
                   {/* Category Badge */}

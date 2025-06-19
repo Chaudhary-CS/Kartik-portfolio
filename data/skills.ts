@@ -8,6 +8,18 @@ export interface Skill {
   projects: string[] // Project slugs where this skill was used
   icon?: string // Optional icon path
   color: string // Hex color for the skill badge
+  internships?: number // Number of internships where this skill was used
+  internshipDetails?: string[] // Specific internships where used
+  jobs?: number // Number of full-time/part-time jobs where this skill was used
+  jobDetails?: string[] // Specific jobs where used
+  researchRoles?: number // Number of research positions where this skill was used
+  researchDetails?: string[] // Specific research roles where used
+  teachingRoles?: number // Number of teaching/TA roles where this skill was used
+  teachingDetails?: string[] // Specific teaching roles where used
+  certifications?: number // Number of certifications earned for this skill
+  certificationDetails?: string[] // Specific certifications earned
+  publications?: number // Number of research publications involving this skill
+  publicationDetails?: string[] // Specific publications that used this skill
 }
 
 export const skills: Skill[] = [
@@ -17,11 +29,23 @@ export const skills: Skill[] = [
     slug: 'python',
     category: 'Programming Languages',
     proficiency: 'Advanced',
-    description: 'My go-to language for data science, machine learning, and backend development. I have built everything from autonomous vehicle simulations to financial modeling tools using Python&apos;s extensive ecosystem.',
+    description: 'My go-to language for data science, machine learning, and backend development. Extensive experience with ML models, data pipelines, and conversational AI systems.',
     experience: '4+ years',
     projects: ['av-simulator', 'financial-modeling-tool'],
     icon: 'SiPython',
-    color: '#3776ab'
+    color: '#3776ab',
+    internships: 4,
+    internshipDetails: ['INTERA Incorporated (Data Science)', 'Pivotal Research Inc.', 'INTERA Incorporated (Data Engineering)', 'Momentum Technologies'],
+    jobs: 1,
+    jobDetails: ['PitchFact'],
+    researchRoles: 2,
+    researchDetails: ['TAMU x Soft Interaction Lab', 'Algoverse'],
+    teachingRoles: 1,
+    teachingDetails: ['CSCE 221 Teaching Assistant'],
+    certifications: 2,
+    certificationDetails: ['Data Science Math Skills (Coursera)', 'Scientific Computing with Python (freeCodeCamp)'],
+    publications: 1,
+    publicationDetails: ['ChatGPT 4o Performance on Mechanical Engineering Concept Inventories']
   },
   {
     name: 'TypeScript',
@@ -36,14 +60,41 @@ export const skills: Skill[] = [
   },
   {
     name: 'C++',
-    slug: 'c++',
+    slug: 'cpp',
     category: 'Programming Languages',
     proficiency: 'Intermediate',
     description: 'Used for performance-critical applications and system programming. Applied it in client-server systems where real-time processing was essential.',
     experience: '2+ years',
     projects: ['client-server-system'],
     icon: 'SiCplusplus',
-    color: '#00599c'
+    color: '#00599c',
+    teachingRoles: 1,
+    teachingDetails: ['CSCE 221 Teaching Assistant']
+  },
+  {
+    name: 'JavaScript',
+    slug: 'javascript',
+    category: 'Programming Languages',
+    proficiency: 'Advanced',
+    description: 'Fundamental web programming language for modern web development. Experienced in both frontend and backend JavaScript development.',
+    experience: '4+ years',
+    projects: ['save-gas', 'exped-browser', 'panda-express-pos'],
+    icon: 'SiJavascript',
+    color: '#f7df1e',
+    certifications: 1,
+    certificationDetails: ['JavaScript Algorithms and Data Structures (freeCodeCamp)']
+  },
+
+  {
+    name: 'HTML/CSS',
+    slug: 'html-css',
+    category: 'Programming Languages',
+    proficiency: 'Advanced',
+    description: 'Core web technologies used in frontend development across multiple projects and research applications.',
+    experience: '4+ years',
+    projects: ['save-gas', 'exped-browser', 'panda-express-pos'],
+    icon: 'SiHtml5',
+    color: '#e34f26'
   },
 
   // Frameworks & Libraries
@@ -107,11 +158,13 @@ export const skills: Skill[] = [
     slug: 'pytorch',
     category: 'AI/ML',
     proficiency: 'Advanced',
-    description: 'Deep learning framework I use for research and production. Particularly effective for computer vision tasks in autonomous vehicle projects.',
+    description: 'Deep learning framework used for research and production. Applied for Physics-Informed Neural Networks (PINNs) and computer vision tasks in autonomous vehicle projects.',
     experience: '2+ years',
     projects: ['av-simulator'],
     icon: 'SiPytorch',
-    color: '#ee4c2c'
+    color: '#ee4c2c',
+    internships: 1,
+    internshipDetails: ['Momentum Technologies']
   },
   {
     name: 'Electron',
@@ -135,6 +188,60 @@ export const skills: Skill[] = [
     icon: 'SiExpress',
     color: '#ffffff'
   },
+  {
+    name: 'Flask',
+    slug: 'flask',
+    category: 'Frameworks & Libraries',
+    proficiency: 'Advanced',
+    description: 'Python web framework used in research work at Texas A&M University & Soft Interaction Lab. Built conversational AI tools for 500+ SANE nurses and backend services for medical training applications.',
+    experience: '2+ years',
+    projects: [],
+    icon: 'SiFlask',
+    color: '#000000',
+    researchRoles: 1,
+    researchDetails: ['TAMU x Soft Interaction Lab']
+  },
+  {
+    name: 'FastAPI',
+    slug: 'fastapi',
+    category: 'Frameworks & Libraries',
+    proficiency: 'Intermediate',
+    description: 'Modern Python web framework for building APIs with Uvicorn server deployment. Used for creating high-performance LLM pipelines processing 500+ PDFs weekly and startup evaluation systems.',
+    experience: '1+ years',
+    projects: [],
+    icon: 'SiFastapi',
+    color: '#009688',
+    jobs: 1,
+    jobDetails: ['PitchFact']
+  },
+  {
+    name: 'SQLAlchemy',
+    slug: 'sqlalchemy',
+    category: 'Frameworks & Libraries',
+    proficiency: 'Intermediate',
+    description: 'Python SQL toolkit and ORM used for database interactions, data modeling, and handling large-scale transaction processing.',
+    experience: '2+ years',
+    projects: [],
+    icon: 'SiSqlalchemy',
+    color: '#d71f00',
+    internships: 1,
+    internshipDetails: ['Pivotal Research Inc.'],
+    researchRoles: 1,
+    researchDetails: ['TAMU x Soft Interaction Lab']
+  },
+  {
+    name: 'Selenium',
+    slug: 'selenium',
+    category: 'Frameworks & Libraries',
+    proficiency: 'Intermediate',
+    description: 'Web automation framework used for data extraction and testing. Applied for environmental data processing and automated data collection workflows.',
+    experience: '1+ years',
+    projects: [],
+    icon: 'SiSelenium',
+    color: '#43b02a',
+    internships: 1,
+    internshipDetails: ['INTERA Incorporated (Data Science)']
+  },
 
   // Databases
   {
@@ -147,6 +254,19 @@ export const skills: Skill[] = [
     projects: ['panda-express-pos'],
     icon: 'SiPostgresql',
     color: '#336791'
+  },
+  {
+    name: 'MySQL',
+    slug: 'mysql',
+    category: 'Databases',
+    proficiency: 'Intermediate',
+    description: 'Relational database management system used at INTERA Incorporated across 2 internships for environmental data modeling and scalable data architectures. Experience with data integrity and multi-department collaboration.',
+    experience: '2+ years',
+    projects: [],
+    icon: 'SiMysql',
+    color: '#4479a1',
+    internships: 2,
+    internshipDetails: ['INTERA Incorporated (Data Science)', 'INTERA Incorporated (Data Engineering)']
   },
 
   // Cloud & DevOps
@@ -171,6 +291,19 @@ export const skills: Skill[] = [
     projects: ['save-gas'],
     icon: 'ConvexIcon',
     color: '#f59e0b'
+  },
+  {
+    name: 'Firebase',
+    slug: 'firebase',
+    category: 'Cloud & DevOps',
+    proficiency: 'Intermediate',
+    description: 'Google\'s cloud platform used for backend services and real-time data synchronization in conversational AI applications for medical training.',
+    experience: '1+ years',
+    projects: [],
+    icon: 'SiFirebase',
+    color: '#ffca28',
+    researchRoles: 1,
+    researchDetails: ['TAMU x Soft Interaction Lab']
   },
 
   // Tools & Platforms
@@ -225,33 +358,41 @@ export const skills: Skill[] = [
     slug: 'pandas',
     category: 'Frameworks & Libraries',
     proficiency: 'Advanced',
-    description: 'Essential library for data manipulation and analysis in Python. Used extensively for financial modeling and data preprocessing.',
+    description: 'Essential library for data manipulation and analysis in Python. Used for data processing, ETL pipelines, and financial modeling.',
     experience: '3+ years',
     projects: ['av-simulator', 'financial-modeling-tool'],
     icon: 'SiPandas',
-    color: '#150458'
+    color: '#150458',
+    internships: 3,
+    internshipDetails: ['Pivotal Research Inc.', 'INTERA Incorporated (Data Engineering)', 'Momentum Technologies'],
+    jobs: 1,
+    jobDetails: ['PitchFact']
   },
   {
     name: 'NumPy',
     slug: 'numpy',
     category: 'Frameworks & Libraries',
     proficiency: 'Advanced',
-    description: 'Fundamental package for scientific computing with Python. Critical for numerical computations in ML and data analysis projects.',
+    description: 'Fundamental package for scientific computing with Python. Used for Physics-Informed Neural Networks and numerical computations in ML and data analysis.',
     experience: '3+ years',
     projects: ['av-simulator', 'financial-modeling-tool'],
     icon: 'SiNumpy',
-    color: '#013243'
+    color: '#013243',
+    internships: 3,
+    internshipDetails: ['INTERA Incorporated (Data Science)', 'INTERA Incorporated (Data Engineering)', 'Momentum Technologies']
   },
   {
     name: 'Matplotlib',
     slug: 'matplotlib',
     category: 'Frameworks & Libraries',
     proficiency: 'Advanced',
-    description: 'Primary plotting library for creating static, animated, and interactive visualizations in Python.',
+    description: 'Primary plotting library for creating static, animated, and interactive visualizations in Python. Used for data visualization and analysis reporting.',
     experience: '3+ years',
     projects: ['av-simulator'],
     icon: 'FcScatterPlot',
-    color: '#1f77b4'
+    color: '#1f77b4',
+    internships: 2,
+    internshipDetails: ['INTERA Incorporated (Data Science)', 'INTERA Incorporated (Data Engineering)']
   },
   {
     name: 'Scikit-Learn',
@@ -282,18 +423,20 @@ export const skills: Skill[] = [
     slug: 'tableau',
     category: 'Tools & Platforms',
     proficiency: 'Intermediate',
-    description: 'Business intelligence tool for creating interactive data visualizations and dashboards.',
+    description: 'Business intelligence tool for creating interactive data visualizations and dashboards. Used at INTERA Incorporated across 1 internship for environmental impact tracking and client reporting across 5 countries.',
     experience: '1+ years',
     projects: ['av-simulator'],
     icon: 'SiTableau',
-    color: '#e97627'
+    color: '#e97627',
+    internships: 1,
+    internshipDetails: ['INTERA Incorporated (Data Science)']
   },
   {
     name: 'Power BI',
     slug: 'power-bi',
     category: 'Tools & Platforms',
     proficiency: 'Intermediate',
-    description: 'Microsoft&apos;s business analytics tool for creating reports and dashboards from various data sources.',
+    description: 'Microsoft&apos;s business analytics tool for creating reports and dashboards from various data sources. Used at Pivotal Research Inc. across 1 internship for large-scale data analysis and business intelligence reporting.',
     experience: '1+ years',
     projects: ['av-simulator'],
     icon: 'IoBusiness',
@@ -420,11 +563,15 @@ export const skills: Skill[] = [
     slug: 'excel',
     category: 'Tools & Platforms',
     proficiency: 'Advanced',
-    description: 'Advanced spreadsheet application for data analysis, financial modeling, and business intelligence.',
+    description: 'Advanced spreadsheet application for data analysis, financial modeling, and business intelligence. Used for data processing and analysis.',
     experience: '5+ years',
     projects: ['av-simulator'],
     icon: 'PiMicrosoftExcelLogoFill',
-    color: '#217346'
+    color: '#217346',
+    internships: 4,
+    internshipDetails: ['INTERA Incorporated (Data Science)', 'Pivotal Research Inc.', 'INTERA Incorporated (Data Engineering)', 'Momentum Technologies'],
+    jobs: 1,
+    jobDetails: ['PitchFact']
   },
 
   // AI & Emerging Technologies
@@ -433,22 +580,30 @@ export const skills: Skill[] = [
     slug: 'prompt-engineering',
     category: 'AI/ML',
     proficiency: 'Advanced',
-    description: 'Specialized in crafting effective prompts for AI systems. Created educational GPT bots featured in industry publications.',
+    description: 'Specialized in crafting effective prompts for AI systems. Featured work with educational GPT bots.',
     experience: '1+ years',
     projects: ['class-primer'],
     icon: 'SiOpenai',
-    color: '#9333ea'
+    color: '#9333ea',
+    researchRoles: 1,
+    researchDetails: ['TAMU x Soft Interaction Lab'],
+    publications: 1,
+    publicationDetails: ['ChatGPT 4o Performance on Mechanical Engineering Concept Inventories']
   },
   {
     name: 'GPT Agent Creation',
     slug: 'gpt-agent-creation',
     category: 'AI/ML',
     proficiency: 'Advanced',
-    description: 'Expertise in building custom GPT agents for specific use cases. Featured work in educational technology.',
+    description: 'Expertise in building custom GPT agents for specific use cases. Featured work with educational technology applications.',
     experience: '1+ years',
     projects: ['class-primer'],
     icon: 'SiOpenai',
-    color: '#10b981'
+    color: '#10b981',
+    researchRoles: 1,
+    researchDetails: ['TAMU x Soft Interaction Lab'],
+    publications: 1,
+    publicationDetails: ['ChatGPT 4o Performance on Mechanical Engineering Concept Inventories']
   },
   {
     name: 'Educational Technology',
@@ -460,6 +615,47 @@ export const skills: Skill[] = [
     projects: ['class-primer'],
     icon: 'IoBookOutline',
     color: '#f59e0b'
+  },
+  {
+    name: 'LLM APIs',
+    slug: 'llm-apis',
+    category: 'AI/ML',
+    proficiency: 'Advanced',
+    description: 'Large Language Model APIs including OpenAI, Hume.ai, and Anthropic AI SDK. Used for conversational AI development and LLM pipeline creation.',
+    experience: '1+ years',
+    projects: ['class-primer'],
+    icon: 'SiOpenai',
+    color: '#412991',
+    jobs: 1,
+    jobDetails: ['PitchFact'],
+    researchRoles: 2,
+    researchDetails: ['TAMU x Soft Interaction Lab', 'Algoverse']
+  },
+  {
+    name: 'PDF Processing',
+    slug: 'pdf-processing',
+    category: 'Tools & Platforms',
+    proficiency: 'Intermediate',
+    description: 'PDF creation, manipulation, and processing using PyPDF2 and Ghostscript. Applied for automated document processing in startup evaluation pipelines.',
+    experience: '1+ years',
+    projects: [],
+    icon: 'SiAdobeacrobatreader',
+    color: '#dc2626',
+    jobs: 1,
+    jobDetails: ['PitchFact']
+  },
+  {
+    name: 'VBA',
+    slug: 'vba',
+    category: 'Programming Languages',
+    proficiency: 'Intermediate',
+    description: 'Microsoft Visual Basic for Applications used for creating customized Excel applications tailored to specific employee needs. Applied at INTERA for automated data processing workflows across 1 internship.',
+    experience: '1+ years',
+    projects: [],
+    icon: 'TbLayoutNavbar',
+    color: '#ff8c00',
+    internships: 1,
+    internshipDetails: ['INTERA Incorporated (Data Engineering)']
   },
 
 ]

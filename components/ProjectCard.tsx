@@ -23,6 +23,7 @@ const getSkillSlug = (techName: string): string => {
     'Python': 'python',
     'TypeScript': 'typescript',
     'JavaScript': 'javascript',
+    'HTML/CSS': 'html-css',
     'C++': 'c++',
     'Java': 'java',
     'Go': 'go',
@@ -36,6 +37,9 @@ const getSkillSlug = (techName: string): string => {
     'Next.js': 'next.js',
     'Node.js': 'node.js',
     'Express.js': 'express.js',
+    'Flask': 'flask',
+    'FastAPI': 'fastapi',
+    'SQLAlchemy': 'sqlalchemy',
     'Tailwind CSS': 'tailwind-css',
     'TensorFlow': 'tensorflow',
     'PyTorch': 'pytorch',
@@ -64,6 +68,7 @@ const getSkillSlug = (techName: string): string => {
     // Cloud & DevOps
     'Vercel': 'vercel',
     'Convex': 'convex',
+    'Firebase': 'firebase',
     'AWS': 'aws',
     'Docker': 'docker',
     'Kubernetes': 'kubernetes',
@@ -78,6 +83,7 @@ const getSkillSlug = (techName: string): string => {
     'Excel': 'excel',
     'Tableau': 'tableau',
     'Power BI': 'power-bi',
+    'Selenium': 'selenium',
     
     // AI/ML & Other Technologies
     'Socket Programming': 'sockets',
@@ -87,6 +93,9 @@ const getSkillSlug = (techName: string): string => {
     'Prompt Engineering': 'prompt-engineering',
     'GPT Agent Creation': 'gpt-agent-creation',
     'Educational Technology': 'educational-technology',
+    'LLM APIs': 'llm-apis',
+    'PDF Processing': 'pdf-processing',
+    'VBA': 'vba',
   }
   
   // Return mapped slug or create a fallback slug

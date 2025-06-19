@@ -93,6 +93,36 @@ export default function SkillPageClient({ skill, relatedProjects }: SkillPageCli
             <span className="px-3 py-1 bg-gray-800/60 text-sm text-gray-300 rounded-full">
               {skill.category}
             </span>
+            {skill.internships && skill.internships > 0 && (
+              <span className="px-3 py-1 bg-teal-900/40 text-sm text-teal-300 rounded-full border border-teal-400/30">
+                {skill.internships} internship{skill.internships !== 1 ? 's' : ''}
+              </span>
+            )}
+            {skill.jobs && skill.jobs > 0 && (
+              <span className="px-3 py-1 bg-green-900/40 text-sm text-green-300 rounded-full border border-green-400/30">
+                {skill.jobs} job{skill.jobs !== 1 ? 's' : ''}
+              </span>
+            )}
+            {skill.researchRoles && skill.researchRoles > 0 && (
+              <span className="px-3 py-1 bg-indigo-900/40 text-sm text-indigo-300 rounded-full border border-indigo-400/30">
+                {skill.researchRoles} research role{skill.researchRoles !== 1 ? 's' : ''}
+              </span>
+            )}
+            {skill.teachingRoles && skill.teachingRoles > 0 && (
+              <span className="px-3 py-1 bg-amber-900/40 text-sm text-amber-300 rounded-full border border-amber-400/30">
+                {skill.teachingRoles} teaching role{skill.teachingRoles !== 1 ? 's' : ''}
+              </span>
+            )}
+            {skill.certifications && skill.certifications > 0 && (
+              <span className="px-3 py-1 bg-blue-900/40 text-sm text-blue-300 rounded-full border border-blue-400/30">
+                {skill.certifications} certification{skill.certifications !== 1 ? 's' : ''}
+              </span>
+            )}
+            {skill.publications && skill.publications > 0 && (
+              <span className="px-3 py-1 bg-purple-900/40 text-sm text-purple-300 rounded-full border border-purple-400/30">
+                {skill.publications} publication{skill.publications !== 1 ? 's' : ''}
+              </span>
+            )}
           </div>
 
           <p className="text-gray-400 text-sm max-w-2xl">
@@ -111,9 +141,90 @@ export default function SkillPageClient({ skill, relatedProjects }: SkillPageCli
             <h2 className="text-2xl font-semibold mb-4 text-teal-400">
               My Experience
             </h2>
-            <p className="text-gray-300 text-lg leading-relaxed">
+            <p className="text-gray-300 text-lg leading-relaxed mb-6">
               {skill.description}
             </p>
+
+            {/* Experience Details */}
+            <div className="space-y-4">
+              {skill.internshipDetails && skill.internshipDetails.length > 0 && (
+                <div>
+                  <h3 className="text-sm font-semibold text-teal-300 mb-2">Internships</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {skill.internshipDetails.map((internship, index) => (
+                      <span key={index} className="px-3 py-1 bg-teal-900/40 text-sm text-teal-200 rounded-full border border-teal-400/30">
+                        {internship}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {skill.jobDetails && skill.jobDetails.length > 0 && (
+                <div>
+                  <h3 className="text-sm font-semibold text-green-300 mb-2">Jobs</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {skill.jobDetails.map((job, index) => (
+                      <span key={index} className="px-3 py-1 bg-green-900/40 text-sm text-green-200 rounded-full border border-green-400/30">
+                        {job}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {skill.researchDetails && skill.researchDetails.length > 0 && (
+                <div>
+                  <h3 className="text-sm font-semibold text-indigo-300 mb-2">Research Roles</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {skill.researchDetails.map((research, index) => (
+                      <span key={index} className="px-3 py-1 bg-indigo-900/40 text-sm text-indigo-200 rounded-full border border-indigo-400/30">
+                        {research}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {skill.teachingDetails && skill.teachingDetails.length > 0 && (
+                <div>
+                  <h3 className="text-sm font-semibold text-amber-300 mb-2">Teaching Roles</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {skill.teachingDetails.map((teaching, index) => (
+                      <span key={index} className="px-3 py-1 bg-amber-900/40 text-sm text-amber-200 rounded-full border border-amber-400/30">
+                        {teaching}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {skill.certificationDetails && skill.certificationDetails.length > 0 && (
+                <div>
+                  <h3 className="text-sm font-semibold text-blue-300 mb-2">Certifications</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {skill.certificationDetails.map((cert, index) => (
+                      <span key={index} className="px-3 py-1 bg-blue-900/40 text-sm text-blue-200 rounded-full border border-blue-400/30">
+                        {cert}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {skill.publicationDetails && skill.publicationDetails.length > 0 && (
+                <div>
+                  <h3 className="text-sm font-semibold text-purple-300 mb-2">Publications</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {skill.publicationDetails.map((pub, index) => (
+                      <span key={index} className="px-3 py-1 bg-purple-900/40 text-sm text-purple-200 rounded-full border border-purple-400/30">
+                        {pub}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </motion.div>
 
@@ -184,26 +295,80 @@ export default function SkillPageClient({ skill, relatedProjects }: SkillPageCli
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 1.0 }}
         >
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="text-center bg-gray-900/70 rounded-xl p-6 border border-gray-700">
-              <div className="text-3xl font-bold text-teal-400 mb-2">
+          <div className="flex flex-wrap gap-4 sm:gap-6 justify-center">
+            <div className="bg-gray-900/70 rounded-xl p-4 sm:p-6 border border-gray-700 min-w-[140px] flex-1 max-w-[200px] flex flex-col justify-center items-center">
+              <div className="text-2xl sm:text-3xl font-bold text-teal-400 mb-2 text-center">
                 {skill.experience}
               </div>
-              <div className="text-gray-400">Experience</div>
+              <div className="text-gray-400 text-sm text-center">Experience</div>
             </div>
             
-            <div className="text-center bg-gray-900/70 rounded-xl p-6 border border-gray-700">
-              <div className="text-3xl font-bold text-teal-400 mb-2">
+            <div className="bg-gray-900/70 rounded-xl p-4 sm:p-6 border border-gray-700 min-w-[140px] flex-1 max-w-[200px] flex flex-col justify-center items-center">
+              <div className="text-2xl sm:text-3xl font-bold text-teal-400 mb-2 text-center">
                 {skill.projects.length}
               </div>
-              <div className="text-gray-400">Projects</div>
+              <div className="text-gray-400 text-sm text-center">Projects</div>
             </div>
+
+            {skill.internships && skill.internships > 0 && (
+              <div className="bg-gray-900/70 rounded-xl p-4 sm:p-6 border border-gray-700 min-w-[140px] flex-1 max-w-[200px] flex flex-col justify-center items-center">
+                <div className="text-2xl sm:text-3xl font-bold text-teal-400 mb-2 text-center">
+                  {skill.internships}
+                </div>
+                <div className="text-gray-400 text-sm text-center">Internships</div>
+              </div>
+            )}
+
+            {skill.jobs && skill.jobs > 0 && (
+              <div className="bg-gray-900/70 rounded-xl p-4 sm:p-6 border border-gray-700 min-w-[140px] flex-1 max-w-[200px] flex flex-col justify-center items-center">
+                <div className="text-2xl sm:text-3xl font-bold text-green-400 mb-2 text-center">
+                  {skill.jobs}
+                </div>
+                <div className="text-gray-400 text-sm text-center">Jobs</div>
+              </div>
+            )}
+
+            {skill.researchRoles && skill.researchRoles > 0 && (
+              <div className="bg-gray-900/70 rounded-xl p-4 sm:p-6 border border-gray-700 min-w-[140px] flex-1 max-w-[200px] flex flex-col justify-center items-center">
+                <div className="text-2xl sm:text-3xl font-bold text-indigo-400 mb-2 text-center">
+                  {skill.researchRoles}
+                </div>
+                <div className="text-gray-400 text-sm text-center">Research</div>
+              </div>
+            )}
+
+            {skill.teachingRoles && skill.teachingRoles > 0 && (
+              <div className="bg-gray-900/70 rounded-xl p-4 sm:p-6 border border-gray-700 min-w-[140px] flex-1 max-w-[200px] flex flex-col justify-center items-center">
+                <div className="text-2xl sm:text-3xl font-bold text-amber-400 mb-2 text-center">
+                  {skill.teachingRoles}
+                </div>
+                <div className="text-gray-400 text-sm text-center">Teaching</div>
+              </div>
+            )}
+
+            {skill.certifications && skill.certifications > 0 && (
+              <div className="bg-gray-900/70 rounded-xl p-4 sm:p-6 border border-gray-700 min-w-[140px] flex-1 max-w-[200px] flex flex-col justify-center items-center">
+                <div className="text-2xl sm:text-3xl font-bold text-blue-400 mb-2 text-center">
+                  {skill.certifications}
+                </div>
+                <div className="text-gray-400 text-sm text-center">Certifications</div>
+              </div>
+            )}
+
+            {skill.publications && skill.publications > 0 && (
+              <div className="bg-gray-900/70 rounded-xl p-4 sm:p-6 border border-gray-700 min-w-[140px] flex-1 max-w-[200px] flex flex-col justify-center items-center">
+                <div className="text-2xl sm:text-3xl font-bold text-purple-400 mb-2 text-center">
+                  {skill.publications}
+                </div>
+                <div className="text-gray-400 text-sm text-center">Publications</div>
+              </div>
+            )}
             
-            <div className="text-center bg-gray-900/70 rounded-xl p-6 border border-gray-700">
-              <div className="text-3xl font-bold text-teal-400 mb-2">
+            <div className="text-center bg-gray-900/70 rounded-xl p-4 sm:p-6 border border-gray-700 min-w-[140px] flex-1 max-w-[200px] flex flex-col justify-center items-center">
+              <div className="text-2xl sm:text-3xl font-bold text-teal-400 mb-2 break-words text-center">
                 {skill.proficiency}
               </div>
-              <div className="text-gray-400">Proficiency</div>
+              <div className="text-gray-400 text-sm whitespace-nowrap text-center">Proficiency</div>
             </div>
           </div>
         </motion.div>
