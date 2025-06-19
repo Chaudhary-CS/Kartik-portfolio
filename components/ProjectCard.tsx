@@ -80,6 +80,7 @@ const getSkillSlug = (techName: string): string => {
     'Power BI': 'power-bi',
     
     // AI/ML & Other Technologies
+    'Socket Programming': 'sockets',
     'Socket': 'sockets',
     'TCP/IP': 'tcp-ip',
     'Multithreading': 'multithreading',

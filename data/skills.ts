@@ -188,7 +188,7 @@ export const skills: Skill[] = [
   {
     name: 'CARLA',
     slug: 'carla',
-    category: 'AI/ML',
+    category: 'Frameworks & Libraries',
     proficiency: 'Advanced',
     description: 'Specialized in autonomous vehicle simulation using CARLA. I have built complex scenarios for testing self-driving algorithms in realistic environments.',
     experience: '1+ years',
@@ -223,7 +223,7 @@ export const skills: Skill[] = [
   {
     name: 'Pandas',
     slug: 'pandas',
-    category: 'AI/ML',
+    category: 'Frameworks & Libraries',
     proficiency: 'Advanced',
     description: 'Essential library for data manipulation and analysis in Python. Used extensively for financial modeling and data preprocessing.',
     experience: '3+ years',
@@ -234,7 +234,7 @@ export const skills: Skill[] = [
   {
     name: 'NumPy',
     slug: 'numpy',
-    category: 'AI/ML',
+    category: 'Frameworks & Libraries',
     proficiency: 'Advanced',
     description: 'Fundamental package for scientific computing with Python. Critical for numerical computations in ML and data analysis projects.',
     experience: '3+ years',
@@ -245,7 +245,7 @@ export const skills: Skill[] = [
   {
     name: 'Matplotlib',
     slug: 'matplotlib',
-    category: 'AI/ML',
+    category: 'Frameworks & Libraries',
     proficiency: 'Advanced',
     description: 'Primary plotting library for creating static, animated, and interactive visualizations in Python.',
     experience: '3+ years',
@@ -302,7 +302,7 @@ export const skills: Skill[] = [
   {
     name: 'Plotly',
     slug: 'plotly',
-    category: 'AI/ML',
+    category: 'Frameworks & Libraries',
     proficiency: 'Advanced',
     description: 'Interactive plotting library for creating dynamic, web-based visualizations. Perfect for financial data analysis.',
     experience: '2+ years',
@@ -359,7 +359,7 @@ export const skills: Skill[] = [
   {
     name: 'yfinance',
     slug: 'yfinance',
-    category: 'AI/ML',
+    category: 'Frameworks & Libraries',
     proficiency: 'Advanced',
     description: 'Python library for downloading historical market data from Yahoo Finance. Essential for financial modeling projects.',
     experience: '1+ years',
@@ -383,7 +383,7 @@ export const skills: Skill[] = [
   {
     name: 'Multithreading',
     slug: 'multithreading',
-    category: 'Programming Languages',
+    category: 'Tools & Platforms',
     proficiency: 'Intermediate',
     description: 'Concurrent programming technique for improving application performance through parallel execution.',
     experience: '2+ years',
@@ -405,7 +405,7 @@ export const skills: Skill[] = [
   {
     name: 'Sockets',
     slug: 'sockets',
-    category: 'Programming Languages',
+    category: 'Tools & Platforms',
     proficiency: 'Intermediate',
     description: 'Network programming using sockets for inter-process communication over networks.',
     experience: '1+ years',
@@ -425,19 +425,6 @@ export const skills: Skill[] = [
     projects: ['av-simulator'],
     icon: 'PiMicrosoftExcelLogoFill',
     color: '#217346'
-  },
-
-  // Additional missing skills from projects
-  {
-    name: 'Sockets',
-    slug: 'sockets',
-    category: 'Programming Languages',
-    proficiency: 'Intermediate',
-    description: 'Network programming using sockets for inter-process communication over networks. Implemented in high-performance client-server systems.',
-    experience: '1+ years',
-    projects: ['client-server-system'],
-    icon: 'SiSocketdotio',
-    color: '#61dafb'
   },
 
   // AI & Emerging Technologies
