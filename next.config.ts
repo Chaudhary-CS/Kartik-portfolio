@@ -9,7 +9,8 @@ const withMdx = withMDX({
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   pageExtensions: ['ts','tsx','js','jsx','md','mdx'],
-  output: 'export',
+  // output: 'export', // Temporarily disabled to test navigation
+  // trailingSlash: true,
   images: {
     unoptimized: true,
   },

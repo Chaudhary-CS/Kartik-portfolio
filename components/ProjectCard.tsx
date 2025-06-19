@@ -16,6 +16,82 @@ export interface ProjectCardProps {
   date?: string       // optional project date
 }
 
+// Mapping function to convert project tech names to skill slugs
+const getSkillSlug = (techName: string): string => {
+  const techToSlugMap: { [key: string]: string } = {
+    // Programming Languages
+    'Python': 'python',
+    'TypeScript': 'typescript',
+    'JavaScript': 'javascript',
+    'C++': 'c++',
+    'Java': 'java',
+    'Go': 'go',
+    'Rust': 'rust',
+    'R': 'r',
+    'C': 'c',
+    'C#': 'c-sharp',
+    
+    // Frameworks & Libraries
+    'React': 'react',
+    'Next.js': 'next.js',
+    'Node.js': 'node.js',
+    'Express.js': 'express.js',
+    'Tailwind CSS': 'tailwind-css',
+    'TensorFlow': 'tensorflow',
+    'PyTorch': 'pytorch',
+    'Electron': 'electron',
+    'Vite': 'vite',
+    'PostCSS': 'postcss',
+    'Axios': 'axios',
+    'Lucide React': 'lucide-react',
+    'Radix UI': 'radix-ui',
+    'Dash': 'dash',
+    'Plotly': 'plotly',
+    'Pandas': 'pandas',
+    'NumPy': 'numpy',
+    'Matplotlib': 'matplotlib',
+    'Scikit-Learn': 'scikit-learn',
+    'OpenCV': 'opencv',
+    'yfinance': 'yfinance',
+    
+    // Databases
+    'PostgreSQL': 'postgresql',
+    'MySQL': 'mysql',
+    'MongoDB': 'mongodb',
+    'Redis': 'redis',
+    'SQLite': 'sqlite',
+    
+    // Cloud & DevOps
+    'Vercel': 'vercel',
+    'Convex': 'convex',
+    'AWS': 'aws',
+    'Docker': 'docker',
+    'Kubernetes': 'kubernetes',
+    
+    // Tools & Platforms
+    'Auth0': 'auth0',
+    'CARLA': 'carla',
+    'Git': 'git',
+    'GitHub': 'github',
+    'VS Code': 'vs-code',
+    'Linux': 'linux',
+    'Excel': 'excel',
+    'Tableau': 'tableau',
+    'Power BI': 'power-bi',
+    
+    // AI/ML & Other Technologies
+    'Socket': 'sockets',
+    'TCP/IP': 'tcp-ip',
+    'Multithreading': 'multithreading',
+    'Prompt Engineering': 'prompt-engineering',
+    'GPT Agent Creation': 'gpt-agent-creation',
+    'Educational Technology': 'educational-technology',
+  }
+  
+  // Return mapped slug or create a fallback slug
+  return techToSlugMap[techName] || encodeURIComponent(techName.toLowerCase().replace(/[^a-z0-9]+/g, '-'))
+}
+
 export default function ProjectCard({
   title,
   description,
@@ -27,6 +103,12 @@ export default function ProjectCard({
   date,
 }: ProjectCardProps) {
   const router = useRouter()
+  
+  const handleSkillClick = (e: React.MouseEvent, skillSlug: string) => {
+    e.stopPropagation()
+    e.preventDefault()
+    router.push(`/skills/${skillSlug}`)
+  }
   
   return (
     <div className="block h-full w-full flex flex-col group">
@@ -63,14 +145,11 @@ export default function ProjectCard({
           {techs.length > 0 && (
             <div className="flex flex-wrap gap-1.5 sm:gap-2 mt-auto pt-2">
               {techs.map((tech) => {
-                const slug = encodeURIComponent(tech.toLowerCase())
+                const skillSlug = getSkillSlug(tech)
                 return (
-                  <span
+                  <button
                     key={tech}
-                    onClick={(e) => {
-                      e.stopPropagation()
-                      router.push(`/skills/${slug}`)
-                    }}
+                    onClick={(e) => handleSkillClick(e, skillSlug)}
                     className={
                       "cursor-pointer bg-gray-700 text-white px-2 py-1 rounded-full text-xs sm:text-sm \
                       border border-white hover:border-teal-400 \
@@ -78,7 +157,7 @@ export default function ProjectCard({
                     }
                   >
                     {tech}
-                  </span>
+                  </button>
                 )
               })}
             </div>

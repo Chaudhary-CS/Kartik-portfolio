@@ -427,6 +427,19 @@ export const skills: Skill[] = [
     color: '#217346'
   },
 
+  // Additional missing skills from projects
+  {
+    name: 'Sockets',
+    slug: 'sockets',
+    category: 'Programming Languages',
+    proficiency: 'Intermediate',
+    description: 'Network programming using sockets for inter-process communication over networks. Implemented in high-performance client-server systems.',
+    experience: '1+ years',
+    projects: ['client-server-system'],
+    icon: 'SiSocketdotio',
+    color: '#61dafb'
+  },
+
   // AI & Emerging Technologies
   {
     name: 'Prompt Engineering',
