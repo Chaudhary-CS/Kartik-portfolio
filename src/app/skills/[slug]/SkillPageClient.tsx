@@ -228,29 +228,62 @@ export default function SkillPageClient({ skill, relatedProjects }: SkillPageCli
           </div>
         </motion.div>
 
-        {/* Detailed Content Placeholder */}
-        <motion.div
-          className="mb-8 sm:mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.6 }}
-        >
-          <div className="bg-gray-900/70 rounded-xl p-6 sm:p-8 border border-gray-700">
-            <h2 className="text-2xl font-semibold mb-4 text-teal-400">
-              Technical Deep Dive
-            </h2>
-            <div className="prose prose-invert max-w-none">
-              <p className="text-gray-300 mb-4">
-                <em>This section will contain your detailed, human-written analysis of your experience with {skill.name}.</em>
-              </p>
-              <p className="text-gray-400 text-sm">
-                You can add specific examples, challenges you&apos;ve overcome, best practices you&apos;ve learned, 
-                and how this technology fits into your overall development philosophy. This is where you 
-                can showcase your deep understanding and practical experience.
-              </p>
+        {/* Technical Deep Dive */}
+        {skill.technicalDeepDive && (
+          <motion.div
+            className="mb-8 sm:mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.6 }}
+          >
+            <div className="bg-gray-900/70 rounded-xl p-6 sm:p-8 border border-gray-700">
+              <h2 className="text-2xl font-semibold mb-6 text-teal-400">
+                Technical Deep Dive
+              </h2>
+              <div className="prose prose-invert max-w-none">
+                <div 
+                  className="text-gray-300 leading-relaxed space-y-4"
+                  dangerouslySetInnerHTML={{ 
+                    __html: skill.technicalDeepDive
+                      // First, handle bold sections (headings)
+                      .replace(/\*\*(.*?)\*\*/g, '<strong class="text-white font-semibold">$1</strong>')
+                      // Handle italic sections
+                      .replace(/\*(.*?)\*/g, '<em class="text-teal-300 font-medium">$1</em>')
+                      // Split into paragraphs and handle each section
+                      .split('\n\n')
+                      .map(section => {
+                        // Handle bullet points within sections
+                        if (section.includes('- ')) {
+                          const lines = section.split('\n');
+                          const processedLines = lines.map(line => {
+                            if (line.startsWith('- **') && line.includes('**:')) {
+                              // Handle bullet points with bold labels
+                              return line.replace(/^- \*\*(.*?)\*\*:(.*)/, '<div class="ml-4 mb-2">• <strong class="text-teal-400">$1:</strong>$2</div>');
+                            } else if (line.startsWith('- ')) {
+                              // Handle regular bullet points
+                              return line.replace(/^- (.*)/, '<div class="ml-4 mb-2">• $1</div>');
+                            } else {
+                              // Handle section headers or regular text
+                              return line.includes('**') ? `<div class="mb-3 font-semibold text-lg">${line}</div>` : `<div class="mb-3">${line}</div>`;
+                            }
+                          });
+                          return processedLines.join('');
+                        } else {
+                          // Handle non-bullet sections (like headers or paragraphs)
+                          if (section.includes('**') && !section.includes(':')) {
+                            return `<div class="mb-4 font-semibold text-lg text-teal-400">${section}</div>`;
+                          } else {
+                            return `<div class="mb-4 leading-relaxed">${section}</div>`;
+                          }
+                        }
+                      })
+                      .join('<div class="mb-6"></div>')
+                  }}
+                />
+              </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
+        )}
 
         {/* Related Projects */}
         {relatedProjects.length > 0 && (

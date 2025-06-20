@@ -20,6 +20,7 @@ export interface Skill {
   certificationDetails?: string[] // Specific certifications earned
   publications?: number // Number of research publications involving this skill
   publicationDetails?: string[] // Specific publications that used this skill
+  technicalDeepDive?: string // Detailed technical expertise and problem-solving examples
 }
 
 export const skills: Skill[] = [
@@ -29,7 +30,7 @@ export const skills: Skill[] = [
     slug: 'python',
     category: 'Programming Languages',
     proficiency: 'Advanced',
-    description: 'My go-to language for data science, machine learning, and backend development. Extensive experience with ML models, data pipelines, and conversational AI systems.',
+    description: 'My go-to language for data science, machine learning, and backend development. Specialized in data processing, conversational AI systems, and environmental data pipelines with extensive experience across research, industry, and academic settings.',
     experience: '4+ years',
     projects: ['av-simulator', 'financial-modeling-tool'],
     icon: 'SiPython',
@@ -45,18 +46,77 @@ export const skills: Skill[] = [
     certifications: 2,
     certificationDetails: ['Data Science Math Skills (Coursera)', 'Scientific Computing with Python (freeCodeCamp)'],
     publications: 1,
-    publicationDetails: ['ChatGPT 4o Performance on Mechanical Engineering Concept Inventories']
+    publicationDetails: ['ChatGPT 4o Performance on Mechanical Engineering Concept Inventories'],
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Data Processing & Analytics**: Advanced Pandas operations for DataFrame manipulation, Excel file processing, row/column transformations, and complex data aggregation workflows
+- **Asynchronous Programming**: Async/await patterns for full-stack communication, enabling efficient frontend-backend data flow and real-time system interactions
+- **Type Safety & Data Validation**: Type hints implementation combined with Pydantic for robust data validation, especially in LLM training pipelines and API development
+- **Object-Oriented Design**: Strategic use of dataclasses for structured data representation (with performance considerations in mind)
+- **Data Visualization Ecosystem**: Advanced plotting and interactive dashboard creation using Matplotlib, Plotly, and Dash for business intelligence applications
+
+**Advanced Libraries & Integration:**
+- **Pydantic**: JSON schema validation and data serialization for LLM training pipelines processing 500+ PDFs weekly
+- **HTTP Communication**: Advanced usage of Requests library for API integrations, data collection workflows, and external service communications
+- **Cloud Integration**: AWS S3 operations using boto3 for cloud-based data storage and retrieval
+- **Web Frameworks**: Flask for research applications serving 500+ SANE nurses, FastAPI for high-performance API development
+- **Database Integration**: SQLAlchemy ORM for complex data modeling and large-scale transaction processing
+- **Automation**: Selenium for web scraping and automated data collection from environmental sources
+
+**Complex Problem-Solving Examples:**
+
+*Environmental Data Pipeline Challenge:*
+Architected and implemented a comprehensive carbon footprint tracking system at INTERA Incorporated that automated data collection from multiple company locations using Selenium, processed complex environmental datasets with Pandas, and created interactive visualizations using Plotly and Matplotlib. The system identified key emission sources across different departments and geographical locations, providing actionable insights through automated reporting. This technical solution directly influenced the company founder to launch enterprise-wide carbon reduction initiatives, demonstrating how technical expertise can drive strategic business decisions and improve ESG investment appeal.
+
+*High-Performance LLM Pipeline:*
+At PitchFact, designed and built FastAPI-based LLM processing pipelines handling 500+ PDF documents weekly, integrating Pydantic for robust data validation and Pandas for complex startup evaluation analytics. The system required optimization for concurrent processing and reliable data transformation across diverse document formats.
+
+*Medical AI Research Application:*
+Developed Flask-based conversational AI tools at TAMU's Soft Interaction Lab serving 500+ SANE nurses, integrating Firebase for real-time data synchronization and implementing sophisticated prompt engineering techniques for medical training applications.
+
+**Areas for Continued Growth:**
+- **Performance Optimization**: Expanding expertise in Python profiling, multiprocessing, Cython, and advanced performance tuning techniques
+- **Cloud Architecture**: Deepening AWS services knowledge beyond S3, exploring serverless architectures and distributed computing
+- **Advanced ML Operations**: MLOps practices, model deployment, and production ML system optimization`
   },
   {
     name: 'TypeScript',
     slug: 'typescript',
     category: 'Programming Languages',
     proficiency: 'Advanced',
-    description: 'I prefer TypeScript over JavaScript for larger projects due to its type safety and better development experience. This portfolio is built entirely with TypeScript.',
+    description: 'My preferred language for modern web development, chosen for its type safety and superior development experience. This entire portfolio showcases TypeScript integration with Next.js, React, and modern development workflows.',
     experience: '3+ years',
     projects: ['save-gas', 'exped-browser', 'panda-express-pos'],
     icon: 'SiTypescript',
-    color: '#3178c6'
+    color: '#3178c6',
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Type System Fundamentals**: Extensive use of interfaces, generics, and comprehensive type definitions for robust application architecture
+- **Type Safety in Practice**: Leveraging TypeScript's compile-time error detection to prevent runtime issues across desktop, mobile, and cross-platform environments
+- **Modern Development Syntax**: Utilizing TypeScript's enhanced syntax and developer experience improvements over vanilla JavaScript
+- **Framework Integration**: Seamless integration with Next.js, React.js, and modern build tools for full-stack development
+- **Component Architecture**: Building type-safe React components with proper prop typing and interface definitions
+
+**Advanced Development Patterns:**
+- **Interface-Driven Development**: Designing clear contracts between components and services using TypeScript interfaces
+- **Generic Programming**: Implementing reusable, type-safe functions and components that work across different data types
+- **Modern Tech Stack Integration**: Combining TypeScript + Next.js + React + TailwindCSS for cutting-edge development workflows
+- **Cross-Platform Compatibility**: Ensuring type safety across different devices and environments through comprehensive typing
+- **Build-Time Optimization**: Leveraging TypeScript's compilation process for early error detection and code optimization
+
+**Complex Problem-Solving Examples:**
+
+*HTML Semantic Structure Challenge:*
+Encountered a critical issue where nested anchor tags were causing accessibility and functionality problems throughout the portfolio website. TypeScript's type checking helped identify the structural issue where skill navigation components were incorrectly implementing \`<a>\` tags within existing \`<a>\` tag contexts. The solution involved refactoring the skill components to use button elements within div containers, maintaining semantic HTML while preserving navigation functionality. This experience highlighted how TypeScript's strict typing and development-time error detection can catch not just JavaScript errors, but also help identify structural and accessibility issues in complex component hierarchies.
+
+*Cross-Platform Type Safety:*
+Developed responsive applications that needed to function consistently across desktop, mobile, and various screen sizes. TypeScript's type system enabled creating robust interfaces that ensured component props and state management worked reliably across different environments, preventing runtime errors that would be difficult to catch with vanilla JavaScript.
+
+*Modern Framework Integration:*
+Successfully architected full-stack applications using TypeScript as the foundation for both frontend (React/Next.js) and development tooling integration. This unified approach eliminated the traditional Node.js + JavaScript separation, creating a more cohesive development experience with consistent typing throughout the entire application stack.
+
+**Areas for Continued Growth:**
+- **Advanced Type Features**: Exploring union types, mapped types, and conditional types for more sophisticated type manipulations
+- **Enterprise Architecture Patterns**: Deepening understanding of TypeScript's role in large-scale enterprise applications and microservices architectures
+- **Performance Optimization**: Learning advanced TypeScript compiler optimizations and build performance improvements for production applications`
   },
   {
     name: 'C++',
@@ -76,13 +136,42 @@ export const skills: Skill[] = [
     slug: 'javascript',
     category: 'Programming Languages',
     proficiency: 'Advanced',
-    description: 'Fundamental web programming language for modern web development. Experienced in both frontend and backend JavaScript development.',
+    description: 'Foundation language for my web development journey, from computer science fundamentals to cross-platform browser development. Strong expertise in vanilla JavaScript, browser APIs, and solving complex compatibility challenges.',
     experience: '4+ years',
     projects: ['save-gas', 'exped-browser', 'panda-express-pos'],
     icon: 'SiJavascript',
     color: '#f7df1e',
     certifications: 1,
-    certificationDetails: ['JavaScript Algorithms and Data Structures (freeCodeCamp)']
+    certificationDetails: ['JavaScript Algorithms and Data Structures (freeCodeCamp)'],
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Data Structures & Algorithms Foundation**: Solid computer science fundamentals using JavaScript as primary language for implementing algorithms, arrays, and data structures as an alternative to Java during high school
+- **ES6+ Modern JavaScript**: Proficient with arrow functions, async/await, modules, and destructuring for modern JavaScript development patterns
+- **Cross-Platform Browser Development**: Expert-level experience ensuring JavaScript applications work consistently across Windows, Apple, and Linux environments
+- **Browser APIs Integration**: Extensive experience with fetch API, localStorage, and geolocation APIs for building interactive web applications
+- **Frontend Data Optimization**: Understanding how to implement client-side data structures to reduce backend load and improve application performance
+
+**Advanced Development Patterns:**
+- **Cross-Platform Compatibility**: Deep experience resolving platform-specific JavaScript behavior differences across different operating systems
+- **Authentication Integration**: Implementing secure API calls and authentication flows using vanilla JavaScript
+- **WebView Architecture**: Advanced understanding of WebView components for building secure, resizable browser interfaces with security restrictions
+- **Frontend-First Development**: Strategic use of JavaScript for rapid prototyping and foundational web development before transitioning to TypeScript for larger projects
+- **Client-Side Performance**: Leveraging frontend JavaScript data structures and localStorage for improved application responsiveness
+
+**Complex Problem-Solving Examples:**
+
+*Cross-Platform Browser Component Challenge:*
+Encountered a critical UI issue in the Exped Browser project where the internet search interface displayed incorrectly small across Windows, Apple, and Linux devices. Through systematic debugging, discovered the root cause was calling a non-editable HTML tag that prevented dynamic screen resizing. The breakthrough solution involved implementing a WebView component that not only resolved the sizing issues but also enabled adding security restrictions to prevent browser exploitation and protect users from potential security vulnerabilities. This experience demonstrated deep understanding of browser architecture, HTML element limitations, and innovative security-focused solutions.
+
+*Frontend Data Structure Optimization:*
+During freeCodeCamp certification, implemented various data structures and algorithms directly in JavaScript frontend environments to reduce backend processing load. This approach improved application performance by handling data manipulation client-side rather than requiring server-side processing for every operation, demonstrating understanding of performance optimization strategies.
+
+*API Integration and Authentication:*
+Successfully integrated multiple browser APIs including fetch for HTTP requests, localStorage for client-side data persistence, and geolocation for location-based features. Built authentication systems and API integrations for various use-case specific applications, ensuring secure and reliable data exchange between frontend and backend services.
+
+**Areas for Continued Growth:**
+- **Advanced Debugging Techniques**: Expanding beyond console logging to utilize browser developer tools, debugger statements, and advanced debugging strategies for complex JavaScript applications
+- **Local Storage Architecture**: Deepening expertise in localStorage patterns and offline-first application development for non-cloud device solutions
+- **Modern JavaScript Testing**: Learning testing frameworks and methodologies for robust JavaScript application development`
   },
 
   {
@@ -103,22 +192,80 @@ export const skills: Skill[] = [
     slug: 'react',
     category: 'Frameworks & Libraries',
     proficiency: 'Advanced',
-    description: 'My framework of choice for building modern, interactive user interfaces. I\'m comfortable with hooks, context, and advanced patterns.',
+    description: 'My pragmatic framework of choice for building modern, interactive user interfaces. Expert in practical React development with strong focus on TypeScript integration, Next.js SSR, and advanced component styling systems.',
     experience: '3+ years',
     projects: ['save-gas', 'exped-browser', 'panda-express-pos'],
     icon: 'SiReact',
-    color: '#61dafb'
+    color: '#61dafb',
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Pragmatic Component Development**: Focus on building functional, maintainable components that solve real-world problems efficiently
+- **Context-Based State Management**: Utilizing React Context for application-wide state management without over-engineering
+- **TypeScript Integration**: Seamless integration of React components with TypeScript for type-safe development
+- **Next.js SSR Integration**: Leveraging Next.js server-side rendering capabilities for optimal performance and SEO
+- **Advanced Styling Integration**: Expert-level component styling using Tailwind CSS, CSS modules, and dynamic theming systems
+
+**Advanced Development Patterns:**
+- **Multi-Theme Architecture**: Implementing complex theming systems that dynamically switch entire application UI schemes
+- **Responsive Component Design**: Building components that work seamlessly across desktop, mobile, and tablet environments
+- **SSR-Aware Development**: Understanding how components behave in server-side rendering contexts with Next.js
+- **Practical State Solutions**: Using Context API strategically for application state without unnecessary complexity
+- **Component-CSS Integration**: Deep expertise in styling React components through multiple CSS methodologies
+
+**Complex Problem-Solving Examples:**
+
+*Dynamic Theme Switching Challenge:*
+Architected and implemented a comprehensive dark/light theme system for the Panda Express POS application that required dynamic UI transformation across the entire application. The challenge involved creating a theme context that could propagate theme changes to every component while maintaining performance and ensuring CSS references updated correctly. The solution required modifying component attributes to dynamically reference different CSS files and managing theme state across complex component hierarchies. This implementation demonstrated advanced understanding of React Context, CSS architecture, and state propagation in large-scale applications.
+
+*SSR-Optimized Component Development:*
+Developed React components specifically designed to work seamlessly with Next.js server-side rendering, ensuring optimal performance and SEO benefits. This required understanding the nuances of how components behave differently in server vs. client environments and architecting solutions that work reliably in both contexts.
+
+*Practical State Management Solutions:*
+Successfully implemented Context-based state management across multiple projects, choosing practical solutions over complex state management libraries. This approach prioritized maintainability and development speed while still providing robust state handling for real-world applications.
+
+**Areas for Continued Growth:**
+- **Advanced State Management**: Exploring Redux, Zustand, and other complex state management solutions for larger-scale applications
+- **Component Architecture Patterns**: Learning advanced patterns like compound components, render props, and higher-order components for more sophisticated component design
+- **Modern React Features**: Investigating React 18+ features including Suspense, concurrent features, and server components for cutting-edge development`
   },
   {
     name: 'Next.js',
     slug: 'next.js',
     category: 'Frameworks & Libraries',
     proficiency: 'Advanced',
-    description: 'I love Next.js for its full-stack capabilities and excellent developer experience. This portfolio showcases my skills with App Router, SSR, and modern Next.js features.',
+    description: 'My full-stack framework of choice for modern web development. Expert in App Router, SSG/SSR implementation, and seamless user experience design. This entire portfolio demonstrates advanced Next.js architecture with persistent backgrounds and smooth animations.',
     experience: '2+ years',
     projects: ['panda-express-pos'],
     icon: 'SiNextdotjs',
-    color: '#ffffff'
+    color: '#ffffff',
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **App Router Architecture**: Modern Next.js 13+ App Router implementation with proper layout hierarchy and metadata management for SEO optimization
+- **Static Site Generation (SSG)**: Expert implementation of SSG with CI/CD pipelines for GitHub Pages deployment, ensuring optimal performance and fast load times
+- **Server-Side Rendering (SSR)**: Strategic use of SSR for dynamic content that requires real-time data while maintaining performance benefits
+- **Full-Stack Development**: Complete Next.js API route implementation for backend functionality, demonstrated in the Panda Express POS System with weather API integration
+- **TypeScript Integration**: Seamless Next.js and TypeScript configuration for type-safe full-stack development across frontend and backend
+
+**Advanced Development Patterns:**
+- **Consistent User Experience Design**: Architected persistent background (VantaNet) and navigation systems that maintain visual continuity across route transitions
+- **Animation-Enhanced Navigation**: Integration of Framer Motion with Next.js routing using AnimatePresence and usePathname for smooth page transitions
+- **MDX Content Integration**: Advanced configuration supporting both .md and .mdx files for dynamic content rendering and blog functionality
+- **Export Configuration**: Strategic Next.js export setup for static deployment while maintaining dynamic capabilities where needed
+- **Client/Server Component Architecture**: Proper separation of client-side interactivity and server-side optimization using Next.js 'use client' directives
+
+**Complex Problem-Solving Examples:**
+
+*Seamless Navigation with Persistent Background:*
+Architected a sophisticated layout system that maintains visual continuity across all routes while providing smooth page transitions. The challenge involved implementing a persistent VantaNet background component that remains stable during navigation while allowing individual pages to animate in and out. The solution used Next.js App Router with a custom ClientLayout component that leverages usePathname hook for route detection and AnimatePresence for coordinated animations. This creates an immersive user experience where the background animation never interrupts, providing professional-grade visual consistency throughout the application.
+
+*Full-Stack Weather API Integration:*
+Implemented real-time weather API integration in the Panda Express POS System using Next.js API routes and TypeScript. The system dynamically adjusts the application's theme based on current weather conditions, requiring server-side API calls, data processing, and client-side state management. This demonstrated mastery of Next.js full-stack capabilities, handling both backend API integration and frontend state updates seamlessly.
+
+*Optimized Static Generation with Dynamic Content:*
+Configured Next.js for optimal static site generation while maintaining dynamic capabilities for skill pages and project showcases. The implementation uses strategic ISR (Incremental Static Regeneration) concepts for content that may update, while leveraging full SSG for performance-critical pages. This hybrid approach delivers exceptional loading speeds while maintaining content flexibility.
+
+**Areas for Continued Growth:**
+- **Advanced Performance Optimization**: Exploring Next.js caching strategies, bundle optimization, and advanced image optimization techniques for enterprise-scale applications
+- **SEO and Core Web Vitals**: Deepening expertise in Next.js SEO optimization, structured data implementation, and Core Web Vitals improvement strategies
+- **Advanced ISR Patterns**: Mastering complex Incremental Static Regeneration implementations for large-scale content management systems`
   },
   {
     name: 'Node.js',
