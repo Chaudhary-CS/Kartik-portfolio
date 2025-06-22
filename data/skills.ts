@@ -84,7 +84,7 @@ Developed Flask-based conversational AI tools at TAMU's Soft Interaction Lab ser
     category: 'Programming Languages',
     proficiency: 'Advanced',
     description: 'My preferred language for modern web development, chosen for its type safety and superior development experience. This entire portfolio showcases TypeScript integration with Next.js, React, and modern development workflows.',
-    experience: '3+ years',
+    experience: '2+ years',
     projects: ['save-gas', 'exped-browser', 'panda-express-pos'],
     icon: 'SiTypescript',
     color: '#3178c6',
@@ -124,7 +124,7 @@ Successfully architected full-stack applications using TypeScript as the foundat
     category: 'Programming Languages',
     proficiency: 'Intermediate',
     description: 'Used for performance-critical applications and system programming. Applied it in client-server systems where real-time processing was essential.',
-    experience: '2+ years',
+    experience: '3+ years',
     projects: ['client-server-system'],
     icon: 'SiCplusplus',
     color: '#00599c',
@@ -170,7 +170,7 @@ Explored multi-threading concepts within C++ applications, understanding how con
     category: 'Programming Languages',
     proficiency: 'Advanced',
     description: 'Foundation language for my web development journey, from computer science fundamentals to cross-platform browser development. Strong expertise in vanilla JavaScript, browser APIs, and solving complex compatibility challenges.',
-    experience: '4+ years',
+    experience: '3+ years',
     projects: ['save-gas', 'exped-browser', 'panda-express-pos'],
     icon: 'SiJavascript',
     color: '#f7df1e',
@@ -343,9 +343,9 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     name: 'Node.js',
     slug: 'node.js',
     category: 'Frameworks & Libraries',
-    proficiency: 'Advanced',
+    proficiency: 'Intermediate',
     description: 'Proficient in building scalable backend services with Node.js. I have created APIs that handle thousands of concurrent connections.',
-    experience: '3+ years',
+    experience: '2+ years',
     projects: ['save-gas', 'exped-browser', 'panda-express-pos'],
     icon: 'SiNodedotjs',
     color: '#339933',
@@ -434,9 +434,9 @@ Successfully combined reusable component architecture with Tailwind's utility-fi
     name: 'TensorFlow',
     slug: 'tensorflow',
     category: 'AI/ML',
-    proficiency: 'Advanced',
+    proficiency: 'Intermediate',
     description: 'Extensive experience building and training neural networks for computer vision and autonomous systems. I have implemented everything from CNNs to reinforcement learning models.',
-    experience: '3+ years',
+    experience: '2+ years',
     projects: ['av-simulator', 'financial-modeling-tool'],
     icon: 'SiTensorflow',
     color: '#ff6f00',
@@ -482,7 +482,7 @@ Applied TensorFlow expertise to financial data modeling, creating predictive mod
     name: 'PyTorch',
     slug: 'pytorch',
     category: 'AI/ML',
-    proficiency: 'Advanced',
+    proficiency: 'Intermediate',
     description: 'Deep learning framework used for research and production. Applied for Physics-Informed Neural Networks (PINNs) and computer vision tasks in autonomous vehicle projects.',
     experience: '2+ years',
     projects: ['av-simulator'],
@@ -580,13 +580,49 @@ Overcame the significant learning curve of desktop application development while
     name: 'Express.js',
     slug: 'express.js',
     category: 'Frameworks & Libraries',
-    proficiency: 'Advanced',
+    proficiency: 'Intermediate',
     description: 'Robust web framework for Node.js applications. Used for building RESTful APIs and handling server-side logic efficiently.',
     experience: '2+ years',
     projects: ['panda-express-pos'],
     icon: 'SiExpress',
     color: '#ffffff',
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **RESTful Routing & Middleware**: Strategic implementation of routing systems and middleware for scalable web applications with proper request handling and response management
+- **Multi-Role Authentication Systems**: Advanced route and endpoint creation for customer, employee, and manager access levels with comprehensive permission management and authentication controls
+- **External API Integration**: Expert-level integration of external APIs for authentication services and functionality enhancement, ensuring secure and reliable third-party service connections
+- **Order Processing Architecture**: Sophisticated backend systems for order processing and inventory management, handling complex business logic for POS operations
+- **Database Integration Workflows**: Seamless connection and interaction with PostgreSQL databases via AWS for customer data management and business analytics
+- **Business Intelligence Backend**: Comprehensive backend development focused on store operations, break-even analysis, and profitability tracking for commercial POS systems
+- **Agile Development Integration**: Strategic use of Express.js for API integration supporting Agile/Jira workflows and feature implementation like day/night theme functionality
+
+**Advanced Development Patterns:**
+- **Role-Based Access Control**: Implementation of sophisticated permission systems ensuring customers, employees, and managers can only access appropriate pages and functionality based on their authentication levels
+- **Test Case Scenario Management**: Comprehensive testing approach covering various authentication scenarios and edge cases to ensure system security and reliability across all user types
+- **Cloud Database Architecture**: Strategic use of Express.js as the bridge between Node.js backend and AWS-hosted PostgreSQL databases for scalable data management
+- **Business Logic Implementation**: Complex backend systems designed to track customer orders, preferences, inventory, and business metrics necessary for successful restaurant operations
+- **API-Driven Development**: Leveraging external APIs through Express.js to enhance application functionality while maintaining clean separation of concerns
+- **Workflow Integration**: Seamless integration of Express.js with project management tools and development workflows to support team collaboration and feature deployment
+
+**Complex Problem-Solving Examples:**
+
+*Multi-Role POS System Authentication Architecture:*
+Developed a comprehensive authentication and routing system for the Panda Express POS application that manages three distinct user types: customers, employees, and managers. The challenge involved creating secure routes and endpoints that prevent unauthorized access while ensuring each user type can seamlessly access their appropriate functionality. Successfully implemented robust permission management that handles various test case scenarios, preventing customers from accessing employee interfaces, employees from accessing manager functions, and ensuring all authentication flows work reliably across the entire application.
+
+*Comprehensive Order Processing & Inventory Backend:*
+Architected the most challenging component of the POS system: the complete backend infrastructure that tracks customer orders, preferences, inventory levels, and business metrics. This involved building sophisticated Express.js routes that handle order placement, modification, completion, and cancellation while simultaneously updating inventory databases and tracking business performance indicators. The system processes complex order data, manages inventory in real-time, and provides analytics necessary for the store to achieve break-even and profitability targets.
+
+*AWS PostgreSQL Integration for Customer Data Simulation:*
+Successfully connected the Express.js application to AWS-hosted PostgreSQL databases to simulate realistic customer data and demonstrate the POS system's business value. This integration required careful handling of database connections, query optimization, and data management to show how the system generates valuable customer insights and operational analytics that benefit restaurant management and decision-making processes.
+
+*Agile-Integrated API Development:*
+Implemented Express.js API integrations that support Agile development workflows and Jira task management, including the development of dynamic theming features like day/night mode. This required coordination between Express.js routing, external API calls, and frontend functionality to ensure theme changes worked seamlessly across the entire application while maintaining development workflow integration.
+
+**Areas for Continued Growth:**
+- **Real-Time Communication**: Learning WebSocket implementation, real-time features, and server-sent events for live updates and enhanced user interactions in POS and web applications
+- **Performance Optimization**: Developing expertise in Express.js performance tuning, caching strategies, and optimization techniques for high-traffic commercial applications
+- **Advanced Middleware Development**: Creating custom middleware solutions for complex authentication, logging, error handling, and request processing scenarios
+- **Microservices Architecture**: Exploring Express.js applications within microservices environments and learning service communication patterns for scalable enterprise applications
+- **Production Security**: Implementing advanced security measures, rate limiting, and production-ready security configurations for commercial-grade applications`
   },
   {
     name: 'Flask',
@@ -594,7 +630,7 @@ Overcame the significant learning curve of desktop application development while
     category: 'Frameworks & Libraries',
     proficiency: 'Advanced',
     description: 'Python web framework used in research work at Texas A&M University & Soft Interaction Lab. Built conversational AI tools for 500+ SANE nurses and backend services for medical training applications.',
-    experience: '2+ years',
+    experience: '3+ years',
     projects: [],
     icon: 'SiFlask',
     color: '#000000',
@@ -697,15 +733,50 @@ Created a system that efficiently processes and integrates information from both
     category: 'Databases',
     proficiency: 'Intermediate',
     description: 'Python SQL toolkit and ORM used for database interactions, data modeling, and handling large-scale transaction processing.',
-    experience: '2+ years',
+    experience: '1+ years',
     projects: [],
     icon: 'SiSqlalchemy',
     color: '#d71f00',
-    internships: 1,
-    internshipDetails: ['Pivotal Research Inc.'],
     researchRoles: 1,
     researchDetails: ['TAMU x Soft Interaction Lab'],
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Local Storage Architecture**: Expert implementation of SQLAlchemy for local database storage solutions, providing cost-effective alternatives to cloud service providers
+- **Flask-SQLAlchemy Integration**: Advanced integration of SQLAlchemy ORM with Flask applications for seamless database operations and local data management
+- **WebSocket Database Connectivity**: Strategic implementation of SQLAlchemy with WebSocket connections for real-time data access and local storage synchronization
+- **Object-Relational Mapping (ORM)**: Proficient use of SQLAlchemy ORM to map database objects correctly for LLM reference systems and document management
+- **Document Storage for LLM Systems**: Specialized database design for storing court case documents and legal resources that LLM agents can reference for improved decision-making
+- **Privacy-First Database Design**: Implementation of secure, private database systems for sensitive departmental partnerships without external data sharing
+- **Local Reference Management**: Advanced techniques for organizing and referencing documents locally to enable efficient LLM agent resource access
+
+**Advanced Development Patterns:**
+- **Cost-Effective Local Solutions**: Strategic use of local database storage to reduce dependency on expensive cloud service providers while maintaining full functionality
+- **LLM-Database Integration**: Sophisticated database architecture that enables LLM agents to access and reference stored documents for enhanced contextual decision-making
+- **Real-Time Data Synchronization**: Integration of SQLAlchemy with WebSocket technology for live database updates and real-time data access across research applications
+- **Secure Local Storage Frameworks**: Implementation of database solutions designed with privacy and security as primary considerations for sensitive research data
+- **Partnership-Compliant Data Management**: Database design that meets departmental partnership requirements for data privacy and controlled access
+- **Resource Optimization**: Local storage strategies that optimize both cost and performance for research applications requiring document reference systems
+
+**Complex Problem-Solving Examples:**
+
+*LLM Agent Document Reference System:*
+Architected a comprehensive local database system using SQLAlchemy ORM that stores court case documents and legal resources for LLM agent reference at TAMU x Soft Interaction Lab. The challenge involved creating a database structure that allows LLM agents to efficiently access and reference the correct documents when making decisions about legal scenarios. Successfully implemented object mapping that ensures proper document organization and retrieval, enabling LLM agents to provide more accurate and contextually appropriate responses based on stored case law and legal precedents.
+
+*Flask-WebSocket-SQLAlchemy Integration:*
+Developed a sophisticated integration system that connects SQLAlchemy local storage with Flask applications and WebSocket functionality for real-time data access. The challenge required ensuring that database operations could be performed seamlessly while maintaining WebSocket connections for live updates. Successfully created an architecture that allows real-time synchronization between local database storage and connected clients, providing immediate access to document updates and LLM reference materials.
+
+*Privacy-Compliant Local Storage Architecture:*
+Designed and implemented a secure local storage solution using SQLAlchemy that meets strict privacy requirements for departmental partnerships. The challenge involved creating a database system that keeps sensitive court case documents completely private and secure while still allowing efficient access for research purposes. Successfully developed a local-first approach that eliminates external data sharing risks while maintaining full functionality for LLM agent training and reference applications.
+
+*Cost-Effective Cloud Alternative Implementation:*
+Created a local storage solution using SQLAlchemy that significantly reduces costs compared to traditional cloud service providers while maintaining professional-grade functionality. The solution demonstrates how local database architecture can provide the same capabilities as expensive cloud services, offering a sustainable approach for research applications with limited budgets.
+
+**Areas for Continued Growth:**
+- **Local Cloud Storage Development**: Expanding expertise in creating comprehensive local cloud storage applications that can completely replace expensive cloud service providers for specific use cases
+- **Advanced Security Framework Integration**: Learning to incorporate massive security frameworks with SQLAlchemy for enterprise-grade local storage solutions
+- **Performance Optimization**: Developing advanced SQLAlchemy optimization techniques for handling large-scale document storage and retrieval in local environments
+- **Distributed Local Storage**: Exploring techniques for creating distributed local storage networks that maintain privacy while providing scalability benefits
+- **Advanced ORM Patterns**: Mastering complex SQLAlchemy ORM patterns for sophisticated data relationships and advanced querying capabilities in local storage contexts
+- **Database Migration Strategies**: Learning advanced schema migration and versioning techniques for evolving local database requirements in research environments`
   },
   {
     name: 'Selenium',
@@ -713,13 +784,50 @@ Created a system that efficiently processes and integrates information from both
     category: 'Frameworks & Libraries',
     proficiency: 'Intermediate',
     description: 'Web automation framework used for data extraction and testing. Applied for environmental data processing and automated data collection workflows.',
-    experience: '1+ years',
+    experience: '3+ years',
     projects: [],
     icon: 'SiSelenium',
     color: '#43b02a',
     internships: 2,
     internshipDetails: ['INTERA Incorporated (Data Science)', 'INTERA Incorporated (Data Engineering)'],
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Web Scraping for Environmental Data**: Expert-level automated collection of tabular data from public and private company websites for environmental consulting projects
+- **Microsoft Edge WebDriver Implementation**: Strategic use of Microsoft Edge WebDriver for reliable web automation when Chrome configuration challenges arose
+- **Dynamic Content Handling**: Advanced use of WebDriverWait to ensure websites fully load content before data extraction, preventing incomplete data collection
+- **Structured Data Output**: Comprehensive JSON formatting for organized data storage, ensuring clean, debuggable outputs for INTERA employee workflows
+- **Large-Scale Data Collection**: Efficient automation of data collection processes that would manually require days of work, processing hundreds of tabular datasets
+- **Flask Integration for Verification**: Strategic backend development using Flask to verify correct data collection and provide comprehensive debugging capabilities
+- **Public Data Extraction**: Specialized focus on extracting publicly available information without authentication barriers, optimizing for speed and accuracy
+
+**Advanced Development Patterns:**
+- **Time-Saving Automation Architecture**: Development of web scraping solutions that transform multi-day manual data collection processes into automated workflows
+- **Debug-First Development Approach**: Strategic use of JSON file printing throughout the scraping process for real-time debugging and verification of data collection accuracy
+- **Partner Website Integration**: Systematic approach to scraping both public and private partner websites while maintaining data organization and quality standards
+- **Environmental Consulting Workflow Integration**: Tailored automation solutions designed specifically for environmental consulting data requirements and INTERA employee needs
+- **Structured Output Design**: Careful JSON structuring that includes both collected data and debugging variables for comprehensive process monitoring
+- **Backend Verification Systems**: Flask-based verification architecture that ensures data collection accuracy and provides systematic debugging capabilities
+
+**Complex Problem-Solving Examples:**
+
+*Large-Scale Environmental Data Collection Automation:*
+Developed comprehensive web scraping systems at INTERA that automated the collection of hundreds of tabular datasets from public and private company websites. The challenge involved creating reliable automation that could handle diverse website structures while maintaining data quality and organization. Successfully implemented Microsoft Edge WebDriver with WebDriverWait strategies to ensure complete page loading before data extraction, transforming manual processes that would take days into automated workflows that deliver structured JSON outputs. This solution directly supported environmental consulting projects by providing organized, reliable data collection for INTERA employees.
+
+*Flask-Selenium Integration for Data Verification:*
+Architected a comprehensive debugging and verification system that combines Selenium web scraping with Flask backend services. The challenge involved ensuring data collection accuracy while providing systematic debugging capabilities throughout the scraping process. Successfully implemented a Flask application that verifies correct data collection by processing and displaying organized JSON outputs, enabling real-time monitoring of scraping progress and immediate identification of any data collection issues. This integrated approach ensured reliable data quality for environmental consulting applications.
+
+*Multi-Source Tabular Data Standardization:*
+Created sophisticated data collection workflows that extract tabular information from diverse public and partner websites, standardizing the output into consistent JSON format regardless of source website structure. The solution involved developing adaptive scraping strategies that could handle different table formats, data layouts, and website architectures while maintaining consistent output structure. This standardization enabled INTERA employees to work with uniform data formats across multiple sources, significantly improving workflow efficiency.
+
+*WebDriverWait Optimization for Dynamic Content:*
+Solved complex timing challenges when scraping websites with dynamic content loading by implementing strategic WebDriverWait configurations. The challenge involved ensuring complete data extraction from websites that load content asynchronously or use JavaScript to populate tables. Successfully developed timing strategies that balance scraping speed with data completeness, ensuring no information is missed while maintaining efficient automation performance.
+
+**Areas for Continued Growth:**
+- **CAPTCHA Bypass Techniques**: Learning methods for handling CAPTCHA challenges and advanced anti-bot protection systems to expand scraping capabilities to protected websites
+- **Authentication System Navigation**: Developing expertise in automating login processes and handling session management for websites requiring user authentication
+- **Chrome WebDriver Configuration**: Mastering Chrome WebDriver setup and configuration to expand browser compatibility options and leverage Chrome-specific automation features
+- **Advanced Anti-Detection Measures**: Implementing sophisticated techniques to avoid detection by websites with anti-scraping protection, including user agent rotation and request timing optimization
+- **Headless Browsing Implementation**: Learning headless browser automation for improved performance and resource efficiency in large-scale data collection operations
+- **Distributed Scraping Architecture**: Exploring parallel processing and distributed scraping systems for handling even larger datasets and improving collection speed across multiple sources`
   },
 
   // Databases
@@ -727,26 +835,12 @@ Created a system that efficiently processes and integrates information from both
     name: 'PostgreSQL',
     slug: 'postgresql',
     category: 'Databases',
-    proficiency: 'Advanced',
+    proficiency: 'Intermediate',
     description: 'My database of choice for complex applications. I\'m experienced with advanced features like JSON columns, full-text search, and performance optimization.',
-    experience: '3+ years',
+    experience: '2+ years',
     projects: ['panda-express-pos'],
     icon: 'SiPostgresql',
     color: '#336791',
-    technicalDeepDive: ''
-  },
-  {
-    name: 'MySQL',
-    slug: 'mysql',
-    category: 'Databases',
-    proficiency: 'Intermediate',
-    description: 'Relational database management system used at INTERA Incorporated across 2 internships for environmental data modeling and scalable data architectures. Experience with data integrity and multi-department collaboration.',
-    experience: '2+ years',
-    projects: [],
-    icon: 'SiMysql',
-    color: '#4479a1',
-    internships: 2,
-    internshipDetails: ['INTERA Incorporated (Data Science)', 'INTERA Incorporated (Data Engineering)'],
     technicalDeepDive: ''
   },
 
@@ -757,7 +851,7 @@ Created a system that efficiently processes and integrates information from both
     category: 'Cloud & DevOps',
     proficiency: 'Advanced',
     description: 'My preferred platform for deploying Next.js applications. Excellent integration with modern web development workflows.',
-    experience: '2+ years',
+    experience: '1+ years',
     projects: ['save-gas'],
     icon: 'SiVercel',
     color: '#ffffff',
@@ -804,18 +898,6 @@ Created a system that efficiently processes and integrates information from both
     technicalDeepDive: ''
   },
   {
-    name: 'CARLA',
-    slug: 'carla',
-    category: 'Frameworks & Libraries',
-    proficiency: 'Advanced',
-    description: 'Specialized in autonomous vehicle simulation using CARLA. I have built complex scenarios for testing self-driving algorithms in realistic environments.',
-    experience: '1+ years',
-    projects: ['av-simulator'],
-    icon: 'CarlaIcon',
-    color: '#0ea5e9',
-    technicalDeepDive: ''
-  },
-  {
     name: 'Auth0',
     slug: 'auth0',
     category: 'Tools & Platforms',
@@ -840,8 +922,8 @@ Created a system that efficiently processes and integrates information from both
     projects: ['av-simulator', 'financial-modeling-tool'],
     icon: 'SiPandas',
     color: '#150458',
-    internships: 3,
-    internshipDetails: ['Pivotal Research Inc.', 'INTERA Incorporated (Data Engineering)', 'Momentum Technologies'],
+    internships: 4,
+    internshipDetails: ['INTERA Incorporated (Data Science)', 'Pivotal Research Inc.', 'INTERA Incorporated (Data Engineering)', 'Momentum Technologies'],
     jobs: 1,
     jobDetails: ['PitchFact'],
     technicalDeepDive: `**Core Concepts I'm Proficient In:**
@@ -889,12 +971,12 @@ Created a system that efficiently processes and integrates information from both
     category: 'Frameworks & Libraries',
     proficiency: 'Advanced',
     description: 'Fundamental package for scientific computing with Python. Used for Physics-Informed Neural Networks and numerical computations in ML and data analysis.',
-    experience: '3+ years',
+    experience: '4+ years',
     projects: ['av-simulator', 'financial-modeling-tool'],
     icon: 'SiNumpy',
     color: '#013243',
-    internships: 3,
-    internshipDetails: ['INTERA Incorporated (Data Science)', 'INTERA Incorporated (Data Engineering)', 'Momentum Technologies'],
+    internships: 4,
+    internshipDetails: ['INTERA Incorporated (Data Science)', 'Pivotal Research Inc.', 'INTERA Incorporated (Data Engineering)', 'Momentum Technologies'],
     technicalDeepDive: ''
   },
   {
@@ -903,24 +985,26 @@ Created a system that efficiently processes and integrates information from both
     category: 'Frameworks & Libraries',
     proficiency: 'Advanced',
     description: 'Primary plotting library for creating static, animated, and interactive visualizations in Python. Used for data visualization and analysis reporting.',
-    experience: '3+ years',
+    experience: '4+ years',
     projects: ['av-simulator'],
     icon: 'FcScatterPlot',
     color: '#1f77b4',
-    internships: 2,
-    internshipDetails: ['INTERA Incorporated (Data Science)', 'INTERA Incorporated (Data Engineering)'],
+    internships: 3,
+    internshipDetails: ['INTERA Incorporated (Data Science)', 'INTERA Incorporated (Data Engineering)', 'Momentum Technologies'],
     technicalDeepDive: ''
   },
   {
     name: 'Scikit-Learn',
     slug: 'scikit-learn',
     category: 'AI/ML',
-    proficiency: 'Advanced',
+    proficiency: 'Intermediate',
     description: 'Go-to library for machine learning in Python. Used for implementing various ML algorithms and model evaluation.',
     experience: '2+ years',
     projects: ['financial-modeling-tool'],
     icon: 'SiScikitlearn',
     color: '#f7931e',
+    internships: 1,
+    internshipDetails: ['Momentum Technologies'],
     technicalDeepDive: ''
   },
   {
@@ -961,6 +1045,8 @@ Created a system that efficiently processes and integrates information from both
     projects: ['av-simulator'],
     icon: 'IoBusiness',
     color: '#f2c800',
+    internships: 1,
+    internshipDetails: ['Pivotal Research Inc.'],
     technicalDeepDive: ''
   },
   {
@@ -991,18 +1077,6 @@ Created a system that efficiently processes and integrates information from both
   // Additional Libraries & Tools
 
   {
-    name: 'Radix UI',
-    slug: 'radix-ui',
-    category: 'Frameworks & Libraries',
-    proficiency: 'Intermediate',
-    description: 'Low-level UI primitives for building high-quality, accessible design systems and web apps.',
-    experience: '1+ years',
-    projects: ['exped-browser'],
-    icon: 'SiRadixui',
-    color: '#ffffff',
-    technicalDeepDive: ''
-  },
-  {
     name: 'Lucide React',
     slug: 'lucide-react',
     category: 'Frameworks & Libraries',
@@ -1014,18 +1088,7 @@ Created a system that efficiently processes and integrates information from both
     color: '#f56565',
     technicalDeepDive: ''
   },
-  {
-    name: 'yfinance',
-    slug: 'yfinance',
-    category: 'Frameworks & Libraries',
-    proficiency: 'Advanced',
-    description: 'Python library for downloading historical market data from Yahoo Finance. Essential for financial modeling projects.',
-    experience: '1+ years',
-    projects: ['financial-modeling-tool'],
-    icon: 'FaYahoo',
-    color: '#720e9e',
-    technicalDeepDive: ''
-  },
+
 
   // System Programming
   {
@@ -1056,9 +1119,9 @@ Created a system that efficiently processes and integrates information from both
     name: 'Linux',
     slug: 'linux',
     category: 'Tools & Platforms',
-    proficiency: 'Advanced',
+    proficiency: 'Intermediate',
     description: 'Unix-like operating system. Extensive experience with command-line tools, system administration, and development.',
-    experience: '4+ years',
+    experience: '1+ years',
     projects: ['client-server-system'],
     icon: 'SiLinux',
     color: '#fcc624',
@@ -1070,10 +1133,12 @@ Created a system that efficiently processes and integrates information from both
     category: 'Tools & Platforms',
     proficiency: 'Intermediate',
     description: 'Network programming using sockets for inter-process communication over networks.',
-    experience: '1+ years',
+    experience: '2+ years',
     projects: ['client-server-system'],
     icon: 'SiSocketdotio',
     color: '#61dafb',
+    researchRoles: 1,
+    researchDetails: ['TAMU x Soft Interaction Lab'],
     technicalDeepDive: ''
   },
 
@@ -1102,7 +1167,7 @@ Created a system that efficiently processes and integrates information from both
     category: 'AI/ML',
     proficiency: 'Advanced',
     description: 'Specialized in crafting effective prompts for AI systems. Featured work with educational GPT bots.',
-    experience: '1+ years',
+    experience: '2+ years',
     projects: ['class-primer'],
     icon: 'SiOpenai',
     color: '#9333ea',
@@ -1113,40 +1178,12 @@ Created a system that efficiently processes and integrates information from both
     technicalDeepDive: ''
   },
   {
-    name: 'GPT Agent Creation',
-    slug: 'gpt-agent-creation',
-    category: 'AI/ML',
-    proficiency: 'Advanced',
-    description: 'Expertise in building custom GPT agents for specific use cases. Featured work with educational technology applications.',
-    experience: '1+ years',
-    projects: ['class-primer'],
-    icon: 'SiOpenai',
-    color: '#10b981',
-    researchRoles: 1,
-    researchDetails: ['TAMU x Soft Interaction Lab'],
-    publications: 1,
-    publicationDetails: ['ChatGPT 4o Performance on Mechanical Engineering Concept Inventories'],
-    technicalDeepDive: ''
-  },
-  {
-    name: 'Educational Technology',
-    slug: 'educational-technology',
-    category: 'Tools & Platforms',
-    proficiency: 'Advanced',
-    description: 'Innovative application of technology in educational settings. Created tools that transform learning experiences.',
-    experience: '1+ years',
-    projects: ['class-primer'],
-    icon: 'IoBookOutline',
-    color: '#f59e0b',
-    technicalDeepDive: ''
-  },
-  {
     name: 'LLM APIs',
     slug: 'llm-apis',
     category: 'AI/ML',
     proficiency: 'Advanced',
     description: 'Large Language Model APIs including OpenAI, Hume.ai, and Anthropic AI SDK. Used for conversational AI development and LLM pipeline creation.',
-    experience: '1+ years',
+    experience: '2+ years',
     projects: ['class-primer'],
     icon: 'SiOpenai',
     color: '#412991',
@@ -1162,7 +1199,7 @@ Created a system that efficiently processes and integrates information from both
     category: 'Tools & Platforms',
     proficiency: 'Intermediate',
     description: 'PDF creation, manipulation, and processing using PyPDF2 and Ghostscript. Applied for automated document processing in startup evaluation pipelines.',
-    experience: '1+ years',
+    experience: '3+ years',
     projects: [],
     icon: 'SiAdobeacrobatreader',
     color: '#dc2626',

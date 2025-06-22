@@ -57,7 +57,7 @@ const projects: Project[] = [
     description: 'CARLA-based autonomous vehicle simulation with real-time object detection and advanced pathfinding algorithms.',
     longDescription: 'Developed autonomous vehicles in CARLA for vehicle navigation, sensor integration, and decision-making. Built comprehensive simulation environment integrating LiDAR and camera sensors for real-time object detection with machine learning models for navigation optimization.',
     image: '/images/projects/av_sim.png',
-    techs: ['CARLA', 'Python', 'PyTorch', 'TensorFlow', 'OpenCV', 'Tableau', 'Power BI', 'Excel', 'Pandas', 'NumPy', 'Matplotlib'],
+    techs: ['Python', 'PyTorch', 'TensorFlow', 'OpenCV', 'Tableau', 'Power BI', 'Excel', 'Pandas', 'NumPy', 'Matplotlib'],
     liveDemo: 'https://docs.google.com/presentation/d/1V2agrhnjItJWyib6dGJf8xYpDqPeRsu3l0NsSZdQheE/edit?usp=sharing',
     featured: true,
     date: 'August 2024 - December 2024',
@@ -92,7 +92,7 @@ const projects: Project[] = [
     description: 'Comprehensive stock price forecasting system using machine learning with 80%+ accuracy for major companies.',
     longDescription: 'This is a comprehensive stock price forecasting and analysis system that downloads historical stock data for major companies (including MSFT, AAPL, NVDA, GOOG, etc.) and uses multiple machine learning and statistical models to predict future stock prices across different time horizons (1 day to 1 year). The system includes data preprocessing, feature engineering, model training, performance evaluation, and an interactive web dashboard for visualization.',
     image: '/images/projects/financial_modeling.png',
-    techs: ['Python', 'Scikit-Learn', 'TensorFlow', 'Dash', 'Plotly', 'Pandas', 'NumPy', 'yfinance'],
+    techs: ['Python', 'Scikit-Learn', 'TensorFlow', 'Dash', 'Plotly', 'Pandas', 'NumPy'],
     github: 'https://github.com/SamiMelhem/FinancialModelingTool',
     date: 'June 2024 - August 2024',
     achievements: [
