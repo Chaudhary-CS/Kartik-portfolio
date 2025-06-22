@@ -129,7 +129,40 @@ Successfully architected full-stack applications using TypeScript as the foundat
     icon: 'SiCplusplus',
     color: '#00599c',
     teachingRoles: 1,
-    teachingDetails: ['CSCE 221 Teaching Assistant']
+    teachingDetails: ['CSCE 221 Teaching Assistant'],
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Data Structures & Algorithms Foundation**: Comprehensive understanding of implementing fundamental data structures from scratch including linked lists, trees, hash tables, and graphs, gained through rigorous academic study and reinforced through teaching experience
+- **STL Containers & Templates**: Proficient use of Standard Template Library containers (vector, list, map, set) and understanding of template programming for generic, reusable code components
+- **Pointers & References**: Solid grasp of pointer arithmetic, reference semantics, and the relationship between memory addresses and data access patterns
+- **Object-Oriented Programming**: Strong foundation in inheritance, polymorphism, and virtual functions, leveraging prior Java experience to understand C++'s OOP implementation
+- **Multi-Threading Concepts**: Understanding of concurrent programming principles and thread management for performance optimization in system applications
+- **System Programming**: Experience with low-level programming concepts including client-server architecture and inter-process communication
+
+**Advanced Development Patterns:**
+- **Performance-Critical Design**: Architecting C++ applications with emphasis on speed and efficiency, particularly in client-server communication scenarios
+- **Template-Based Programming**: Utilizing C++ templates for creating flexible, type-safe code that can work with multiple data types without performance penalties
+- **Academic Teaching Methodology**: Ability to break down complex C++ concepts into digestible parts for student comprehension, demonstrating deep understanding of language fundamentals
+- **System Architecture Understanding**: Knowledge of how client-server interactions work at the system level, including request-response cycles and server optimization
+- **Cross-Language Integration**: Leveraging experience from Java to understand C++'s approach to similar programming paradigms
+
+**Complex Problem-Solving Examples:**
+
+*Client-Server System Architecture:*
+Designed and implemented a comprehensive client-server system that handles real-time communication between client requests and server responses. The project required optimizing the interaction speed to ensure the server could process requests efficiently while maintaining system stability. This involved implementing proper error handling, managing concurrent connections, and ensuring that server-side processes remained responsive under load. The experience provided deep insights into system-level programming and the critical importance of performance optimization in networked applications.
+
+*Data Structures Implementation & Teaching:*
+As a CSCE 221 Teaching Assistant, mastered the implementation of fundamental data structures from scratch, including complex structures like balanced trees and hash tables. This required not only technical proficiency but also the ability to explain intricate concepts like pointer manipulation, memory allocation patterns, and algorithmic complexity to students. The teaching experience reinforced understanding of C++'s memory model and helped develop expertise in debugging and problem-solving techniques that are essential for system-level programming.
+
+*Multi-Threading Integration:*
+Explored multi-threading concepts within C++ applications, understanding how concurrent execution can dramatically improve performance in system applications. This knowledge forms the foundation for future implementation of parallel processing in more complex applications, demonstrating recognition of C++'s capability for high-performance computing applications.
+
+**Areas for Continued Growth:**
+- **Memory Management Mastery**: Refreshing and deepening expertise in dynamic memory allocation, RAII principles, and smart pointers for robust resource management
+- **Advanced Multi-Threading & Parallel Computing**: Expanding knowledge of parallel computing paradigms, thread synchronization, and concurrent data structures for high-performance applications
+- **Low-Level Programming Specialization**: Developing expertise in system-level programming to create optimized libraries and components for integration into larger projects
+- **Library Development**: Learning advanced C++ patterns and best practices for creating reusable libraries that can be published and utilized by the broader development community
+- **Performance Optimization Techniques**: Mastering profiling tools, optimization strategies, and advanced C++ features for creating incredibly fast applications
+- **Modern C++ Standards**: Exploring C++17/C++20+ features and modern C++ development practices for contemporary application development`
   },
   {
     name: 'JavaScript',
@@ -179,11 +212,50 @@ Successfully integrated multiple browser APIs including fetch for HTTP requests,
     slug: 'html-css',
     category: 'Programming Languages',
     proficiency: 'Advanced',
-    description: 'Core web technologies used in frontend development across multiple projects and research applications.',
+    description: 'Foundation web technologies with emphasis on modern layout systems, animations, and dynamic theming. Specialized in CSS Grid layouts, utility-first styling with Tailwind CSS, and creating engaging user experiences through smooth animations and transitions.',
     experience: '4+ years',
     projects: ['save-gas', 'exped-browser', 'panda-express-pos'],
     icon: 'SiHtml5',
-    color: '#e34f26'
+    color: '#e34f26',
+    researchRoles: 1,
+    researchDetails: ['TAMU x Soft Interaction Lab'],
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **HTML5 Semantic Structure**: Proficient use of semantic elements including header, nav, and main for proper document structure and improved accessibility
+- **CSS Grid Mastery**: Strong preference and expertise in CSS Grid for complex layout designs, choosing Grid over Flexbox for most layout scenarios
+- **Interactive HTML Elements**: Experience creating buttons, forms, and interactive components with proper HTML structure and functionality
+- **Utility-First CSS Architecture**: Extensive experience with Tailwind CSS for rapid styling and consistent design systems across applications
+- **Animation & Transitions**: Advanced knowledge of CSS animations, transitions, and transforms to enhance user experience across all projects
+- **Dynamic Theming Systems**: Expert-level implementation of theme switching functionality through API routes and CSS variable management
+- **Cross-Platform Consistency**: Experience ensuring HTML/CSS compatibility across different browsers and platforms, particularly in research applications
+
+**Advanced Development Patterns:**
+- **Modern Layout Design**: Strategic use of CSS Grid for complex, responsive layouts while maintaining clean, maintainable code
+- **Component-Based Styling**: Integration of HTML/CSS with TypeScript and React components for cohesive full-stack development
+- **Theme Architecture**: Sophisticated theme switching systems that dynamically modify CSS variables and styling based on user preferences or external triggers
+- **Animation-Enhanced UX**: Consistent implementation of smooth animations and transitions to improve user engagement and application feel
+- **Research Application Development**: Experience building accessible, cross-platform web interfaces for academic research applications
+- **Utility-First Organization**: Strategic CSS organization using utility-first approaches and modular file structures for maintainable codebases
+
+**Complex Problem-Solving Examples:**
+
+*Portfolio Animation & Layout System:*
+Architected the comprehensive layout and animation system for this portfolio website using advanced CSS Grid layouts and Tailwind CSS utilities. The challenge involved creating a cohesive visual experience with smooth transitions between pages while maintaining responsive design across all devices. Implemented sophisticated animation sequences that enhance user engagement without compromising performance, demonstrating mastery of CSS transforms, transitions, and modern layout techniques.
+
+*Dynamic Theme Switching Architecture:*
+Developed robust theme switching functionality across multiple applications, creating systems that can rapidly transition between light/dark themes or custom color schemes. This involved designing CSS variable architectures that work seamlessly with API routes and JavaScript triggers, enabling real-time theme changes that affect every component consistently. The implementation required deep understanding of CSS custom properties, scope management, and integration with modern JavaScript frameworks.
+
+*Cross-Platform Research Interface:*
+At TAMU x Soft Interaction Lab, worked on improving HTML/CSS implementations for research applications that needed to function consistently across different browsers and platforms. This required addressing browser compatibility issues, ensuring accessibility standards, and creating interfaces that would work reliably in academic research environments. The experience provided valuable insights into cross-platform web development challenges and solutions.
+
+*Engaging User Experience Design:*
+Consistently implemented CSS animations, transitions, and transforms across all projects to create more engaging user experiences. This involved strategic use of hover effects, loading animations, and interactive feedback that makes applications feel responsive and professional while maintaining performance standards.
+
+**Areas for Continued Growth:**
+- **Performance Optimization**: Learning advanced CSS optimization techniques, bundle size reduction strategies, and performance monitoring for faster load times
+- **Advanced Accessibility**: Deepening knowledge of WCAG guidelines and accessibility best practices beyond basic semantic HTML structure
+- **CSS Architecture Patterns**: Exploring methodologies like BEM, CSS-in-JS, and advanced CSS organization strategies for larger-scale applications
+- **Modern CSS Features**: Mastering CSS custom properties, container queries, and cutting-edge CSS features for more sophisticated styling capabilities
+- **Advanced Animation Techniques**: Learning complex CSS animations, keyframe optimization, and performance-conscious animation strategies for professional-grade user experiences`
   },
 
   // Frameworks & Libraries
@@ -276,7 +348,39 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '3+ years',
     projects: ['save-gas', 'exped-browser', 'panda-express-pos'],
     icon: 'SiNodedotjs',
-    color: '#339933'
+    color: '#339933',
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Asynchronous Programming**: Extensive use of async/await patterns for handling non-blocking operations and managing asynchronous workflows in backend services
+- **RESTful API Development**: Building comprehensive routing systems with proper HTTP methods, status codes, and response handling for scalable web applications
+- **Express.js Integration**: Leveraging Express.js framework for robust server-side logic, middleware implementation, and efficient request handling
+- **Backend Data Organization**: Structuring and organizing large datasets for different routing purposes, ensuring proper data flow across application endpoints
+- **External API Integration**: Successfully integrating third-party APIs and services into Node.js applications for enhanced functionality
+- **AWS Server Integration**: Implementing cloud-based database connections and ensuring real-time data processing and synchronization
+
+**Advanced Development Patterns:**
+- **Route-Based Architecture**: Designing modular routing systems that separate concerns and maintain clean code organization across different application sections
+- **Middleware Implementation**: Strategic use of middleware for authentication, logging, error handling, and request processing throughout the application pipeline
+- **Real-Time Data Processing**: Ensuring up-to-date data synchronization between frontend applications and cloud-based backend systems
+- **Full-Stack Integration**: Seamless integration of Node.js backend services with TypeScript/Next.js/React frontend applications for cohesive development workflows
+- **API Endpoint Design**: Creating well-structured API endpoints that serve different functionalities while maintaining consistent response patterns
+
+**Complex Problem-Solving Examples:**
+
+*Weather-Based Dynamic Theming System:*
+Implemented a sophisticated weather API integration in the Panda Express POS System that dynamically changes the application's theme based on real-time weather conditions and time of day. The Node.js backend handles API calls to weather services, processes the data to determine if the sun is in the sky, and communicates this information to the frontend for theme switching. This required careful handling of asynchronous API calls, data processing, and real-time updates to ensure the theme changes reflect current conditions accurately and responsively.
+
+*Scalable POS System Architecture:*
+Designed and built the backend infrastructure for the Panda Express POS System, creating multiple routes to handle different system functionalities including order processing, inventory management, and user authentication. The Node.js server manages complex data flows between the frontend interface and AWS cloud services, ensuring that all transactions are processed correctly and data remains synchronized across the system. This implementation required careful route organization and error handling to maintain system reliability during high-traffic periods.
+
+*Multi-Service API Coordination:*
+Successfully coordinated multiple external services and APIs within Node.js applications, managing asynchronous calls and data processing across different service endpoints. This involved implementing proper error handling, request timeout management, and data transformation to ensure reliable communication between various system components.
+
+**Areas for Continued Growth:**
+- **Performance Optimization**: Learning advanced Node.js performance tuning techniques, memory management, and optimization strategies for high-traffic applications
+- **Clustering & Load Balancing**: Exploring Node.js clustering capabilities, load balancing strategies, and horizontal scaling techniques for enterprise-level applications
+- **Microservices Architecture**: Deepening understanding of microservices design patterns, service discovery, and distributed system architecture both within Node.js and across different technologies
+- **Advanced Error Handling**: Moving beyond console logging to implement comprehensive error handling, structured logging systems, and application monitoring solutions
+- **Database Connection Optimization**: Learning advanced database connection pooling, query optimization, and database performance tuning strategies for scalable applications`
   },
   {
     name: 'Tailwind CSS',
@@ -287,7 +391,44 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '2+ years',
     projects: ['save-gas', 'exped-browser', 'panda-express-pos'],
     icon: 'SiTailwindcss',
-    color: '#06b6d4'
+    color: '#06b6d4',
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Utility-First Design Philosophy**: Strategic approach to frontend design that prioritizes functionality and style efficiency over perfectionist design iteration
+- **Core Utility Mastery**: Extensive use of spacing, CSS Grid, color systems, and Flexbox utilities across all applications for comprehensive layout control
+- **Responsive Design Excellence**: Creating user experiences that amaze visitors while maintaining clarity and ease of use through thoughtful responsive design patterns
+- **Component-Utility Integration**: Seamless combination of reusable components with Tailwind utilities to create both stylish and highly functional applications
+- **Strategic Feature Implementation**: Deliberate decision-making about when to implement features like dark mode based on actual user needs rather than adding unnecessary complexity
+- **Icon Integration**: Expert-level incorporation of icons within Tailwind-styled components for enhanced visual communication and user interface design
+- **Color Palette Strategy**: Systematic approach to color selection and implementation that serves the specific purpose and user goals of each application
+
+**Advanced Development Patterns:**
+- **User-Centric Design Approach**: Focusing design decisions on what users actually want and need from applications rather than implementing features for the sake of completeness
+- **Purpose-Driven Styling**: Careful style design that directly serves the website's core purpose and user objectives, ensuring every design choice has strategic value
+- **Professional Presentation Standards**: Understanding that experienced developers and recruiters notice unnecessary features, leading to refined and purposeful design decisions
+- **Functional Aesthetics**: Balancing stylish visual design with practical functionality to create applications that are both beautiful and highly usable
+- **Consistency Through Strategy**: Maintaining design consistency by establishing clear color palettes and user-focused design principles that guide all styling decisions
+- **Component Architecture**: Building reusable, styled components that leverage Tailwind's utility system for maximum efficiency and maintainability
+
+**Complex Problem-Solving Examples:**
+
+*Strategic Portfolio Design Decisions:*
+Made deliberate choices in this portfolio website to exclude certain features like light/dark theme switching, recognizing that experienced developers and recruiters would notice unnecessary complexity. This demonstrates advanced understanding of when features add value versus when they detract from the core purpose. The decision prioritizes showcasing technical skills and professional presentation over feature completeness, showing sophisticated judgment about user experience and professional presentation.
+
+*User-Amazement Through Functional Design:*
+Developed responsive design strategies that consistently create "wow" moments for users while maintaining crystal-clear usability and purpose. This involves careful balance of visual impact with functional clarity, using Tailwind's utility system to create designs that are both visually striking and immediately understandable to users across all device types.
+
+*Color Palette and Consistency Architecture:*
+Implemented systematic color palette strategies across multiple projects, ensuring that all design elements work together cohesively to serve the application's purpose. This approach allows "everything else to fall into place" once the foundational color strategy and user-focused design principles are established, demonstrating efficient design workflow and strategic thinking.
+
+*Component-Utility Optimization:*
+Successfully combined reusable component architecture with Tailwind's utility-first approach to create applications that are both maintainable and visually impressive. This hybrid approach leverages the best of both component-based development and utility-first styling for maximum development efficiency.
+
+**Areas for Continued Growth:**
+- **Production Optimization**: Learning advanced Tailwind optimization techniques, purging strategies, and production build optimization for shipping polished, performant applications
+- **Advanced Customization**: Exploring Tailwind configuration customization, custom utility creation, and extending the framework for specialized use cases
+- **Performance Monitoring**: Understanding how to measure and optimize Tailwind's impact on application performance and load times
+- **Advanced Animation Techniques**: Mastering Tailwind's animation utilities and custom animation implementations for more sophisticated user interactions
+- **Enterprise-Scale Architecture**: Learning patterns for maintaining consistency and efficiency in large-scale applications with multiple developers and complex design systems`
   },
   {
     name: 'TensorFlow',
@@ -298,7 +439,44 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '3+ years',
     projects: ['av-simulator', 'financial-modeling-tool'],
     icon: 'SiTensorflow',
-    color: '#ff6f00'
+    color: '#ff6f00',
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Practical Model Architecture Design**: Strategic approach to ML model selection that prioritizes simplicity and effectiveness, choosing between simple models like Linear Regression/Random Forest versus complex neural networks based on problem requirements
+- **Neural Network Implementation**: Advanced use of tf.nn for building custom neural network architectures and Keras for rapid prototyping and chatbot development
+- **Computer Vision for Autonomous Systems**: Extensive experience with CNNs and RNNs for processing LiDAR and camera data in autonomous vehicle applications
+- **Object Detection & Image Classification**: Implementation of sophisticated vision systems for real-time object recognition and classification in safety-critical autonomous vehicle scenarios
+- **Reinforcement Learning Integration**: Design and implementation of RL components with reward systems for decision-making in complex autonomous driving scenarios
+- **Transfer Learning & Fine-Tuning**: Strategic use of pre-trained models with custom fine-tuning for specialized computer vision tasks in autonomous vehicle environments
+- **Data Preprocessing Leadership**: Leading data preprocessing and feature engineering initiatives to ensure optimal data quality for machine learning model performance
+
+**Advanced Development Patterns:**
+- **Multi-Modal Sensor Integration**: Combining TensorFlow models with OpenCV methods for processing diverse sensor inputs (LiDAR, cameras) in real-time autonomous vehicle applications
+- **Safety-Critical ML Systems**: Developing machine learning models that handle life-critical decisions including stopping, lane switching, and speed control in autonomous vehicles
+- **Custom Data Pipeline Architecture**: Building proprietary data processing pipelines tailored to specific project requirements rather than relying solely on pre-built solutions
+- **Model Performance Optimization**: Creative design approaches for optimizing machine learning models to process complex visual data and make rapid backend decisions
+- **Financial Data Modeling**: Applying TensorFlow expertise to financial time series analysis and prediction models with proper training and deployment validation
+- **End-to-End ML Workflow**: Managing complete machine learning workflows from data preprocessing through model training to performance evaluation
+
+**Complex Problem-Solving Examples:**
+
+*Autonomous Vehicle Computer Vision System:*
+Led the development of a comprehensive computer vision system for autonomous vehicles that processes LiDAR and camera data in real-time to make safety-critical driving decisions. The challenge involved integrating CNNs and RNNs with OpenCV methods to create a system capable of object detection, image classification, and scenario analysis. Successfully implemented models that enable autonomous vehicles to make appropriate decisions for stopping, lane switching, and speed control while ensuring passenger safety across diverse driving scenarios. This required creative optimization of machine learning models to handle the computational demands of real-time processing while maintaining accuracy in safety-critical situations.
+
+*Reinforcement Learning Reward System Design:*
+Architected and implemented RL components that reward correct actions in various autonomous driving situations, creating a learning system that continuously improves decision-making capabilities. The solution involved designing reward functions that could evaluate complex scenarios and provide appropriate feedback for actions like safe lane changes, proper following distances, and emergency braking responses. This required deep understanding of both RL algorithms and real-world driving dynamics.
+
+*Data Preprocessing and Feature Engineering Leadership:*
+Took leadership role in designing data preprocessing and feature engineering pipelines that ensure optimal data quality for machine learning models. This involved creating custom data transformation workflows that could handle the complexity and variety of sensor data from autonomous vehicles, including temporal alignment of different sensor inputs, noise reduction, and feature extraction that maximizes model performance while maintaining real-time processing capabilities.
+
+*Financial Modeling Application:*
+Applied TensorFlow expertise to financial data modeling, creating predictive models for financial analysis and forecasting. This involved adapting computer vision and time series modeling techniques to financial data, implementing proper training procedures, and validating model performance against real-world financial scenarios to ensure practical applicability.
+
+**Areas for Continued Growth:**
+- **TensorFlow Data Pipeline Optimization**: Learning tf.data and other TensorFlow-native data pipeline tools to improve efficiency and reduce custom pipeline development time
+- **Production Deployment Mastery**: Developing expertise in deploying TensorFlow models to production-ready applications with proper scaling, monitoring, and maintenance
+- **Advanced Distributed Training**: Exploring distributed training techniques and GPU optimization for larger-scale machine learning applications
+- **Model Optimization Techniques**: Learning advanced model compression, quantization, and optimization strategies for deployment in resource-constrained environments like autonomous vehicle systems
+- **MLOps Integration**: Implementing comprehensive MLOps practices for model versioning, experiment tracking, and automated deployment pipelines`
   },
   {
     name: 'PyTorch',
@@ -311,7 +489,44 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     icon: 'SiPytorch',
     color: '#ee4c2c',
     internships: 1,
-    internshipDetails: ['Momentum Technologies']
+    internshipDetails: ['Momentum Technologies'],
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Production-Focused Neural Networks**: Extensive use of torch.nn for building ML models to optimize chemical processes, product production, and staff allocation with emphasis on practical deployment
+- **Physics-Informed Neural Networks (PINNs)**: Advanced implementation of PINNs incorporating Physics loss and Mass Balance loss for chemical process optimization and metal precipitation retention prediction
+- **Pragmatic Model Development Philosophy**: Strategic three-phase approach: build simplest working model → make it right for the situation → make it fast and production ready
+- **Chemical Process Optimization**: Specialized application of PyTorch for optimizing chemical processes to increase product yield and improve process evaluation for staff allocation efficiency
+- **Computer Vision Integration**: Implementation of CNNs for object detection in autonomous vehicle applications, seamlessly integrating with broader system architecture
+- **Optimal Training Workflows**: Strategic dataset splitting (60% training, 20% evaluation, 20% testing) for maximum model validation effectiveness
+- **Research & Development Integration**: Using R&D methodologies to create production-ready PINNs for real-world chemical process optimization
+
+**Advanced Development Patterns:**
+- **Constraint-Based Neural Networks**: Sophisticated implementation of physics constraints in neural network architectures, ensuring models respect fundamental physical laws while optimizing for practical outcomes
+- **Multi-Loss Function Architecture**: Advanced loss function design combining Physics loss and Mass Balance loss to create models that understand and respect chemical process constraints
+- **Production-First Framework Choice**: Strategic selection of PyTorch over TensorFlow for application-focused development, leveraging PyTorch's superior production deployment capabilities
+- **Simplicity-Driven Model Design**: Intentional focus on building simple, effective models rather than complex architectures, recognizing that most industrial problems require straightforward ML solutions
+- **Pre-Built Model Optimization**: Strategic use of PyTorch's pre-built models and workable layers to eliminate guesswork and accelerate development cycles
+- **Industry-Specific Adaptation**: Tailoring neural network architectures specifically for chemical engineering applications and process optimization challenges
+
+**Complex Problem-Solving Examples:**
+
+*Chemical Process Optimization with PINNs:*
+Developed sophisticated Physics-Informed Neural Networks at Momentum Technologies that optimize chemical processes for maximum product yield and efficiency. The challenge involved incorporating fundamental physics constraints (Physics loss) and chemical engineering principles (Mass Balance loss) into neural network architectures to predict metal precipitation retention percentages. Successfully implemented models that respect chemical process limitations while optimizing for practical industrial outcomes, demonstrating deep understanding of both machine learning and chemical engineering principles.
+
+*Production-Ready Model Development Workflow:*
+Established a systematic three-phase development process that consistently delivers production-ready models: first building the simplest working solution, then adapting it to specific situational requirements, and finally optimizing for speed and production deployment. This methodology has proven effective across multiple chemical process optimization projects, ensuring rapid iteration while maintaining industrial-grade reliability and performance standards.
+
+*Staff Allocation and Process Evaluation Optimization:*
+Created ML models that optimize staff allocation and reduce work time while maintaining accuracy in chemical process evaluation. This involved understanding complex workforce dynamics, process timing constraints, and quality requirements to develop models that improve both efficiency and effectiveness in industrial chemical production environments.
+
+*Autonomous Vehicle Computer Vision Integration:*
+Successfully implemented CNN architectures for object detection in autonomous vehicle simulation projects, demonstrating ability to apply PyTorch across diverse domains beyond chemical engineering. The models integrated seamlessly with broader autonomous vehicle systems while maintaining real-time performance requirements.
+
+**Areas for Continued Growth:**
+- **GPU Optimization Mastery**: Learning advanced GPU optimization techniques and distributed training strategies for handling large-scale datasets in chemical process modeling
+- **Distributed Training Architecture**: Developing expertise in PyTorch's distributed training capabilities for scaling machine learning models across multiple processing units
+- **Advanced Model Optimization**: Exploring cutting-edge optimization techniques to maximize model performance in resource-intensive chemical process applications
+- **Scalable Production Deployment**: Mastering enterprise-scale deployment strategies for PyTorch models in industrial chemical production environments
+- **Advanced Physics Integration**: Deepening expertise in incorporating complex physics constraints and chemical engineering principles into neural network architectures`
   },
   {
     name: 'Electron',
@@ -322,7 +537,44 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '1+ years',
     projects: ['exped-browser'],
     icon: 'SiElectron',
-    color: '#47848f'
+    color: '#47848f',
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **BrowserWindow API Mastery**: Extensive use of Electron's BrowserWindow API for creating robust desktop applications with proper window management and cross-platform functionality
+- **Cross-Platform Desktop Development**: Expert-level implementation of desktop applications that work seamlessly across Windows, Apple, and Linux devices with consistent user experience
+- **WebView Component Security**: Strategic implementation of WebView components for secure browser functionality, ensuring user data protection and safe web browsing within desktop applications
+- **OS-Specific Functionality**: Understanding of platform-specific libraries and components that allow customized behavior and appearance based on the user's operating system
+- **Desktop-First Design Philosophy**: Strategic approach to desktop application development that prioritizes downloadable applications over web-based access for enhanced user convenience
+- **React-TypeScript-Electron Integration**: Seamless integration of React and TypeScript workflows with Electron for building sophisticated, type-safe desktop applications
+- **Responsive Desktop UI**: Advanced techniques for creating desktop interfaces that scale properly across different screen sizes and device configurations
+
+**Advanced Development Patterns:**
+- **System Design Decision-Making**: Sophisticated approach to architectural choices in desktop application development, balancing functionality with user experience and technical feasibility
+- **Cross-Device Compatibility**: Strategic use of Electron's cross-platform capabilities combined with OS-specific libraries to create applications that feel native on each operating system
+- **Build Process Optimization**: Integration of Vite for streamlined packaging and distribution workflows, eliminating manual packaging complexity
+- **Scalable Component Architecture**: Design patterns for WebView components that can dynamically adjust to different screen sizes and user preferences without breaking functionality
+- **Long-Term Usability Focus**: Design decisions that prioritize sustained user engagement and application longevity over short-term feature completeness
+- **Security-Conscious Development**: Implementation of security measures through component-level protections, particularly in browser-based desktop applications
+
+**Complex Problem-Solving Examples:**
+
+*Cross-Platform Browser Architecture:*
+Architected and built the Exped Browser as a comprehensive cross-platform desktop application that provides users with a downloadable alternative to web-based access. The challenge involved learning desktop application development from the ground up while making critical system design choices about architecture, security, and user experience. Successfully implemented BrowserWindow API integration with React and TypeScript to create a smooth, professional desktop browsing experience that maintains functionality across Windows, Apple, and Linux platforms.
+
+*Scalable WebView Component Implementation:*
+Developed sophisticated WebView component functionality that dynamically scales based on user screen size preferences and device configurations. This required deep understanding of Electron's rendering processes and careful consideration of how desktop applications behave differently from web applications. The solution ensures users can expand their screen size or modify window dimensions without experiencing functionality issues or visual breaking points.
+
+*GitHub-to-Desktop Distribution Strategy:*
+Created a deployment strategy that enables 10,000+ users to clone the application from GitHub and successfully build their own desktop versions. This approach required careful consideration of build processes, dependency management, and cross-platform compatibility to ensure that users across different operating systems could reliably create working desktop applications from the source code.
+
+*Comprehensive Desktop Application Learning:*
+Overcame the significant learning curve of desktop application development while simultaneously adapting web development skills to desktop contexts. This involved understanding the fundamental differences between web and desktop application architecture, mastering Electron-specific APIs, and making strategic decisions about when to implement desktop-specific features versus maintaining web-like functionality.
+
+**Areas for Continued Growth:**
+- **Memory Management & Performance Optimization**: Learning advanced Electron memory management techniques, performance profiling, and optimization strategies for resource-intensive desktop applications
+- **Advanced Security Implementation**: Deepening expertise in Electron's security model, implementing comprehensive security measures beyond component-level protections
+- **Tauri Framework Exploration**: Investigating Tauri as a modern alternative to Electron for future projects, understanding the performance and security advantages of Rust-based desktop application development
+- **Native Module Integration**: Learning to integrate native system APIs and modules for enhanced desktop functionality and system-level integrations
+- **Enterprise Deployment Strategies**: Mastering advanced packaging, distribution, and auto-update mechanisms for professional desktop application deployment`
   },
   {
     name: 'Express.js',
@@ -333,7 +585,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '2+ years',
     projects: ['panda-express-pos'],
     icon: 'SiExpress',
-    color: '#ffffff'
+    color: '#ffffff',
+    technicalDeepDive: ''
   },
   {
     name: 'Flask',
@@ -345,8 +598,47 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     projects: [],
     icon: 'SiFlask',
     color: '#000000',
+    internships: 2,
+    internshipDetails: ['INTERA Incorporated (Data Science)', 'INTERA Incorporated (Data Engineering)'],
     researchRoles: 1,
-    researchDetails: ['TAMU x Soft Interaction Lab']
+    researchDetails: ['TAMU x Soft Interaction Lab'],
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Backend Debugging & Development**: Expert use of Flask app routing and templates with emphasis on comprehensive backend debugging through object dictionary returns for full situational analysis
+- **Multi-User Application Architecture**: Advanced implementation of caching systems enabling multiple developers and users to work simultaneously on the same Flask application for enhanced development and production performance
+- **Research & Medical Simulation Tools**: Specialized development of simulation applications for medical school departments, focusing on functional utility over aesthetic design for specialized institutional needs
+- **Data Processing Applications**: Extensive experience building Flask applications for data organization, elimination, and output processing, particularly in environmental and research contexts
+- **Authentication & Security Integration**: Strategic use of Firebase for user authentication combined with Werkzeug for data security in sensitive medical and research applications
+- **Database Integration**: Practical integration of Flask with SQLAlchemy for local data collection and management, ensuring accurate information gathering and processing
+- **Web Scraping Integration**: Advanced combination of Flask with Selenium for automated web scraping applications in data collection workflows
+
+**Advanced Development Patterns:**
+- **Debugging-First Development**: Strategic approach to Flask development that prioritizes comprehensive debugging capabilities through detailed object exposure and systematic backend monitoring
+- **Collaborative Development Architecture**: Implementation of caching systems and multi-user support that enables effective team development and concurrent user access without performance degradation
+- **Function-Over-Form Philosophy**: Practical development approach that prioritizes application functionality and institutional utility over visual design, particularly for specialized research and medical tools
+- **Integrated Technology Stack**: Seamless integration of Flask with complementary technologies (Firebase, Werkzeug, SQLAlchemy, Selenium) for comprehensive application solutions
+- **Research-Focused Application Design**: Development of specialized tools tailored to academic and medical research needs, with emphasis on practical utility for institutional decision-making
+- **Data-Centric Backend Services**: Flask application architecture optimized for data processing workflows, including organization, filtering, and output generation for research and environmental applications
+
+**Complex Problem-Solving Examples:**
+
+*Court Simulation System for Medical Training:*
+Developed a comprehensive Court Simulation application using Flask that serves the medical school department's training and assessment needs. The challenge involved creating a multi-user system with robust caching architecture that allows numerous developers and users to access the application simultaneously without performance degradation. The solution prioritized functional effectiveness over visual aesthetics, recognizing that the tool's value lies in its ability to help the department understand specific situational requirements for medical training scenarios. This project demonstrated expertise in designing Flask applications for specialized institutional needs.
+
+*Multi-Developer Collaborative Environment:*
+Architected a Flask application with advanced caching systems that enable multiple developers to work on the same codebase simultaneously while maintaining application performance in both development and production environments. This required deep understanding of Flask's architecture and strategic implementation of caching mechanisms to prevent conflicts and ensure smooth collaborative development workflows.
+
+*Environmental Data Processing Applications at INTERA:*
+Built comprehensive data processing applications during internships that handle data organization, elimination, and output generation for environmental consulting projects. These Flask applications served as critical debugging tools, allowing for systematic analysis of data processing workflows and ensuring accuracy in environmental impact assessments. The applications integrated SQLAlchemy for local data management, providing reliable data collection and verification capabilities.
+
+*Web Scraping Automation System:*
+Developed an integrated Flask and Selenium application for automated web scraping during the first INTERA internship. This system combined Flask's web framework capabilities with Selenium's automation features to create efficient data collection workflows for environmental data gathering, demonstrating ability to integrate multiple technologies for comprehensive solutions.
+
+**Areas for Continued Growth:**
+- **Python Web Framework Exploration**: Expanding expertise beyond Flask to explore FastAPI, Django, and other Python web frameworks for broader application development capabilities
+- **Advanced Caching Strategies**: Deepening knowledge of caching architectures and performance optimization techniques for large-scale collaborative applications
+- **Production Deployment Optimization**: Learning advanced deployment strategies and production-ready Flask configurations for enterprise-scale applications
+- **API Development Mastery**: Developing expertise in REST API design and implementation using Flask for modern web service architectures
+- **Security Enhancement**: Advancing knowledge of Flask security best practices and implementation of comprehensive security measures for sensitive applications`
   },
   {
     name: 'FastAPI',
@@ -359,12 +651,50 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     icon: 'SiFastapi',
     color: '#009688',
     jobs: 1,
-    jobDetails: ['PitchFact']
+    jobDetails: ['PitchFact'],
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **LLM Pipeline Architecture**: Expert development of high-performance LLM pipelines processing 500+ PDFs weekly for startup evaluation systems, with emphasis on speed and reliability
+- **Local Storage & Performance Optimization**: Strategic use of FastAPI for local storage solutions that enable rapid processing, achieving under 1-minute processing time per PDF upload
+- **Startup Evaluation Systems**: Specialized implementation of FastAPI applications for storing and processing startup information from both public and private sources
+- **PDF Processing Integration**: Advanced integration of PDF handling workflows using GhostScript for PDF flattening and structured output generation for form completion
+- **TypeScript Application Integration**: Seamless integration between FastAPI backend services and TypeScript applications for comprehensive startup evaluation workflows
+- **Prompt Engineering Integration**: Strategic implementation of Claude LLM integration with optimized prompt engineering to ensure accurate information extraction from input documents
+- **Structured Output Generation**: Expert design of structured data outputs that enable easy form completion while providing clear visibility into model-generated content and attribute changes
+
+**Advanced Development Patterns:**
+- **High-Volume Document Processing**: Architecture designed to handle 100+ PDFs per day per employee through optimized pipeline workflows and efficient resource management
+- **Multi-Source Data Integration**: Strategic processing of information from both public and private sources to create comprehensive startup evaluation reports
+- **Pipeline Transparency & Monitoring**: Implementation of clear attribute change tracking throughout the entire LLM pipeline, providing visibility into each processing step
+- **WebView Component Integration**: Advanced integration of WebView components within TypeScript applications for seamless PDF downloading and user interaction
+- **Internal Deployment Architecture**: Strategic use of Uvicorn server for internal employee deployment, focusing on functionality over complex external deployment configurations
+- **Speed-Optimized Framework Selection**: Strategic choice of FastAPI over Flask for superior performance in local storage solutions and rapid LLM pipeline execution
+- **Employee Productivity Focus**: System design prioritized around enabling employee efficiency, with workflows optimized for rapid startup evaluation and meeting preparation
+
+**Complex Problem-Solving Examples:**
+
+*High-Performance LLM Pipeline for Startup Evaluation:*
+Architected and built a comprehensive LLM pipeline system at PitchFact that processes 500+ PDFs weekly for startup evaluation purposes. The challenge involved creating a system that could store PDF documents, extract relevant information using Claude LLM integration, and fill out evaluation forms with structured outputs. Successfully implemented FastAPI architecture that references local storage for each company, enabling the TypeScript application to efficiently process information from multiple sources and generate resulting PDFs with clear documentation of the LLM's processing steps and attribute changes throughout the pipeline.
+
+*Sub-Minute PDF Processing Optimization:*
+Developed performance optimizations that enable employees to process approximately 100 PDFs per day, with each file taking less than one minute to complete the entire pipeline. This required strategic specification of document requirements, advanced prompt engineering to ensure Claude LLM provided accurate extractions from input documents, and creation of structured output formats that facilitate easy form completion while maintaining transparency about model-generated content.
+
+*GhostScript and WebView Integration Solution:*
+Implemented a comprehensive solution using GhostScript for PDF flattening and WebView components for seamless PDF downloading within the TypeScript application. This integration solved the challenge of processing complex PDF documents while providing users with an intuitive interface for accessing completed evaluation reports, demonstrating ability to integrate multiple technologies for cohesive workflow solutions.
+
+*Multi-Source Information Processing System:*
+Created a system that efficiently processes and integrates information from both public and private sources to generate comprehensive startup evaluation reports. The FastAPI architecture enables employees to quickly access processed information and set up meetings with startups, demonstrating understanding of business workflow requirements and technical implementation of information aggregation systems.
+
+**Areas for Continued Growth:**
+- **FastAPI Feature Exploration**: Learning advanced FastAPI features including automatic documentation generation (Swagger/OpenAPI), dependency injection, and advanced path operations for more sophisticated API development
+- **Production Deployment Mastery**: Expanding knowledge of Uvicorn server optimization and production-ready deployment configurations beyond internal employee usage
+- **Advanced Async Operations**: Developing expertise in FastAPI's asynchronous capabilities and concurrent processing for even higher-performance document processing workflows
+- **API Architecture Patterns**: Learning advanced API design patterns, middleware implementation, and scalable architecture strategies for enterprise-level FastAPI applications
+- **Data Processing Integration**: Exploring deeper integration possibilities between FastAPI and data processing libraries for more sophisticated analytics and reporting capabilities`
   },
   {
     name: 'SQLAlchemy',
     slug: 'sqlalchemy',
-    category: 'Frameworks & Libraries',
+    category: 'Databases',
     proficiency: 'Intermediate',
     description: 'Python SQL toolkit and ORM used for database interactions, data modeling, and handling large-scale transaction processing.',
     experience: '2+ years',
@@ -374,7 +704,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     internships: 1,
     internshipDetails: ['Pivotal Research Inc.'],
     researchRoles: 1,
-    researchDetails: ['TAMU x Soft Interaction Lab']
+    researchDetails: ['TAMU x Soft Interaction Lab'],
+    technicalDeepDive: ''
   },
   {
     name: 'Selenium',
@@ -386,8 +717,9 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     projects: [],
     icon: 'SiSelenium',
     color: '#43b02a',
-    internships: 1,
-    internshipDetails: ['INTERA Incorporated (Data Science)']
+    internships: 2,
+    internshipDetails: ['INTERA Incorporated (Data Science)', 'INTERA Incorporated (Data Engineering)'],
+    technicalDeepDive: ''
   },
 
   // Databases
@@ -400,7 +732,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '3+ years',
     projects: ['panda-express-pos'],
     icon: 'SiPostgresql',
-    color: '#336791'
+    color: '#336791',
+    technicalDeepDive: ''
   },
   {
     name: 'MySQL',
@@ -413,7 +746,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     icon: 'SiMysql',
     color: '#4479a1',
     internships: 2,
-    internshipDetails: ['INTERA Incorporated (Data Science)', 'INTERA Incorporated (Data Engineering)']
+    internshipDetails: ['INTERA Incorporated (Data Science)', 'INTERA Incorporated (Data Engineering)'],
+    technicalDeepDive: ''
   },
 
   // Cloud & DevOps
@@ -426,7 +760,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '2+ years',
     projects: ['save-gas'],
     icon: 'SiVercel',
-    color: '#ffffff'
+    color: '#ffffff',
+    technicalDeepDive: ''
   },
   {
     name: 'Convex',
@@ -437,7 +772,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '1+ years',
     projects: ['save-gas'],
     icon: 'ConvexIcon',
-    color: '#f59e0b'
+    color: '#f59e0b',
+    technicalDeepDive: ''
   },
   {
     name: 'Firebase',
@@ -450,7 +786,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     icon: 'SiFirebase',
     color: '#ffca28',
     researchRoles: 1,
-    researchDetails: ['TAMU x Soft Interaction Lab']
+    researchDetails: ['TAMU x Soft Interaction Lab'],
+    technicalDeepDive: ''
   },
 
   // Tools & Platforms
@@ -463,7 +800,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '2+ years',
     projects: ['save-gas', 'exped-browser'],
     icon: 'SiVite',
-    color: '#646cff'
+    color: '#646cff',
+    technicalDeepDive: ''
   },
   {
     name: 'CARLA',
@@ -474,7 +812,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '1+ years',
     projects: ['av-simulator'],
     icon: 'CarlaIcon',
-    color: '#0ea5e9'
+    color: '#0ea5e9',
+    technicalDeepDive: ''
   },
   {
     name: 'Auth0',
@@ -485,19 +824,10 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '1+ years',
     projects: ['save-gas'],
     icon: 'SiGoogle',
-    color: '#eb5424'
+    color: '#eb5424',
+    technicalDeepDive: ''
   },
-  {
-    name: 'PostCSS',
-    slug: 'postcss',
-    category: 'Tools & Platforms',
-    proficiency: 'Intermediate',
-    description: 'CSS post-processor that extends CSS capabilities. Used for optimizing and transforming CSS in modern build pipelines.',
-    experience: '2+ years',
-    projects: ['save-gas', 'exped-browser', 'panda-express-pos'],
-    icon: 'SiTailwindcss',
-    color: '#dd3a0a'
-  },
+
 
   // Data Science & Analytics
   {
@@ -513,7 +843,45 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     internships: 3,
     internshipDetails: ['Pivotal Research Inc.', 'INTERA Incorporated (Data Engineering)', 'Momentum Technologies'],
     jobs: 1,
-    jobDetails: ['PitchFact']
+    jobDetails: ['PitchFact'],
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **LLM Pipeline Architecture**: Expert development of high-performance LLM pipelines processing 500+ PDFs weekly for startup evaluation systems, with emphasis on speed and reliability
+- **Local Storage & Performance Optimization**: Strategic use of FastAPI for local storage solutions that enable rapid processing, achieving under 1-minute processing time per PDF upload
+- **Startup Evaluation Systems**: Specialized implementation of FastAPI applications for storing and processing startup information from both public and private sources
+- **PDF Processing Integration**: Advanced integration of PDF handling workflows using GhostScript for PDF flattening and structured output generation for form completion
+- **TypeScript Application Integration**: Seamless integration between FastAPI backend services and TypeScript applications for comprehensive startup evaluation workflows
+- **Prompt Engineering Integration**: Strategic implementation of Claude LLM integration with optimized prompt engineering to ensure accurate information extraction from input documents
+- **Structured Output Generation**: Expert design of structured data outputs that enable easy form completion while providing clear visibility into model-generated content and attribute changes
+
+**Advanced Development Patterns:**
+- **High-Volume Document Processing**: Architecture designed to handle 100+ PDFs per day per employee through optimized pipeline workflows and efficient resource management
+- **Multi-Source Data Integration**: Strategic processing of information from both public and private sources to create comprehensive startup evaluation reports
+- **Pipeline Transparency & Monitoring**: Implementation of clear attribute change tracking throughout the entire LLM pipeline, providing visibility into each processing step
+- **WebView Component Integration**: Advanced integration of WebView components within TypeScript applications for seamless PDF downloading and user interaction
+- **Internal Deployment Architecture**: Strategic use of Uvicorn server for internal employee deployment, focusing on functionality over complex external deployment configurations
+- **Speed-Optimized Framework Selection**: Strategic choice of FastAPI over Flask for superior performance in local storage solutions and rapid LLM pipeline execution
+- **Employee Productivity Focus**: System design prioritized around enabling employee efficiency, with workflows optimized for rapid startup evaluation and meeting preparation
+
+**Complex Problem-Solving Examples:**
+
+*High-Performance LLM Pipeline for Startup Evaluation:*
+Architected and built a comprehensive LLM pipeline system at PitchFact that processes 500+ PDFs weekly for startup evaluation purposes. The challenge involved creating a system that could store PDF documents, extract relevant information using Claude LLM integration, and fill out evaluation forms with structured outputs. Successfully implemented FastAPI architecture that references local storage for each company, enabling the TypeScript application to efficiently process information from multiple sources and generate resulting PDFs with clear documentation of the LLM's processing steps and attribute changes throughout the pipeline.
+
+*Sub-Minute PDF Processing Optimization:*
+Developed performance optimizations that enable employees to process approximately 100 PDFs per day, with each file taking less than one minute to complete the entire pipeline. This required strategic specification of document requirements, advanced prompt engineering to ensure Claude LLM provided accurate extractions from input documents, and creation of structured output formats that facilitate easy form completion while maintaining transparency about model-generated content.
+
+*GhostScript and WebView Integration Solution:*
+Implemented a comprehensive solution using GhostScript for PDF flattening and WebView components for seamless PDF downloading within the TypeScript application. This integration solved the challenge of processing complex PDF documents while providing users with an intuitive interface for accessing completed evaluation reports, demonstrating ability to integrate multiple technologies for cohesive workflow solutions.
+
+*Multi-Source Information Processing System:*
+Created a system that efficiently processes and integrates information from both public and private sources to generate comprehensive startup evaluation reports. The FastAPI architecture enables employees to quickly access processed information and set up meetings with startups, demonstrating understanding of business workflow requirements and technical implementation of information aggregation systems.
+
+**Areas for Continued Growth:**
+- **FastAPI Feature Exploration**: Learning advanced FastAPI features including automatic documentation generation (Swagger/OpenAPI), dependency injection, and advanced path operations for more sophisticated API development
+- **Production Deployment Mastery**: Expanding knowledge of Uvicorn server optimization and production-ready deployment configurations beyond internal employee usage
+- **Advanced Async Operations**: Developing expertise in FastAPI's asynchronous capabilities and concurrent processing for even higher-performance document processing workflows
+- **API Architecture Patterns**: Learning advanced API design patterns, middleware implementation, and scalable architecture strategies for enterprise-level FastAPI applications
+- **Data Processing Integration**: Exploring deeper integration possibilities between FastAPI and data processing libraries for more sophisticated analytics and reporting capabilities`
   },
   {
     name: 'NumPy',
@@ -526,7 +894,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     icon: 'SiNumpy',
     color: '#013243',
     internships: 3,
-    internshipDetails: ['INTERA Incorporated (Data Science)', 'INTERA Incorporated (Data Engineering)', 'Momentum Technologies']
+    internshipDetails: ['INTERA Incorporated (Data Science)', 'INTERA Incorporated (Data Engineering)', 'Momentum Technologies'],
+    technicalDeepDive: ''
   },
   {
     name: 'Matplotlib',
@@ -539,7 +908,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     icon: 'FcScatterPlot',
     color: '#1f77b4',
     internships: 2,
-    internshipDetails: ['INTERA Incorporated (Data Science)', 'INTERA Incorporated (Data Engineering)']
+    internshipDetails: ['INTERA Incorporated (Data Science)', 'INTERA Incorporated (Data Engineering)'],
+    technicalDeepDive: ''
   },
   {
     name: 'Scikit-Learn',
@@ -550,7 +920,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '2+ years',
     projects: ['financial-modeling-tool'],
     icon: 'SiScikitlearn',
-    color: '#f7931e'
+    color: '#f7931e',
+    technicalDeepDive: ''
   },
   {
     name: 'OpenCV',
@@ -561,7 +932,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '1+ years',
     projects: ['av-simulator'],
     icon: 'SiOpencv',
-    color: '#5c3ee8'
+    color: '#5c3ee8',
+    technicalDeepDive: ''
   },
 
   // Data Visualization
@@ -576,7 +948,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     icon: 'SiTableau',
     color: '#e97627',
     internships: 1,
-    internshipDetails: ['INTERA Incorporated (Data Science)']
+    internshipDetails: ['INTERA Incorporated (Data Science)'],
+    technicalDeepDive: ''
   },
   {
     name: 'Power BI',
@@ -587,7 +960,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '1+ years',
     projects: ['av-simulator'],
     icon: 'IoBusiness',
-    color: '#f2c800'
+    color: '#f2c800',
+    technicalDeepDive: ''
   },
   {
     name: 'Plotly',
@@ -598,7 +972,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '2+ years',
     projects: ['financial-modeling-tool'],
     icon: 'SiPlotly',
-    color: '#3f4f75'
+    color: '#3f4f75',
+    technicalDeepDive: ''
   },
   {
     name: 'Dash',
@@ -609,21 +984,12 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '1+ years',
     projects: ['financial-modeling-tool'],
     icon: 'BiSolidDashboard',
-    color: '#0ea5e9'
+    color: '#0ea5e9',
+    technicalDeepDive: ''
   },
 
   // Additional Libraries & Tools
-  {
-    name: 'Axios',
-    slug: 'axios',
-    category: 'Frameworks & Libraries',
-    proficiency: 'Advanced',
-    description: 'Promise-based HTTP client for JavaScript. Essential for making API calls in web applications.',
-    experience: '3+ years',
-    projects: ['save-gas'],
-    icon: 'SiAxios',
-    color: '#5a29e4'
-  },
+
   {
     name: 'Radix UI',
     slug: 'radix-ui',
@@ -633,7 +999,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '1+ years',
     projects: ['exped-browser'],
     icon: 'SiRadixui',
-    color: '#ffffff'
+    color: '#ffffff',
+    technicalDeepDive: ''
   },
   {
     name: 'Lucide React',
@@ -644,7 +1011,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '2+ years',
     projects: ['exped-browser', 'panda-express-pos'],
     icon: 'SiLucide',
-    color: '#f56565'
+    color: '#f56565',
+    technicalDeepDive: ''
   },
   {
     name: 'yfinance',
@@ -655,7 +1023,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '1+ years',
     projects: ['financial-modeling-tool'],
     icon: 'FaYahoo',
-    color: '#720e9e'
+    color: '#720e9e',
+    technicalDeepDive: ''
   },
 
   // System Programming
@@ -668,7 +1037,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '1+ years',
     projects: ['client-server-system'],
     icon: 'BsRouterFill',
-    color: '#4a90e2'
+    color: '#4a90e2',
+    technicalDeepDive: ''
   },
   {
     name: 'Multithreading',
@@ -679,7 +1049,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '2+ years',
     projects: ['client-server-system'],
     icon: 'TbNeedleThread',
-    color: '#ff6b6b'
+    color: '#ff6b6b',
+    technicalDeepDive: ''
   },
   {
     name: 'Linux',
@@ -690,7 +1061,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '4+ years',
     projects: ['client-server-system'],
     icon: 'SiLinux',
-    color: '#fcc624'
+    color: '#fcc624',
+    technicalDeepDive: ''
   },
   {
     name: 'Sockets',
@@ -701,7 +1073,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '1+ years',
     projects: ['client-server-system'],
     icon: 'SiSocketdotio',
-    color: '#61dafb'
+    color: '#61dafb',
+    technicalDeepDive: ''
   },
 
   // Office & Productivity
@@ -718,7 +1091,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     internships: 4,
     internshipDetails: ['INTERA Incorporated (Data Science)', 'Pivotal Research Inc.', 'INTERA Incorporated (Data Engineering)', 'Momentum Technologies'],
     jobs: 1,
-    jobDetails: ['PitchFact']
+    jobDetails: ['PitchFact'],
+    technicalDeepDive: ''
   },
 
   // AI & Emerging Technologies
@@ -735,7 +1109,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     researchRoles: 1,
     researchDetails: ['TAMU x Soft Interaction Lab'],
     publications: 1,
-    publicationDetails: ['ChatGPT 4o Performance on Mechanical Engineering Concept Inventories']
+    publicationDetails: ['ChatGPT 4o Performance on Mechanical Engineering Concept Inventories'],
+    technicalDeepDive: ''
   },
   {
     name: 'GPT Agent Creation',
@@ -750,7 +1125,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     researchRoles: 1,
     researchDetails: ['TAMU x Soft Interaction Lab'],
     publications: 1,
-    publicationDetails: ['ChatGPT 4o Performance on Mechanical Engineering Concept Inventories']
+    publicationDetails: ['ChatGPT 4o Performance on Mechanical Engineering Concept Inventories'],
+    technicalDeepDive: ''
   },
   {
     name: 'Educational Technology',
@@ -761,7 +1137,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     experience: '1+ years',
     projects: ['class-primer'],
     icon: 'IoBookOutline',
-    color: '#f59e0b'
+    color: '#f59e0b',
+    technicalDeepDive: ''
   },
   {
     name: 'LLM APIs',
@@ -776,7 +1153,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     jobs: 1,
     jobDetails: ['PitchFact'],
     researchRoles: 2,
-    researchDetails: ['TAMU x Soft Interaction Lab', 'Algoverse']
+    researchDetails: ['TAMU x Soft Interaction Lab', 'Algoverse'],
+    technicalDeepDive: ''
   },
   {
     name: 'PDF Processing',
@@ -789,7 +1167,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     icon: 'SiAdobeacrobatreader',
     color: '#dc2626',
     jobs: 1,
-    jobDetails: ['PitchFact']
+    jobDetails: ['PitchFact'],
+    technicalDeepDive: ''
   },
   {
     name: 'VBA',
@@ -802,7 +1181,8 @@ Configured Next.js for optimal static site generation while maintaining dynamic 
     icon: 'TbLayoutNavbar',
     color: '#ff8c00',
     internships: 1,
-    internshipDetails: ['INTERA Incorporated (Data Engineering)']
+    internshipDetails: ['INTERA Incorporated (Data Engineering)'],
+    technicalDeepDive: ''
   },
 
 ]
