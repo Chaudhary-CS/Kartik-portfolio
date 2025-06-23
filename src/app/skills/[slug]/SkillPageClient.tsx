@@ -23,6 +23,8 @@ interface SkillPageClientProps {
 }
 
 export default function SkillPageClient({ skill, relatedProjects }: SkillPageClientProps) {
+
+
   const getProficiencyColor = (proficiency: string) => {
     switch (proficiency) {
       case 'Expert': return 'text-emerald-400 bg-emerald-400/20 border-emerald-400/30'
@@ -46,32 +48,26 @@ export default function SkillPageClient({ skill, relatedProjects }: SkillPageCli
   return (
     <main className="relative min-h-screen flex flex-col text-white">
       <div className="relative z-10 flex-1 max-w-4xl mx-auto py-8 sm:py-12 px-2 sm:px-4">
-        
-        {/* Back Button */}
-        <motion.div
-          className="mb-6"
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.4 }}
-        >
-          <Link 
-            href="/skills"
-            className="inline-flex items-center gap-2 text-teal-400 hover:text-teal-300 transition-colors"
-          >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-            Back to Skills
-          </Link>
-        </motion.div>
-
-        {/* Header */}
+        {/* Back Button + Header Section */}
         <motion.div
           className="mb-8 sm:mb-12"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.2 }}
         >
+          {/* Back Button */}
+          <div className="mb-6">
+            <Link 
+              href="/skills"
+              className="inline-flex items-center gap-2 text-teal-400 hover:text-teal-300 transition-colors"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+              Back to Skills
+            </Link>
+          </div>
+          
           <div className="flex items-center gap-4 mb-4">
             <SkillIcon 
               iconName={skill.icon}

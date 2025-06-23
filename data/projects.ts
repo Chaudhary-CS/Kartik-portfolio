@@ -39,7 +39,7 @@ const projects: Project[] = [
     description: 'Cross-platform desktop browser supporting 10,000+ concurrent users with privacy-first AI-powered web page summarization.',
     longDescription: 'Developed a cross-platform desktop browser that efficiently supports over 10,000 concurrent users and delivers a privacy-first experience with local AI-powered web page summarization. Enhanced user productivity by reducing navigation and reading times by up to 50%, while achieving a 95% satisfaction rate and ensuring complete data privacy.',
     image: '/images/projects/exped_browser.png',
-    techs: ['React', 'TypeScript', 'JavaScript', 'HTML/CSS', 'Node.js', 'Electron', 'Vite', 'Tailwind CSS', 'Radix UI', 'Lucide React'],
+    techs: ['React', 'TypeScript', 'JavaScript', 'HTML/CSS', 'Node.js', 'Electron', 'Vite', 'Tailwind CSS', 'Lucide React'],
     github: 'https://github.com/SamiMelhem/exped-browser',
     featured: true,
     date: 'January 2025 - April 2025',
@@ -109,7 +109,7 @@ const projects: Project[] = [
     description: 'Linux-based networked communication system using TCP/IP protocol supporting 1 million concurrent connections.',
     longDescription: 'Networked client-server application using the TCP/IP protocol. The project enhances an inter-process communication system by extending it to operate over a network, supporting both data point transfers and file transfers between multiple clients and a server.',
     image: '/images/projects/client_server_architecture.svg',
-    techs: ['C++', 'TCP/IP', 'Multithreading', 'Linux', 'Socket Programming'],
+    techs: ['C++', 'TCP/IP', 'Multithreading', 'Linux', 'Sockets'],
     github: 'https://github.com/SamiMelhem/ClientServerProcess',
     date: 'March 2024 - April 2024',
     achievements: [
@@ -126,7 +126,7 @@ const projects: Project[] = [
     description: 'Custom GPT bot helping students prepare for courses using the "Priming" method, featured in AI x Education newsletter.',
     longDescription: 'An expert academic guide for mastering any class, tailored to specific course details. Created a custom GPT bot called "Class Primer" to help students prepare for courses by generating personalized "primers" weeks before classes start, integrating the "Priming" method.',
     image: '/images/projects/class_primer.png',
-    techs: ['Prompt Engineering', 'GPT Agent Creation', 'Educational Technology'],
+    techs: ['Prompt Engineering'],
     liveDemo: 'https://chatgpt.com/g/g-LbbPjuL7W-class-primer',
     date: 'February 2024 - April 2024',
     achievements: [
