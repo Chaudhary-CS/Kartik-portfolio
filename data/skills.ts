@@ -771,12 +771,12 @@ Designed and implemented a secure local storage solution using SQLAlchemy that m
 Created a local storage solution using SQLAlchemy that significantly reduces costs compared to traditional cloud service providers while maintaining professional-grade functionality. The solution demonstrates how local database architecture can provide the same capabilities as expensive cloud services, offering a sustainable approach for research applications with limited budgets.
 
 **Areas for Continued Growth:**
-- **Local Cloud Storage Development**: Expanding expertise in creating comprehensive local cloud storage applications that can completely replace expensive cloud service providers for specific use cases
-- **Advanced Security Framework Integration**: Learning to incorporate massive security frameworks with SQLAlchemy for enterprise-grade local storage solutions
-- **Performance Optimization**: Developing advanced SQLAlchemy optimization techniques for handling large-scale document storage and retrieval in local environments
-- **Distributed Local Storage**: Exploring techniques for creating distributed local storage networks that maintain privacy while providing scalability benefits
-- **Advanced ORM Patterns**: Mastering complex SQLAlchemy ORM patterns for sophisticated data relationships and advanced querying capabilities in local storage contexts
-- **Database Migration Strategies**: Learning advanced schema migration and versioning techniques for evolving local database requirements in research environments`
+- **ORM Integration & Query Optimization**: Learning advanced ORM frameworks like SQLAlchemy or Prisma to simplify database interactions while maintaining performance and reducing raw SQL complexity
+- **Database Performance Tuning**: Developing expertise in PostgreSQL performance optimization including indexing strategies, query plan analysis, and database monitoring for high-traffic commercial applications
+- **Advanced PostgreSQL Features**: Exploring JSON columns, full-text search capabilities, and advanced data types for more sophisticated business intelligence and analytics applications
+- **Multi-User Concurrency Management**: Learning advanced locking strategies, transaction isolation levels, and concurrent access patterns for scaling POS systems to support multiple simultaneous users
+- **Database Security & Compliance**: Implementing advanced security measures, encryption, and compliance standards for commercial applications handling sensitive customer and financial data
+- **Automated Testing & Migration Strategies**: Developing expertise in database testing frameworks, schema versioning, and automated migration strategies for production database management`
   },
   {
     name: 'Selenium',
@@ -836,12 +836,49 @@ Solved complex timing challenges when scraping websites with dynamic content loa
     slug: 'postgresql',
     category: 'Databases',
     proficiency: 'Intermediate',
-    description: 'My database of choice for complex applications. I\'m experienced with advanced features like JSON columns, full-text search, and performance optimization.',
+    description: 'My database of choice for complex applications. Extensive experience with relational database design, foreign key relationships, and business logic implementation for commercial POS systems.',
     experience: '2+ years',
     projects: ['panda-express-pos'],
     icon: 'SiPostgresql',
     color: '#336791',
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Complex Relational Database Design**: Expert implementation of multi-table database architecture with separate tables for every major business process including customers, employees, inventory, orders, and menu management
+- **Foreign Key Relationships & Data Integrity**: Advanced use of foreign keys to ensure maximum efficiency across all business processes, including employee-to-customer matching and many-to-many relationships between inventory and customers
+- **AWS S3 Database Integration**: Strategic connection setup between PostgreSQL databases and AWS S3 for cloud-based data storage and retrieval in commercial POS applications
+- **Raw SQL Query Implementation**: Extensive experience writing direct SQL queries for complex business operations, data retrieval, and transaction processing without ORM abstraction
+- **Business Logic Database Implementation**: Comprehensive implementation of commercial logic including automatic tax calculations, pricing accuracy, and inventory-to-pricing matching systems
+- **Manager Dashboard Backend Architecture**: Sophisticated database design supporting comprehensive management functionality including customer analytics, menu modifications, statistical reporting, and employee management
+- **Automated Inventory Management**: Advanced database triggers and procedures for automatic inventory updates based on stock levels and projected demand patterns
+
+**Advanced Development Patterns:**
+- **Multi-Role Database Access Control**: Strategic database design that supports different access levels for customers, employees, and managers with appropriate data visibility and modification permissions
+- **Real-Time Inventory Tracking**: Implementation of database systems that automatically update food inventory when stock levels drop below thresholds or are projected to run low
+- **Statistical Analysis Integration**: Database architecture designed to support menu item statistics, sales analytics, and business intelligence for management decision-making
+- **Seasonal Menu Management**: Flexible database schema that accommodates seasonal item additions, menu modifications, and dynamic pricing structures
+- **Single-User POS Optimization**: Database design optimized for single-employee POS operations while maintaining data integrity and transaction reliability
+- **Transaction Processing Architecture**: Comprehensive order processing systems that handle complex customer orders, inventory adjustments, and payment processing through structured database operations
+
+**Complex Problem-Solving Examples:**
+
+*Comprehensive POS Database Architecture:*
+Designed and implemented the complete database schema for the Panda Express POS System, creating separate tables for customers, employees, inventory, orders, menu items, and management functions. The challenge involved establishing proper foreign key relationships that ensure maximum operational efficiency while maintaining data integrity across all business processes. Successfully implemented many-to-many relationships between inventory and customers, enabling complex order tracking and customer preference analysis. The database architecture supports comprehensive manager dashboard functionality including customer point-of-view analysis, menu management, item statistics, seasonal item integration, and employee administration.
+
+*Automated Inventory Management System:*
+Developed sophisticated database triggers and stored procedures that automatically update food inventory levels based on real-time stock monitoring and demand projections. The system calculates when inventory levels drop below operational thresholds or projects future shortages based on historical usage patterns. This automated approach prevents stockouts and ensures consistent product availability while minimizing food waste and over-ordering, demonstrating advanced understanding of business logic implementation within PostgreSQL database systems.
+
+*Complex Business Logic Implementation:*
+Implemented comprehensive business logic directly in PostgreSQL including automatic tax calculations, pricing accuracy verification, and item-to-pricing matching systems. The challenge involved ensuring that all financial calculations occur correctly at the database level while maintaining transaction integrity and audit trails. Successfully created raw SQL queries that handle complex pricing structures, promotional discounts, seasonal adjustments, and multi-item order processing with accurate tax computation for different product categories.
+
+*AWS S3 Integration for Cloud Data Management:*
+Established reliable connection architecture between PostgreSQL databases and AWS S3 services for cloud-based data storage and backup. The integration enables secure data transmission and storage while maintaining local database performance for real-time POS operations. This hybrid approach provides both immediate transaction processing capabilities and secure cloud-based data persistence for business analytics and disaster recovery purposes.
+
+**Areas for Continued Growth:**
+- **ORM Integration & Query Optimization**: Learning advanced ORM frameworks like SQLAlchemy or Prisma to simplify database interactions while maintaining performance and reducing raw SQL complexity
+- **Database Performance Tuning**: Developing expertise in PostgreSQL performance optimization including indexing strategies, query plan analysis, and database monitoring for high-traffic commercial applications
+- **Advanced PostgreSQL Features**: Exploring JSON columns, full-text search capabilities, and advanced data types for more sophisticated business intelligence and analytics applications
+- **Multi-User Concurrency Management**: Learning advanced locking strategies, transaction isolation levels, and concurrent access patterns for scaling POS systems to support multiple simultaneous users
+- **Database Security & Compliance**: Implementing advanced security measures, encryption, and compliance standards for commercial applications handling sensitive customer and financial data
+- **Automated Testing & Migration Strategies**: Developing expertise in database testing frameworks, schema versioning, and automated migration strategies for production database management`
   },
 
   // Cloud & DevOps
@@ -849,39 +886,183 @@ Solved complex timing challenges when scraping websites with dynamic content loa
     name: 'Vercel',
     slug: 'vercel',
     category: 'Cloud & DevOps',
-    proficiency: 'Advanced',
-    description: 'My preferred platform for deploying Next.js applications. Excellent integration with modern web development workflows.',
+    proficiency: 'Intermediate',
+    description: 'Modern deployment platform that I\'m eager to master for Next.js applications. My experience with GitHub Pages deployment has inspired me to explore Vercel\'s advanced features for future projects.',
     experience: '1+ years',
     projects: ['save-gas'],
     icon: 'SiVercel',
     color: '#ffffff',
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Familiar With:**
+- **Basic Deployment Workflow**: Initial experience with Vercel's deployment process and understanding of how it simplifies application deployment compared to traditional hosting methods
+- **GitHub Pages Comparison**: Practical experience deploying this portfolio via GitHub Pages, providing context for understanding Vercel's advantages and deployment optimization opportunities
+- **Next.js Integration Potential**: Recognition of Vercel's native optimization for Next.js applications and how it can enhance the deployment process for React-based projects
+- **Modern Development Workflow Integration**: Understanding of how Vercel fits into contemporary web development workflows and CI/CD practices
+- **Git-Based Deployment Philosophy**: Familiarity with git-based deployment concepts from GitHub Pages experience, preparing for Vercel's automated deployment features
+- **Static Site Generation Deployment**: Experience with SSG deployment through GitHub Pages, providing foundation for understanding Vercel's advanced static and dynamic deployment capabilities
+
+**Advanced Development Patterns I Want to Master:**
+- **Automated CI/CD Integration**: Learning Vercel's automatic deployment triggers from Git commits and branch-based deployment strategies for development and production environments
+- **Environment Variable Management**: Mastering secure environment variable configuration for different deployment stages and API key management across development and production
+- **Custom Domain Configuration**: Understanding domain management, DNS configuration, and SSL certificate automation for professional project deployment
+- **Performance Optimization Features**: Exploring Vercel's built-in performance optimizations, edge caching, and CDN capabilities for faster application loading
+- **Serverless Function Implementation**: Learning to leverage Vercel's serverless functions for backend API development and dynamic functionality integration
+- **Preview Deployments**: Utilizing Vercel's preview deployment features for testing and collaboration before production releases
+
+**Deployment Experience & Learning Goals:**
+
+*GitHub Pages Foundation:*
+Successfully deployed this portfolio website using GitHub Pages with Next.js static site generation, gaining practical experience with git-based deployment workflows and static hosting. This experience provided valuable understanding of deployment pipelines, build processes, and the relationship between development code and production websites. The GitHub Pages deployment taught me the importance of proper configuration, build optimization, and the challenges of managing deployment across different environments.
+
+*Vercel Integration Motivation:*
+The GitHub Pages deployment experience revealed both the possibilities and limitations of static hosting, inspiring interest in Vercel's advanced features for future projects. Recognized that Vercel offers superior integration with Next.js applications, automated optimization, and more sophisticated deployment features that could significantly improve development workflows. This motivation drives my desire to master Vercel for upcoming projects that require more dynamic capabilities and professional-grade deployment features.
+
+*Future Project Planning:*
+Planning to leverage Vercel for upcoming projects that require more advanced deployment features than GitHub Pages can provide. Interested in exploring how Vercel's platform can optimize the entire development-to-production pipeline, particularly for projects involving API integration, dynamic content, and collaborative development workflows.
+
+**Areas for Continued Growth:**
+- **Edge Functions & API Routes**: Learning to implement and optimize Vercel's edge functions and API routes for dynamic backend functionality within deployed applications
+- **Performance Monitoring & Analytics**: Mastering Vercel's built-in analytics and performance monitoring tools to optimize application performance and user experience
+- **Team Collaboration Features**: Exploring Vercel's team features, branch previews, and collaborative deployment workflows for professional development environments
+- **Advanced Optimization Techniques**: Learning image optimization, automatic code splitting, and other Vercel-specific performance enhancements for production applications
+- **Integration with External Services**: Understanding how to integrate Vercel deployments with databases, authentication services, and third-party APIs for full-stack applications
+- **Cost Optimization & Scaling**: Learning Vercel's pricing model, usage optimization, and scaling strategies for applications with growing traffic and resource requirements`
   },
   {
     name: 'Convex',
     slug: 'convex',
     category: 'Cloud & DevOps',
     proficiency: 'Intermediate',
-    description: 'Backend-as-a-service platform for real-time applications. Used for building scalable, reactive applications with ease.',
+    description: 'Backend-as-a-service platform with excellent database organization and clarity. Used for user data storage and session management, with interest in exploring advanced real-time capabilities.',
     experience: '1+ years',
     projects: ['save-gas'],
     icon: 'ConvexIcon',
     color: '#f59e0b',
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Database Management & Organization**: Expert use of Convex's database system for storing and organizing user data with exceptional clarity and structure for easy data retrieval and management
+- **User Session Management**: Strategic implementation of Convex database for storing user authentication data to maintain login sessions across multiple visits and browser sessions
+- **Data Storage Architecture**: Comprehensive understanding of Convex's data storage patterns and how to structure information for optimal organization and accessibility
+- **Database Query Implementation**: Practical experience with Convex's query system for retrieving and managing stored user data in web applications
+- **Real-Time Data Synchronization**: Foundational understanding of Convex's real-time capabilities for keeping application data synchronized across different sessions and users
+- **SaveGas Application Integration**: Successful integration of Convex database services into full-stack web applications for production use
+
+**Advanced Development Patterns I'm Developing:**
+- **Backend-as-a-Service Architecture**: Strategic use of Convex as a complete backend solution that eliminates the need for traditional server setup and database configuration
+- **Data Clarity & Organization**: Leveraging Convex's exceptional data organization features to create clear, maintainable database structures that are easy to debug and analyze
+- **Session Persistence**: Implementation of reliable user session management that maintains authentication state across browser sessions and return visits
+- **TypeScript Integration**: Working with Convex's TypeScript-first approach for type-safe database operations and function development
+- **Real-Time Application Development**: Exploring Convex's reactive capabilities for building applications that respond to data changes in real-time
+
+**Complex Problem-Solving Examples:**
+
+*User Authentication Data Management in SaveGas:*
+Successfully implemented Convex database integration in the SaveGas application to handle user authentication data storage and session management. The challenge involved creating a reliable system that keeps users logged in across multiple visits and browser sessions while maintaining data security and accessibility. Leveraged Convex's organized database structure to store user credentials and session information in a clear, debuggable format that enables easy troubleshooting and data verification. This implementation demonstrated practical understanding of how to use Convex for production user management in web applications.
+
+*Database Organization & Data Clarity:*
+Utilized Convex's exceptional database organization features to create clear, structured data storage that provides excellent visibility into collected and stored information. The organized nature of Convex's database system enabled efficient debugging and data analysis, making it easy to understand data relationships and troubleshoot any issues with data storage or retrieval. This experience highlighted Convex's strength in providing transparent, well-organized data management that simplifies development workflows.
+
+*Learning from Authentication Challenges:*
+Encountered difficulties while attempting to implement Convex's authentication system, providing valuable learning experience about the complexity of authentication workflows and the importance of understanding service limitations. This challenge highlighted areas for growth in understanding Convex's authentication patterns and motivated deeper exploration of their documentation and best practices for secure user authentication implementation.
+
+**Areas for Continued Growth:**
+- **Authentication System Mastery**: Overcoming previous challenges with Convex authentication to successfully implement secure, reliable user authentication flows using Convex's built-in authentication services
+- **Advanced Real-Time Features**: Exploring Convex's real-time subscription capabilities, live queries, and reactive programming patterns for building more dynamic, responsive applications
+- **Function Development**: Learning to create and deploy Convex functions for server-side logic, data processing, and complex business operations within the Convex ecosystem
+- **Advanced Database Patterns**: Mastering complex data relationships, indexing strategies, and performance optimization techniques within Convex's database system
+- **Full-Stack Convex Integration**: Utilizing Convex to its fullest extent by implementing comprehensive backend solutions that leverage all of Convex's capabilities for complete application development
+- **Production Optimization**: Learning advanced Convex configuration, monitoring, and optimization techniques for scaling applications and improving performance in production environments`
   },
   {
     name: 'Firebase',
     slug: 'firebase',
     category: 'Cloud & DevOps',
     proficiency: 'Intermediate',
-    description: 'Google\'s cloud platform used for backend services and real-time data synchronization in conversational AI applications for medical training.',
+    description: 'Google\'s cloud platform for authentication and backend services. Implemented role-based access control for research applications, with strong interest in exploring Firebase\'s comprehensive ecosystem.',
     experience: '1+ years',
     projects: [],
     icon: 'SiFirebase',
     color: '#ffca28',
     researchRoles: 1,
     researchDetails: ['TAMU x Soft Interaction Lab'],
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Authentication System Implementation**: Comprehensive experience with Firebase Authentication for user sign-in workflows and session management in research applications
+- **Role-Based Access Control**: Strategic implementation of dual-access systems where authenticated workers can test/develop and modify applications while unauthenticated users experience customer-level functionality
+- **User Permission Management**: Advanced understanding of creating differentiated user experiences based on authentication status and user roles within research environments
+- **Research Application Integration**: Practical integration of Firebase authentication with conversational AI tools for medical training applications serving 500+ SANE nurses
+- **Session Management**: Reliable implementation of user session handling that maintains authentication state and enforces appropriate access levels throughout application usage
+- **Medical Application Security**: Understanding of security considerations when implementing authentication systems for sensitive medical and research applications
+
+**Advanced Development Patterns I'm Developing:**
+- **Multi-Tier Access Architecture**: Design patterns for creating applications with distinct functionality levels based on user authentication and role verification
+- **Research Workflow Integration**: Strategic integration of authentication systems that support both development/testing workflows and production user experiences
+- **Medical Data Security**: Implementation of secure authentication patterns appropriate for medical training and research applications with sensitive data considerations
+- **Cross-Platform Authentication**: Understanding Firebase's authentication capabilities across web and mobile platforms for comprehensive application development
+- **Industry-Standard Implementation**: Recognition of Firebase as a critical industry tool, particularly within Google's ecosystem and modern web development practices
+
+**Complex Problem-Solving Examples:**
+
+*Dual-Access Research Application Authentication:*
+Implemented a comprehensive Firebase Authentication system at TAMU x Soft Interaction Lab that creates distinct user experiences based on authentication status. The challenge involved designing an access control system where authenticated workers (researchers, developers, testers) can sign in to access full application functionality including testing capabilities, development tools, and modification permissions, while unauthenticated users experience the application from a customer perspective with appropriate limitations. This implementation required careful consideration of user roles, permission boundaries, and seamless transitions between different access levels while maintaining security and usability.
+
+*Medical Training Application Security:*
+Successfully integrated Firebase Authentication into conversational AI tools designed for medical training applications serving 500+ SANE nurses. The challenge involved implementing secure authentication that meets the requirements of medical research environments while maintaining ease of use for healthcare professionals. The solution required understanding the balance between accessibility for medical professionals and security requirements for research applications handling sensitive training data.
+
+*Research Development Workflow Support:*
+Created authentication workflows that support the unique needs of research environments where the same application serves multiple purposes: development testing, research validation, and end-user functionality. The Firebase implementation enables seamless switching between developer/researcher mode and customer simulation mode, providing essential flexibility for research application development and testing processes.
+
+**Areas for Continued Growth:**
+- **Advanced Firebase Services**: Exploring Firestore for real-time databases, Cloud Functions for serverless backend logic, and Firebase Hosting for complete application deployment solutions
+- **Real-Time Data Synchronization**: Learning Firebase's real-time database capabilities and implementing live data updates for collaborative applications and real-time user interactions
+- **Cloud Functions Integration**: Mastering serverless function development within the Firebase ecosystem for advanced backend processing and API integration
+- **Firebase Analytics & Performance**: Implementing Firebase Analytics for user behavior tracking and Firebase Performance Monitoring for application optimization in production environments
+- **Advanced Security Rules**: Developing expertise in Firebase Security Rules for fine-grained access control and data protection in complex applications
+- **Google Cloud Integration**: Exploring deeper integration between Firebase and other Google Cloud services for enterprise-scale application development and deployment
+- **Mobile Development Integration**: Learning Firebase's mobile SDKs for iOS and Android development to create cross-platform applications with consistent authentication and data management`
+  },
+  {
+    name: 'Docker',
+    slug: 'docker',
+    category: 'Cloud & DevOps',
+    proficiency: 'Intermediate',
+    description: 'Containerization platform for consistent development environments across multiple devices and operating systems. Expert in Dockerfile creation for dependency management and team collaboration in research settings.',
+    experience: '1+ years',
+    projects: [],
+    icon: 'SiDocker',
+    color: '#2496ed',
+    researchRoles: 1,
+    researchDetails: ['TAMU x Soft Interaction Lab'],
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Dockerfile Creation & Optimization**: Expert creation of Dockerfiles for installing appropriate dependencies and ensuring consistent environments across multiple development devices
+- **Cross-Device Dependency Management**: Strategic use of Docker to solve dependency consistency challenges when multiple developers work on the same research project
+- **OS-Dependent Configuration**: Advanced implementation of OS-specific configurations within Dockerfiles to handle platform differences and ensure compatibility across different operating systems
+- **Development Environment Standardization**: Comprehensive approach to creating reproducible development environments that enable seamless collaboration in research settings
+- **Multi-Developer Workflow Integration**: Practical implementation of Docker containers that ensure every team member has identical development setups regardless of their local machine configuration
+- **Research Application Containerization**: Successful containerization of research applications and tools for consistent deployment and testing across different environments
+
+**Advanced Development Patterns I'm Developing:**
+- **Dependency Resolution Architecture**: Strategic approach to managing complex dependency trees and version conflicts through containerized environments
+- **Cross-Platform Compatibility**: Implementation of Docker solutions that work seamlessly across Windows, macOS, and Linux development environments
+- **Team Collaboration Enhancement**: Using Docker to eliminate "works on my machine" problems and enable efficient research team collaboration
+- **Environment Isolation**: Leveraging Docker's isolation capabilities to prevent dependency conflicts and maintain clean development environments
+- **Reproducible Research Workflows**: Creating containerized environments that ensure research results can be consistently reproduced across different systems and team members
+
+**Complex Problem-Solving Examples:**
+
+*Multi-Developer Research Environment Standardization:*
+Created comprehensive Dockerfile solutions for a research project at TAMU x Soft Interaction Lab that ensures every developer working on the project has identical development environments. The challenge involved managing complex dependency requirements that varied across different operating systems and developer machines. Successfully implemented Docker containers that automatically install appropriate dependencies and handle OS-specific configurations, eliminating environment-related bugs and reducing onboarding time for new team members. This solution transformed the research workflow from hours of manual dependency installation to a single Docker command that creates a fully configured development environment.
+
+*Cross-Platform Dependency Management:*
+Developed sophisticated Dockerfiles that handle OS-dependent configurations and ensure consistent behavior across Windows, macOS, and Linux development environments. The challenge involved creating containers that could automatically detect and adapt to different operating system requirements while maintaining identical functionality. Successfully implemented platform-specific dependency installation routines within Docker containers, enabling research team members to work on any operating system without compatibility issues or manual configuration steps.
+
+*Research Workflow Optimization:*
+Implemented Docker-based development environments that significantly improved research project collaboration and reduced environment-related issues. The containerized approach eliminated the common problem of dependency conflicts and version mismatches that previously caused delays in research development. This solution enabled the research team to focus on actual research work rather than spending time troubleshooting environment configuration issues.
+
+**Areas for Continued Growth:**
+- **Docker Compose Mastery**: Learning multi-container application orchestration using docker-compose for complex research applications with multiple services (databases, APIs, frontend, etc.)
+- **Advanced Container Management**: Exploring container networking, volume management, and inter-container communication for sophisticated research application architectures
+- **Image Optimization Techniques**: Mastering multi-stage builds, layer optimization, and image size reduction strategies for efficient container deployment and storage
+- **Container Orchestration**: Learning Kubernetes and Docker Swarm for managing containerized applications at scale in research and production environments
+- **Production Deployment Patterns**: Understanding Docker deployment strategies, security best practices, and monitoring techniques for production research applications
+- **Advanced Docker Features**: Exploring Docker secrets, health checks, and advanced configuration options for enterprise-grade containerized research infrastructure`
   },
 
   // Tools & Platforms
@@ -889,13 +1070,48 @@ Solved complex timing challenges when scraping websites with dynamic content loa
     name: 'Vite',
     slug: 'vite',
     category: 'Tools & Platforms',
-    proficiency: 'Advanced',
-    description: 'Lightning-fast build tool that significantly improves development experience. My go-to for modern frontend development.',
+    proficiency: 'Intermediate',
+    description: 'Modern build tool that provides excellent dev server experience and fast builds. Used for project organization and live development across multiple applications, with interest in exploring advanced features.',
     experience: '2+ years',
     projects: ['save-gas', 'exped-browser'],
     icon: 'SiVite',
     color: '#646cff',
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Development Server Excellence**: Extensive use of Vite's dev server for live development, enabling real-time code changes and immediate visual feedback across multiple projects
+- **Build Process Management**: Practical experience using Vite's build system to compile and optimize applications for production deployment
+- **Library Organization**: Strategic use of Vite for organizing and managing project libraries and dependencies in a clean, maintainable structure
+- **Plugin Integration**: Hands-on experience manually adding plugins when necessary to extend Vite's functionality for specific project requirements
+- **Project Workflow Integration**: Seamless integration of Vite into development workflows for applications including this portfolio, SaveGas, and Exped Browser
+- **Cross-Project Implementation**: Consistent use of Vite across different types of applications, demonstrating understanding of its versatility and reliability
+
+**Advanced Development Patterns I'm Developing:**
+- **Hot Module Replacement (HMR)**: Leveraging Vite's fast HMR capabilities for efficient development cycles and rapid iteration during application development
+- **Multi-Project Architecture**: Using Vite consistently across diverse project types from web applications to desktop applications (Electron integration)
+- **Development Experience Optimization**: Strategic use of Vite's fast startup times and efficient bundling to improve overall development productivity
+- **Plugin Ecosystem Understanding**: Growing familiarity with when and how to integrate plugins to extend Vite's core functionality
+- **Modern Frontend Tooling**: Recognition of Vite as a superior alternative to traditional build tools for contemporary web development
+
+**Complex Problem-Solving Examples:**
+
+*Portfolio Development with Live Updates:*
+Successfully implemented Vite for this portfolio website, leveraging its dev server capabilities to enable rapid development and real-time preview of changes. The challenge involved setting up a development environment that allows for efficient iteration on design, content, and functionality while maintaining fast build times. Vite's dev server proved essential for developing complex components like the persistent VantaNet background, smooth page transitions, and responsive design elements, providing immediate feedback that accelerated the development process significantly.
+
+*Cross-Platform Application Development:*
+Applied Vite across different application types including web applications (SaveGas) and desktop applications (Exped Browser with Electron integration). The challenge involved understanding how Vite's build process adapts to different deployment targets while maintaining consistent development experience. Successfully leveraged Vite's flexibility to handle both web-based and desktop application requirements, demonstrating its versatility across different development contexts.
+
+*Plugin Integration for Specific Requirements:*
+Gained practical experience manually adding plugins to Vite when projects required functionality beyond the default configuration. This hands-on approach provided valuable understanding of Vite's extensibility and plugin architecture, laying the foundation for more advanced customization as project requirements become more complex.
+
+*Library and Dependency Management:*
+Utilized Vite's efficient handling of project libraries and dependencies to maintain clean, organized codebases across multiple applications. The tool's intelligent dependency resolution and fast bundling capabilities proved essential for managing complex project structures while maintaining development speed and build reliability.
+
+**Areas for Continued Growth:**
+- **Advanced Plugin Development**: Learning to create custom Vite plugins for specific project requirements and exploring the extensive plugin ecosystem for enhanced functionality
+- **Build Optimization Techniques**: Mastering advanced build configurations, code splitting strategies, and optimization techniques for production deployment
+- **Custom Configuration Mastery**: Developing expertise in Vite configuration files, environment-specific settings, and advanced build customization options
+- **Performance Optimization**: Learning advanced performance optimization techniques including bundle analysis, lazy loading implementation, and asset optimization strategies
+- **Integration with Advanced Frameworks**: Exploring Vite's integration with cutting-edge frameworks and tools for more sophisticated application development
+- **Production Deployment Optimization**: Understanding advanced deployment strategies, caching configurations, and production-specific optimizations for Vite-built applications`
   },
   {
     name: 'Auth0',
@@ -907,7 +1123,40 @@ Solved complex timing challenges when scraping websites with dynamic content loa
     projects: ['save-gas'],
     icon: 'SiGoogle',
     color: '#eb5424',
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Social Login Integration**: Strategic implementation of social authentication providers including Google, Facebook, and GitHub for seamless user onboarding experiences
+- **Role-Based Access Control (RBAC)**: Advanced configuration of user roles and permissions to control access to different application features and functionalities
+- **Secure Token Management**: Comprehensive handling of JWT tokens, refresh tokens, and session management for maintaining secure user authentication states
+- **Authentication Flow Implementation**: Expert integration of Auth0's Universal Login flow and custom authentication workflows within React and Next.js applications
+- **User Profile Management**: Strategic implementation of user profile data storage, retrieval, and management through Auth0's user management APIs
+- **Security Best Practices**: Application of industry-standard security measures including multi-factor authentication setup and secure redirect URI configuration
+- **API Protection**: Implementation of protected API routes and endpoints using Auth0's authentication middleware and token verification
+
+**Advanced Development Patterns:**
+- **Single Sign-On (SSO) Architecture**: Design and implementation of SSO solutions that provide seamless authentication across multiple application domains and services
+- **Custom Authentication Rules**: Development of custom rules and hooks within Auth0 to implement business-specific authentication logic and user data enrichment
+- **Progressive Authentication**: Strategic implementation of authentication flows that adapt based on user risk profiles and application security requirements
+- **Cross-Platform Integration**: Seamless Auth0 integration across web applications, mobile apps, and API services for consistent authentication experiences
+- **Enterprise Identity Provider Integration**: Configuration of Auth0 to work with enterprise identity providers for B2B application authentication requirements
+
+**Complex Problem-Solving Examples:**
+
+*SaveGas Social Authentication System:*
+Implemented a comprehensive social login system for the SaveGas application that supports multiple authentication providers while maintaining a seamless user experience. The challenge involved integrating Auth0's Universal Login with React components and ensuring proper token management across different user sessions. Successfully configured Google and GitHub social login providers, implemented role-based access control to differentiate between regular users and administrative access, and created a secure authentication flow that handles both new user registration and returning user login scenarios.
+
+*Secure API Route Protection:*
+Developed a robust API protection system using Auth0's token verification to secure backend endpoints and ensure only authenticated users can access protected resources. The challenge involved implementing middleware that validates JWT tokens, handles token refresh scenarios, and provides appropriate error responses for unauthorized access attempts. Successfully created a security layer that protects sensitive application data while maintaining optimal performance and user experience.
+
+*Role-Based Feature Access Control:*
+Architected a sophisticated role-based access control system that dynamically shows or hides application features based on user permissions and roles defined in Auth0. The implementation required creating custom React components that check user roles and permissions before rendering protected content, ensuring that users only see functionality appropriate to their access level while maintaining a clean and intuitive user interface.
+
+**Areas for Continued Growth:**
+- **Advanced Auth0 Features**: Exploring Auth0's machine-to-machine authentication, custom database connections, and advanced security features like anomaly detection and brute force protection
+- **Enterprise Authentication Patterns**: Learning SAML integration, Active Directory federation, and enterprise-grade authentication solutions for large-scale B2B applications
+- **Authentication Analytics**: Implementing Auth0's analytics and monitoring capabilities to track authentication patterns, user behavior, and security metrics for application optimization
+- **Custom Identity Providers**: Developing expertise in creating custom identity providers and authentication extensions for specialized authentication requirements
+- **Multi-Tenant Authentication**: Learning advanced multi-tenant authentication patterns and organization-based access control for SaaS applications
+- **Authentication Testing Strategies**: Mastering authentication testing methodologies, security auditing, and compliance verification for production authentication systems`
   },
 
 
@@ -1017,7 +1266,44 @@ Created a system that efficiently processes and integrates information from both
     projects: ['av-simulator'],
     icon: 'SiOpencv',
     color: '#5c3ee8',
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Image Processing Fundamentals**: Comprehensive understanding of digital image manipulation including filtering, noise reduction, edge detection, and morphological operations for computer vision applications
+- **Object Detection & Recognition**: Advanced implementation of object detection algorithms for identifying and classifying objects in real-time video streams from autonomous vehicle camera systems
+- **Feature Extraction**: Strategic use of feature detection and matching algorithms including SIFT, SURF, and ORB for identifying key visual features in complex driving environments
+- **Real-Time Video Processing**: Expert implementation of live video stream processing for autonomous vehicle applications requiring immediate visual analysis and decision-making
+- **Image Segmentation**: Sophisticated segmentation techniques for separating objects, lanes, and obstacles in automotive computer vision applications
+- **Camera Calibration**: Advanced camera calibration and distortion correction techniques for accurate spatial measurements and depth perception in autonomous vehicle systems
+- **Multi-Modal Sensor Integration**: Strategic combination of OpenCV image processing with sensor fusion techniques for comprehensive environmental understanding
+
+**Advanced Development Patterns:**
+- **Autonomous Vehicle Vision Systems**: Integration of OpenCV with autonomous vehicle control systems for real-time environmental analysis and navigation decision-making
+- **Safety-Critical Image Processing**: Implementation of robust computer vision algorithms that function reliably in safety-critical autonomous driving scenarios
+- **Performance-Optimized Vision Processing**: Strategic optimization of OpenCV algorithms for real-time processing requirements in autonomous vehicle applications
+- **TensorFlow-OpenCV Integration**: Seamless combination of OpenCV preprocessing with TensorFlow neural networks for enhanced computer vision capabilities
+- **Multi-Camera System Management**: Coordination of multiple camera inputs and processing streams for comprehensive 360-degree environmental awareness
+- **Environmental Adaptation**: Implementation of vision algorithms that adapt to varying lighting conditions, weather, and environmental challenges
+
+**Complex Problem-Solving Examples:**
+
+*Autonomous Vehicle Object Detection System:*
+Developed a comprehensive object detection system for autonomous vehicles using OpenCV that processes real-time camera feeds to identify vehicles, pedestrians, traffic signs, and road obstacles. The challenge involved creating algorithms that could reliably detect objects in varying lighting conditions, different weather scenarios, and complex traffic environments while maintaining the processing speed necessary for real-time autonomous driving decisions. Successfully implemented multi-scale object detection with confidence scoring that enables the autonomous vehicle to make appropriate navigation decisions based on detected objects and their relative positions.
+
+*Lane Detection and Tracking Algorithm:*
+Architected a sophisticated lane detection system using OpenCV that identifies road lane markings, tracks lane boundaries, and provides continuous feedback for autonomous vehicle steering control. The project required implementing edge detection algorithms, Hough line transforms, and perspective transformation techniques to accurately identify lane geometry even in challenging conditions like curved roads, faded markings, and variable lighting. Successfully created a robust lane tracking system that maintains accuracy across diverse driving conditions and integrates seamlessly with vehicle control systems.
+
+*Multi-Sensor Computer Vision Integration:*
+Integrated OpenCV image processing capabilities with TensorFlow neural networks to create a comprehensive computer vision system for autonomous vehicles that combines traditional computer vision techniques with deep learning approaches. The challenge involved coordinating OpenCV's real-time processing capabilities with TensorFlow's advanced pattern recognition to create a hybrid system that leverages the strengths of both approaches. Successfully developed a system that uses OpenCV for rapid initial processing and feature extraction while applying TensorFlow models for complex pattern recognition and decision-making.
+
+*Real-Time Environmental Analysis Pipeline:*
+Created a high-performance image processing pipeline using OpenCV that analyzes multiple camera feeds simultaneously to provide comprehensive environmental awareness for autonomous vehicle navigation. The system required optimizing algorithm performance to handle multiple high-resolution video streams while maintaining the low latency necessary for safe autonomous operation. Successfully implemented efficient memory management, parallel processing techniques, and algorithm optimization that enables real-time analysis of complex driving environments.
+
+**Areas for Continued Growth:**
+- **Deep Learning Integration**: Expanding expertise in combining OpenCV with modern deep learning frameworks for more sophisticated computer vision applications using CNNs and advanced neural network architectures
+- **3D Computer Vision**: Learning stereo vision, depth estimation, and 3D reconstruction techniques for enhanced spatial understanding in autonomous vehicle applications
+- **Advanced Object Tracking**: Mastering multi-object tracking algorithms, Kalman filters, and predictive tracking for following objects across video sequences in dynamic environments
+- **Performance Optimization**: Developing expertise in GPU acceleration, parallel processing, and optimization techniques for real-time computer vision in resource-constrained automotive systems
+- **Specialized Automotive Vision**: Learning automotive-specific computer vision techniques including advanced driver assistance systems (ADAS), parking assistance, and specialized automotive imaging challenges
+- **Machine Learning Integration**: Exploring the integration of OpenCV with custom machine learning models for specialized computer vision tasks beyond standard object detection and recognition`
   },
 
   // Data Visualization
@@ -1059,7 +1345,43 @@ Created a system that efficiently processes and integrates information from both
     projects: ['financial-modeling-tool'],
     icon: 'SiPlotly',
     color: '#3f4f75',
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Interactive Financial Visualizations**: Expert creation of dynamic charts and graphs specifically designed for financial data analysis, stock price tracking, and market trend visualization
+- **Real-Time Data Integration**: Advanced implementation of live data updates and streaming financial data visualization for real-time market monitoring and analysis
+- **Multi-Dimensional Data Plotting**: Sophisticated visualization of complex financial datasets using 3D plots, heatmaps, and multi-axis charts for comprehensive data analysis
+- **Custom Interactive Features**: Strategic implementation of zoom, pan, hover effects, and custom tooltips to enhance user interaction with financial visualizations
+- **Web-Based Dashboard Integration**: Seamless integration of Plotly visualizations into web applications for accessible and shareable financial analysis tools
+- **Statistical Visualization**: Advanced plotting of financial indicators, moving averages, volatility measures, and correlation matrices for comprehensive market analysis
+- **Time Series Analysis**: Expert implementation of time-based financial data visualization including candlestick charts, volume analysis, and trend line integration
+
+**Advanced Development Patterns:**
+- **Dynamic Chart Configuration**: Implementation of user-configurable chart parameters allowing real-time modification of visualization settings and data display options
+- **Cross-Filter Integration**: Advanced linking of multiple visualizations to enable coordinated data exploration and multi-dimensional financial analysis
+- **Performance Optimization**: Strategic optimization of large financial dataset visualization through data sampling, efficient rendering, and memory management techniques
+- **Responsive Design Implementation**: Creation of visualizations that adapt seamlessly across desktop, tablet, and mobile devices for universal accessibility
+- **Export and Sharing Capabilities**: Integration of chart export functionality for reports, presentations, and collaborative financial analysis workflows
+
+**Complex Problem-Solving Examples:**
+
+*Financial Modeling Dashboard Creation:*
+Developed a comprehensive interactive financial modeling dashboard using Plotly that enables users to visualize complex financial scenarios, perform sensitivity analysis, and explore different investment strategies. The challenge involved creating multiple interconnected visualizations that update dynamically based on user inputs and parameter changes. Successfully implemented real-time chart updates, interactive parameter controls, and coordinated multi-chart displays that allow users to explore financial models from multiple perspectives simultaneously.
+
+*Real-Time Market Data Visualization:*
+Architected a sophisticated real-time financial data visualization system that processes and displays live market data using Plotly's streaming capabilities. The challenge involved handling high-frequency data updates while maintaining smooth user interaction and preventing performance degradation. Successfully created dynamic candlestick charts, volume indicators, and technical analysis overlays that update in real-time while providing users with interactive tools for detailed market analysis.
+
+*Multi-Asset Portfolio Analysis Interface:*
+Designed and implemented an advanced portfolio analysis interface that visualizes complex relationships between multiple financial assets, risk metrics, and performance indicators. The project required creating coordinated visualizations that show correlation matrices, efficient frontier plots, and individual asset performance in a cohesive, interactive dashboard. Successfully developed a system that enables portfolio managers to explore different allocation strategies and assess risk-return relationships through intuitive visual interfaces.
+
+*Statistical Analysis Visualization Suite:*
+Created a comprehensive suite of statistical visualizations for financial analysis including distribution plots, regression analysis, and Monte Carlo simulation results. The challenge involved presenting complex statistical concepts in accessible visual formats while maintaining mathematical accuracy and providing interactive exploration capabilities.
+
+**Areas for Continued Growth:**
+- **Advanced 3D Visualization**: Exploring Plotly's 3D plotting capabilities for complex financial surface modeling, risk visualization, and multi-dimensional data exploration
+- **Custom Widget Development**: Learning to create custom Plotly widgets and extensions for specialized financial analysis tools and industry-specific visualization requirements
+- **Big Data Integration**: Mastering techniques for visualizing extremely large financial datasets through efficient data processing, aggregation, and progressive loading strategies
+- **Machine Learning Visualization**: Integrating Plotly with machine learning workflows for model result visualization, feature importance displays, and predictive analytics presentations
+- **Production Dashboard Optimization**: Advanced optimization techniques for production-grade financial dashboards including caching strategies, performance monitoring, and scalability considerations
+- **Integration with Financial APIs**: Developing expertise in connecting Plotly visualizations with real-time financial data APIs, market data providers, and trading platforms for live analysis capabilities`
   },
   {
     name: 'Dash',
@@ -1071,7 +1393,40 @@ Created a system that efficiently processes and integrates information from both
     projects: ['financial-modeling-tool'],
     icon: 'BiSolidDashboard',
     color: '#0ea5e9',
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Interactive Dashboard Development**: Strategic creation of analytical web applications using Dash's component-based architecture for financial modeling and data analysis workflows
+- **Callback System Implementation**: Advanced use of Dash callbacks to create reactive interfaces where user inputs trigger real-time updates across multiple dashboard components
+- **Financial Data Integration**: Seamless integration of financial datasets with Dash applications for creating comprehensive modeling tools and analytical dashboards
+- **Component Layout Design**: Expert implementation of Dash HTML and Core components to create intuitive, professional-grade user interfaces for financial analysis applications
+- **Real-Time Data Updates**: Strategic implementation of live data feeds and automatic dashboard refreshing for dynamic financial modeling and market analysis tools
+- **User Input Management**: Comprehensive handling of user inputs including sliders, dropdowns, text fields, and date pickers for interactive financial parameter adjustment
+- **Plotly Integration**: Advanced integration of Plotly visualizations within Dash applications for creating sophisticated interactive charts and graphs
+
+**Advanced Development Patterns:**
+- **Multi-Page Application Architecture**: Implementation of complex Dash applications with multiple pages and navigation systems for comprehensive financial analysis platforms
+- **State Management**: Strategic management of application state and user session data to maintain dashboard consistency across different user interactions
+- **Performance Optimization**: Implementation of efficient callback patterns, data caching, and component optimization to ensure responsive dashboard performance with large datasets
+- **Custom Component Development**: Creation of specialized Dash components tailored for financial modeling requirements and industry-specific analytical needs
+- **Responsive Design Integration**: Development of Dash applications that adapt seamlessly across different screen sizes and device types for universal accessibility
+
+**Complex Problem-Solving Examples:**
+
+*Financial Modeling Dashboard Application:*
+Developed a comprehensive financial modeling dashboard using Dash that enables users to perform complex financial analysis, scenario planning, and investment evaluation. The challenge involved creating an interactive interface where users can adjust multiple financial parameters and see real-time updates across various visualizations and calculations. Successfully implemented a multi-component dashboard with synchronized updates, where changes to input parameters automatically recalculate financial models and update corresponding charts, tables, and summary statistics.
+
+*Interactive Portfolio Analysis Tool:*
+Created a sophisticated portfolio analysis application using Dash that allows users to explore different asset allocation strategies and assess risk-return relationships. The project required implementing complex callback chains that update multiple visualizations simultaneously based on user-selected portfolios and time periods. Successfully developed an interface that combines user input controls with dynamic Plotly charts to provide comprehensive portfolio performance analysis and optimization recommendations.
+
+*Real-Time Financial Data Dashboard:*
+Architected a live financial data dashboard that processes and displays real-time market information using Dash's interval components and callback system. The challenge involved handling continuous data updates while maintaining smooth user interaction and preventing callback conflicts. Successfully implemented automatic data refresh capabilities with user-configurable update frequencies and real-time chart updates that maintain interactivity during live data streaming.
+
+**Areas for Continued Growth:**
+- **Advanced Callback Patterns**: Learning complex callback chaining, pattern-matching callbacks, and advanced state management techniques for building more sophisticated interactive applications
+- **Custom CSS and Styling**: Mastering advanced styling techniques, custom CSS integration, and responsive design principles for creating professional-grade dashboard interfaces
+- **Database Integration**: Implementing direct database connections, SQL query integration, and efficient data loading strategies for enterprise-scale analytical applications
+- **Deployment and Scaling**: Learning production deployment strategies, performance optimization, and scaling techniques for Dash applications in enterprise environments
+- **Advanced Component Libraries**: Exploring Dash Bootstrap Components, Dash AG Grid, and other advanced component libraries for enhanced functionality and professional UI design
+- **Authentication and Security**: Implementing user authentication, role-based access control, and security best practices for production Dash applications handling sensitive financial data`
   },
 
   // Additional Libraries & Tools
@@ -1086,7 +1441,43 @@ Created a system that efficiently processes and integrates information from both
     projects: ['exped-browser', 'panda-express-pos'],
     icon: 'SiLucide',
     color: '#f56565',
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Icon System Architecture**: Strategic implementation of consistent icon systems across React applications using Lucide's comprehensive icon library for professional UI design
+- **Component Integration**: Expert integration of Lucide icons with React components, including proper sizing, styling, and responsive behavior for optimal user experience
+- **Theme-Aware Iconography**: Advanced implementation of icon systems that adapt to application themes, including dynamic color schemes and style variations based on context
+- **Accessibility Implementation**: Comprehensive application of accessibility best practices for icons including proper ARIA labels, semantic markup, and screen reader compatibility
+- **Performance Optimization**: Strategic use of icon tree-shaking, selective imports, and optimization techniques to minimize bundle size while maintaining full icon functionality
+- **UI Consistency Standards**: Expert maintenance of visual consistency across large applications through standardized icon usage patterns and design system integration
+- **Interactive Icon States**: Advanced implementation of icon states including hover effects, active states, and animated transitions for enhanced user interaction
+
+**Advanced Development Patterns:**
+- **Dynamic Icon Selection**: Implementation of dynamic icon rendering systems where icons are selected programmatically based on data, user preferences, or application state
+- **Custom Icon Variants**: Creation of custom icon variants and modifications while maintaining Lucide's design principles and visual consistency standards
+- **Icon Component Abstraction**: Development of higher-order icon components that provide consistent styling, sizing, and behavior patterns across different application contexts
+- **Cross-Platform Consistency**: Ensuring identical icon appearance and behavior across desktop applications (Electron) and web platforms for unified user experiences
+- **Icon Animation Integration**: Strategic implementation of icon animations and micro-interactions using Lucide icons with CSS transitions and JavaScript animations
+
+**Complex Problem-Solving Examples:**
+
+*Exped Browser Icon System:*
+Developed a comprehensive icon system for the Exped Browser desktop application using Lucide React that provides consistent visual language across all browser features and interfaces. The challenge involved selecting appropriate icons for browser-specific functionality while maintaining intuitive user navigation and visual hierarchy. Successfully implemented a scalable icon system that supports different icon sizes, states, and contexts throughout the application, ensuring users can easily identify and access browser features like navigation, bookmarks, settings, and tab management.
+
+*POS System Interface Design:*
+Created a sophisticated icon-based interface for the Panda Express POS System that enables efficient operation in fast-paced restaurant environments. The project required selecting and implementing icons that are immediately recognizable to restaurant staff across different roles (customers, employees, managers) while maintaining visual consistency and accessibility standards. Successfully developed an icon system that supports role-based interface variations, ensuring each user type sees appropriate iconography for their specific workflow requirements.
+
+*Responsive Icon Scaling System:*
+Architected a responsive icon scaling and adaptation system that maintains visual consistency across different screen sizes and device types in both desktop and web applications. The challenge involved ensuring icons remain legible and aesthetically pleasing at various sizes while preserving their semantic meaning and visual impact. Successfully implemented automated icon sizing based on viewport dimensions and context, with smart fallbacks for different display densities and accessibility requirements.
+
+*Theme-Adaptive Icon Implementation:*
+Designed and implemented a theme-aware icon system that seamlessly adapts to different application themes and color schemes while maintaining optimal contrast and visual hierarchy. The solution involved creating icon variants that automatically adjust based on background colors, theme preferences, and accessibility requirements to ensure icons remain visible and meaningful across all application states.
+
+**Areas for Continued Growth:**
+- **Custom Icon Development**: Learning to create custom icons that match Lucide's design principles and integrate seamlessly with the existing icon library for specialized application requirements
+- **Advanced Animation Techniques**: Mastering complex icon animations, morphing effects, and interactive icon behaviors for enhanced user engagement and micro-interaction design
+- **Design System Integration**: Developing expertise in integrating Lucide icons with comprehensive design systems, including documentation, usage guidelines, and automated consistency checking
+- **Accessibility Innovation**: Exploring cutting-edge accessibility techniques for icons including dynamic alternative text, context-aware descriptions, and advanced screen reader integration
+- **Performance Optimization**: Learning advanced optimization techniques for large-scale icon usage including custom bundling strategies, lazy loading, and progressive icon enhancement
+- **Cross-Framework Integration**: Expanding knowledge of Lucide integration across different frameworks and platforms for consistent iconography in diverse technology stacks`
   },
 
 
@@ -1101,7 +1492,40 @@ Created a system that efficiently processes and integrates information from both
     projects: ['client-server-system'],
     icon: 'BsRouterFill',
     color: '#4a90e2',
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Socket Programming Fundamentals**: Comprehensive understanding of TCP and UDP socket creation, configuration, and management for reliable client-server communication
+- **Protocol Layer Understanding**: Deep knowledge of the TCP/IP stack including application, transport, network, and data link layers and their interactions in network communication
+- **Reliable Data Transmission**: Expert implementation of TCP's reliable delivery mechanisms including acknowledgments, retransmission, and flow control for robust network applications
+- **Client-Server Architecture**: Advanced design and implementation of client-server systems using TCP/IP protocols for scalable and efficient network communication
+- **Network Error Handling**: Comprehensive error handling and recovery strategies for network failures, connection timeouts, and data corruption scenarios
+- **Connection Management**: Strategic implementation of connection establishment, maintenance, and termination procedures for stable network applications
+- **Data Serialization**: Expert handling of data formatting, serialization, and deserialization for consistent communication between network endpoints
+
+**Advanced Development Patterns:**
+- **Multi-Client Server Design**: Implementation of servers capable of handling multiple simultaneous client connections using concurrent programming techniques
+- **Network Performance Optimization**: Strategic optimization of network communication including buffer management, packet sizing, and connection pooling for enhanced performance
+- **Security Implementation**: Application of network security principles including data encryption, authentication, and secure communication protocols
+- **Cross-Platform Networking**: Development of network applications that function consistently across different operating systems and network environments
+- **Real-Time Communication**: Implementation of low-latency network communication suitable for real-time applications and interactive systems
+
+**Complex Problem-Solving Examples:**
+
+*Client-Server System Architecture:*
+Designed and implemented a comprehensive client-server system using TCP/IP protocols that enables reliable communication between multiple clients and a central server. The challenge involved creating a robust network architecture that handles concurrent client connections, manages data flow efficiently, and provides error recovery mechanisms for network failures. Successfully developed a system that maintains connection stability, implements proper message formatting and parsing, and ensures data integrity across network transmissions.
+
+*Multi-Client Connection Management:*
+Architected a sophisticated connection management system that allows a single server to handle multiple simultaneous client connections while maintaining individual session states and ensuring fair resource allocation. The project required implementing connection queuing, proper socket lifecycle management, and efficient data routing between different client sessions. Successfully created a scalable server architecture that can dynamically manage varying numbers of client connections without performance degradation.
+
+*Network Error Recovery System:*
+Developed a robust error handling and recovery system for network communications that gracefully manages connection failures, data corruption, and timeout scenarios. The challenge involved implementing retry mechanisms, connection re-establishment procedures, and data validation to ensure system reliability in unstable network conditions. Successfully created a fault-tolerant network layer that maintains application functionality even during adverse network conditions.
+
+**Areas for Continued Growth:**
+- **Advanced Protocol Implementation**: Learning to implement custom network protocols, protocol extensions, and advanced features like streaming data transmission and protocol negotiation
+- **Network Security Mastery**: Developing expertise in secure network programming including TLS/SSL implementation, certificate management, and encrypted communication protocols
+- **Performance Optimization**: Mastering advanced network performance techniques including asynchronous I/O, event-driven architectures, and high-throughput network programming
+- **Distributed Systems Integration**: Learning how TCP/IP networking integrates with distributed system architectures, load balancing, and microservices communication patterns
+- **Network Monitoring and Debugging**: Developing skills in network analysis tools, packet capture, and network debugging techniques for troubleshooting complex networking issues
+- **Modern Networking Protocols**: Exploring contemporary networking technologies including HTTP/2, WebSockets, gRPC, and other modern communication protocols for advanced network application development`
   },
   {
     name: 'Multithreading',
@@ -1113,7 +1537,40 @@ Created a system that efficiently processes and integrates information from both
     projects: ['client-server-system'],
     icon: 'TbNeedleThread',
     color: '#ff6b6b',
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Thread Creation and Management**: Comprehensive understanding of thread lifecycle, creation, synchronization, and termination for efficient concurrent programming
+- **Synchronization Mechanisms**: Expert implementation of mutexes, semaphores, condition variables, and other synchronization primitives to prevent race conditions and ensure thread safety
+- **Concurrent Client Handling**: Advanced design of multi-threaded server architectures that handle multiple client connections simultaneously through dedicated worker threads
+- **Shared Resource Management**: Strategic management of shared data structures and resources across multiple threads with proper locking mechanisms and access control
+- **Thread Pool Implementation**: Efficient implementation of thread pool patterns to optimize resource usage and improve application performance in high-concurrency scenarios
+- **Deadlock Prevention**: Comprehensive understanding of deadlock conditions and implementation of prevention strategies including lock ordering and timeout mechanisms
+- **Performance Optimization**: Strategic use of multithreading to improve application responsiveness and throughput in computationally intensive and I/O-bound operations
+
+**Advanced Development Patterns:**
+- **Producer-Consumer Architecture**: Implementation of producer-consumer patterns using multithreading for efficient data processing and workflow management
+- **Task-Based Concurrency**: Development of task-oriented multithreading systems that distribute work efficiently across available processor cores
+- **Thread-Safe Data Structures**: Design and implementation of thread-safe data structures that support concurrent access without performance degradation
+- **Asynchronous Processing**: Integration of multithreading with asynchronous programming patterns for responsive user interfaces and efficient resource utilization
+- **Load Balancing Across Threads**: Strategic distribution of computational workload across multiple threads for optimal system performance
+
+**Complex Problem-Solving Examples:**
+
+*Multi-Client Server Threading Architecture:*
+Designed and implemented a sophisticated multi-threaded server system for the client-server project that creates dedicated threads for each client connection while maintaining efficient resource management. The challenge involved balancing thread creation overhead with system responsiveness, implementing proper thread synchronization for shared server resources, and ensuring graceful handling of client disconnections. Successfully developed a scalable threading model that allows the server to handle numerous concurrent clients while maintaining stable performance and preventing resource exhaustion.
+
+*Thread-Safe Resource Management System:*
+Developed a comprehensive thread synchronization system that manages shared resources and data structures across multiple concurrent threads without race conditions or data corruption. The project required implementing sophisticated locking strategies, designing thread-safe interfaces, and creating deadlock prevention mechanisms. Successfully created a robust concurrent system that maintains data integrity while allowing multiple threads to efficiently access shared resources.
+
+*Performance-Optimized Concurrent Processing:*
+Architected a multi-threaded processing system that distributes computational workload across multiple threads to maximize system performance and responsiveness. The challenge involved identifying optimal thread counts, implementing efficient work distribution algorithms, and managing thread lifecycle to prevent resource leaks. Successfully implemented a concurrent processing solution that significantly improved application performance while maintaining system stability.
+
+**Areas for Continued Growth:**
+- **Advanced Synchronization Techniques**: Learning lock-free programming, atomic operations, and advanced synchronization patterns for high-performance concurrent applications
+- **Thread Pool Optimization**: Mastering advanced thread pool configurations, work-stealing algorithms, and dynamic thread pool sizing for optimal resource utilization
+- **Concurrent Data Structures**: Developing expertise in implementing and using advanced concurrent data structures like lock-free queues, concurrent hash maps, and parallel algorithms
+- **Performance Profiling**: Learning multithreading performance analysis tools, profiling techniques, and optimization strategies for identifying and resolving concurrency bottlenecks
+- **Parallel Algorithms**: Exploring parallel algorithm design, map-reduce patterns, and distributed computing concepts for large-scale concurrent processing
+- **Modern Concurrency Models**: Understanding contemporary concurrency models including actor systems, coroutines, and async/await patterns for modern application development`
   },
   {
     name: 'Linux',
@@ -1125,7 +1582,43 @@ Created a system that efficiently processes and integrates information from both
     projects: ['client-server-system'],
     icon: 'SiLinux',
     color: '#fcc624',
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Command-Line Interface Mastery**: Comprehensive proficiency with Linux terminal operations, shell scripting, and command-line tools for efficient system navigation and file management
+- **Process Management**: Advanced understanding of process lifecycle, job control, system monitoring, and resource management using tools like ps, top, htop, and kill commands
+- **File System Navigation**: Expert knowledge of Linux file system hierarchy, permissions, ownership management, and advanced file operations using commands like find, grep, and sed
+- **Network Configuration**: Strategic implementation of network services, socket programming, and system-level network configuration for client-server application development
+- **System Development Environment**: Comprehensive setup and management of Linux development environments including compiler toolchains, build systems, and debugging tools
+- **Package Management**: Proficient use of package managers (apt, yum, dnf) for software installation, dependency management, and system maintenance
+- **Shell Scripting**: Advanced shell scripting capabilities for automation, system administration tasks, and development workflow optimization
+
+**Advanced Development Patterns:**
+- **System Programming Integration**: Strategic use of Linux system calls and APIs for low-level programming and system-level application development
+- **Development Workflow Optimization**: Implementation of Linux-based development environments that enhance productivity through terminal customization and tool integration
+- **Cross-Platform Development**: Leveraging Linux environments for developing applications that target multiple platforms while maintaining compatibility
+- **Server Environment Management**: Understanding of Linux server configurations, service management, and deployment environments for networked applications
+- **Performance Monitoring**: Strategic use of Linux system monitoring tools and performance analysis for optimizing application and system performance
+
+**Complex Problem-Solving Examples:**
+
+*Client-Server System Development Environment:*
+Established a comprehensive Linux development environment for building and testing the client-server system project, utilizing Linux's robust networking capabilities and development tools. The challenge involved configuring the system for optimal network programming, setting up proper development toolchains, and managing multiple concurrent processes for testing client-server interactions. Successfully created a streamlined development workflow that leverages Linux's powerful command-line tools, process management capabilities, and networking features to efficiently develop, debug, and test networked applications.
+
+*Network Programming Environment Configuration:*
+Configured a sophisticated Linux environment specifically optimized for network programming and socket development, including proper network interface management, firewall configuration, and debugging tool setup. The project required understanding Linux networking subsystems, configuring development tools for network analysis, and setting up testing environments that simulate various network conditions. Successfully established a robust development platform that enables efficient network application development and testing.
+
+*System Resource Management for Concurrent Applications:*
+Implemented comprehensive system resource monitoring and management strategies for applications running multiple concurrent processes and network connections. The challenge involved understanding Linux process scheduling, memory management, and I/O operations to optimize application performance. Successfully developed monitoring and optimization strategies that ensure stable application performance even under high-load conditions.
+
+*Development Tool Integration and Automation:*
+Created automated development workflows using Linux shell scripting and command-line tools to streamline the build, test, and deployment processes for system programming projects. The solution involved integrating multiple development tools, creating custom scripts for repetitive tasks, and establishing efficient debugging workflows that leverage Linux's extensive toolkit for system development.
+
+**Areas for Continued Growth:**
+- **System Administration Mastery**: Developing expertise in advanced Linux system administration including user management, security configuration, service deployment, and system optimization for production environments
+- **Container and Virtualization Technologies**: Learning Docker, containerization, and virtualization technologies that build upon Linux fundamentals for modern application deployment and development
+- **Advanced Shell Scripting**: Mastering complex shell scripting techniques, automation frameworks, and Linux-specific programming interfaces for sophisticated system automation
+- **Security and Hardening**: Understanding Linux security models, system hardening techniques, access control mechanisms, and security auditing for production system deployment
+- **Performance Tuning**: Learning advanced Linux performance optimization techniques including kernel tuning, system profiling, and resource optimization for high-performance applications
+- **DevOps Integration**: Exploring Linux's role in modern DevOps workflows including CI/CD pipeline integration, infrastructure as code, and automated deployment strategies`
   },
   {
     name: 'Sockets',
