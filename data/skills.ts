@@ -1226,7 +1226,44 @@ Created a system that efficiently processes and integrates information from both
     color: '#013243',
     internships: 4,
     internshipDetails: ['INTERA Incorporated (Data Science)', 'Pivotal Research Inc.', 'INTERA Incorporated (Data Engineering)', 'Momentum Technologies'],
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Array Manipulation Mastery**: Extensive experience with multi-dimensional array operations, reshaping, indexing, and slicing for diverse scientific computing applications across environmental data analysis and machine learning workflows
+- **Mathematical Functions & Operations**: Comprehensive use of NumPy's mathematical function library for implementing complex calculations in financial modeling, physics equations, and statistical analysis across multiple industry applications
+- **Statistical Operations**: Advanced statistical computing using NumPy for environmental data analysis, financial forecasting, and scientific modeling with emphasis on real-world data analysis and mathematical modeling
+- **Linear Algebra Integration**: Expert implementation of linear algebra calculations that seamlessly integrate with PyTorch and TensorFlow ML models, providing foundational mathematical operations for neural network development
+- **Physics Equation Implementation**: Specialized experience implementing physics equations and custom loss functions for Physics-Informed Neural Networks (PINNs) in chemical process optimization applications
+- **Sensor Data Processing**: Sophisticated sensor data processing combined with Pandas for autonomous vehicle applications, handling complex matrix operations and real-time data analysis
+- **Advanced Array Features**: Practical experience with structured arrays and masked arrays for handling complex data structures and specialized scientific computing requirements
+
+**Advanced Development Patterns:**
+- **ML Framework Integration**: Strategic use of NumPy as the foundational layer for PyTorch and TensorFlow operations, enabling seamless data flow between numerical computing and deep learning frameworks
+- **Financial Mathematical Modeling**: Comprehensive implementation of financial mathematics using NumPy for calculating complex financial forecasts, statistical models, and quantitative analysis in financial modeling applications
+- **Scientific Computing Workflows**: Integration of NumPy operations within larger scientific computing pipelines for environmental consulting, chemical process optimization, and autonomous vehicle simulation
+- **Physics-Informed Computing**: Advanced implementation of physics constraints and mathematical models using NumPy arrays for scientific computing applications requiring domain-specific mathematical accuracy
+- **Vectorization Optimization**: Strategic use of vectorized operations to improve computational efficiency and performance in large-scale data processing and mathematical modeling applications
+- **Multi-Dimensional Data Analysis**: Expert handling of complex multi-dimensional datasets for environmental analysis, sensor processing, and scientific modeling across diverse industry applications
+
+**Complex Problem-Solving Examples:**
+
+*Physics-Informed Neural Network Mathematical Implementation:*
+Developed sophisticated physics equation implementations using NumPy for Physics-Informed Neural Networks at Momentum Technologies, integrating fundamental physics principles directly into neural network loss functions. The challenge involved translating complex chemical engineering equations into efficient NumPy array operations while maintaining mathematical accuracy and computational performance. Successfully implemented custom loss functions that incorporate physics constraints, mass balance equations, and thermodynamic principles using NumPy's mathematical functions, enabling the neural network to respect physical laws while optimizing chemical process parameters.
+
+*Financial Modeling Mathematical Engine:*
+Architected a comprehensive financial mathematics engine using NumPy that calculates complex financial forecasts, statistical models, and quantitative analysis for the financial modeling tool. The project required implementing sophisticated mathematical operations including time series analysis, statistical distributions, risk calculations, and portfolio optimization algorithms. Successfully created a robust numerical computing foundation that handles diverse financial calculations, from basic statistical measures to complex derivative pricing models, demonstrating mastery of NumPy's mathematical function library for real-world financial applications.
+
+*Autonomous Vehicle Sensor Data Processing System:*
+Designed and implemented a sophisticated sensor data processing system for the autonomous vehicle simulator that combines NumPy matrix operations with Pandas data manipulation. The challenge involved processing real-time sensor data from multiple sources (LiDAR, cameras, GPS) and performing complex matrix transformations for spatial analysis and object detection. Successfully created efficient numerical processing pipelines that handle high-frequency sensor data, coordinate transformations, and real-time mathematical analysis essential for autonomous vehicle navigation and safety systems.
+
+*Environmental Data Analysis & Mathematical Modeling:*
+Developed comprehensive environmental data analysis systems at INTERA using NumPy for statistical analysis and mathematical modeling of environmental monitoring data. The projects required implementing complex statistical operations, time series analysis, and mathematical models for regulatory compliance reporting. Successfully created robust numerical analysis workflows that process large environmental datasets, perform statistical validation, and generate mathematical models that meet strict regulatory requirements for environmental consulting applications.
+
+**Areas for Continued Growth:**
+- **Advanced NumPy C API**: Learning NumPy's C API for performance-critical applications and custom extension development to create specialized numerical computing functions for scientific applications
+- **Broadcasting & Memory Optimization**: Mastering NumPy broadcasting techniques and memory-efficient operations for handling extremely large arrays and optimizing computational performance in production environments
+- **Advanced Array Structures**: Expanding expertise in custom dtypes, record arrays, and specialized array structures for complex scientific computing applications requiring domain-specific data representations
+- **Parallel Computing Integration**: Exploring NumPy integration with parallel computing frameworks and distributed computing systems for large-scale scientific computing applications
+- **Performance Profiling**: Developing expertise in NumPy performance optimization, memory profiling, and computational efficiency analysis for production-scale numerical computing applications
+- **Scientific Computing Libraries**: Deepening integration knowledge with SciPy, SymPy, and other scientific computing libraries that build upon NumPy's foundational capabilities for advanced mathematical modeling`
   },
   {
     name: 'Matplotlib',
@@ -1240,7 +1277,44 @@ Created a system that efficiently processes and integrates information from both
     color: '#1f77b4',
     internships: 3,
     internshipDetails: ['INTERA Incorporated (Data Science)', 'INTERA Incorporated (Data Engineering)', 'Momentum Technologies'],
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Comprehensive Plot Types**: Extensive experience with line plots, scatter plots, bar charts, and 3D visualizations for diverse scientific and engineering applications across environmental consulting and chemical process optimization
+- **DataFrame & NumPy Integration**: Seamless creation of visualizations directly from Pandas DataFrames and NumPy arrays, enabling efficient data-to-visualization workflows for analysis and reporting
+- **CSV Data Processing Visualization**: Strategic use of Matplotlib to visualize original CSV data and processed datasets, providing clear insights into data transformations and analysis results
+- **Time Series Visualization**: Advanced implementation of time series plots for environmental monitoring data, regulatory compliance reporting, and temporal analysis across multiple INTERA projects
+- **Statistical Analysis Visualization**: Comprehensive plotting of statistical analysis results including distributions, correlations, and regression analysis for environmental and chemical process data
+- **Scientific Data Visualization**: Specialized plotting for chemical process mapping, predictive equation visualization, and experimental data analysis in industrial optimization applications
+- **Performance Metrics & Debugging**: Strategic visualization of sensor data, performance metrics, and debugging information for autonomous vehicle development and system validation
+
+**Advanced Development Patterns:**
+- **Multi-Source Data Visualization**: Integration of Matplotlib with diverse data processing workflows, handling visualizations from CSV files, processed DataFrames, and real-time data streams
+- **Chemical Process Mapping**: Sophisticated visualization of chemical processes and predictive equations derived from experimental data points for process optimization and analysis
+- **Environmental Data Analysis**: Comprehensive time series and statistical visualization workflows for environmental consulting applications requiring regulatory compliance and client reporting
+- **Sensor Data Analysis Workflows**: Strategic implementation of sensor data visualizations and performance metric plotting for autonomous vehicle development and system debugging
+- **Scientific Reporting Integration**: Professional visualization creation for technical reports, regulatory submissions, and client presentations across environmental and chemical engineering applications
+- **Data Processing Validation**: Use of Matplotlib for validating data processing workflows, ensuring correct results through visual inspection and debugging visualization techniques
+
+**Complex Problem-Solving Examples:**
+
+*Environmental Time Series Analysis & Regulatory Reporting:*
+Developed comprehensive time series visualization systems at INTERA for environmental monitoring data that required regulatory compliance reporting and client presentations. The challenge involved processing large volumes of environmental measurements from multiple monitoring stations and creating clear, professional visualizations that demonstrate compliance with environmental regulations. Successfully implemented automated plotting workflows that generate standardized time series charts, statistical analysis visualizations, and regulatory compliance reports that meet strict environmental consulting standards and client requirements.
+
+*Chemical Process Optimization Visualization System:*
+Created sophisticated visualization systems at Momentum Technologies for mapping chemical processes and visualizing predictive equations derived from experimental data points. The project required developing plots that could clearly show the relationship between process parameters and outcomes, enabling optimization of chemical processes through visual analysis. Successfully implemented custom plotting workflows that visualize complex chemical process data, predictive models, and optimization results, providing clear insights for process improvement and decision-making.
+
+*Autonomous Vehicle Sensor Data & Performance Visualization:*
+Architected comprehensive sensor data visualization and performance metric plotting systems for the autonomous vehicle simulator project. The challenge involved creating debugging visualizations that could clearly show sensor performance, system metrics, and validation results to ensure correct autonomous vehicle behavior. Successfully developed visualization workflows that process real-time sensor data, performance metrics, and system debugging information, enabling effective development and validation of autonomous vehicle systems through clear visual feedback.
+
+*Multi-Format Data Processing Visualization Pipeline:*
+Designed and implemented visualization pipelines that handle diverse data sources including original CSV files, processed DataFrames, and NumPy arrays across multiple industry applications. The challenge involved creating consistent, professional visualizations that could adapt to different data formats while maintaining visual quality and analytical clarity. Successfully created flexible plotting workflows that seamlessly integrate with data processing pipelines, providing immediate visual feedback for data analysis and validation across environmental, chemical, and automotive applications.
+
+**Areas for Continued Growth:**
+- **Advanced Customization & Styling**: Learning sophisticated plot customization techniques, professional styling approaches, and advanced formatting options to create visually stunning presentations for client reports and technical publications
+- **Publication-Quality Visualization**: Mastering techniques for creating publication-ready figures, professional color schemes, and advanced layout management for scientific papers and technical documentation
+- **Interactive Visualization Integration**: Exploring integration with interactive plotting libraries and web-based visualization tools to enhance presentation capabilities and user engagement
+- **Performance Optimization**: Developing expertise in optimizing Matplotlib for large datasets, memory-efficient plotting, and performance tuning for real-time visualization applications
+- **Advanced Animation Techniques**: Learning animation capabilities for time-series data, process visualization, and dynamic data presentation for enhanced analytical storytelling
+- **Custom Plot Development**: Expanding skills in creating custom plot types, specialized scientific visualizations, and domain-specific plotting functions for advanced engineering and scientific applications`
   },
   {
     name: 'Scikit-Learn',
