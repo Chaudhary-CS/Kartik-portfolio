@@ -1323,12 +1323,50 @@ Designed and implemented visualization pipelines that handle diverse data source
     proficiency: 'Intermediate',
     description: 'Go-to library for machine learning in Python. Used for implementing various ML algorithms and model evaluation.',
     experience: '2+ years',
-    projects: ['financial-modeling-tool'],
+    projects: ['av-simulator', 'financial-modeling-tool'],
     icon: 'SiScikitlearn',
     color: '#f7931e',
     internships: 1,
     internshipDetails: ['Momentum Technologies'],
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Classification & Regression Algorithms**: Comprehensive experience with fundamental ML algorithms including Random Forest, Support Vector Machines (SVMs), and regression models for diverse industry applications
+- **ML Pipeline Development**: Strategic implementation of complete machine learning workflows from data preprocessing through model training, evaluation, and deployment across multiple domains
+- **Statistical Analysis & Preprocessing**: Advanced use of Scikit-Learn for statistical analysis during preprocessing and evaluation phases, ensuring robust data preparation and model validation
+- **Feature Engineering & Selection**: Expert implementation of feature selection, data encoding, and scaling techniques to identify meaningful trends and optimize model performance
+- **Evaluation Metrics & Model Assessment**: Comprehensive use of Scikit-Learn's evaluation tools to assess model performance, compare algorithms, and validate results across different applications
+- **DataFrame Integration**: Seamless integration with Pandas DataFrames for efficient data flow from preprocessing through modeling and evaluation phases
+- **Hybrid ML Framework Integration**: Strategic use alongside PyTorch and TensorFlow for evaluation metrics, preprocessing, and foundational ML operations in complex workflows
+
+**Advanced Development Patterns:**
+- **Multi-Domain Algorithm Application**: Strategic selection and application of appropriate ML algorithms across chemical process optimization, financial analysis, and autonomous vehicle development
+- **Evaluation-Focused Workflows**: Implementation of comprehensive evaluation frameworks using Scikit-Learn metrics to assess model performance and guide algorithm selection decisions
+- **Preprocessing Pipeline Architecture**: Systematic approach to data preprocessing, feature engineering, and scaling that prepares datasets for both traditional ML and deep learning applications
+- **Statistical Validation Methods**: Use of Scikit-Learn's statistical tools to validate data trends, assess feature importance, and ensure model reliability across different industry contexts
+- **Cross-Framework Integration**: Strategic integration of Scikit-Learn preprocessing and evaluation capabilities with advanced deep learning frameworks for comprehensive ML solutions
+- **Industry-Specific Model Selection**: Tailored approach to algorithm selection based on specific industry requirements and data characteristics
+
+**Complex Problem-Solving Examples:**
+
+*Chemical Process Evaluation Metrics System:*
+Developed comprehensive evaluation metric systems at Momentum Technologies using Scikit-Learn to assess chemical process optimization models based on experimental data from DataFrames. The challenge involved creating robust evaluation frameworks that could accurately measure model performance across different chemical process parameters and optimization objectives. Successfully implemented evaluation pipelines that use Scikit-Learn metrics to validate PyTorch PINN models, ensuring that chemical process optimization algorithms meet accuracy and reliability standards for industrial applications.
+
+*Financial Analysis & Risk Modeling Pipeline:*
+Architected a sophisticated financial modeling system using Scikit-Learn for financial forecasting, risk analysis, price prediction, and statistical analysis integrated with Dash for portfolio optimization. The project required implementing multiple ML algorithms including Random Forest and regression models to handle diverse financial analysis tasks. Successfully created comprehensive workflows that combine Scikit-Learn's statistical analysis capabilities with advanced visualization tools, enabling robust financial modeling and portfolio optimization decisions based on rigorous statistical validation.
+
+*Autonomous Vehicle Sensor Classification System:*
+Designed and implemented sensor data classification and modeling systems for the AV simulator using Scikit-Learn to evaluate object detection and identification capabilities. The challenge involved processing complex sensor data and creating classification models that could assess how effectively the autonomous vehicle can identify different objects and environmental features. Successfully developed classification workflows that use Random Forest and SVM algorithms to analyze sensor performance, providing critical validation metrics for autonomous vehicle safety and reliability assessment.
+
+*Cross-Platform ML Preprocessing Architecture:*
+Created comprehensive preprocessing and feature engineering pipelines using Scikit-Learn that serve as foundational components for both traditional ML and deep learning applications. The system handles feature selection, data encoding, and scaling operations that prepare datasets for analysis across multiple frameworks including PyTorch and TensorFlow. Successfully implemented scalable preprocessing workflows that identify meaningful data trends and optimize feature sets for diverse ML applications across chemical, financial, and automotive domains.
+
+**Areas for Continued Growth:**
+- **Advanced Ensemble Methods**: Learning sophisticated ensemble techniques, advanced Random Forest optimization, and ensemble model combination strategies for improved prediction accuracy and robustness
+- **Hyperparameter Optimization**: Mastering grid search, random search, and advanced hyperparameter tuning techniques to optimize model performance across different algorithms and applications
+- **Cross-Validation Strategies**: Developing expertise in advanced cross-validation techniques, stratified sampling, and model validation strategies for robust performance assessment
+- **Feature Engineering Mastery**: Expanding knowledge of advanced feature engineering techniques, dimensionality reduction, and automated feature selection for complex datasets
+- **Model Selection & Comparison**: Learning sophisticated model comparison techniques, statistical significance testing, and automated model selection strategies for optimal algorithm choice
+- **Production ML Integration**: Developing skills in deploying Scikit-Learn models to production environments, model monitoring, and integration with MLOps pipelines for enterprise applications`
+
   },
   {
     name: 'OpenCV',
@@ -1393,7 +1431,44 @@ Created a high-performance image processing pipeline using OpenCV that analyzes 
     color: '#e97627',
     internships: 1,
     internshipDetails: ['INTERA Incorporated (Data Science)'],
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Strategic Data Preparation Systems**: Systematic approach to data preparation and cleaning by first building comprehensive systems that identify all necessary data for creating proper trends and actionable insights
+- **Multi-Source Data Integration**: Expert handling of diverse data sources including CSV files, Excel files, and web-scraped international data from INTERA locations across multiple countries
+- **Environmental Metrics Visualization**: Specialized experience visualizing environmental data including air quality, water monitoring, emissions tracking, and regulatory compliance across different company departments
+- **Statistical Dashboard Development**: Creation of basic dashboards and visualizations for statistical reports including autonomous vehicle object classification analysis and environmental trend reporting
+- **International Data Coordination**: Strategic management of international reporting workflows using Excel files and web-scraped data containing constants and metrics from global INTERA locations
+- **Actionable Insights Focus**: Design philosophy centered on creating meaningful dashboards that show clear trends and provide actionable insights for business decision-making
+- **Cross-Department Analysis**: Implementation of environmental tracking systems that demonstrate metrics across different company departments and operational areas
+
+**Advanced Development Patterns:**
+- **Systems-First Data Approach**: Strategic methodology where comprehensive data systems are designed before visualization creation, ensuring all necessary information is captured for meaningful trend analysis
+- **Multi-Country Reporting Architecture**: Development of international reporting frameworks that coordinate data from multiple geographic locations and standardize metrics across different operational contexts
+- **Environmental Compliance Dashboards**: Specialized dashboard creation for environmental consulting applications that demonstrate regulatory compliance and highlight areas requiring corrective action
+- **Trend-Driven Storytelling**: Focus on visualization design that clearly communicates data stories and provides specific, actionable steps based on environmental and operational trends
+- **Departmental Comparative Analysis**: Implementation of dashboard systems that enable comparison of environmental metrics across different company departments and identification of optimization opportunities
+- **Autonomous Vehicle Data Visualization**: Application of Tableau skills to technical domains including statistical analysis and reporting for autonomous vehicle object classification systems
+
+**Complex Problem-Solving Examples:**
+
+*Multi-Country Environmental Impact Tracking System:*
+Developed comprehensive environmental impact tracking dashboards at INTERA that coordinate data from locations across 5 countries, integrating web-scraped data and Excel files to create unified international reporting systems. The challenge involved standardizing environmental metrics across different regulatory environments and operational contexts while maintaining data accuracy and relevance for each location. Successfully implemented Tableau workflows that process diverse international data sources and create meaningful comparative visualizations showing environmental trends, compliance status, and areas requiring attention across global INTERA operations.
+
+*Cross-Departmental Environmental Metrics Dashboard:*
+Created sophisticated environmental monitoring dashboards that visualize air quality, water monitoring, emissions tracking, and regulatory compliance data across multiple company departments. The project required designing visualization systems that could clearly demonstrate environmental performance trends and identify specific departments or processes requiring environmental improvements. Successfully implemented dashboard systems that enable management to quickly identify environmental issues, track compliance status, and make data-driven decisions about environmental initiatives and resource allocation.
+
+*Autonomous Vehicle Statistical Analysis Dashboard:*
+Architected statistical reporting dashboards for autonomous vehicle object classification analysis, creating visualizations that help evaluate AV system performance and accuracy. The challenge involved processing complex technical data and creating clear, actionable reports that demonstrate system capabilities and identify areas for improvement. Successfully developed Tableau workflows that transform autonomous vehicle data into meaningful statistical visualizations, enabling technical teams to assess classification accuracy and make informed decisions about system optimization.
+
+*Actionable Insights Dashboard Architecture:*
+Designed and implemented dashboard systems focused specifically on providing actionable insights rather than just data display, ensuring every visualization element contributes to clear decision-making processes. The approach involved systematic data analysis to identify the most meaningful trends and creating dashboard layouts that guide users toward specific actions based on environmental and operational data. Successfully created visualization systems that transform complex environmental data into clear, actionable recommendations for environmental compliance and operational improvement.
+
+**Areas for Continued Growth:**
+- **Complex Dashboard Architecture**: Learning to create sophisticated, multi-variable dashboards with advanced interactivity, animations, and dynamic filtering capabilities for handling larger, more complex datasets
+- **Advanced Animation & Storytelling**: Mastering Tableau's animation features and advanced storytelling capabilities to create compelling presentations that explain complex data trends and relationships over time
+- **Big Data Integration**: Developing expertise in connecting Tableau to larger datasets, optimizing performance for complex queries, and implementing efficient data refresh strategies for enterprise-scale environmental monitoring
+- **Advanced Calculation & Analytics**: Learning Tableau's advanced calculation features, statistical functions, and predictive analytics capabilities to enhance environmental trend analysis and forecasting
+- **Interactive User Experience Design**: Expanding skills in creating intuitive, user-friendly dashboard interfaces with advanced filtering, parameter controls, and interactive elements for different audience types
+- **Enterprise Deployment & Collaboration**: Understanding Tableau Server deployment, user management, and collaboration features for scaling environmental monitoring dashboards across larger organizations and client networks`
   },
   {
     name: 'Power BI',
@@ -1407,7 +1482,44 @@ Created a high-performance image processing pipeline using OpenCV that analyzes 
     color: '#f2c800',
     internships: 1,
     internshipDetails: ['Pivotal Research Inc.'],
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Cross-Industry Dashboard Development**: Extensive experience creating business intelligence dashboards for diverse clients ranging from Canadian government agencies to LLM startups, adapting visualization strategies to meet varied organizational needs
+- **Multi-Source Data Integration**: Expert integration of diverse data sources including real-time social media APIs, databases, and Excel files for comprehensive business intelligence solutions
+- **Actionable Results Framework**: Strategic focus on designing dashboards that evolve clients' perspective on data and provide clear actionable results for business decision-making and record keeping
+- **Real-Time Data Processing**: Advanced implementation of live API connections to social media platforms for real-time data feeds and dynamic dashboard updates
+- **Systems-First Development Approach**: Systematic methodology similar to Tableau workflow where comprehensive system architecture is designed before implementation and integration phases
+- **Custom Visual Development**: Practical experience creating custom visuals tailored to specific client requirements and industry-specific data presentation needs
+- **Business Forward Strategy**: Design philosophy focused on creating data solutions that actively move businesses forward through improved insights and decision-making capabilities
+
+**Advanced Development Patterns:**
+- **Government-to-Startup Adaptability**: Strategic approach to dashboard design that scales across different organizational contexts, from government regulatory requirements to startup growth metrics
+- **API-Driven Real-Time Integration**: Advanced implementation of social media and external API connections for live data feeds, enabling dynamic and current business intelligence reporting
+- **Record Keeping & Compliance Systems**: Development of dashboard architectures that support both operational decision-making and comprehensive record keeping for regulatory and business continuity requirements
+- **Multi-Client Portfolio Management**: Systematic approach to managing diverse client requirements while maintaining consistency in development methodology and quality standards
+- **Business Evolution Analytics**: Focus on creating analytics solutions that fundamentally change how organizations view and utilize their data for strategic advancement
+- **Cross-Platform Data Orchestration**: Strategic coordination of data from databases, Excel files, and API sources into unified Power BI reporting environments
+
+**Complex Problem-Solving Examples:**
+
+*Canadian Government Multi-Agency Dashboard System:*
+Developed comprehensive business intelligence dashboards for Canadian government agencies that required integration of multiple data sources while maintaining strict regulatory compliance and security standards. The challenge involved creating visualization systems that could handle sensitive government data while providing actionable insights for policy-making and operational efficiency. Successfully implemented Power BI solutions that transformed government data analysis capabilities, enabling agencies to make data-driven decisions while maintaining all necessary compliance and security requirements.
+
+*LLM Startup Growth Analytics Platform:*
+Created sophisticated dashboard systems for LLM startups in Canada that integrated real-time social media APIs with internal business metrics to provide comprehensive growth analytics and market insights. The project required developing custom visuals and real-time data processing capabilities that could track startup performance, social media engagement, and market trends simultaneously. Successfully implemented Power BI architectures that enabled startups to understand their market position, track growth metrics, and make strategic decisions based on comprehensive data analysis.
+
+*Real-Time Social Media Integration System:*
+Architected advanced Power BI solutions that connect directly to social media APIs for real-time data collection and analysis, enabling clients to monitor brand sentiment, engagement metrics, and market trends as they happen. The challenge involved handling high-frequency API data while maintaining dashboard performance and ensuring reliable real-time updates. Successfully developed API integration frameworks that provide continuous data flows into Power BI dashboards, enabling real-time business intelligence and immediate response to market changes.
+
+*Cross-Industry Business Evolution Framework:*
+Designed and implemented Power BI systems that fundamentally change how organizations across different industries view and utilize their data for strategic advancement. The approach involved systematic analysis of each client's current data practices and creating dashboard solutions that evolve their analytical capabilities and decision-making processes. Successfully created business intelligence frameworks that move organizations from reactive to proactive data-driven strategies, improving record keeping, compliance, and strategic planning across government and private sector clients.
+
+**Areas for Continued Growth:**
+- **Advanced Power BI Features**: Learning sophisticated DAX calculations, advanced Power Query transformations, and complex data modeling techniques for more powerful analytical capabilities
+- **Power BI Service & Automation**: Mastering Power BI Service deployment, automated data refresh strategies, and enterprise-scale sharing and collaboration features
+- **Custom Connector Development**: Developing expertise in creating custom Power BI connectors for specialized data sources and unique API integrations beyond standard social media platforms
+- **Advanced Analytics Integration**: Learning Power BI's machine learning capabilities, R and Python integration, and advanced statistical analysis features for predictive analytics
+- **Enterprise Security & Governance**: Understanding row-level security, data governance frameworks, and enterprise deployment strategies for large-scale organizational implementations
+- **Performance Optimization**: Mastering Power BI performance tuning, large dataset optimization, and efficient dashboard design for handling complex, high-volume data scenarios`
   },
   {
     name: 'Plotly',
@@ -1706,7 +1818,44 @@ Created automated development workflows using Linux shell scripting and command-
     color: '#61dafb',
     researchRoles: 1,
     researchDetails: ['TAMU x Soft Interaction Lab'],
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **TCP Socket Programming**: Comprehensive experience with TCP socket implementation in both C++ and Python for reliable client-server communication and real-time data transmission
+- **Client-Server Architecture Design**: Expert development of socket-based client-server systems with emphasis on robust connection management and efficient data exchange protocols
+- **WebSocket Integration**: Advanced implementation of WebSocket protocols in Python for real-time Flask application updates, eliminating the need for constant page reloads and manual refreshes
+- **Multi-Language Socket Development**: Strategic use of C++ for high-performance client-server systems and Python for research applications requiring real-time web integration
+- **Real-Time Chat System Implementation**: Sophisticated chat system development using Python sockets and WebSocket integration for seamless research application communication
+- **Concurrent Connection Management**: Advanced handling of multiple simultaneous client connections through multi-threading and efficient resource allocation strategies
+- **Traffic Management Architecture**: Strategic implementation of data bucketing systems that scale based on traffic volume to prevent crashes and maintain system stability under high-load conditions
+
+**Advanced Development Patterns:**
+- **Research-Production Integration**: Strategic socket implementation that bridges research applications with production web interfaces, ensuring real-time data synchronization without manual intervention
+- **Multi-Threading Socket Servers**: Advanced concurrent programming techniques for handling multiple client connections simultaneously while maintaining thread safety and resource efficiency
+- **High-Traffic Scalability**: Implementation of traffic-aware resource allocation systems that dynamically create sufficient data management structures to handle varying load conditions
+- **Flask-WebSocket Integration**: Seamless integration of WebSocket protocols with Flask applications to provide real-time updates and eliminate traditional page refresh requirements
+- **Cross-Language Socket Communication**: Coordination of socket communication between C++ high-performance systems and Python web applications for comprehensive network solutions
+- **Research Application Real-Time Updates**: Strategic use of socket programming to ensure research applications maintain current data without performance degradation or user interruption
+
+**Complex Problem-Solving Examples:**
+
+*Real-Time Research Application Data Synchronization:*
+Developed a comprehensive WebSocket integration system for the TAMU x Soft Interaction Lab research application that ensures Flask pages maintain up-to-date information without requiring constant manual reruns or page refreshes. The challenge involved creating a reliable real-time communication channel between the research backend and web interface while maintaining system performance and user experience. Successfully implemented Python WebSocket architecture that automatically updates research data, chat functionality, and application state in real-time, enabling researchers to focus on their work rather than managing data refresh cycles.
+
+*Multi-Threaded Client-Server System Architecture:*
+Architected and implemented a sophisticated client-server system in C++ that handles multiple concurrent client connections through advanced multi-threading techniques. The challenge involved ensuring thread safety while maintaining high performance and preventing resource conflicts between simultaneous client sessions. Successfully developed a robust concurrent architecture that manages multiple client connections, maintains individual session states, and provides reliable data transmission across all connected clients without performance degradation or connection instability.
+
+*High-Traffic Data Management System:*
+Designed and implemented a scalable traffic management system that dynamically creates appropriate data structures and resource allocation based on real-time traffic volume analysis. The challenge involved preventing system crashes during traffic spikes while maintaining efficient resource utilization during normal operations. Successfully created a dynamic bucketing system that monitors traffic patterns and automatically provisions sufficient data management resources to handle varying load conditions, ensuring system stability and optimal performance across different traffic scenarios.
+
+*Cross-Platform Socket Communication Integration:*
+Successfully integrated C++ client-server socket programming with Python WebSocket implementations to create a comprehensive network communication solution spanning both high-performance system operations and real-time web applications. The challenge involved coordinating different programming languages and socket implementations while maintaining consistent communication protocols and data integrity. Successfully developed a unified socket architecture that leverages C++ for performance-critical operations and Python for research application integration.
+
+**Areas for Continued Growth:**
+- **Distributed Systems Architecture**: Learning distributed computing patterns, service discovery, and inter-service communication for building scalable, fault-tolerant network applications across multiple servers
+- **Advanced Parallel Computing**: Mastering parallel processing techniques, load balancing strategies, and distributed workload management for high-performance socket-based applications
+- **Performance Optimization Mastery**: Developing expertise in advanced multi-threading patterns, lock-free programming, and high-throughput socket optimization for building incredibly fast and efficient network systems
+- **Modern Network Protocols**: Exploring contemporary networking technologies including HTTP/2, gRPC, and advanced WebSocket patterns for cutting-edge real-time communication applications
+- **Fault Tolerance & Reliability**: Learning advanced error recovery, connection pooling, and network resilience techniques for enterprise-grade socket applications
+- **Security Implementation**: Implementing comprehensive network security measures including encryption, authentication, and secure communication protocols for production socket applications`
   },
 
   // Office & Productivity
@@ -1724,7 +1873,44 @@ Created automated development workflows using Linux shell scripting and command-
     internshipDetails: ['INTERA Incorporated (Data Science)', 'Pivotal Research Inc.', 'INTERA Incorporated (Data Engineering)', 'Momentum Technologies'],
     jobs: 1,
     jobDetails: ['PitchFact'],
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Advanced Data Analysis Functions**: Expert use of pivot tables and INDEX/MATCH for complex data identification and trend analysis that are challenging to model effectively in Python
+- **Statistical Analysis & Data Modeling**: Comprehensive statistical analysis, data cleaning, and complex calculations using Excel's advanced analytical capabilities
+- **VBA-Excel Integration**: Strategic development of custom GUIs that combine Excel functionality with VBA automation for process optimization and custom solution development
+- **Data Collection & Preprocessing**: Systematic use of Excel as a central data collection hub for gathering necessary information to create models and perform statistical analysis
+- **Multi-Source Data Integration**: Expert coordination of data from Excel sheets, CSV files, databases, and API sources into unified analytical workflows
+- **Cross-Platform Data Bridge**: Specialized expertise in transitioning data and workflows between Excel and Python environments for optimal tool utilization
+- **Team Collaboration & Template Development**: Advanced creation of Excel templates, tools, and scripts designed for team environments to save significant time and improve workflow efficiency
+
+**Advanced Development Patterns:**
+- **Excel-Python Workflow Integration**: Strategic use of Excel as data collection and initial analysis platform that feeds into Python modeling and advanced analytics
+- **Custom Automation Solutions**: Development of VBA-driven custom solutions that automate complex business processes and eliminate repetitive manual tasks
+- **Data Pipeline Architecture**: Implementation of Excel-based data pipelines that handle CSV processing, database integration, and API filtering for comprehensive data management
+- **Business Intelligence Reporting**: Creation of sophisticated Excel reporting systems for business decision-making and stakeholder communication
+- **Large Dataset Management**: Strategic approaches to handling large datasets in collaborative team environments while maintaining performance and accessibility
+- **Process Optimization Framework**: Development of Excel-based tools and scripts that significantly reduce time investment for common analytical and reporting tasks
+
+**Complex Problem-Solving Examples:**
+
+*Angel Investment Report Data Processing System at PitchFact:*
+Developed a comprehensive Excel-based data processing and reporting system that collects and analyzes necessary information to create angel investing reports for startup interviews. The challenge involved integrating diverse data sources including financial metrics, market analysis, and company performance indicators into a standardized reporting format. Successfully implemented Excel workflows that combine data collection, statistical analysis, and report generation, enabling PitchFact to efficiently evaluate startup investment opportunities and prepare comprehensive interview materials for potential angel investors.
+
+*Custom VBA-Excel GUI Automation Solutions:*
+Architected sophisticated custom graphical user interfaces using VBA integrated with Excel that automate complex business processes and eliminate manual data manipulation tasks. The challenge involved creating user-friendly interfaces that could handle complex data operations while remaining accessible to non-technical users. Successfully developed custom GUI solutions that combine Excel's analytical power with VBA's automation capabilities, creating streamlined workflows that significantly reduce processing time and human error in data-intensive operations.
+
+*Multi-Internship Data Integration Framework:*
+Created comprehensive Excel-based data integration systems across multiple internship roles (INTERA x2, Pivotal Research, Momentum Technologies) that handle diverse data sources and analytical requirements. The challenge involved adapting Excel workflows to different industry contexts while maintaining consistency and efficiency. Successfully implemented flexible Excel architectures that process CSV files, database exports, and API data feeds, creating unified analytical frameworks that support various business intelligence and research requirements across different organizational contexts.
+
+*Excel-Python Bridge Development:*
+Designed and implemented systematic workflows that leverage Excel for initial data collection and preprocessing, then seamlessly transition to Python for advanced modeling and statistical analysis. The challenge involved optimizing the handoff between Excel's business-friendly interface and Python's advanced analytical capabilities. Successfully created integrated workflows that utilize Excel for data gathering, initial cleaning, and stakeholder communication, while leveraging Python for complex modeling, ensuring optimal tool utilization and maintaining accessibility for non-technical team members.
+
+**Areas for Continued Growth:**
+- **Excel Certification Mastery**: Pursuing comprehensive Excel certification to master navigation and advanced function location within Excel's extensive feature set for more efficient complex operations
+- **Excel-Python Specialization**: Developing expertise as a specialist who can seamlessly help organizations transition workflows between Excel and Python environments, optimizing tool selection for specific tasks
+- **Advanced Excel-Specific Features**: Learning sophisticated Excel capabilities that are difficult to replicate in Python, enabling creation of custom libraries for CSV automation and data processing workflows
+- **Power Query & Power Pivot Integration**: Mastering Excel's advanced data connection and modeling features for enhanced business intelligence and large dataset management
+- **Advanced Charting & Visualization**: Developing expertise in Excel's advanced visualization capabilities for business reporting and stakeholder communication
+- **Enterprise Excel Architecture**: Learning large-scale Excel deployment strategies, version control, and collaborative development patterns for enterprise-level Excel solutions`
   },
 
   // AI & Emerging Technologies
@@ -1742,7 +1928,44 @@ Created automated development workflows using Linux shell scripting and command-
     researchDetails: ['TAMU x Soft Interaction Lab'],
     publications: 1,
     publicationDetails: ['ChatGPT 4o Performance on Mechanical Engineering Concept Inventories'],
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Multi-Platform LLM Expertise**: Comprehensive experience across all major LLM platforms including ChatGPT, Claude, Cursor, Perplexity, and Gemini, understanding unique capabilities and optimization strategies for each
+- **Conversational AI Design**: Advanced development of conversational agents with proper context management and role-specific prompt architecture for complex multi-agent systems
+- **Structured Output Engineering**: Expert creation of prompts that generate precise structured outputs including JSON formatting and task-specific data formats for integration with applications and workflows
+- **Educational Prompt Architecture**: Specialized design of educational prompts backed by research to enhance student learning efficiency and comprehension in college-level academic settings
+- **Research-Grade Prompt Development**: Systematic approach to prompt engineering that follows application development principles, organizing prompts with proper context and role definitions for research applications
+- **Agent Role Management**: Advanced implementation of context and prompt strategies that enable different AI agents to perform specialized roles within larger system architectures
+- **Academic Performance Analysis**: Strategic prompt design for evaluating LLM performance on standardized academic assessments and concept inventories
+
+**Advanced Development Patterns:**
+- **Situational Prompt Optimization**: Strategic understanding that optimal prompting approaches vary based on specific use cases, requiring flexible methodology rather than one-size-fits-all solutions
+- **Few-Shot Learning Implementation**: Practical experience with few-shot learning techniques, providing strategic examples to guide AI behavior and improve output quality
+- **Chain-of-Thought Reasoning**: Advanced implementation of chain-of-thought prompting to enhance AI reasoning capabilities and generate more thoughtful, step-by-step responses
+- **Role-Playing Prompt Architecture**: Sophisticated use of role-playing techniques to establish clear AI personas and behavioral frameworks for consistent, context-appropriate responses
+- **Systems-Level Prompt Organization**: Application of software development principles to prompt engineering, creating organized, scalable prompt architectures for complex AI applications
+- **Research-Backed Educational Design**: Integration of educational research principles into prompt design to maximize learning outcomes and student engagement
+
+**Complex Problem-Solving Examples:**
+
+*Educational ChatGPT Agent Store Development:*
+Designed and built a comprehensive educational chatbot available through ChatGPT's agent store that helps college students learn more efficiently within their academic courses. The challenge involved creating prompts that could adapt to diverse academic subjects while maintaining educational effectiveness backed by learning research. Successfully implemented research-based prompt strategies that guide students through complex concepts, provide appropriate scaffolding, and promote active learning techniques. The chatbot uses sophisticated prompt engineering to assess student understanding, provide personalized explanations, and adapt teaching strategies based on individual learning needs.
+
+*Multi-Agent Research System for TAMU x Soft Interaction Lab:*
+Architected a sophisticated multi-agent AI system where each agent has specialized roles defined through carefully crafted context and prompt strategies. The challenge involved creating prompt architectures that enable different agents to maintain their specific functions while collaborating effectively within a larger research framework. Successfully implemented systematic prompt organization that treats each agent like a component in an application system, with clear role definitions, context boundaries, and interaction protocols that ensure consistent performance across the research application.
+
+*ChatGPT 4o Academic Performance Evaluation Framework:*
+Developed comprehensive prompt engineering strategies for evaluating ChatGPT 4o performance on Mechanical Engineering Concept Inventories, contributing to academic research on AI capabilities in educational assessment. The project required creating prompts that could fairly assess AI understanding of complex engineering concepts while maintaining consistency with human evaluation standards. Successfully designed prompt frameworks that enable systematic evaluation of AI performance across different knowledge domains and assessment types.
+
+*Structured Output Automation for Application Integration:*
+Created sophisticated prompt engineering solutions that generate precise JSON outputs and other structured formats for seamless integration with applications and automated workflows. The challenge involved designing prompts that consistently produce properly formatted data while maintaining content quality and accuracy. Successfully implemented prompt strategies that enable AI-generated content to flow directly into application pipelines, reducing manual processing and improving workflow automation efficiency.
+
+**Areas for Continued Growth:**
+- **Retrieval-Augmented Generation (RAG) Mastery**: Developing expertise in RAG implementations to complete comprehensive LLM toolkit for automating diverse life challenges and problem-solving applications
+- **Advanced Fine-Tuning Techniques**: Improving prompt fine-tuning capabilities to achieve more precise control over AI behavior and output quality for specialized applications
+- **Large-Scale Automation Architecture**: Learning to design prompt engineering solutions that can automate significant portions of daily workflows and complex problem-solving processes
+- **Multi-Modal Prompt Engineering**: Expanding expertise to include visual, audio, and multi-modal prompt engineering for comprehensive AI interaction capabilities
+- **Enterprise Prompt Management**: Developing systems for managing, versioning, and optimizing prompts at scale for organizational AI implementations
+- **Advanced Context Window Management**: Mastering techniques for managing long conversations, complex context relationships, and multi-turn interaction optimization across different LLM platforms`
   },
   {
     name: 'LLM APIs',
@@ -1758,7 +1981,44 @@ Created automated development workflows using Linux shell scripting and command-
     jobDetails: ['PitchFact'],
     researchRoles: 2,
     researchDetails: ['TAMU x Soft Interaction Lab', 'Algoverse'],
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Production LLM SDK Integration**: Comprehensive experience implementing LLM SDKs in real-world applications across internships, jobs, and research projects, with deep understanding of documentation analysis and practical implementation strategies
+- **Claude SDK Optimization**: Expert use of Anthropic's Claude SDK for reliable startup evaluation report generation at PitchFact, ensuring consistent and accurate business intelligence processing
+- **Multi-Platform API Implementation**: Strategic integration of multiple LLM APIs including OpenAI, Hume.ai, and Anthropic across different project contexts and requirements
+- **Documentation-Driven Development**: Advanced approach to LLM API integration through comprehensive documentation analysis and systematic implementation for specific problem-solving contexts
+- **Educational LLM Applications**: Sophisticated use of ChatGPT Agent store and multiple models to create educational tools and research applications
+- **Research-Grade LLM Integration**: Implementation of LLM APIs for academic research applications including autonomous vehicle communication and medical training simulations
+- **Multi-Model Architecture**: Practical experience with inter-model communication and coordination in complex research environments requiring sophisticated AI agent interactions
+
+**Advanced Development Patterns:**
+- **Resource Optimization Strategy**: Systematic approach to understanding and optimizing LLM resource utilization through comprehensive documentation study and practical experimentation
+- **Reliability-Focused Implementation**: Strategic selection of LLM APIs based on reliability requirements, particularly Claude SDK for mission-critical startup evaluation processes
+- **Problem-Specific API Selection**: Advanced decision-making process for choosing appropriate LLM APIs based on specific application requirements and performance characteristics
+- **Research Integration Methodology**: Systematic approach to implementing cutting-edge LLM research including autonomous vehicle agentic AI communication and court simulation applications
+- **Cross-Application LLM Architecture**: Development of LLM integrations that span multiple application contexts from business intelligence to educational tools and research simulations
+- **Documentation-First Integration**: Strategic methodology that prioritizes comprehensive understanding of API capabilities before implementation to ensure optimal resource utilization
+
+**Complex Problem-Solving Examples:**
+
+*Claude SDK Startup Evaluation Pipeline at PitchFact:*
+Implemented a sophisticated Claude SDK integration for generating comprehensive startup evaluation reports that require high reliability and consistency for business decision-making. The challenge involved ensuring the LLM API could process diverse startup data and generate actionable intelligence reports that meet professional standards for angel investment evaluation. Successfully developed a Claude-based pipeline that consistently delivers accurate startup analysis, financial projections, and investment recommendations, enabling PitchFact to streamline the startup evaluation process while maintaining quality and reliability standards.
+
+*Multi-Model Court Simulation System for Medical Training:*
+Architected a complex multi-model LLM system for court simulation applications in medical training contexts, requiring coordination between different AI agents with specialized roles and inter-model communication protocols. The challenge involved creating a system where multiple LLM APIs could communicate effectively while maintaining their individual specializations and ensuring realistic simulation scenarios. Successfully implemented a multi-agent architecture that uses different LLM models for various simulation roles, creating an immersive training environment for medical professionals with realistic courtroom dynamics and educational value.
+
+*Autonomous Vehicle Agentic AI Research at Algoverse:*
+Conducted cutting-edge research into autonomous vehicle communication using agentic AI systems, implementing the latest LLM API research to explore vehicle-to-vehicle and vehicle-to-infrastructure communication protocols. The project required staying current with rapidly evolving LLM capabilities and implementing experimental features for research purposes. Successfully integrated advanced LLM APIs to model complex communication scenarios between autonomous vehicles, contributing to research understanding of how AI agents can coordinate in real-world transportation systems.
+
+*Educational Tool Development Using ChatGPT Agent Store:*
+Developed sophisticated educational applications leveraging ChatGPT Agent store capabilities and multiple LLM models to create comprehensive learning tools for students. The challenge involved integrating multiple model capabilities while maintaining educational effectiveness and user engagement. Successfully created educational platforms that utilize different LLM strengths for various educational functions, from content explanation to assessment and personalized learning path generation.
+
+**Areas for Continued Growth:**
+- **Advanced LLM Resource Optimization**: Mastering techniques to maximize LLM utilization efficiency, cost optimization, and performance tuning across different API providers for enterprise-scale applications
+- **Authentication & Security Architecture**: Implementing comprehensive security frameworks including data protection, secure API key management, and privacy-preserving LLM integration for sensitive applications
+- **Custom LLM Fine-Tuning**: Developing expertise in fine-tuning LLM APIs for specialized applications, custom model training, and domain-specific optimization to create highly specialized AI solutions
+- **Embeddings & Vector Integration**: Mastering LLM embedding APIs, vector databases, and semantic search integration for advanced retrieval-augmented generation and knowledge management systems
+- **Custom Feature Development**: Learning to extend LLM capabilities through custom API development, function calling, and specialized feature integration for unique application requirements
+- **Enterprise LLM Architecture**: Developing skills in large-scale LLM deployment, multi-tenant systems, and enterprise-grade LLM API management for production-scale applications`
   },
   {
     name: 'PDF Processing',
@@ -1772,7 +2032,44 @@ Created automated development workflows using Linux shell scripting and command-
     color: '#dc2626',
     jobs: 1,
     jobDetails: ['PitchFact'],
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **PDF Text Field Manipulation**: Expert use of PyPDF2 for extracting and manipulating text fields in PDF templates, enabling automated form completion for startup evaluation documents
+- **GhostScript PDF Flattening**: Advanced implementation of GhostScript for PDF flattening operations that create professional-looking filled forms by removing interactive text fields while preserving filled content
+- **Template-Based Document Processing**: Specialized processing of PDF templates designed for angel investor evaluation, handling standardized forms and structured data entry requirements
+- **LLM-PDF Integration Workflows**: Sophisticated integration of PDF processing with Claude AI SDK to automatically populate form fields with AI-generated content based on startup research
+- **RAG-Enhanced Data Collection**: Strategic use of Retrieval-Augmented Generation with Claude SDK to collect comprehensive public and private information for accurate startup evaluation form completion
+- **Automated Form Completion**: End-to-end automation of PDF form filling processes that transform raw startup data into professional investor evaluation documents
+- **Data Source Transparency**: Implementation of transparent processing workflows that maintain clear traceability of information sources for accuracy verification
+
+**Advanced Development Patterns:**
+- **Multi-Tool PDF Pipeline Architecture**: Strategic combination of PyPDF2 and GhostScript for comprehensive PDF processing workflows that handle both dynamic content insertion and final document formatting
+- **FastAPI-Integrated Processing**: Seamless integration of PDF processing capabilities with FastAPI backend systems for responsive internal tool development and real-time preview capabilities
+- **Quality Assurance Through Transparency**: Implementation of processing workflows that expose all data sources and transformation steps to employees for accuracy verification and quality control
+- **Database-Verified Information Processing**: Strategic validation of collected startup information against existing verified databases to ensure accuracy and reliability of generated investor documents
+- **Developer-Friendly Processing Environment**: Creation of PDF processing systems that enable rapid iteration and quick changes through efficient FastAPI backend integration and responsive frontend visualization
+- **Public-Private Data Integration**: Sophisticated data collection workflows that combine publicly available information with private databases to create comprehensive startup profiles
+
+**Complex Problem-Solving Examples:**
+
+*Automated Startup Evaluation Document Generation Pipeline:*
+Developed a comprehensive PDF processing system at PitchFact that automatically generates completed startup evaluation forms for angel investors using PyPDF2 and GhostScript integration. The challenge involved creating a workflow that could take empty PDF templates and fill them with accurate, relevant information about startups while maintaining professional document formatting. Successfully implemented a system that uses PyPDF2 to identify and populate text fields with AI-generated content, then applies GhostScript flattening to create final documents that appear professionally completed without interactive elements, enabling efficient startup evaluation workflows for angel investors.
+
+*RAG-Enhanced Information Collection and PDF Integration:*
+Architected a sophisticated data collection and document processing system that uses Retrieval-Augmented Generation with Claude SDK to gather comprehensive startup information from both public and private sources, then automatically populates PDF evaluation templates. The challenge involved ensuring information accuracy while maintaining processing speed and creating a transparent workflow for employee verification. Successfully developed a system that combines RAG techniques with database verification to collect verified startup information, then seamlessly integrates this data into PDF processing workflows for accurate, comprehensive investor evaluation documents.
+
+*Transparent Processing Pipeline for Accuracy Verification:*
+Implemented a comprehensive quality assurance system that maintains complete visibility into all PDF processing steps and data sources, enabling employees to verify information accuracy and trace content origins. The challenge involved creating processing workflows that balance automation efficiency with transparency requirements for accuracy verification. Successfully developed a system that exposes every aspect of the data collection and PDF generation process, allowing employees to review information sources, validate content accuracy, and ensure that generated investor documents meet professional standards and accuracy requirements.
+
+*FastAPI-Integrated Development Environment for PDF Processing:*
+Created a responsive development environment that integrates PDF processing capabilities with FastAPI backend systems, enabling rapid iteration and real-time preview of document generation workflows. The challenge involved building a system that allows developers to quickly test changes and see immediate results in both processing logic and final document output. Successfully implemented a FastAPI-based architecture that provides responsive backend processing for PDF operations while maintaining a user-friendly frontend interface that enables quick development cycles and efficient workflow optimization.
+
+**Areas for Continued Growth:**
+- **OCR Integration & Advanced Text Recognition**: Learning optical character recognition techniques for processing scanned documents and images, expanding PDF processing capabilities to handle documents that aren't text-searchable or structured
+- **Digital Signature Implementation**: Developing expertise in digital signature processing, verification, and creation for enterprise-grade document workflows requiring authentication and legal compliance
+- **Advanced Form Processing**: Mastering complex PDF form processing including checkbox handling, dropdown menus, and advanced form field types for more sophisticated document automation
+- **Large-Scale Document Processing**: Learning optimization techniques for handling high-volume PDF processing workflows, batch processing strategies, and performance optimization for enterprise-scale applications
+- **Enhanced Security & Compliance**: Implementing advanced security measures for sensitive document processing, including encryption, access control, and compliance with financial industry regulations for investor document handling
+- **Multi-Format Document Integration**: Expanding capabilities to handle diverse document formats beyond PDFs, enabling comprehensive document processing workflows that can handle various input types and generate multiple output formats`
   },
   {
     name: 'VBA',
@@ -1786,7 +2083,40 @@ Created automated development workflows using Linux shell scripting and command-
     color: '#ff8c00',
     internships: 1,
     internshipDetails: ['INTERA Incorporated (Data Engineering)'],
-    technicalDeepDive: ''
+    technicalDeepDive: `**Core Concepts I'm Proficient In:**
+- **Custom GUI Development**: Practical experience building custom graphical user interfaces within Excel using VBA to create user-friendly data filtering and processing tools for specific employee needs
+- **Excel Automation Solutions**: Strategic implementation of VBA automation to streamline Excel workflows and eliminate repetitive manual tasks in professional environments
+- **Systems-First Development Approach**: Comprehensive methodology that prioritizes understanding the underlying system and business requirements before beginning development to ensure solution alignment with actual needs
+- **Employee-Specific Customization**: Tailored VBA application development that addresses specific employee workflow requirements and data processing challenges
+- **Data Filtering & Processing**: Implementation of custom data filtering solutions that enable employees to efficiently process and analyze large datasets according to specific criteria
+- **Excel-VBA Integration**: Strategic combination of Excel functionality with VBA programming to create seamless, automated solutions that enhance productivity and accuracy
+- **Practical Problem-Solving**: Focus on creating VBA solutions that solve real business problems rather than implementing features for their own sake
+
+**Advanced Development Patterns:**
+- **Requirements-Driven Development**: Strategic approach that emphasizes understanding the complete system context and business logic before coding to minimize adjustments and ensure solution effectiveness
+- **User-Centric Interface Design**: Creation of VBA GUIs that prioritize employee usability and workflow efficiency over technical complexity
+- **Automation-First Philosophy**: Implementation of VBA solutions that maximize automation potential while maintaining flexibility for user input and customization
+- **Business Logic Integration**: Development of VBA applications that incorporate complex business rules and data processing requirements into automated workflows
+- **Scalable Solution Architecture**: Design approach that creates VBA solutions with clear overall structure that can accommodate adjustments without requiring complete redesign
+
+**Complex Problem-Solving Examples:**
+
+*Custom Data Filtering GUI for Employee Workflow Optimization:*
+Developed a sophisticated custom GUI using VBA that enables employees to filter through large datasets according to specific business criteria and workflow requirements. The challenge involved creating an intuitive interface that could handle complex data filtering operations while remaining accessible to non-technical users. Successfully implemented a user-friendly GUI that streamlines data processing workflows, reduces manual effort, and ensures consistent data analysis approaches across different employee tasks. The solution demonstrated the power of combining Excel's data capabilities with VBA's automation features to create practical business tools.
+
+*Excel Automation System for Data Processing Workflows:*
+Architected comprehensive Excel automation solutions using VBA that eliminate repetitive manual tasks and improve data processing efficiency for business operations. The project required understanding existing manual workflows and translating them into automated processes that maintain accuracy while dramatically reducing time investment. Successfully created VBA automation that handles complex data manipulation, formatting, and analysis tasks, enabling employees to focus on higher-value activities rather than routine data processing operations.
+
+*Systems-First Development Methodology Implementation:*
+Applied a systematic approach to VBA development that prioritizes comprehensive understanding of business requirements and system architecture before beginning coding work. The methodology involves analyzing the complete workflow context, identifying core business logic, and designing solutions that address fundamental needs rather than surface-level symptoms. Successfully demonstrated that this approach minimizes post-development adjustments and ensures that VBA solutions align with actual business requirements and long-term organizational needs.
+
+**Areas for Continued Growth:**
+- **Advanced VBA Automation Techniques**: Learning sophisticated Excel automation capabilities including advanced statistical analysis, complex data manipulation, and integration with external data sources for comprehensive business intelligence solutions
+- **VBA-Python Bridge Development**: Developing expertise in creating Python libraries that replicate and extend VBA functionality, enabling organizations to transition from Excel-based automation to Python-based solutions while maintaining familiar workflows
+- **Advanced Debugging & Error Handling**: Mastering comprehensive debugging techniques beyond print statements, including advanced error handling, code profiling, and systematic troubleshooting methodologies for robust VBA application development
+- **Enterprise VBA Architecture**: Learning large-scale VBA deployment strategies, code organization patterns, and maintenance approaches for enterprise-level Excel automation solutions
+- **API Integration & External Connectivity**: Expanding VBA capabilities to include external API calls, database connectivity, and integration with other business systems for comprehensive workflow automation
+- **Modern Development Practices**: Implementing version control, documentation standards, and collaborative development practices for VBA projects to support team-based development and long-term maintainability`
   },
 
 ]

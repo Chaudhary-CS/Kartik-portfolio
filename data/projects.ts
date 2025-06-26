@@ -57,7 +57,7 @@ const projects: Project[] = [
     description: 'CARLA-based autonomous vehicle simulation with real-time object detection and advanced pathfinding algorithms.',
     longDescription: 'Developed autonomous vehicles in CARLA for vehicle navigation, sensor integration, and decision-making. Built comprehensive simulation environment integrating LiDAR and camera sensors for real-time object detection with machine learning models for navigation optimization.',
     image: '/images/projects/av_sim.png',
-    techs: ['Python', 'PyTorch', 'TensorFlow', 'OpenCV', 'Tableau', 'Power BI', 'Excel', 'Pandas', 'NumPy', 'Matplotlib'],
+    techs: ['Python', 'PyTorch', 'TensorFlow', 'Scikit-Learn', 'OpenCV', 'Tableau', 'Power BI', 'Excel', 'Pandas', 'NumPy', 'Matplotlib'],
     liveDemo: 'https://docs.google.com/presentation/d/1V2agrhnjItJWyib6dGJf8xYpDqPeRsu3l0NsSZdQheE/edit?usp=sharing',
     featured: true,
     date: 'August 2024 - December 2024',
