@@ -1,7 +1,4 @@
 // src/app/blog/page.tsx
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
 import BlogListClient from "../../../components/BlogListClient";
 
 interface PostMeta {
@@ -13,26 +10,25 @@ interface PostMeta {
 }
 
 export default function BlogIndex() {
-  // 1. Read all the filenames in content/blog
-  const blogDir = path.join(process.cwd(), "content/blog");
-  const filenames = fs.readdirSync(blogDir).filter((f) => f.endsWith(".mdx"));
+  // Define our blog posts manually since we're using React components instead of MDX
+  const posts: PostMeta[] = [
+    {
+      slug: "lessons-learned-making-website",
+      title: "The Lessons Learned from Making This Website",
+      date: "2025-01-23",
+      excerpt: "Five critical lessons I discovered while building my developer portfolio with Next.js, TypeScript, and modern web technologies - and how you can apply them to your own projects.",
+      image: "gradient-gray-blue" // Custom gradient matching blog post background
+    },
+    {
+      slug: "why-blogging-matters-today",
+      title: "Why Blogging Matters in Today's Market",
+      date: "2025-01-23",
+      excerpt: "In an AI-driven job market where everyone has access to the same information, your unique perspective and ability to communicate complex ideas clearly has become your most valuable differentiator.",
+      image: "gradient-purple-pink" // Custom gradient matching blog post background
+    }
+  ];
 
-  // 2. Parse front-matter from each file
-  const posts: PostMeta[] = filenames.map((filename) => {
-    const fullPath = path.join(blogDir, filename);
-    const source = fs.readFileSync(fullPath, "utf8");
-    const { data } = matter(source);
-
-    return {
-      slug: filename.replace(/\.mdx$/, ""),
-      title: String(data.title),
-      date: String(data.date),
-      excerpt: data.excerpt ? String(data.excerpt) : undefined,
-      image: data.image ? String(data.image) : undefined,
-    };
-  });
-
-  // 3. Sort posts by date (newest first)
+  // Sort posts by date (newest first)
   posts.sort((a, b) => (a.date > b.date ? -1 : 1));
 
   return <BlogListClient posts={posts} />;

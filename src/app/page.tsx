@@ -5,15 +5,12 @@ import FeaturedInFront from '../../components/FeaturedInFront';
 import ContactIcons from '../../components/ContactIcons';
 import projects from '../../data/projects';
 
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
-
 interface BlogPost {
   slug: string;
   title: string;
   date: string;
   excerpt: string;
+  image?: string;
 }
 
 export default function Home() {
@@ -33,13 +30,23 @@ export default function Home() {
       date: project.date
     }));
 
-  // load latest blog posts
-  const blogDir = path.join(process.cwd(), 'content/blog');
-  const posts = fs.readdirSync(blogDir).map((fname) => {
-    const src = fs.readFileSync(path.join(blogDir, fname), 'utf-8');
-    const { data } = matter(src);
-    return { slug: fname.replace(/\.mdx$/, ''), ...data } as BlogPost;
-  })
+  // Define our blog posts manually since we're using React components instead of MDX
+  const posts: BlogPost[] = [
+    {
+      slug: "lessons-learned-making-website",
+      title: "The Lessons Learned from Making This Website",
+      date: "2025-01-23",
+      excerpt: "Five critical lessons I discovered while building my developer portfolio with Next.js, TypeScript, and modern web technologies - and how you can apply them to your own projects.",
+      image: "gradient-gray-blue"
+    },
+    {
+      slug: "why-blogging-matters-today", 
+      title: "Why Blogging Matters in Today's Market",
+      date: "2025-01-23",
+      excerpt: "In an AI-driven job market where everyone has access to the same information, your unique perspective and ability to communicate complex ideas clearly has become your most valuable differentiator.",
+      image: "gradient-purple-pink"
+    }
+  ]
   .sort((a,b) => b.date.localeCompare(a.date))
   .slice(0, 3);
 

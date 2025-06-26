@@ -21,7 +21,7 @@ export default function FeaturedAndBlog({
     liveDemo?: string;
     date?: string;
   }>;
-  posts: Array<{ slug: string; title: string; date: string; excerpt: string }>;
+  posts: Array<{ slug: string; title: string; date: string; excerpt: string; image?: string }>;
 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
