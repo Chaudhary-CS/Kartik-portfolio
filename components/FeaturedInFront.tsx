@@ -28,7 +28,6 @@ export default function FeaturedAndBlog({
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
-  const [isDragging, setIsDragging] = useState(false);
   const [dragOffset, setDragOffset] = useState(0);
 
   // Check if mobile on mount and resize
@@ -45,7 +44,6 @@ export default function FeaturedAndBlog({
   const onTouchStart = (e: React.TouchEvent) => {
     setTouchEnd(null);
     setTouchStart(e.targetTouches[0].clientX);
-    setIsDragging(true);
     setDragOffset(0);
   };
 
@@ -62,7 +60,6 @@ export default function FeaturedAndBlog({
 
   const onTouchEnd = () => {
     if (!touchStart || !touchEnd) {
-      setIsDragging(false);
       setDragOffset(0);
       return;
     }
@@ -78,7 +75,6 @@ export default function FeaturedAndBlog({
       setCurrentIndex(currentIndex - 1);
     }
     
-    setIsDragging(false);
     setDragOffset(0);
   };
 
@@ -159,7 +155,7 @@ export default function FeaturedAndBlog({
                       onTouchMove={onTouchMove}
                       onTouchEnd={onTouchEnd}
                     >
-                      {featured.map((proj, index) => (
+                      {featured.map((proj) => (
                         <div
                           key={proj.slug}
                           className="individual-project-card relative rounded-xl overflow-hidden cursor-pointer flex-shrink-0 w-full
