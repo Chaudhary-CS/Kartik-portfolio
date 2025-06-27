@@ -13,13 +13,28 @@ interface PostData {
 
 export default function WhyBloggingMattersClient({ postData }: { postData: PostData }) {
   return (
-    <main className="relative min-h-screen text-white">
-      <div className="relative z-10">
+    <main className="relative min-h-screen flex flex-col text-white">
+      {/* Animated background that covers entire viewport */}
+      <motion.div 
+        className="fixed inset-0 bg-gradient-to-br from-purple-900 via-black to-pink-900 -z-50"
+        style={{ 
+          backgroundImage: `
+            radial-gradient(circle at 2px 2px, rgba(236, 72, 153, 0.1) 2px, transparent 0),
+            linear-gradient(to bottom right, rgba(236, 72, 153, 0.05), rgba(147, 51, 234, 0.05)),
+            linear-gradient(to bottom right, rgb(88, 28, 135), rgb(0, 0, 0), rgb(157, 23, 77))
+          `,
+          backgroundSize: '30px 30px, 100% 100%, 100% 100%'
+        }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.4, delay: 0.2 }}
+      />
+      <div className="relative z-10 flex-1">
         {/* Hero Section */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.4 }}
+          transition={{ duration: 0.4, delay: 0.6 }}
           className="pt-24 pb-16 px-6"
         >
           <div className="max-w-4xl mx-auto text-center">
@@ -60,13 +75,13 @@ export default function WhyBloggingMattersClient({ postData }: { postData: PostD
         <motion.article 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.6 }}
+          transition={{ duration: 0.4, delay: 0.8 }}
           className="max-w-4xl mx-auto px-6 pb-24"
         >
           {/* Introduction */}
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-white/10">
             <p className="text-lg text-gray-200 leading-relaxed">
-              In 2025, we're experiencing a fundamental shift in how technical skills are valued. ChatGPT can write code, AI can solve complex algorithms, and automated tools can handle many tasks that once required deep technical expertise. So what separates good developers from great ones? It's not just what you know—it's how effectively you can communicate what you know.
+              {`In 2025, we're experiencing a fundamental shift in how technical skills are valued. ChatGPT can write code, AI can solve complex algorithms, and automated tools can handle many tasks that once required deep technical expertise. So what separates good developers from great ones? It's not just what you know—it's how effectively you can communicate what you know.`}
             </p>
           </div>
 
@@ -108,7 +123,7 @@ export default function WhyBloggingMattersClient({ postData }: { postData: PostD
                 </div>
                 
                 <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-6">
-                  <h3 className="text-xl font-semibold text-green-300 mb-4">What AI Can't Replace</h3>
+                  <h3 className="text-xl font-semibold text-green-300 mb-4">{`What AI Can't Replace`}</h3>
                   <ul className="space-y-3 text-gray-300">
                     <li className="flex items-start gap-3">
                       <span className="text-green-400 mt-1">✓</span>
@@ -226,7 +241,7 @@ export default function WhyBloggingMattersClient({ postData }: { postData: PostD
 
               <div className="mt-6 p-4 bg-orange-900/20 border border-orange-500/30 rounded-lg">
                 <p className="text-orange-200 font-medium">
-                  <strong>Key Insight:</strong> Your blog isn't just content—it's proof that you can think clearly and communicate effectively under your own motivation.
+                  <strong>Key Insight:</strong> {`Your blog isn't just content—it's proof that you can think clearly and communicate effectively under your own motivation.`}
                 </p>
               </div>
             </div>
@@ -248,7 +263,7 @@ export default function WhyBloggingMattersClient({ postData }: { postData: PostD
               href="/contact" 
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-200 transform hover:scale-105"
             >
-              Let's Connect
+              {`Let's Connect`}
             </a>
           </motion.div>
 

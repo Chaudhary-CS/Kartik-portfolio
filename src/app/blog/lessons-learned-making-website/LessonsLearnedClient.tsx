@@ -13,22 +13,28 @@ interface PostData {
 
 export default function LessonsLearnedClient({ postData }: { postData: PostData }) {
   return (
-    <main className="relative min-h-screen bg-gradient-to-br from-gray-900 via-black to-blue-900">
-      {/* Static background pattern */}
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5"></div>
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(79, 70, 229, 0.15) 1px, transparent 0)',
-          backgroundSize: '20px 20px'
-        }}></div>
-      </div>
-
-      <div className="relative z-10">
+    <main className="relative min-h-screen flex flex-col text-white">
+      {/* Animated background that covers entire viewport */}
+      <motion.div 
+        className="fixed inset-0 bg-gradient-to-br from-gray-900 via-black to-blue-900 -z-50"
+        style={{ 
+          backgroundImage: `
+            radial-gradient(circle at 1px 1px, rgba(79, 70, 229, 0.15) 1px, transparent 0),
+            linear-gradient(to bottom right, rgba(59, 130, 246, 0.05), rgba(147, 51, 234, 0.05)),
+            linear-gradient(to bottom right, rgb(17, 24, 39), rgb(0, 0, 0), rgb(30, 58, 138))
+          `,
+          backgroundSize: '20px 20px, 100% 100%, 100% 100%'
+        }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.4, delay: 0.2 }}
+      />
+      <div className="relative z-10 flex-1">
         {/* Hero Section */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.4 }}
+          transition={{ duration: 0.4, delay: 0.6 }}
           className="pt-24 pb-16 px-6"
         >
           <div className="max-w-4xl mx-auto text-center">
@@ -69,13 +75,13 @@ export default function LessonsLearnedClient({ postData }: { postData: PostData 
         <motion.article 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.6 }}
+          transition={{ duration: 0.4, delay: 0.8 }}
           className="max-w-4xl mx-auto px-6 pb-24"
         >
           {/* Introduction */}
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-white/10">
             <p className="text-lg text-gray-200 leading-relaxed">
-              Building a developer portfolio isn't just about showcasing your work—it's a journey that teaches you as much about software development as any formal project. Over the past month, I've discovered that the real value of creating this portfolio wasn't just the final product, but the lessons learned along the way.
+              {`Building a developer portfolio isn't just about showcasing your work—it's a journey that teaches you as much about software development as any formal project. Over the past month, I've discovered that the real value of creating this portfolio wasn't just the final product, but the lessons learned along the way.`}
             </p>
           </div>
 
@@ -124,7 +130,7 @@ export default function LessonsLearnedClient({ postData }: { postData: PostData 
 
               <div className="mt-6 p-4 bg-blue-900/20 border border-blue-500/30 rounded-lg">
                 <p className="text-blue-200 font-medium">
-                  <strong>Key Insight:</strong> Choose technologies that compound your productivity, not just solve immediate problems.
+                  <strong>Key Insight:</strong> {`Choose technologies that compound your productivity, not just solve immediate problems.`}
                 </p>
               </div>
             </div>
@@ -221,20 +227,20 @@ export default function LessonsLearnedClient({ postData }: { postData: PostData 
           >
             <h3 className="text-2xl font-bold text-white mb-4">Ready to Build Your Own Portfolio?</h3>
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-              The lessons I learned can save you weeks of development time. Start with your data structure, choose technologies that compound, and always design for your audience.
+              {`The lessons I learned can save you weeks of development time. Start with your data structure, choose technologies that compound, and always design for your audience.`}
             </p>
             <a 
               href="/contact" 
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-200 transform hover:scale-105"
             >
-              Let's Connect
+              {`Let's Connect`}
             </a>
           </motion.div>
 
           {/* Navigation */}
           <div className="mt-16 pt-8 border-t border-gray-800 text-center">
             <a 
-              href="/blog" 
+              href="/blog/" 
               className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors text-lg font-medium"
             >
               ← Back to Blog
