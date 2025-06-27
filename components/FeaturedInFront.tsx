@@ -85,46 +85,18 @@ export default function FeaturedAndBlog({
   const scroll = (direction: 'left' | 'right') => {
     if (!scrollContainerRef.current) return;
     
-    const container = scrollContainerRef.current;
-    const containerWidth = container.clientWidth;
-    const cardWidth = container.children[0]?.clientWidth || 0;
-    const gap = window.innerWidth < 768 ? 16 : 32;
-    const cardOffset = (containerWidth - cardWidth) / 2;
-    
     if (direction === 'left') {
       const newIndex = Math.max(0, currentIndex - 1);
       setCurrentIndex(newIndex);
-      const scrollLeft = newIndex * (cardWidth + gap) - cardOffset;
-      container.scrollTo({
-        left: Math.max(0, scrollLeft),
-        behavior: 'smooth'
-      });
     } else {
       const maxIndex = Math.max(0, featured.length - 1);
       const newIndex = Math.min(maxIndex, currentIndex + 1);
       setCurrentIndex(newIndex);
-      const scrollLeft = newIndex * (cardWidth + gap) - cardOffset;
-      container.scrollTo({
-        left: Math.max(0, scrollLeft),
-        behavior: 'smooth'
-      });
     }
   };
 
   const goToSlide = (index: number) => {
     setCurrentIndex(index);
-    if (scrollContainerRef.current) {
-      const container = scrollContainerRef.current;
-      const containerWidth = container.clientWidth;
-      const cardWidth = container.children[0]?.clientWidth || 0;
-      const gap = window.innerWidth < 768 ? 16 : 32;
-      const cardOffset = (containerWidth - cardWidth) / 2;
-      const scrollLeft = index * (cardWidth + gap) - cardOffset;
-      container.scrollTo({
-        left: Math.max(0, scrollLeft),
-        behavior: 'smooth'
-      });
-    }
   };
 
   return (
@@ -177,12 +149,12 @@ export default function FeaturedAndBlog({
                 className={`flex transition-transform duration-300 ease-out ${
                   isMobile 
                     ? 'gap-4' 
-                    : 'gap-8'
+                    : 'gap-8 justify-center'
                 }`}
                 style={{ 
                   transform: isMobile 
-                    ? `translateX(calc(-${currentIndex * (100 / featured.length)}% - ${currentIndex * 16}px + ${dragOffset}px))`
-                    : undefined,
+                    ? `translateX(calc(-${currentIndex * 100}% - ${currentIndex * 16}px + ${dragOffset}px))`
+                    : `translateX(calc(-${currentIndex * 50}% + ${(featured.length - 1 - currentIndex) * 25}%))`,
                   scrollbarWidth: 'none', 
                   msOverflowStyle: 'none' 
                 }}
@@ -200,22 +172,26 @@ export default function FeaturedAndBlog({
                                shadow-[0_0_10px_rgba(20,184,166,0.3)] hover:shadow-[0_0_20px_rgba(20,184,166,0.6)]
                                border border-white hover:border-teal-400 transition-all duration-300"
                       style={{
-                        opacity: isDragging ? 1 : (Math.abs(index - currentIndex) <= 1 ? 1 : 0.6),
-                        transform: isDragging ? 'none' : `scale(${Math.abs(index - currentIndex) <= 1 ? 1 : 0.85})`,
+                        opacity: isDragging ? 1 : (index === currentIndex ? 1 : 0.7),
+                        transform: isDragging ? 'none' : `scale(${index === currentIndex ? 1 : 0.9})`,
                       }}
                     >
                       <ProjectCard {...proj} />
                     </div>
                   ))
                 ) : (
-                  // Desktop: Show all cards in slider
-                  featured.map((proj) => (
+                  // Desktop: Show all cards in slider with center focus
+                  featured.map((proj, index) => (
                     <div
                       key={proj.slug}
                       className="individual-project-card relative rounded-xl overflow-hidden cursor-pointer flex-shrink-0 
-                               w-[380px] lg:w-[400px]
+                               w-[350px] lg:w-[380px]
                                shadow-[0_0_10px_rgba(20,184,166,0.3)] hover:shadow-[0_0_20px_rgba(20,184,166,0.6)]
                                border border-white hover:border-teal-400 transition-all duration-300"
+                      style={{
+                        opacity: index === currentIndex ? 1 : 0.6,
+                        transform: `scale(${index === currentIndex ? 1 : 0.85})`,
+                      }}
                     >
                       <ProjectCard {...proj} />
                     </div>
