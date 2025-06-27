@@ -161,7 +161,7 @@ Key Features and Results:
 \- Optimized API calls from a 60-second refresh cooldown system that provides up-to-date pricing information, resulting in a seamless user experience across both desktop and mobile devices.  
 Technologies Used:  
 \-  React, TypeScript, Convex, Vercel, Node.js, Auth0, Axios, Vite, Tailwind CSS, PostCSS  
-GitHub Link: [https://github.com/SamiMelhem/save-gas](https://github.com/SamiMelhem/save-gas)  
+GitHub Link: [https://github.com/SamiMelhem/save-gas/](https://github.com/SamiMelhem/save-gas/)  
 April 2025 \- May 2025
 
 Exped Browser  

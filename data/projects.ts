@@ -4,7 +4,7 @@ export interface Project {
     title: string
     description: string
     longDescription?: string
-    href?: string        // optional override, otherwise `/projects/${slug}`
+    href?: string        // optional override, otherwise `/projects/${slug}/`
     image?: string
     techs?: string[]
     github?: string
@@ -22,7 +22,7 @@ const projects: Project[] = [
     longDescription: 'Built a real-time gas price tracking application that helps users save up to $0.30 per gallon by comparing prices across 100+ stations, featuring an interactive map with turn-by-turn navigation and secure location-based services. The application implements a 60-second refresh system to optimize API calls while maintaining strict privacy standards, delivering a seamless cross-platform experience that enables users to make informed fuel purchase decisions.',
     image: '/images/projects/savegas.png',
     techs: ['React', 'TypeScript', 'JavaScript', 'HTML/CSS', 'Convex', 'Vercel', 'Node.js', 'Auth0', 'Vite', 'Tailwind CSS'],
-    github: 'https://github.com/SamiMelhem/save-gas',
+    github: 'https://github.com/SamiMelhem/save-gas/',
     featured: true,
     date: 'April 2025 - May 2025',
     achievements: [
@@ -40,7 +40,7 @@ const projects: Project[] = [
     longDescription: 'Developed a cross-platform desktop browser that efficiently supports over 10,000 concurrent users and delivers a privacy-first experience with local AI-powered web page summarization. Enhanced user productivity by reducing navigation and reading times by up to 50%, while achieving a 95% satisfaction rate and ensuring complete data privacy.',
     image: '/images/projects/exped_browser.png',
     techs: ['React', 'TypeScript', 'JavaScript', 'HTML/CSS', 'Node.js', 'Electron', 'Vite', 'Tailwind CSS', 'Lucide React'],
-    github: 'https://github.com/SamiMelhem/exped-browser',
+    github: 'https://github.com/SamiMelhem/exped-browser/',
     featured: true,
     date: 'January 2025 - April 2025',
     achievements: [
@@ -58,7 +58,7 @@ const projects: Project[] = [
     longDescription: 'Developed autonomous vehicles in CARLA for vehicle navigation, sensor integration, and decision-making. Built comprehensive simulation environment integrating LiDAR and camera sensors for real-time object detection with machine learning models for navigation optimization.',
     image: '/images/projects/av_sim.png',
     techs: ['Python', 'PyTorch', 'TensorFlow', 'Scikit-Learn', 'OpenCV', 'Tableau', 'Power BI', 'Excel', 'Pandas', 'NumPy', 'Matplotlib'],
-    liveDemo: 'https://docs.google.com/presentation/d/1V2agrhnjItJWyib6dGJf8xYpDqPeRsu3l0NsSZdQheE/edit?usp=sharing',
+    liveDemo: 'https://docs.google.com/presentation/d/1V2agrhnjItJWyib6dGJf8xYpDqPeRsu3l0NsSZdQheE/edit?usp=sharing/',
     featured: true,
     date: 'August 2024 - December 2024',
     achievements: [
@@ -75,7 +75,7 @@ const projects: Project[] = [
     longDescription: 'A Point of Sale (POS) System for Panda Express. It is a full-stack web application designed to streamline ordering and management processes for Panda Express employees while delivering an efficient and visually pleasing interface for customers. The system includes role-based access for cashiers, managers, and customers, with functionality tailored for each user type. The application dynamically adapts to environmental factors such as day/night themes based on real-time weather data.',
     image: '/images/projects/panda_express.png',
     techs: ['TypeScript', 'React', 'JavaScript', 'HTML/CSS', 'Next.js', 'Tailwind CSS', 'Lucide React', 'Node.js', 'Express.js', 'PostgreSQL'],
-    github: 'https://github.com/CSCE331-Fall2024/Panda_Express_POS_System',
+    github: 'https://github.com/CSCE331-Fall2024/Panda_Express_POS_System/',
     featured: true,
     date: 'October 2024 - December 2024',
     achievements: [
@@ -93,7 +93,7 @@ const projects: Project[] = [
     longDescription: 'This is a comprehensive stock price forecasting and analysis system that downloads historical stock data for major companies (including MSFT, AAPL, NVDA, GOOG, etc.) and uses multiple machine learning and statistical models to predict future stock prices across different time horizons (1 day to 1 year). The system includes data preprocessing, feature engineering, model training, performance evaluation, and an interactive web dashboard for visualization.',
     image: '/images/projects/financial_modeling.png',
     techs: ['Python', 'Scikit-Learn', 'TensorFlow', 'Dash', 'Plotly', 'Pandas', 'NumPy'],
-    github: 'https://github.com/SamiMelhem/FinancialModelingTool',
+    github: 'https://github.com/SamiMelhem/FinancialModelingTool/',
     date: 'June 2024 - August 2024',
     achievements: [
       'Python-based financial modeling tool achieving 80%+ forecasting accuracy',
@@ -110,7 +110,7 @@ const projects: Project[] = [
     longDescription: 'Networked client-server application using the TCP/IP protocol. The project enhances an inter-process communication system by extending it to operate over a network, supporting both data point transfers and file transfers between multiple clients and a server.',
     image: '/images/projects/client_server_architecture.svg',
     techs: ['C++', 'TCP/IP', 'Multithreading', 'Linux', 'Sockets'],
-    github: 'https://github.com/SamiMelhem/ClientServerProcess',
+    github: 'https://github.com/SamiMelhem/ClientServerProcess/',
     date: 'March 2024 - April 2024',
     achievements: [
       'Linux-based client-server communication system using C and socket programming',
@@ -127,7 +127,7 @@ const projects: Project[] = [
     longDescription: 'An expert academic guide for mastering any class, tailored to specific course details. Created a custom GPT bot called "Class Primer" to help students prepare for courses by generating personalized "primers" weeks before classes start, integrating the "Priming" method.',
     image: '/images/projects/class_primer.png',
     techs: ['Prompt Engineering'],
-    liveDemo: 'https://chatgpt.com/g/g-LbbPjuL7W-class-primer',
+    liveDemo: 'https://chatgpt.com/g/g-LbbPjuL7W-class-primer/',
     date: 'February 2024 - April 2024',
     achievements: [
       'Custom GPT bot generating personalized course primers using "Priming" method',

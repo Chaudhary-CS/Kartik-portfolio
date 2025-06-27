@@ -83,7 +83,10 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             <ul className="flex space-x-8">
               {links.map(({ href, label }) => {
-                const isActive = path === href
+                // Improved active detection for nested routes
+                const isActive = href === '/' 
+                  ? path === '/' 
+                  : path.startsWith(href)
                 return (
                   <li key={href} className="relative group">
                     <Link
@@ -91,7 +94,7 @@ export default function Navbar() {
                       className={`
                         px-1 pb-1 transition-colors duration-200
                         ${isActive
-                          ? 'font-semibold text-white'
+                          ? 'font-bold text-white'
                           : scrolled
                             ? 'text-gray-200 hover:text-white'
                             : 'text-white hover:text-white'
@@ -194,7 +197,10 @@ export default function Navbar() {
             >
               <ul className="flex flex-col space-y-8 text-center">
                 {links.map(({ href, label }, index) => {
-                  const isActive = path === href
+                  // Improved active detection for nested routes
+                  const isActive = href === '/' 
+                    ? path === '/' 
+                    : path.startsWith(href)
                   return (
                     <motion.li
                       key={href}

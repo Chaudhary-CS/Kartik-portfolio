@@ -79,7 +79,7 @@ export default function ContactPage() {
             icon: SiGmail,
             color: 'text-red-400',
             getUrl: (subject: string, body: string) => 
-                `https://mail.google.com/mail/?view=cm&fs=1&to=samilmelhem23@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+                `https://mail.google.com/mail/?view=cm&fs=1&to=samilmelhem23@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}/`
         },
         {
             name: 'Outlook',
@@ -92,7 +92,7 @@ export default function ContactPage() {
                     return `ms-outlook://compose?to=samilmelhem23@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
                 }
                 // On Mac/iOS, use web version (desktop app uses different protocol)
-                return `https://outlook.live.com/mail/0/deeplink/compose?to=samilmelhem23@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+                return `https://outlook.live.com/mail/0/deeplink/compose?to=samilmelhem23@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}/`
             }
         },
         {
@@ -112,7 +112,7 @@ export default function ContactPage() {
             icon: FaYahoo,
             color: 'text-purple-400',
             getUrl: (subject: string, body: string) => 
-                `https://compose.mail.yahoo.com/?to=samilmelhem23@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+                `https://compose.mail.yahoo.com/?to=samilmelhem23@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}/`
         }
     ]
 
@@ -152,7 +152,7 @@ ${formData.email}`
         if (service.name === 'Outlook' && navigator.userAgent.toLowerCase().includes('windows')) {
             // Try to open desktop app first
             const desktopUrl = url
-            const webUrl = `https://outlook.live.com/mail/0/deeplink/compose?to=samilmelhem23@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+            const webUrl = `https://outlook.live.com/mail/0/deeplink/compose?to=samilmelhem23@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}/`
             
             // Attempt to open desktop app
             window.location.href = desktopUrl
