@@ -42,16 +42,16 @@ export default function Navbar() {
 
   const links = [
     { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
-    { href: '/projects', label: 'Projects' },
-    { href: '/skills', label: 'Skills' },
-    { href: '/blog', label: 'Blog' },
-    { href: '/contact', label: 'Contact' },
+    { href: '/about/', label: 'About' },
+    { href: '/projects/', label: 'Projects' },
+    { href: '/skills/', label: 'Skills' },
+    { href: '/blog/', label: 'Blog' },
+    { href: '/contact/', label: 'Contact' },
   ]
 
   const documentLinks = [
-    { href: '/documents/sami_melhem.pdf', label: 'Resume' },
-    { href: '/documents/sami_melhem_cv.pdf', label: 'CV' },
+    { href: '/documents/sami_melhem.pdf/', label: 'Resume' },
+    { href: '/documents/sami_melhem_cv.pdf/', label: 'CV' },
   ]
 
   return (

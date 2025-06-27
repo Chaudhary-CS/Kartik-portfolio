@@ -242,7 +242,7 @@ export default function AboutPage() {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <a
-                href="/documents/sami_melhem.pdf"
+                href="/documents/sami_melhem.pdf/"
                 download
                 className="group flex items-center justify-center gap-3 bg-teal-600 hover:bg-teal-700 px-6 py-3 rounded-lg transition-all duration-300 font-semibold"
               >
@@ -250,7 +250,7 @@ export default function AboutPage() {
                 Download Resume
               </a>
               <a
-                href="/documents/sami_melhem_cv.pdf"
+                href="/documents/sami_melhem_cv.pdf/"
                 download
                 className="group flex items-center justify-center gap-3 bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-lg transition-all duration-300 font-semibold border border-gray-600 hover:border-gray-500"
               >
@@ -306,7 +306,7 @@ export default function AboutPage() {
                 examining AI&apos;s potential and limitations in engineering education support.
               </p>
               <a
-                href="/documents/sami_melhem_research_paper_1.pdf"
+                href="/documents/sami_melhem_research_paper_1.pdf/"
                 download
                 className="group inline-flex items-center gap-3 bg-teal-600 hover:bg-teal-700 px-4 py-2 rounded-lg transition-all duration-300 font-medium text-sm"
               >

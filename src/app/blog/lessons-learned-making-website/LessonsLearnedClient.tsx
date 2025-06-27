@@ -230,7 +230,7 @@ export default function LessonsLearnedClient({ postData }: { postData: PostData 
               {`The lessons I learned can save you weeks of development time. Start with your data structure, choose technologies that compound, and always design for your audience.`}
             </p>
             <a 
-              href="/contact" 
+              href="/contact/" 
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-200 transform hover:scale-105"
             >
               {`Let's Connect`}

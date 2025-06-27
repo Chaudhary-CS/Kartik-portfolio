@@ -192,7 +192,7 @@ ${body}`
         external: true,
     },
     {
-        href: 'https://www.github.com/SamiMelhem',
+        href: 'https://www.github.com/SamiMelhem/',
         label: 'GitHub',
         Icon: SiGithub,
         external: true,

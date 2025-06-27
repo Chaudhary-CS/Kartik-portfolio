@@ -80,7 +80,7 @@ export default function ProjectsPage() {
               <ProjectCard
                 title={p.title}
                 description={p.description}
-                href={p.href ?? `/projects/${p.slug}`}
+                href={p.href ?? `/projects/${p.slug}/`}
                 image={p.image}
                 techs={p.techs}
                 github={p.github}

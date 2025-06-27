@@ -44,7 +44,7 @@ export default function AboutPreview() {
           transition={{ delay: 0.5, duration: 0.5 }}
         >
           <Link
-            href="/about"
+            href="/about/"
             className="relative inline-block px-1 pb-1 text-lg font-medium group"
             style={{ color: '#ffffff' }}
           >

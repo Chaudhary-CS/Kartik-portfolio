@@ -8,10 +8,10 @@ import { SiLinkedin, SiGithub, SiInstagram } from 'react-icons/si'
 
 export default function ContactIcons() {
   const contacts = [
-    { href: 'https://linkedin.com/in/sami-melhem', Icon: SiLinkedin, label: 'LinkedIn', external: true },
-    { href: 'https://github.com/SamiMelhem',   Icon: SiGithub,   label: 'GitHub', external: true   },
-    { href: '/contact',   Icon: MdEmail,    label: 'Email', external: false    },
-    { href: 'https://instagram.com/samimelhem__', Icon: SiInstagram, label: 'Instagram', external: true },
+    { href: 'https://linkedin.com/in/sami-melhem/', Icon: SiLinkedin, label: 'LinkedIn', external: true },
+    { href: 'https://github.com/SamiMelhem/',   Icon: SiGithub,   label: 'GitHub', external: true   },
+    { href: '/contact/',   Icon: MdEmail,    label: 'Email', external: false    },
+    { href: 'https://instagram.com/samimelhem__/', Icon: SiInstagram, label: 'Instagram', external: true },
   ]
 
   return (

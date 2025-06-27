@@ -116,7 +116,7 @@ export default function SkillsPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: index * 0.1 }}
             >
-              <Link href={`/skills/${skill.slug}`}>
+              <Link href={`/skills/${skill.slug}/`}>
                 <div className="group relative rounded-xl overflow-hidden cursor-pointer h-full
                              bg-gray-900/70 border border-white hover:border-teal-400
                              shadow-[0_0_10px_rgba(20,184,166,0.3)] hover:shadow-[0_0_20px_rgba(20,184,166,0.6)]

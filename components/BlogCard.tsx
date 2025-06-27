@@ -24,7 +24,7 @@ export default function BlogCard({ slug, title, date, excerpt, image }: BlogCard
 
   return (
     <Link 
-        href={`/blog/${slug}`} 
+        href={`/blog/${slug}/`} 
         className="
             group block h-full w-full min-h-[400px]
             transition-all hover:scale-[1.02]

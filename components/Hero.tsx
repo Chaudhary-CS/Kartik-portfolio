@@ -60,8 +60,8 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.8 }}
         >
             {[
-                { href: '/projects', label: 'See Projects' },
-                { href: '/blog',    label: 'Read My Blog' },
+                { href: '/projects/', label: 'See Projects' },
+                { href: '/blog/',    label: 'Read My Blog' },
             ].map(({ href, label }, index) => (
             <motion.div
               key={href}

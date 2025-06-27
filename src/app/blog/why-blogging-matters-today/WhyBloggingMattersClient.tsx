@@ -260,7 +260,7 @@ export default function WhyBloggingMattersClient({ postData }: { postData: PostD
               The best time to start was yesterday. The second best time is now. Your unique perspective and experience have value—share them with the world.
             </p>
             <a 
-              href="/contact" 
+              href="/contact/" 
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-200 transform hover:scale-105"
             >
               {`Let's Connect`}
@@ -270,7 +270,7 @@ export default function WhyBloggingMattersClient({ postData }: { postData: PostD
           {/* Navigation */}
           <div className="mt-16 pt-8 border-t border-gray-800 text-center">
             <a 
-              href="/blog" 
+              href="/blog/" 
               className="inline-flex items-center text-purple-400 hover:text-purple-300 transition-colors text-lg font-medium"
             >
               ← Back to Blog

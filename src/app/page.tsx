@@ -21,7 +21,7 @@ export default function Home() {
     .map(project => ({
       title: project.title,
       description: project.description,
-      href: project.href ?? `/projects/${project.slug}`,
+      href: project.href ?? `/projects/${project.slug}/`,
       image: project.image || '/images/project-placeholder.png',
       techs: project.techs || [],
       slug: project.slug,

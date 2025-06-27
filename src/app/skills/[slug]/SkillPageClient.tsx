@@ -58,7 +58,7 @@ export default function SkillPageClient({ skill, relatedProjects }: SkillPageCli
           {/* Back Button */}
           <div className="mb-6">
             <Link 
-              href="/skills"
+              href="/skills/"
               className="inline-flex items-center gap-2 text-teal-400 hover:text-teal-300 transition-colors"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -304,7 +304,7 @@ export default function SkillPageClient({ skill, relatedProjects }: SkillPageCli
                   <ProjectCard
                     title={project.title}
                     description={project.description}
-                    href={project.href ?? `/projects/${project.slug}`}
+                    href={project.href ?? `/projects/${project.slug}/`}
                     image={project.image}
                     techs={project.techs}
                     github={project.github}
