@@ -28,6 +28,8 @@ export default function FeaturedAndBlog({
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [dragOffset, setDragOffset] = useState(0);
 
   // Check if mobile on mount and resize
   useEffect(() => {
@@ -37,20 +39,33 @@ export default function FeaturedAndBlog({
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  // Swipe detection
+  // Enhanced swipe detection with live preview
   const minSwipeDistance = 50;
 
   const onTouchStart = (e: React.TouchEvent) => {
     setTouchEnd(null);
     setTouchStart(e.targetTouches[0].clientX);
+    setIsDragging(true);
+    setDragOffset(0);
   };
 
   const onTouchMove = (e: React.TouchEvent) => {
-    setTouchEnd(e.targetTouches[0].clientX);
+    if (!touchStart) return;
+    
+    const currentTouch = e.targetTouches[0].clientX;
+    setTouchEnd(currentTouch);
+    
+    // Calculate drag offset for live preview
+    const offset = currentTouch - touchStart;
+    setDragOffset(offset);
   };
 
   const onTouchEnd = () => {
-    if (!touchStart || !touchEnd) return;
+    if (!touchStart || !touchEnd) {
+      setIsDragging(false);
+      setDragOffset(0);
+      return;
+    }
     
     const distance = touchStart - touchEnd;
     const isLeftSwipe = distance > minSwipeDistance;
@@ -62,6 +77,9 @@ export default function FeaturedAndBlog({
     if (isRightSwipe && currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
     }
+    
+    setIsDragging(false);
+    setDragOffset(0);
   };
 
   const scroll = (direction: 'left' | 'right') => {
@@ -153,45 +171,57 @@ export default function FeaturedAndBlog({
             )}
 
             {/* Projects Slider */}
-            <div 
-              ref={scrollContainerRef}
-              className={`flex overflow-x-hidden scroll-smooth ${
-                isMobile 
-                  ? 'gap-4 px-4' 
-                  : 'gap-8 px-0'
-              }`}
-              style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-              onTouchStart={isMobile ? onTouchStart : undefined}
-              onTouchMove={isMobile ? onTouchMove : undefined}
-              onTouchEnd={isMobile ? onTouchEnd : undefined}
-            >
-              {isMobile ? (
-                // Mobile: Show only current card
-                <div className="w-full flex justify-center">
-                  <div
-                    key={featured[currentIndex].slug}
-                    className="individual-project-card relative rounded-xl overflow-hidden cursor-pointer flex-shrink-0 
-                             w-[calc(100vw-2rem)] max-w-[350px]
-                             shadow-[0_0_10px_rgba(20,184,166,0.3)] hover:shadow-[0_0_20px_rgba(20,184,166,0.6)]
-                             border border-white hover:border-teal-400 transition-all duration-300"
-                  >
-                    <ProjectCard {...featured[currentIndex]} />
-                  </div>
-                </div>
-              ) : (
-                // Desktop: Show all cards in slider
-                featured.map((proj) => (
-                  <div
-                    key={proj.slug}
-                    className="individual-project-card relative rounded-xl overflow-hidden cursor-pointer flex-shrink-0 
-                             w-[380px] lg:w-[400px]
-                             shadow-[0_0_10px_rgba(20,184,166,0.3)] hover:shadow-[0_0_20px_rgba(20,184,166,0.6)]
-                             border border-white hover:border-teal-400 transition-all duration-300"
-                  >
-                    <ProjectCard {...proj} />
-                  </div>
-                ))
-              )}
+            <div className="overflow-hidden">
+              <div 
+                ref={scrollContainerRef}
+                className={`flex transition-transform duration-300 ease-out ${
+                  isMobile 
+                    ? 'gap-4' 
+                    : 'gap-8'
+                }`}
+                style={{ 
+                  transform: isMobile 
+                    ? `translateX(calc(-${currentIndex * (100 / featured.length)}% - ${currentIndex * 16}px + ${dragOffset}px))`
+                    : undefined,
+                  scrollbarWidth: 'none', 
+                  msOverflowStyle: 'none' 
+                }}
+                onTouchStart={isMobile ? onTouchStart : undefined}
+                onTouchMove={isMobile ? onTouchMove : undefined}
+                onTouchEnd={isMobile ? onTouchEnd : undefined}
+              >
+                {isMobile ? (
+                  // Mobile: Show all cards in carousel
+                  featured.map((proj, index) => (
+                    <div
+                      key={proj.slug}
+                      className="individual-project-card relative rounded-xl overflow-hidden cursor-pointer flex-shrink-0 
+                               w-[calc(85vw)] max-w-[320px]
+                               shadow-[0_0_10px_rgba(20,184,166,0.3)] hover:shadow-[0_0_20px_rgba(20,184,166,0.6)]
+                               border border-white hover:border-teal-400 transition-all duration-300"
+                      style={{
+                        opacity: isDragging ? 1 : (Math.abs(index - currentIndex) <= 1 ? 1 : 0.6),
+                        transform: isDragging ? 'none' : `scale(${Math.abs(index - currentIndex) <= 1 ? 1 : 0.85})`,
+                      }}
+                    >
+                      <ProjectCard {...proj} />
+                    </div>
+                  ))
+                ) : (
+                  // Desktop: Show all cards in slider
+                  featured.map((proj) => (
+                    <div
+                      key={proj.slug}
+                      className="individual-project-card relative rounded-xl overflow-hidden cursor-pointer flex-shrink-0 
+                               w-[380px] lg:w-[400px]
+                               shadow-[0_0_10px_rgba(20,184,166,0.3)] hover:shadow-[0_0_20px_rgba(20,184,166,0.6)]
+                               border border-white hover:border-teal-400 transition-all duration-300"
+                    >
+                      <ProjectCard {...proj} />
+                    </div>
+                  ))
+                )}
+              </div>
             </div>
 
             {/* Dots Indicator */}
