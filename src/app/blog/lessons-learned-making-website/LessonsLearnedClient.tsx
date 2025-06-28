@@ -77,7 +77,7 @@ export default function LessonsLearnedClient({ postData }: { postData: PostData 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.8 }}
-          className="max-w-4xl mx-auto px-6 pb-24"
+          className="max-w-4xl mx-auto px-6 pb-24 overflow-x-hidden"
         >
           {/* Introduction */}
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-white/10">
@@ -108,8 +108,8 @@ export default function LessonsLearnedClient({ postData }: { postData: PostData 
                 <h3 className="text-xl font-semibold text-blue-300 mb-4">The Magic Combination</h3>
                 <p className="text-gray-300 mb-4">Using `AnimatePresence` with `usePathname` hook creates seamless route transitions, while timeline-based animations prevent double animations when users visit pages.</p>
                 
-                <div className="bg-gray-800/50 rounded-lg p-4 mb-4">
-                  <pre className="text-blue-200 text-sm overflow-x-auto">
+                <div className="bg-gray-800/50 rounded-lg p-4 mb-4 overflow-hidden">
+                  <pre className="text-blue-200 text-sm overflow-x-auto w-full max-w-full">
                     <code>{`<AnimatePresence mode="wait">
   <motion.main
     key={pathname}
@@ -124,9 +124,9 @@ export default function LessonsLearnedClient({ postData }: { postData: PostData 
                 
                 <p className="text-gray-300">The timeline-based approach ensures each page animation completes before the next begins, preventing the jarring experience of overlapping animations.</p>
                 
-                <div className="bg-gray-800/50 rounded-lg p-4 mt-4">
+                <div className="bg-gray-800/50 rounded-lg p-4 mt-4 overflow-hidden">
                   <h4 className="text-blue-300 font-semibold mb-2">Hero Section</h4>
-                  <pre className="text-blue-200 text-sm overflow-x-auto">
+                  <pre className="text-blue-200 text-sm overflow-x-auto w-full max-w-full">
                     <code>{`// Hero.tsx - Elements appear in sequence
 <motion.h1 
   initial={{ opacity: 0, y: 20 }}
@@ -216,13 +216,13 @@ export default function LessonsLearnedClient({ postData }: { postData: PostData 
                         { step: 7, name: "Upload artifact", desc: "Package /out directory for Pages", icon: "📤" },
                         { step: 8, name: "Deploy to Pages", desc: "Live site updated automatically", icon: "🚀" }
                       ].map(({ step, name, desc, icon }) => (
-                        <div key={step} className="flex items-start gap-3 p-3 bg-gray-700/30 rounded-lg">
-                          <div className="flex items-center gap-2 min-w-0">
+                        <div key={step} className="p-3 bg-gray-700/30 rounded-lg">
+                          <div className="flex items-center gap-2 mb-1">
                             <span className="text-lg">{icon}</span>
                             <span className="text-purple-300 font-medium text-sm">{step}.</span>
                             <span className="text-white font-medium text-sm">{name}</span>
                           </div>
-                          <span className="text-gray-300 text-xs mt-0.5">{desc}</span>
+                          <p className="text-gray-300 text-xs ml-7">{desc}</p>
                         </div>
                       ))}
                     </div>
@@ -316,7 +316,7 @@ export default function LessonsLearnedClient({ postData }: { postData: PostData 
                         Contact System: Platform-Specific Optimizations
                       </h4>
                       <p className="text-gray-300 text-sm mb-3">Advanced email client integration with intelligent platform detection and fallback mechanisms:</p>
-                      <pre className="text-green-200 text-xs overflow-x-auto bg-gray-900/50 rounded p-3">
+                      <pre className="text-green-200 text-xs overflow-x-auto bg-gray-900/50 rounded p-3 w-full max-w-full">
                         <code>{`const emailServices = [
   {
     name: 'Gmail',
@@ -404,7 +404,7 @@ export default function LessonsLearnedClient({ postData }: { postData: PostData 
                         File Organization: Professional Structure
                       </h4>
                       <p className="text-gray-300 text-sm mb-3">Clear separation of concerns that recruiters immediately recognize:</p>
-                      <pre className="text-green-200 text-xs overflow-x-auto bg-gray-900/50 rounded p-3">
+                      <pre className="text-green-200 text-xs overflow-x-auto bg-gray-900/50 rounded p-3 w-full max-w-full">
                         <code>{`samimelhem-portfolio/
 ├── components/              # 14 reusable UI components
 │   ├── AboutPreview.tsx     # Homepage about section
@@ -458,7 +458,7 @@ export default function LessonsLearnedClient({ postData }: { postData: PostData 
                           <p className="text-gray-300 text-sm mb-2">
                             <strong>Project Example:</strong> <Link href="/projects/save-gas/" className="text-blue-400 hover:text-blue-300 underline font-semibold">SaveGas App</Link>
                           </p>
-                          <pre className="text-blue-200 text-xs overflow-x-auto bg-gray-900/50 rounded p-3">
+                          <pre className="text-blue-200 text-xs overflow-x-auto bg-gray-900/50 rounded p-3 w-full max-w-full">
                             <code>{`{
   title: 'SaveGas',
   description: 'Real-time gas price tracking application that helps users save up to $0.30 per gallon',
@@ -481,7 +481,7 @@ export default function LessonsLearnedClient({ postData }: { postData: PostData 
                           <p className="text-gray-300 text-sm mb-2">
                             <strong>Skill Example:</strong> <Link href="/skills/python/" className="text-purple-400 hover:text-purple-300 underline font-semibold">Python Expertise</Link>
                           </p>
-                          <pre className="text-purple-200 text-xs overflow-x-auto bg-gray-900/50 rounded p-3">
+                          <pre className="text-purple-200 text-xs overflow-x-auto bg-gray-900/50 rounded p-3 w-full max-w-full">
                             <code>{`{
   name: 'Python',
   proficiency: 'Advanced',
@@ -548,8 +548,8 @@ export default function LessonsLearnedClient({ postData }: { postData: PostData 
                     <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
                       <h4 className="text-blue-300 font-semibold mb-2">Strategic Lazy Loading: VantaNet Background</h4>
                       <p className="text-gray-300 text-sm mb-3">Complex 3D animations loaded only when needed with intelligent cleanup:</p>
-                      <div className="bg-gray-800/50 rounded p-3">
-                        <pre className="text-blue-200 text-xs overflow-x-auto">
+                      <div className="bg-gray-800/50 rounded p-3 overflow-hidden">
+                        <pre className="text-blue-200 text-xs overflow-x-auto w-full max-w-full">
                           <code>{`// components/VantaNet.tsx - Strategic lazy loading implementation
 'use client'
 
@@ -663,8 +663,8 @@ export default function VantaNet() {
                 <div className="space-y-4">
                   <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-4">
                     <h4 className="text-blue-300 font-semibold mb-2">Responsive State Management:</h4>
-                    <div className="bg-gray-800/50 rounded p-2 mb-2">
-                      <pre className="text-blue-200 text-xs overflow-x-auto">
+                    <div className="bg-gray-800/50 rounded p-2 mb-2 overflow-hidden">
+                      <pre className="text-blue-200 text-xs overflow-x-auto w-full max-w-full">
                         <code>{`const [isMobile, setIsMobile] = useState(false)
 useEffect(() => {
   const checkMobile = () => setIsMobile(window.innerWidth < 768)
@@ -681,7 +681,7 @@ useEffect(() => {
                     <div className="space-y-4">
                       <div className="bg-gray-800/50 rounded-lg p-4">
                         <h5 className="text-green-300 font-semibold mb-2 text-sm">Swipe Navigation with Live Preview</h5>
-                        <pre className="text-green-200 text-xs overflow-x-auto bg-gray-900/50 rounded p-3">
+                        <pre className="text-green-200 text-xs overflow-x-auto bg-gray-900/50 rounded p-3 w-full max-w-full">
                           <code>{`// components/FeaturedInFront.tsx - Touch interaction system
 const [touchStart, setTouchStart] = useState<number | null>(null)
 const [touchEnd, setTouchEnd] = useState<number | null>(null)
@@ -740,7 +740,7 @@ const onTouchEnd = () => {
 
                       <div className="bg-gray-800/50 rounded-lg p-4">
                         <h5 className="text-green-300 font-semibold mb-2 text-sm">Mobile-Optimized Layout Switching</h5>
-                        <pre className="text-green-200 text-xs overflow-x-auto bg-gray-900/50 rounded p-3">
+                        <pre className="text-green-200 text-xs overflow-x-auto bg-gray-900/50 rounded p-3 w-full max-w-full">
                           <code>{`{isMobile ? (
   // Mobile: Full-width swipeable carousel
   <div className="w-full px-4">
@@ -787,7 +787,7 @@ const onTouchEnd = () => {
 
                       <div className="bg-gray-800/50 rounded-lg p-4">
                         <h5 className="text-green-300 font-semibold mb-2 text-sm">Mobile Navigation Menu</h5>
-                        <pre className="text-green-200 text-xs overflow-x-auto bg-gray-900/50 rounded p-3">
+                        <pre className="text-green-200 text-xs overflow-x-auto bg-gray-900/50 rounded p-3 w-full max-w-full">
                           <code>{`// components/Navbar.tsx - Touch-optimized mobile menu
 const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -839,7 +839,7 @@ useEffect(() => {
 
                       <div className="bg-gray-800/50 rounded-lg p-4">
                         <h5 className="text-green-300 font-semibold mb-2 text-sm">Touch-Optimized Interactive Elements</h5>
-                        <pre className="text-green-200 text-xs overflow-x-auto bg-gray-900/50 rounded p-3">
+                        <pre className="text-green-200 text-xs overflow-x-auto bg-gray-900/50 rounded p-3 w-full max-w-full">
                           <code>{`// Touch-friendly button sizing and spacing
 const buttonStyle = {
   // Minimum 44px touch target (iOS/Android guidelines)
