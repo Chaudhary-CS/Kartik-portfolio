@@ -198,7 +198,7 @@ export default function LessonsLearnedClient({ postData }: { postData: PostData 
                 <div className="space-y-6">
                   <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-4">
                     <h4 className="text-green-300 font-semibold mb-2">GitHub Actions Automation:</h4>
-                    <p className="text-gray-300 text-sm mb-2">Push to main → automatic build → deploy in seconds</p>
+                    <p className="text-gray-300 text-sm mb-2">Push to main → automatic build → deploy in minutes</p>
                   </div>
                   
                   <div className="bg-gray-800/50 rounded-lg p-4">
@@ -229,7 +229,7 @@ export default function LessonsLearnedClient({ postData }: { postData: PostData 
                     
                     <div className="mt-4 p-3 bg-green-900/20 border border-green-500/30 rounded-lg">
                       <p className="text-green-200 text-sm">
-                        <strong>Total Time:</strong> {`<1 minute from push to live site`}
+                        <strong>Total Time:</strong> {`<2 minutes from push to live site`}
                       </p>
                     </div>
                   </div>
