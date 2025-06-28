@@ -34,15 +34,15 @@ export default function Home() {
   const posts: BlogPost[] = [
     {
       slug: "lessons-learned-making-website",
-      title: "The Lessons Learned from Making This Website",
-      date: "2025-01-23",
+      title: "5 Key Lessons I Learned from Making This Website (So You Don't Have To)",
+      date: "June 28th, 2025",
       excerpt: "Five critical lessons I discovered while building my developer portfolio with Next.js, TypeScript, and modern web technologies - and how you can apply them to your own projects.",
       image: "gradient-gray-blue"
     },
     {
       slug: "why-blogging-matters-today", 
       title: "Why Blogging Matters in Today's Market",
-      date: "2025-01-23",
+      date: "June 28th, 2025",
       excerpt: "In an AI-driven job market where everyone has access to the same information, your unique perspective and ability to communicate complex ideas clearly has become your most valuable differentiator.",
       image: "gradient-purple-pink"
     }
