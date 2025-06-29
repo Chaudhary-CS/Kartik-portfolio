@@ -50,8 +50,8 @@ export default function Navbar() {
   ]
 
   const documentLinks = [
-    { href: '/documents/sami_melhem.pdf/', label: 'Resume' },
-    { href: '/documents/sami_melhem_cv.pdf/', label: 'CV' },
+    { href: '/documents/sami_melhem.pdf', label: 'Resume' },
+    { href: '/documents/sami_melhem_cv.pdf', label: 'CV' },
   ]
 
   return (
