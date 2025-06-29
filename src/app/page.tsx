@@ -42,7 +42,7 @@ export default function Home() {
     {
       slug: "why-blogging-matters-today", 
       title: "Why Blogging Matters in Today's Market",
-      date: "June 28th, 2025",
+      date: "June 29th, 2025",
       excerpt: "In an AI-driven job market where everyone has access to the same information, your unique perspective and ability to communicate complex ideas clearly has become your most valuable differentiator.",
       image: "gradient-purple-pink"
     }
