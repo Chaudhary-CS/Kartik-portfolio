@@ -2,10 +2,9 @@
 
 A high-performance, fully customizable developer portfolio built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**. Features professional animations, mobile-first responsive design, and automated CI/CD deployment.
 
-![Portfolio Preview](https://img.shields.io/badge/Live%20Demo-samimelhem.com-blue?style=for-the-badge&logo=vercel)
-![GitHub Pages](https://github.com/SamiMelhem/samimelhem-portfolio/actions/workflows/deploy.yml/badge.svg)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-samimelhem.com-blue?style=for-the-badge&logo=vercel)](https://samimelhem.com)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 
 ## ✨ Features
 
@@ -46,7 +45,6 @@ A high-performance, fully customizable developer portfolio built with **Next.js 
 - [Deployment](#-deployment)
 - [Project Structure](#-project-structure)
 - [Technology Stack](#-technology-stack)
-- [Contributing](#-contributing)
 - [Troubleshooting](#-troubleshooting)
 - [License](#-license)
 
@@ -304,37 +302,6 @@ samimelhem-portfolio/
 - **Image Optimization** - Next.js Image component with lazy loading
 - **Code Splitting** - Automatic bundle optimization
 
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-### Types of Contributions
-- 🐛 **Bug Fixes** - Fix issues or improve performance
-- ✨ **Features** - Add new functionality or components  
-- 📚 **Documentation** - Improve guides and examples
-- 🎨 **Design** - Enhance UI/UX and animations
-
-### Development Process
-
-1. **Fork the repository**
-2. **Create a feature branch**:
-   ```bash
-   git checkout -b feature/amazing-feature
-   ```
-3. **Make your changes** with proper TypeScript types
-4. **Test thoroughly**:
-   ```bash
-   npm run build  # Ensure build works
-   npm run dev    # Test in development
-   ```
-5. **Submit a pull request** with detailed description
-
-### Code Standards
-- **TypeScript**: Full type safety required
-- **ESLint**: Must pass linting checks
-- **Responsive**: Test on mobile and desktop
-- **Performance**: Maintain fast loading times
-
 ## 🔧 Troubleshooting
 
 ### Common Issues
@@ -347,6 +314,9 @@ npm install
 
 # Check for TypeScript errors
 npx tsc --noEmit
+
+# Check for linting issues before pushing
+npm run lint
 ```
 
 **Deployment Issues:**
