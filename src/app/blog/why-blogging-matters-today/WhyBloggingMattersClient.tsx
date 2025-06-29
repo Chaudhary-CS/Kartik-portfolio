@@ -120,7 +120,7 @@ export default function WhyBloggingMattersClient({ postData }: { postData: PostD
                       
                       <div className="mt-4 p-3 bg-red-800/20 rounded-lg">
                         <p className="text-red-200 text-xs">
-                          <strong>Result:</strong> 67% of developers report increased pressure to deliver faster as AI makes coding appear "easier"
+                          <strong>Result:</strong> {`67% of developers report increased pressure to deliver faster as AI makes coding appear "easier"`}
                         </p>
                       </div>
                     </div>
@@ -179,7 +179,7 @@ export default function WhyBloggingMattersClient({ postData }: { postData: PostD
                         <li>• Project completions and technical skills</li>
                         <li>• Collaboration through pull requests</li>
                       </ul>
-                      <p className="text-gray-400 text-xs mt-2 italic">Shallow view: What technologies you've used</p>
+                      <p className="text-gray-400 text-xs mt-2 italic">{`Shallow view: What technologies you've used`}</p>
                     </div>
                     
                     <div className="bg-gradient-to-r from-purple-900/20 to-pink-900/20 border border-purple-500/30 rounded-lg p-4">
@@ -255,7 +255,7 @@ export default function WhyBloggingMattersClient({ postData }: { postData: PostD
           >
             <div className="flex items-center gap-4 mb-6">
               <div className="w-8 h-8 bg-gradient-to-r from-pink-500 to-orange-500 rounded-full flex items-center justify-center text-white font-bold">2</div>
-              <h2 className="text-3xl md:text-4xl font-bold text-white">Technical Skills Aren't Enough, Communication Is the Differentiator</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-white">{`Technical Skills Aren't Enough, Communication Is the Differentiator`}</h2>
             </div>
             
             <div className="bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 border border-gray-700/50">
@@ -752,7 +752,7 @@ export default function WhyBloggingMattersClient({ postData }: { postData: PostD
                   
                   <div className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-500/30 rounded-lg p-4 mb-4">
                     <h4 className="text-blue-300 font-semibold mb-2">The Magic Formula</h4>
-                    <p className="text-gray-300 text-sm">Pick a technology you learned recently and write: "How I Built [Project] with [Technology]: 5 Lessons That Could Save You Hours"</p>
+                    <p className="text-gray-300 text-sm">{`Pick a technology you learned recently and write: "How I Built [Project] with [Technology]: 5 Lessons That Could Save You Hours"`}</p>
                   </div>
                   
                   <div className="space-y-4">
@@ -789,11 +789,11 @@ export default function WhyBloggingMattersClient({ postData }: { postData: PostD
                     <div className="bg-gray-800/50 rounded-lg p-4">
                       <h4 className="text-blue-300 font-semibold mb-2">Content Ideas That Always Work</h4>
                       <ul className="text-gray-300 text-sm space-y-1">
-                        <li>• "3 React Hooks Mistakes I Made So You Don't Have To"</li>
-                        <li>• "How I Optimized Database Queries: From 2s to 200ms"</li>
-                        <li>• "Building My First API: 5 Lessons from Production Bugs"</li>
-                        <li>• "Docker vs Local Development: When I Learned to Stop Worrying"</li>
-                        <li>• "My First Technical Interview: What I Wish I'd Known"</li>
+                        <li>• {`"3 React Hooks Mistakes I Made So You Don't Have To"`}</li>
+                        <li>• {`"How I Optimized Database Queries: From 2s to 200ms"`}</li>
+                        <li>• {`"Building My First API: 5 Lessons from Production Bugs"`}</li>
+                        <li>• {`"Docker vs Local Development: When I Learned to Stop Worrying"`}</li>
+                        <li>• {`"My First Technical Interview: What I Wish I'd Known"`} </li>
                       </ul>
                     </div>
                   </div>
@@ -925,7 +925,7 @@ export default function WhyBloggingMattersClient({ postData }: { postData: PostD
                     <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0">5</div>
                     <div>
                       <h3 className="text-blue-300 font-semibold mb-1">Start Today with Proven Blueprint</h3>
-                      <p className="text-gray-300 text-sm">Use the learning journey format, choose platforms like Dev.to for quick starts, and follow the 30-day challenge to build momentum. Your first post doesn't need to be perfect, it needs to exist.</p>
+                      <p className="text-gray-300 text-sm">{`Use the learning journey format, choose platforms like Dev.to for quick starts, and follow the 30-day challenge to build momentum. Your first post doesn't need to be perfect, it needs to exist.`}</p>
                     </div>
                   </div>
                 </div>
