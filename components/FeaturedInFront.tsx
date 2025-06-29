@@ -38,6 +38,21 @@ export default function FeaturedAndBlog({
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
+  // Preload all featured project images for smooth navigation
+  useEffect(() => {
+    const preloadImages = () => {
+      featured.forEach((project) => {
+        if (project.image) {
+          const img = new Image();
+          img.src = project.image;
+        }
+      });
+    };
+
+    // Preload images after component mounts
+    preloadImages();
+  }, [featured]);
+
   // Enhanced swipe detection with live preview
   const minSwipeDistance = 50;
 

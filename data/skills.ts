@@ -319,7 +319,7 @@ Successfully implemented Context-based state management across multiple projects
 **Advanced Development Patterns:**
 - **Consistent User Experience Design**: Architected persistent background (VantaNet) and navigation systems that maintain visual continuity across route transitions
 - **Animation-Enhanced Navigation**: Integration of Framer Motion with Next.js routing using AnimatePresence and usePathname for smooth page transitions
-- **MDX Content Integration**: Advanced configuration supporting both .md and .mdx files for dynamic content rendering and blog functionality
+- **React Component Blog System**: Custom blog implementation using React components for maximum flexibility and performance
 - **Export Configuration**: Strategic Next.js export setup for static deployment while maintaining dynamic capabilities where needed
 - **Client/Server Component Architecture**: Proper separation of client-side interactivity and server-side optimization using Next.js 'use client' directives
 
