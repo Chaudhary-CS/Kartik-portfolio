@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import ContactIcons from "../../../../components/ContactIcons";
 
 interface PostData {
@@ -951,22 +952,22 @@ export default function WhyBloggingMattersClient({ postData }: { postData: PostD
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
               In an AI-saturated market where everyone has access to the same tools, your unique context, communication skills, and personal brand become your most valuable assets. Stop competing on commoditized skills, start building your irreplaceable professional identity through technical blogging.
             </p>
-            <a 
+            <Link 
               href="/contact/" 
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-200 transform hover:scale-105"
             >
               Start Your Blogging Journey
-            </a>
+            </Link>
           </motion.div>
 
           {/* Navigation */}
           <div className="mt-16 pt-8 border-t border-gray-800 text-center">
-            <a 
+            <Link 
               href="/blog/" 
               className="inline-flex items-center text-purple-400 hover:text-purple-300 transition-colors text-lg font-medium"
             >
               ← Back to Blog
-            </a>
+            </Link>
           </div>
         </motion.article>
       </div>
