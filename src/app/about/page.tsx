@@ -1,8 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FaDownload, FaGraduationCap, FaCode, FaBrain, FaFileAlt, FaMusic, FaDumbbell, FaPlane, FaMapMarkerAlt, FaCamera, FaFutbol } from 'react-icons/fa'
-import { GiTennisRacket } from 'react-icons/gi'
+import { FaDownload, FaGraduationCap, FaCode, FaBrain, FaMusic, FaDumbbell, FaMapMarkerAlt, FaCamera, FaFutbol } from 'react-icons/fa'
 import ContactIcons from '../../../components/ContactIcons'
 import Image from 'next/image'
 
