@@ -24,8 +24,23 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
   }
 
   return {
-    title: `${project.title} | Sami Melhem`,
+    title: `${project.title} | Kartik Chaudhary`,
     description: project.description,
+    openGraph: {
+      title: `${project.title} | Kartik Chaudhary`,
+      description: project.description,
+      url: `https://kartikchaudhary.com/projects/${project.slug}`,
+      siteName: "Kartik Chaudhary Portfolio",
+      images: [
+        {
+          url: project.image || "/images/kartik.jpg",
+          width: 1200,
+          height: 630,
+          alt: project.title,
+        },
+      ],
+      locale: "en_US",
+    },
   }
 }
 
@@ -38,4 +53,4 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   }
 
   return <ProjectPageClient project={project} />
-} 
+}

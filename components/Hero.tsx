@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import Typewriter from 'typewriter-effect';
 
 export default function Hero() {
   return (
@@ -22,8 +23,8 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
             <Image
-            src="/images/sami.jpg"
-            alt="Sami Melhem"
+            src="/images/kartik.jpg"
+            alt="Kartik Chaudhary"
             width={256}
             height={256}
             className="object-cover"
@@ -40,17 +41,28 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-                {`Hi, I'm Sami Melhem`}
+                {`Hi, I'm Kartik Chaudhary`}
             </motion.h1>
-            <motion.p 
+            <motion.div 
               className="text-lg md:text-xl"
               style={{ color: '#d1d5db' }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
             >
-                {`Senior at Texas A&M University majoring in Computer Science with an emphasis in Data Science, and minoring in Cybersecurity • Principal Clarinet • AI & Data Science Enthusiast`}
-            </motion.p>
+              <Typewriter
+                options={{
+                  strings: [
+                    "I'm a tech enthusiast",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </motion.div>
+            <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+              {`Computer Science Student at the University of South Florida • Software Developer • AI Enthusiast`}
+            </p>
         </div>
         {/* CTA Buttons */}
         <motion.div 
@@ -61,7 +73,7 @@ export default function Hero() {
         >
             {[
                 { href: '/projects/', label: 'See Projects' },
-                { href: '/blog/',    label: 'Read My Blog' },
+                { href: '/work-experience/',    label: 'Work Experience' },
             ].map(({ href, label }, index) => (
             <motion.div
               key={href}

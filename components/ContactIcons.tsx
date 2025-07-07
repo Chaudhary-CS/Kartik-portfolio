@@ -4,14 +4,23 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { MdEmail } from 'react-icons/md'
-import { SiLinkedin, SiGithub, SiInstagram } from 'react-icons/si'
+import { SiLinkedin, SiGithub } from 'react-icons/si'
 
 export default function ContactIcons() {
   const contacts = [
-    { href: 'https://linkedin.com/in/sami-melhem/', Icon: SiLinkedin, label: 'LinkedIn', external: true },
-    { href: 'https://github.com/SamiMelhem/',   Icon: SiGithub,   label: 'GitHub', external: true   },
-    { href: '/contact/',   Icon: MdEmail,    label: 'Email', external: false    },
-    { href: 'https://instagram.com/samimelhem__/', Icon: SiInstagram, label: 'Instagram', external: true },
+    {
+      href: "https://www.linkedin.com/in/Chaudhary-CS",
+      Icon: SiLinkedin,
+      label: "LinkedIn",
+      external: true,
+    },
+    {
+      href: "https://github.com/Chaudhary-CS",
+      Icon: SiGithub,
+      label: "GitHub",
+      external: true,
+    },
+    { href: "/contact/", Icon: MdEmail, label: "Email", external: false },
   ]
 
   return (

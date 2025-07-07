@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { MdEmail, MdSend, MdContentCopy, MdCheck, MdArrowDropDown } from 'react-icons/md'
-import { SiLinkedin, SiGithub, SiInstagram, SiGmail, SiApple } from 'react-icons/si'
+import { SiLinkedin, SiGithub, SiGmail, SiApple } from 'react-icons/si'
 import { FaUser, FaBuilding, FaEnvelope, FaComment, FaExternalLinkAlt, FaYahoo } from 'react-icons/fa'
 
 export default function ContactPage() {
@@ -79,7 +79,7 @@ export default function ContactPage() {
             icon: SiGmail,
             color: 'text-red-400',
             getUrl: (subject: string, body: string) => 
-                `https://mail.google.com/mail/?view=cm&fs=1&to=samilmelhem23@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}/`
+                `https://mail.google.com/mail/?view=cm&fs=1&to=kartikchoudhary085@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}/`
         },
         {
             name: 'Outlook',
@@ -89,10 +89,10 @@ export default function ContactPage() {
                 const userAgent = navigator.userAgent.toLowerCase()
                 // On Windows, try desktop app first
                 if (userAgent.includes('windows')) {
-                    return `ms-outlook://compose?to=samilmelhem23@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+                    return `ms-outlook://compose?to=kartikchoudhary085@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
                 }
                 // On Mac/iOS, use web version (desktop app uses different protocol)
-                return `https://outlook.live.com/mail/0/deeplink/compose?to=samilmelhem23@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}/`
+                return `https://outlook.live.com/mail/0/deeplink/compose?to=kartikchoudhary085@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}/`
             }
         },
         {
@@ -100,7 +100,7 @@ export default function ContactPage() {
             icon: SiApple,
             color: 'text-gray-300',
             getUrl: (subject: string, body: string) => 
-                `mailto:samilmelhem23@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`,
+                `mailto:kartikchoudhary085@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`,
             isAvailable: () => {
                 // Check if running on Mac or iOS
                 const userAgent = navigator.userAgent.toLowerCase()
@@ -112,7 +112,7 @@ export default function ContactPage() {
             icon: FaYahoo,
             color: 'text-purple-400',
             getUrl: (subject: string, body: string) => 
-                `https://compose.mail.yahoo.com/?to=samilmelhem23@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}/`
+                `https://compose.mail.yahoo.com/?to=kartikchoudhary085@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}/`
         }
     ]
 
@@ -131,7 +131,7 @@ export default function ContactPage() {
                              formData.inquiryType === 'networking' ? '[Networking]' : 
                              '[Inquiry]'} ${formData.subject || 'Contact from ' + (formData.company || 'Portfolio Website')}`
 
-        const emailBody = `Hello Sami,
+        const emailBody = `Hello Kartik,
 
 ${formData.message}
 
@@ -152,7 +152,7 @@ ${formData.email}`
         if (service.name === 'Outlook' && navigator.userAgent.toLowerCase().includes('windows')) {
             // Try to open desktop app first
             const desktopUrl = url
-            const webUrl = `https://outlook.live.com/mail/0/deeplink/compose?to=samilmelhem23@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}/`
+            const webUrl = `https://outlook.live.com/mail/0/deeplink/compose?to=kartikchoudhary085@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}/`
             
             // Attempt to open desktop app
             window.location.href = desktopUrl
@@ -170,7 +170,7 @@ ${formData.email}`
 
     const handleCopyEmail = async () => {
         const { subject, body } = generateEmailContent()
-        const emailContent = `To: samilmelhem23@gmail.com
+        const emailContent = `To: kartikchoudhary085@gmail.com
 Subject: ${subject}
 
 ${body}`
@@ -186,21 +186,15 @@ ${body}`
 
     const contacts = [
     {
-        href: 'https://www.linkedin.com/in/sami-melhem/',
+        href: 'https://www.linkedin.com/in/Chaudhary-CS',
         label: 'LinkedIn',
         Icon: SiLinkedin,
         external: true,
     },
     {
-        href: 'https://www.github.com/SamiMelhem/',
+        href: 'https://github.com/Chaudhary-CS',
         label: 'GitHub',
         Icon: SiGithub,
-        external: true,
-    },
-    {
-        href: 'https://www.instagram.com/samimelhem__/',
-        label: 'Instagram',
-        Icon: SiInstagram,
         external: true,
     },
     ]

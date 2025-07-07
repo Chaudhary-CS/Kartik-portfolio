@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FaDownload } from 'react-icons/fa'
+import Image from 'next/image'
 
 export default function Navbar() {
   const path = usePathname()
@@ -43,15 +44,14 @@ export default function Navbar() {
   const links = [
     { href: '/', label: 'Home' },
     { href: '/about/', label: 'About' },
+    { href: '/work-experience/', label: 'Work Experience' },
     { href: '/projects/', label: 'Projects' },
     { href: '/skills/', label: 'Skills' },
-    { href: '/blog/', label: 'Blog' },
     { href: '/contact/', label: 'Contact' },
   ]
 
   const documentLinks = [
-    { href: '/documents/sami_melhem.pdf', label: 'Resume' },
-    { href: '/documents/sami_melhem_cv.pdf', label: 'CV' },
+    { href: '/documents/kartik_chaudhary_cv.pdf', label: 'Resume' },
   ]
 
   return (
@@ -65,19 +65,21 @@ export default function Navbar() {
             : ''}
         `}
       >
-        <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-          <Link href="/" className="relative group">
-            <span className="text-xl font-bold text-white transition-colors duration-200">
-              Sami Melhem
-            </span>
-            {/* teal underline */}
-            <span
-              className={`
-                absolute left-0 -bottom-[2px] h-[2px] bg-teal-400
-                transition-all duration-200 w-0 group-hover:w-full
-              `}
-            />
-          </Link>
+        <div className="container mx-auto flex items-center justify-between px-4 py-3">
+          <div className="flex items-center">
+            <Link href="/" className="flex items-center space-x-2">
+              <Image
+                src="/images/kartik.jpg"
+                alt="Kartik Chaudhary Logo"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
+              <span className="text-lg font-bold text-gray-900 dark:text-white">
+                Kartik Chaudhary
+              </span>
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">

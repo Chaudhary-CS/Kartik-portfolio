@@ -4,11 +4,12 @@ import { motion } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import ProjectCard from "./ProjectCard";
-import BlogCard    from "./BlogCard";
+import WorkExperienceCard from "./WorkExperienceCard";
+import Link from "next/link";
 
-export default function FeaturedAndBlog({
+export default function FeaturedInFront({
   featured,
-  posts,
+  workExperience,
 }: {
   featured: Array<{
     title: string;
@@ -21,7 +22,13 @@ export default function FeaturedAndBlog({
     liveDemo?: string;
     date?: string;
   }>;
-  posts: Array<{ slug: string; title: string; date: string; excerpt: string; image?: string }>;
+  workExperience: Array<{
+    company: string;
+    title: string;
+    dates: string;
+    logo: string;
+    description: string[];
+  }>;
 }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
@@ -101,160 +108,116 @@ export default function FeaturedAndBlog({
     }
   };
 
-  const goToSlide = (index: number) => {
-    setCurrentIndex(index);
-  };
-
   return (
-    <div className="max-w-6xl mx-auto px-2 sm:px-4" style={{ color: '#ffffff' }}>
-      <section className="relative">
-        <motion.div
-          className="relative z-10 py-12"
-          style={{ color: '#ffffff' }}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.4 }}
-        >
-          <motion.h2
-            className="text-3xl font-semibold mb-8 underline decoration-teal-400 underline-offset-4 text-center"
-            style={{ color: '#ffffff' }}
-            initial={{ opacity: 0, y: -10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.3 }}
-          >
-            Featured Projects
-          </motion.h2>
-          
-          {/* Slider Container */}
-          <div className="relative slider-container">
-            {/* Navigation Arrows - Desktop Only */}
-            {!isMobile && featured.length > 1 && (
-              <>
-                {currentIndex > 0 && (
-                  <button
-                    onClick={() => scroll('left')}
-                    className="absolute left-0 top-1/2 -translate-y-1/2 z-20 bg-gray-800/80 hover:bg-gray-700/90 border border-gray-600 hover:border-teal-400 rounded-full p-3 transition-all duration-300 opacity-60 hover:opacity-100"
-                  >
-                    <FaChevronLeft className="text-lg text-white hover:text-teal-400" />
-                  </button>
-                )}
-                
-                {currentIndex < featured.length - 1 && (
-                  <button
-                    onClick={() => scroll('right')}
-                    className="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-gray-800/80 hover:bg-gray-700/90 border border-gray-600 hover:border-teal-400 rounded-full p-3 transition-all duration-300 opacity-60 hover:opacity-100"
-                  >
-                    <FaChevronRight className="text-lg text-white hover:text-teal-400" />
-                  </button>
-                )}
-              </>
-            )}
+    <section className="relative">
+      <motion.div
+        className="relative z-10 max-w-6xl mx-auto px-4 py-16"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        <div className="flex flex-col lg:flex-row-reverse gap-12">
 
-            {/* Projects Slider */}
-            <div className="flex justify-center w-full">
-              {isMobile ? (
-                // Mobile: Swipeable carousel
-                <div className="w-full px-4">
-                  <div className="overflow-hidden rounded-xl">
-                    <div 
-                      ref={scrollContainerRef}
-                      className="flex transition-transform duration-300 ease-out"
-                      style={{ 
-                        transform: `translateX(calc(-${currentIndex * 100}% + ${dragOffset}px))`,
-                        scrollbarWidth: 'none', 
-                        msOverflowStyle: 'none' 
-                      }}
-                      onTouchStart={onTouchStart}
-                      onTouchMove={onTouchMove}
-                      onTouchEnd={onTouchEnd}
-                    >
-                      {featured.map((proj) => (
-                        <div
-                          key={proj.slug}
-                          className="individual-project-card relative rounded-xl overflow-hidden cursor-pointer flex-shrink-0 w-full
-                                   shadow-[0_0_10px_rgba(20,184,166,0.3)] hover:shadow-[0_0_20px_rgba(20,184,166,0.6)]
-                                   border border-white hover:border-teal-400 transition-all duration-300"
-                        >
-                          <ProjectCard {...proj} />
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              ) : (
-                // Desktop: Show only current card, centered
-                <div className="w-[450px] lg:w-[500px] xl:w-[550px]">
-                  <div
-                    key={featured[currentIndex].slug}
-                    className="individual-project-card relative rounded-xl overflow-hidden cursor-pointer
-                             shadow-[0_0_10px_rgba(20,184,166,0.3)] hover:shadow-[0_0_20px_rgba(20,184,166,0.6)]
-                             border border-white hover:border-teal-400 transition-all duration-300"
-                  >
-                    <ProjectCard {...featured[currentIndex]} />
-                  </div>
-                </div>
-              )}
+          {/* Section: Featured Projects */}
+          <div className="w-full lg:w-2/3">
+            <div className="flex justify-between items-center mb-6">
+              <h2 className="text-2xl font-bold text-white">
+                Featured Projects
+              </h2>
+              <div className="hidden md:flex items-center space-x-2">
+                <button 
+                  onClick={() => scroll('left')} 
+                  disabled={currentIndex === 0}
+                  className="p-2 rounded-full bg-gray-800/60 hover:bg-gray-700/80 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                  aria-label="Previous Project"
+                >
+                  <FaChevronLeft />
+                </button>
+                <button 
+                  onClick={() => scroll('right')} 
+                  disabled={currentIndex === featured.length - 1}
+                  className="p-2 rounded-full bg-gray-800/60 hover:bg-gray-700/80 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                  aria-label="Next Project"
+                >
+                  <FaChevronRight />
+                </button>
+              </div>
             </div>
 
-            {/* Dots Indicator */}
-            <div className="flex justify-center mt-6 gap-2">
-              {featured.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => goToSlide(index)}
-                  className={`transition-all duration-300 ${
-                    isMobile
-                      ? 'w-4 h-4 rounded-full' // Larger dots for mobile
-                      : 'w-3 h-3 rounded-full'
-                  } ${
-                    index === currentIndex 
-                      ? 'bg-teal-400 scale-110' 
-                      : 'bg-gray-600 hover:bg-gray-500'
-                  }`}
-                  aria-label={`Go to project ${index + 1}`}
-                />
+            {/* Carousel for Projects */}
+            <div 
+              className="relative overflow-hidden"
+              onTouchStart={onTouchStart}
+              onTouchMove={onTouchMove}
+              onTouchEnd={onTouchEnd}
+            >
+              <motion.div
+                ref={scrollContainerRef}
+                className="flex"
+                animate={{ x: `-${currentIndex * 100}%` }}
+                style={{ transform: `translateX(calc(-${currentIndex * 100}% + ${dragOffset}px))` }}
+                transition={{ type: "spring", stiffness: 300, damping: 30, duration: 0.5 }}
+              >
+                {featured.map((project, index) => (
+                  <div key={index} className="flex-shrink-0 w-full">
+                    <ProjectCard {...project} />
+                  </div>
+                ))}
+              </motion.div>
+            </div>
+
+            {/* Mobile-only navigation buttons */}
+            <div className="md:hidden flex justify-center items-center space-x-4 mt-4">
+              <button 
+                onClick={() => scroll('left')} 
+                disabled={currentIndex === 0}
+                className="p-2 rounded-full bg-gray-800/60 hover:bg-gray-700/80 disabled:opacity-50 transition-all"
+                aria-label="Previous Project"
+              >
+                <FaChevronLeft />
+              </button>
+              <div className="flex space-x-2">
+                {featured.map((_, index) => (
+                  <button 
+                    key={index} 
+                    onClick={() => setCurrentIndex(index)}
+                    className={`w-2 h-2 rounded-full transition-all ${currentIndex === index ? 'bg-teal-400' : 'bg-gray-600'}`}
+                    aria-label={`Go to project ${index + 1}`}
+                  />
+                ))}
+              </div>
+              <button 
+                onClick={() => scroll('right')} 
+                disabled={currentIndex === featured.length - 1}
+                className="p-2 rounded-full bg-gray-800/60 hover:bg-gray-700/80 disabled:opacity-50 transition-all"
+                aria-label="Next Project"
+              >
+                <FaChevronRight />
+              </button>
+            </div>
+          </div>
+
+          {/* Section: Work Experience */}
+          <div className="w-full lg:w-1/3 flex flex-col space-y-6">
+            <div className="flex justify-between items-center">
+              <h2 className="text-2xl font-bold text-white">
+                Work Experience
+              </h2>
+              <Link
+                href="/work-experience/"
+                className="text-teal-400 hover:text-teal-300 transition-colors"
+              >
+                See All
+              </Link>
+            </div>
+            <div className="space-y-4">
+              {workExperience.slice(0, 2).map((job, index) => (
+                <WorkExperienceCard key={index} job={job} index={index} />
               ))}
             </div>
           </div>
-        </motion.div>
-      </section>
-
-      {/* Latest Posts */}
-      <section className="relative">
-        <motion.div
-          className="relative z-10 py-12"
-          style={{ color: '#ffffff' }}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.4, delay: 0.1 }}
-        >
-          <motion.h2
-            className="text-3xl font-semibold mb-6 underline decoration-teal-400 underline-offset-4 text-center"
-            style={{ color: '#ffffff' }}
-            initial={{ opacity: 0, y: -10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.3 }}
-          >
-            Latest Posts
-          </motion.h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {posts.map((post) => (
-              <div
-                key={post.slug}
-                className="group relative rounded-xl overflow-hidden cursor-pointer
-                           shadow-[0_0_10px_rgba(20,184,166,0.3)] hover:shadow-[0_0_20px_rgba(20,184,166,0.6)]
-                           border border-white hover:border-teal-400 transition-all duration-300"
-              >
-                <BlogCard {...post} />
-              </div>
-            ))}
-          </div>
-        </motion.div>
-      </section>
-    </div>
+        </div>
+      </motion.div>
+    </section>
   );
 }

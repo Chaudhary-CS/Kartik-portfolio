@@ -7,16 +7,20 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "git config user.email \"SamiISaboss23@gmail.com\" && git config user.name \"Sami Melhem\" && gh-pages -d out -r https://x-access-token:${GH_TOKEN}@github.com/samimelhem/samimelhem.github.io.git"
+    "deploy": "git config user.email \"kartik.chaudhary@example.com\" && git config user.name \"Kartik Chaudhary\" && gh-pages -d out -r https://x-access-token:${GH_TOKEN}@github.com/kartikchaudhary/Kartik-Portfolio.git"
   },
   "dependencies": {
+    "@mdx-js/loader": "^3.0.1",
+    "@mdx-js/react": "^3.0.1",
+    "@vercel/analytics": "^1.5.0",
+    "@vercel/speed-insights": "^1.2.0",
     "framer-motion": "^12.17.0",
     "next": "15.3.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
     "three": "^0.177.0",
+    "typewriter-effect": "^2.22.0",
     "vanta": "^0.5.24"
   },
   "devDependencies": {

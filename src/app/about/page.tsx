@@ -1,9 +1,10 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FaDownload, FaGraduationCap, FaCode, FaBrain, FaFileAlt, FaMusic, FaDumbbell, FaPlane, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaDownload, FaGraduationCap, FaCode, FaBrain, FaFileAlt, FaMusic, FaDumbbell, FaPlane, FaMapMarkerAlt, FaCamera, FaFutbol } from 'react-icons/fa'
 import { GiTennisRacket } from 'react-icons/gi'
 import ContactIcons from '../../../components/ContactIcons'
+import Image from 'next/image'
 
 export default function AboutPage() {
   return (
@@ -26,21 +27,27 @@ export default function AboutPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <motion.h2 
-              className="text-2xl sm:text-3xl font-semibold mb-4 text-teal-400"
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: 0.5 }}
-            >
-              Hello, I am Sami Melhem
-            </motion.h2>
+            <div className="mt-8 text-center">
+              <div className="mt-8 flex justify-center gap-4">
+                <Image
+                  src="/images/kartik.jpg"
+                  alt="Kartik Chaudhary"
+                  width={150}
+                  height={150}
+                  className="rounded-full"
+                />
+              </div>
+              <h1 className="mt-4 text-4xl font-bold text-gray-900 dark:text-white">
+                Hello, I am Kartik Chaudhary
+              </h1>
+            </div>
             <motion.p 
               className="text-base sm:text-lg text-gray-300 leading-relaxed mb-6"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.7 }}
             >
-              Hi, I&apos;m Sami Melhem, I&apos;m entering my senior year at Texas A&M majoring in Computer Science, with an emphasis in Data Science, and a minor in Cybersecurity. During my time at A&M academically, I focused on machine learning, big-data analytics, and AI workflows where I&apos;ve worked with 2 different startups on AI workflow products and recyclable battery material optimization pipelines.
+              Hi, I&apos;m Kartik Chaudhary, a passionate developer with a love for creating innovative solutions. I have a strong background in web development and a keen interest in exploring new technologies. My journey in the world of programming has been driven by a desire to build meaningful applications that can make a difference.
             </motion.p>
             <motion.p 
               className="text-base sm:text-lg text-gray-300 leading-relaxed"
@@ -48,8 +55,48 @@ export default function AboutPage() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.9 }}
             >
-              I also work as an AI conversational developer & undergraduate researcher for the college of visualization where I develop tools for SANE Nurses at the Texas A&M Medical School. I blend my technical work with creative problem-solving in creating usable products for anyone to use in everyday life so I can not only improve productivity, but help others improve their life situations as well.
+              I am a Computer Science student at the University of South Florida with a passion for software development and data science. I have experience in building and maintaining backend microservices, developing data aggregation modules, and conducting software testing. I am a co-founder of the AI Society at USF and have held leadership positions in student government and other organizations.
             </motion.p>
+            <motion.p 
+              className="text-base sm:text-lg text-gray-300 leading-relaxed"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 1.1 }}
+            >
+              I am always looking for new opportunities to learn and grow as a developer. I am a quick learner and a team player, and I am confident that I can make a valuable contribution to any team.
+            </motion.p>
+          </motion.section>
+
+          {/* Education */}
+          <motion.section 
+            className="bg-gray-800/70 rounded-xl p-6 sm:p-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+          >
+            <motion.h2 
+              className="text-2xl sm:text-3xl font-semibold mb-6 text-teal-400 flex items-center gap-3"
+              initial={{ opacity: 0, y: -10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.4, delay: 0.2 }}
+            >
+              <FaGraduationCap className="text-teal-400" />
+              Education
+            </motion.h2>
+            <motion.div
+              className="bg-gray-700/50 rounded-lg p-4"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+            >
+              <h3 className="text-xl font-bold">University of South Florida</h3>
+              <p className="text-gray-400">BSc in Computer Science (Dean’s List Scholar)</p>
+              <p className="text-gray-400">May 2026</p>
+              <p className="text-gray-400">GPA: 3.4/4.0</p>
+            </motion.div>
           </motion.section>
 
           {/* Skills & Expertise */}
@@ -78,12 +125,9 @@ export default function AboutPage() {
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               {[
-                { title: "Programming Languages", content: "Python (Advanced), JavaScript (Advanced), HTML/CSS (Advanced), SQL (Advanced),  C++ (Intermediate), Java (Intermediate), Go (Beginner), Rust (Beginner), R (Beginner)" },
-                { title: "Frameworks & Libraries", content: "React.js, Node.js, TypeScript, Next.js, Flask, Pandas, NumPy, Matplotlib, Scikit-learn, TensorFlow, PyTorch, FastAPI" },
-                { title: "Tools & Platforms", content: "Git, Docker, Postman, Electron, Vercel, Power BI, Tableau, Visual Studio Code, PyCharm, IntelliJ, Cursor" },
-                { title: "Cloud & Databases", content: "AWS, GCP, MySQL, PostgreSQL, Linux, Firebase, NoSQL, SQLAlchemy" },
-                { title: "AI & Data Science", content: "Machine Learning, Computer Vision, Statistical Modeling, Feature Engineering, A/B Testing, Data Visualization" },
-                { title: "Methodologies", content: "Agile, Waterfall, Scrum, Physics-Informed Neural Networks (PINNs), ETL Pipelines" }
+                { title: "Languages and Web Technology", content: "Java, Python, C/C++, HTML/CSS, JavaScript" },
+                { title: "Frameworks, Tools, Analytics Libraries", content: "Linux/Unix, MySQL, MongoDB, Express.js, React.js, Node.js, GitHub, Power BI, MS Excel, Pandas, NumPy, Hadoop, AWS, Google Cloud, Spring Boot" },
+                { title: "Coursework", content: "Data Structures and Algorithms, Programming Concepts (Python), Computer Organisation, Computer Logic and Design (RISC V), Introduction to Web Development" },
               ].map((skill, index) => (
                 <motion.div 
                   key={skill.title}
@@ -100,68 +144,7 @@ export default function AboutPage() {
             </motion.div>
           </motion.section>
 
-          {/* Education & Background */}
-          <motion.section 
-            className="bg-gray-800/70 rounded-xl p-6 sm:p-8"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <motion.h2 
-              className="text-2xl sm:text-3xl font-semibold mb-6 text-teal-400 flex items-center gap-3"
-              initial={{ opacity: 0, y: -10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.4, delay: 0.2 }}
-            >
-              <FaGraduationCap className="text-teal-400" />
-              Education & Background
-            </motion.h2>
-            <motion.div 
-              className="space-y-4"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-            >
-              <motion.div 
-                className="border-l-4 border-teal-400 pl-4"
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.4, delay: 0.4 }}
-              >
-                <h3 className="font-semibold text-white text-lg">Texas A&M University</h3>
-                <p className="text-gray-300 mb-2">
-                  <strong>Master of Science in Computer Science</strong> (Expected May 2027)<br/>
-                  <strong>GPA:</strong> 4.0/4.0<br/>
-                  <strong>Bachelor of Science in Computer Science</strong> (Expected May 2026)<br/>
-                  <strong>Minor:</strong> Cybersecurity | <strong>Emphasis:</strong> Data Science | <strong>GPA:</strong> 3.8/4.0
-                </p>
-                <p className="text-gray-300 text-sm">
-                  <strong>Relevant Coursework:</strong> Machine Learning, Artificial Intelligence, Data Structures & Algorithms, 
-                  Database Systems, Cloud Computing, Data Visualization, Cryptography, Cybersecurity Risk Management
-                </p>
-              </motion.div>
-              <motion.div 
-                className="border-l-4 border-teal-400 pl-4"
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.4, delay: 0.5 }}
-              >
-                <h3 className="font-semibold text-white text-lg">Honors & Awards</h3>
-                <p className="text-gray-300">
-                  • Michael 78 & Dianne 79 Pfister Endowed Scholar (2024-2025)<br/>
-                  • Best Juniors at ACPC Spring Competition (Spring 2025)<br/>
-                  • Distinguished Student (Fall 2024)
-                </p>
-              </motion.div>
-            </motion.div>
-          </motion.section>
-
-          {/* Leadership & Extracurriculars */}
+          {/* Leadership & Activities */}
           <motion.section 
             className="bg-gray-800/70 rounded-xl p-6 sm:p-8"
             initial={{ opacity: 0, y: 20 }}
@@ -187,20 +170,16 @@ export default function AboutPage() {
               transition={{ duration: 0.5, delay: 0.3 }}
             >
               <div className="bg-gray-700/50 rounded-lg p-4">
-                <h3 className="font-semibold text-white mb-2">Music Leadership</h3>
+                <h3 className="font-semibold text-white mb-2">Leadership</h3>
                 <p className="text-gray-300 text-sm">
-                  • Principal Clarinet - TAMU Wind Symphony<br/>
-                  • Principal Clarinet - TAMU Chamber Orchestra<br/>
-                  • Vice President - Carnival of Animals (2025)<br/>
-                  • Treasurer & Secretary - Carnival of Animals (2024)
+                  • Chief of Staff (USF Student Government)<br/>
+                  • CS Chair (SASE- Society of Asian Scientists and Engineers)
                 </p>
               </div>
               <div className="bg-gray-700/50 rounded-lg p-4">
-                <h3 className="font-semibold text-white mb-2">Technical Leadership</h3>
+                <h3 className="font-semibold text-white mb-2">Activities</h3>
                 <p className="text-gray-300 text-sm">
-                  • Projects Officer - Aggie Data Science Club (2024-2025)<br/>
-                  • Project Manager - Aggie Data Science Club<br/>
-                  • Member - Aggie Competitive Programming Club
+                  • Co-Founder - AI Society at USF
                 </p>
               </div>
             </motion.div>
@@ -250,68 +229,12 @@ export default function AboutPage() {
                 Download Resume
               </a>
               <a
-                href="/documents/sami_melhem_cv.pdf"
+                href="/documents/kartik_chaudhary_cv.pdf"
                 download
                 className="group flex items-center justify-center gap-3 bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-lg transition-all duration-300 font-semibold border border-gray-600 hover:border-gray-500"
               >
                 <FaDownload className="group-hover:animate-bounce" />
                 Download CV
-              </a>
-            </motion.div>
-          </motion.section>
-
-          {/* Research Paper */}
-          <motion.section 
-            className="bg-gray-800/70 rounded-xl p-6 sm:p-8"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-          >
-            <motion.h2 
-              className="text-2xl sm:text-3xl font-semibold mb-6 text-teal-400 flex items-center gap-3"
-              initial={{ opacity: 0, y: -10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.4, delay: 0.2 }}
-            >
-              <FaFileAlt className="text-teal-400" />
-              Research & Publications
-            </motion.h2>
-            <motion.p 
-              className="text-base sm:text-lg text-gray-300 leading-relaxed mb-6"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-            >
-              I&apos;ve conducted research in artificial intelligence and machine learning, particularly focusing on 
-              Large Language Models and their applications in engineering education. My research has been accepted 
-              for presentation at major academic conferences.
-            </motion.p>
-            <motion.div 
-              className="bg-gray-700/50 rounded-lg p-4 border-l-4 border-teal-400"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.4, delay: 0.4 }}
-            >
-              <h3 className="font-semibold text-white text-lg mb-2">An Assessment Of ChatGPT 4o Performance on Mechanical Engineering Concept Inventories</h3>
-              <p className="text-gray-300 text-sm mb-2">
-                <strong>2025 ASEE Annual Conference & Exposition</strong> (Accepted June 15, 2025)
-              </p>
-              <p className="text-gray-300 text-sm mb-4">
-                Co-authored with Dr. Rujun Gao, Hillary E. Merzdorf, Xiaosu Guo, Dr. Kristi J. Shryock, and Prof. Arun R Srinivasa. 
-                This research evaluates ChatGPT-4o&apos;s performance on mechanical engineering concept inventories, 
-                examining AI&apos;s potential and limitations in engineering education support.
-              </p>
-              <a
-                href="/documents/sami_melhem_research_paper_1.pdf"
-                download
-                className="group inline-flex items-center gap-3 bg-teal-600 hover:bg-teal-700 px-4 py-2 rounded-lg transition-all duration-300 font-medium text-sm"
-              >
-                <FaDownload className="group-hover:animate-bounce text-xs" />
-                Download Research Paper
               </a>
             </motion.div>
           </motion.section>
@@ -336,43 +259,13 @@ export default function AboutPage() {
             
             {/* Interest Cards Grid */}
             <motion.div 
-              className="grid grid-cols-2 lg:grid-cols-4 gap-6"
+              className="grid grid-cols-2 lg:grid-cols-3 gap-6"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-              {/* Music */}
-              <motion.div 
-                className="group bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-xl p-6 text-center border border-purple-500/30"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.4, delay: 0.4 }}
-                whileHover={{ 
-                  scale: 1.05,
-                  background: "linear-gradient(135deg, rgba(168, 85, 247, 0.3) 0%, rgba(236, 72, 153, 0.3) 100%)",
-                  borderColor: "rgba(168, 85, 247, 0.6)",
-                  transition: { duration: 0.3, ease: "easeInOut" }
-                }}
-              >
-                <div className="mb-4">
-                  <motion.div
-                    whileHover={{ 
-                      color: "rgb(196, 181, 253)",
-                      transition: { duration: 0.3, ease: "easeInOut" }
-                    }}
-                  >
-                    <FaMusic className="text-4xl text-purple-400 mx-auto" />
-                  </motion.div>
-                </div>
-                <h3 className="text-lg font-semibold text-white mb-2">Music</h3>
-                <p className="text-sm text-gray-300 leading-relaxed">
-                  Principal Clarinet at TAMU Wind Symphony & Chamber Orchestra
-                </p>
-              </motion.div>
-
-              {/* Fitness */}
+              {/* Weightlifting */}
               <motion.div 
                 className="group bg-gradient-to-br from-red-500/20 to-orange-500/20 rounded-xl p-6 text-center border border-red-500/30"
                 initial={{ opacity: 0, y: 20 }}
@@ -396,13 +289,13 @@ export default function AboutPage() {
                     <FaDumbbell className="text-4xl text-red-400 mx-auto" />
                   </motion.div>
                 </div>
-                <h3 className="text-lg font-semibold text-white mb-2">Fitness</h3>
+                <h3 className="text-lg font-semibold text-white mb-2">Weightlifting</h3>
                 <p className="text-sm text-gray-300 leading-relaxed">
-                  Weightlifting enthusiast & strength training
+                  Strength training enthusiast
                 </p>
               </motion.div>
 
-              {/* Pickleball */}
+              {/* Soccer */}
               <motion.div 
                 className="group bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-xl p-6 text-center border border-green-500/30"
                 initial={{ opacity: 0, y: 20 }}
@@ -423,16 +316,16 @@ export default function AboutPage() {
                       transition: { duration: 0.3, ease: "easeInOut" }
                     }}
                   >
-                    <GiTennisRacket className="text-4xl text-green-400 mx-auto" />
+                    <FaFutbol className="text-4xl text-green-400 mx-auto" />
                   </motion.div>
                 </div>
-                <h3 className="text-lg font-semibold text-white mb-2">Pickleball</h3>
+                <h3 className="text-lg font-semibold text-white mb-2">Soccer</h3>
                 <p className="text-sm text-gray-300 leading-relaxed">
-                  Weekend warrior on the courts with friends
+                  Passionate about the beautiful game
                 </p>
               </motion.div>
 
-              {/* Travel */}
+              {/* Videography */}
               <motion.div 
                 className="group bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-xl p-6 text-center border border-blue-500/30"
                 initial={{ opacity: 0, y: 20 }}
@@ -453,12 +346,12 @@ export default function AboutPage() {
                       transition: { duration: 0.3, ease: "easeInOut" }
                     }}
                   >
-                    <FaPlane className="text-4xl text-blue-400 mx-auto" />
+                    <FaCamera className="text-4xl text-blue-400 mx-auto" />
                   </motion.div>
                 </div>
-                <h3 className="text-lg font-semibold text-white mb-2">Travel</h3>
+                <h3 className="text-lg font-semibold text-white mb-2">Videography</h3>
                 <p className="text-sm text-gray-300 leading-relaxed">
-                  Recent adventures: Spain, Mexico, Arkansas
+                  Capturing moments and telling stories
                 </p>
               </motion.div>
             </motion.div>
@@ -473,23 +366,24 @@ export default function AboutPage() {
             >
               <div className="flex items-center gap-3 mb-4">
                 <FaMapMarkerAlt className="text-teal-400 text-xl" />
-                <h3 className="text-lg font-semibold text-white">Recent Adventures</h3>
+                <h3 className="text-lg font-semibold text-white">Countries Traveled</h3>
               </div>
-              <div className="grid sm:grid-cols-3 gap-4 text-center">
+              <div className="grid sm:grid-cols-4 gap-4 text-center">
                 <div className="bg-gray-800/50 rounded-lg p-4">
-                  <div className="text-2xl mb-2">🇪🇸</div>
-                  <p className="text-white font-medium">Spain</p>
-                  <p className="text-xs text-gray-400">Performance Tour</p>
+                  <div className="text-2xl mb-2">🇺🇸</div>
+                  <p className="text-white font-medium">USA</p>
                 </div>
                 <div className="bg-gray-800/50 rounded-lg p-4">
-                  <div className="text-2xl mb-2">🇲🇽</div>
-                  <p className="text-white font-medium">Cancun</p>
-                  <p className="text-xs text-gray-400">Beach Getaway</p>
+                  <div className="text-2xl mb-2">🇮🇳</div>
+                  <p className="text-white font-medium">India</p>
                 </div>
                 <div className="bg-gray-800/50 rounded-lg p-4">
-                  <div className="text-2xl mb-2">🏔️</div>
-                  <p className="text-white font-medium">Arkansas</p>
-                  <p className="text-xs text-gray-400">Nature and State Exploration</p>
+                  <div className="text-2xl mb-2">🇩🇪</div>
+                  <p className="text-white font-medium">Germany</p>
+                </div>
+                <div className="bg-gray-800/50 rounded-lg p-4">
+                  <div className="text-2xl mb-2">🇦🇪</div>
+                  <p className="text-white font-medium">Dubai</p>
                 </div>
               </div>
             </motion.div>
@@ -513,4 +407,4 @@ export default function AboutPage() {
       <ContactIcons />
     </main>
   )
-} 
+}

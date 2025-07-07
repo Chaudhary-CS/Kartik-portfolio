@@ -382,6 +382,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built by [Sami Melhem](https://samimelhem.com)**
+<p align="center">
+  <a href="https://kartikchaudhary.com">
+    <img src="public/images/kartik.jpg" alt="Kartik Chaudhary" width="150" style="border-radius: 50%;">
+  </a>
+</p>
 
-*Star ⭐ this repository if it helped you build an amazing portfolio!*
+<h1 align="center">Kartik Chaudhary's Personal Portfolio</h1>
+
+This is my personal portfolio website, built with Next.js, Tailwind CSS, and TypeScript. It showcases my projects, skills, and blog posts.
+
+**Built by [Kartik Chaudhary](https://kartikchaudhary.com)**
