@@ -12,7 +12,7 @@ This document contains career-related information for Kartik Chaudhary.
 
 **University of South Florida** Tampa,FL
 *BSc in Computer Science* (Dean’s List Scholar) May 2026
-GPA: 3.4/4.0
+GPA: 3.5/4.0
 
 ## Experience
 

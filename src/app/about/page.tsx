@@ -94,7 +94,7 @@ export default function AboutPage() {
               <h3 className="text-xl font-bold">University of South Florida</h3>
               <p className="text-gray-400">BSc in Computer Science (Dean’s List Scholar)</p>
               <p className="text-gray-400">May 2026</p>
-              <p className="text-gray-400">GPA: 3.4/4.0</p>
+              <p className="text-gray-400">GPA: 3.5/4.0</p>
             </motion.div>
           </motion.section>
 
