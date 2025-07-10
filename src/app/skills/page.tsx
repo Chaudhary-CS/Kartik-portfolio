@@ -160,34 +160,14 @@ export default function SkillsPage() {
                           {skill.projects.length} project{skill.projects.length !== 1 ? 's' : ''}
                         </span>
                       )}
-                      {skill.internships && skill.internships > 0 && (
+                      {skill.internshipDetails && skill.internshipDetails.length > 0 && (
                         <span className="px-2 py-1 bg-teal-900/40 text-xs text-teal-300 rounded-full border border-teal-400/30">
-                          {skill.internships} internship{skill.internships !== 1 ? 's' : ''}
+                          {skill.internshipDetails.length} internship{skill.internshipDetails.length !== 1 ? 's' : ''}
                         </span>
                       )}
-                      {skill.jobs && skill.jobs > 0 && (
+                      {skill.jobDetails && skill.jobDetails.length > 0 && (
                         <span className="px-2 py-1 bg-green-900/40 text-xs text-green-300 rounded-full border border-green-400/30">
-                          {skill.jobs} job{skill.jobs !== 1 ? 's' : ''}
-                        </span>
-                      )}
-                      {skill.researchRoles && skill.researchRoles > 0 && (
-                        <span className="px-2 py-1 bg-indigo-900/40 text-xs text-indigo-300 rounded-full border border-indigo-400/30">
-                          {skill.researchRoles} research
-                        </span>
-                      )}
-                      {skill.teachingRoles && skill.teachingRoles > 0 && (
-                        <span className="px-2 py-1 bg-amber-900/40 text-xs text-amber-300 rounded-full border border-amber-400/30">
-                          {skill.teachingRoles} teaching
-                        </span>
-                      )}
-                      {skill.certifications && skill.certifications > 0 && (
-                        <span className="px-2 py-1 bg-blue-900/40 text-xs text-blue-300 rounded-full border border-blue-400/30">
-                          {skill.certifications} cert{skill.certifications !== 1 ? 's' : ''}
-                        </span>
-                      )}
-                      {skill.publications && skill.publications > 0 && (
-                        <span className="px-2 py-1 bg-purple-900/40 text-xs text-purple-300 rounded-full border border-purple-400/30">
-                          {skill.publications} pub{skill.publications !== 1 ? 's' : ''}
+                          {skill.jobDetails.length} job{skill.jobDetails.length !== 1 ? 's' : ''}
                         </span>
                       )}
                     </div>

@@ -53,19 +53,8 @@ export default function ProjectPageClient({ project }: ProjectPageClientProps) {
                   </div>
                 )}
                 
-                <div className="flex gap-3">
-                  {project.liveDemo && (
-                    <a
-                      href={project.liveDemo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2 bg-teal-600 hover:bg-teal-700 text-white rounded-lg transition-colors font-medium"
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                      Live Demo
-                    </a>
-                  )}
-                  {project.github && (
+                {project.github && (
+                  <div className="flex gap-3">
                     <a
                       href={project.github}
                       target="_blank"
@@ -75,8 +64,8 @@ export default function ProjectPageClient({ project }: ProjectPageClientProps) {
                       <Github className="w-4 h-4" />
                       View Code
                     </a>
-                  )}
-                </div>
+                  </div>
+                )}
               </div>
 
               {/* Tech Stack */}
@@ -129,6 +118,63 @@ function ProjectContent({ project }: { project: Project }) {
       keyResults: string[]
       businessImpact: string
     }> = {
+      'trace-the-change': {
+        challenge: "Traditional donation platforms lack transparency and trust, making it difficult for donors to verify where their contributions are going. Users needed a secure, blockchain-based solution that could provide real-time tracking of donations while ensuring data integrity and building trust between donors and recipients.",
+        solution: "Architected a secure and scalable multi-payment donation platform using Java & Spring Boot with blockchain integration. The system provides real-time donation tracking, secure payment processing through MetaMask integration, and transparent fund allocation with immutable blockchain records.",
+        technicalHighlights: [
+          "Built robust REST APIs using Java & Spring Boot for real-time donation processing and tracking",
+          "Integrated MetaMask wallet for secure blockchain-based payment processing",
+          "Implemented AstraDB for scalable data storage with real-time synchronization",
+          "Designed CI/CD pipeline on Vercel for seamless deployment and continuous integration",
+          "Created secure authentication system ensuring donor privacy and data protection"
+        ],
+        keyResults: [
+          "Achieved recognition among 50+ teams at Citi Internal Hackathon",
+          "Engineered REST APIs for real-time processing and donation tracking",
+          "Managed full-stack application CI/CD pipeline on Vercel",
+          "Implemented secure blockchain-based payment system with MetaMask",
+          "Built scalable backend architecture supporting multiple payment methods"
+        ],
+        businessImpact: "This blockchain-based donation platform revolutionizes charitable giving by providing unprecedented transparency and trust. The solution demonstrates expertise in blockchain integration, secure payment systems, and scalable backend architecture - critical skills for fintech and social impact applications."
+      },
+      'bull-mart': {
+        challenge: "USF students needed a reliable platform to buy and sell used products within their community, but existing solutions lacked campus-specific features and secure user authentication. Students required a trusted marketplace with location-based listings and robust user management.",
+        solution: "Developed a full-stack MERN application specifically designed for USF students, featuring secure JWT authentication, location-based listings with Google Maps integration, and responsive design for optimal mobile experience. The platform enables safe peer-to-peer transactions within the university community.",
+        technicalHighlights: [
+          "Built full-stack application using React.js, Node.js, and MongoDB with RESTful API architecture",
+          "Implemented JWT authentication system for secure user registration and login",
+          "Integrated Google Maps API for location-based product listings and proximity search",
+          "Designed responsive UI with Bootstrap ensuring optimal experience across all devices",
+          "Created role-based access control protecting 10+ REST API endpoints"
+        ],
+        keyResults: [
+          "Launched full-stack MERN application with 50+ active users",
+          "Designed responsive UI with Bootstrap & integrated Google Maps API",
+          "Engineered secure authentication system using JWT",
+          "Protected 10+ REST API endpoints with role-based access control",
+          "Enabled location-based listings for USF students"
+        ],
+        businessImpact: "Bull-Mart creates a sustainable, community-driven marketplace that reduces waste and provides economic benefits to students. The platform demonstrates expertise in full-stack development, user authentication, and location-based services - essential skills for modern web applications."
+      },
+      'client-data-management-system': {
+        challenge: "Financial institutions struggle with manual client data management, leading to inefficiencies, security risks, and compliance issues. Traditional paper-based systems and basic spreadsheets fail to provide the security, accuracy, and reporting capabilities required for regulatory compliance.",
+        solution: "Developed a comprehensive desktop application using Python, MySQL, and Tkinter that streamlines client data management for financial institutions. The system provides secure data entry, automated reporting, and regulatory compliance features while maintaining data integrity and accessibility.",
+        technicalHighlights: [
+          "Built desktop application using Python and Tkinter for cross-platform compatibility",
+          "Designed relational database using MySQL with optimized queries for data integrity",
+          "Implemented secure data entry forms with input validation and error handling",
+          "Created comprehensive reporting system with automated data export capabilities",
+          "Developed user-friendly interface with role-based access control for different user types"
+        ],
+        keyResults: [
+          "Streamlined secure client information handling for financial institutions",
+          "Enabled efficient data entry, retrieval, and reporting",
+          "Utilized SQL to design and manage a database",
+          "Ensured data accuracy and security through structured queries",
+          "Optimized data integrity and accessibility for improved client service and regulatory compliance"
+        ],
+        businessImpact: "This data management system modernizes financial institution operations by replacing manual processes with secure, automated solutions. The project demonstrates expertise in database design, desktop application development, and financial compliance - valuable skills for enterprise software development."
+      },
       'save-gas': {
         challenge: "With gas prices fluctuating daily and varying significantly between stations, drivers were losing money and time searching for the best fuel prices. Users needed a reliable way to find the cheapest gas nearby without compromising their location privacy or spending excessive time comparing prices.",
         solution: "Built a real-time gas price tracking system that aggregates data from 100+ stations and presents it through an intuitive map interface. The application balances real-time accuracy with performance through a smart 60-second refresh system, while maintaining strict privacy standards for location-based services.",
@@ -391,17 +437,6 @@ function ProjectContent({ project }: { project: Project }) {
           Check out the source code or see the project in action
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          {project.liveDemo && (
-            <a
-              href={project.liveDemo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white rounded-lg transition-colors font-medium"
-            >
-              <ExternalLink className="w-4 h-4" />
-              View Live Demo
-            </a>
-          )}
           {project.github && (
             <a
               href={project.github}

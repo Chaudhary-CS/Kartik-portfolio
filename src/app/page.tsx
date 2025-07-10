@@ -28,6 +28,10 @@ export default function Home() {
       <Hero />
       <AboutPreview />
       <FeaturedInFront featured={featured} workExperience={workExperience} />
+      
+      {/* 3D Skills Showcase */}
+      {/* Remove the 3D Showcase link/button */}
+      
       <ContactIcons />
     </>
   );

@@ -1,12 +1,22 @@
-# 🚀 Modern Developer Portfolio Template
+# 🚀 Kartik Chaudhary - Personal Portfolio
 
 A high-performance, fully customizable developer portfolio built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**. Features professional animations, mobile-first responsive design, and automated CI/CD deployment.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-samimelhem.com-blue?style=for-the-badge&logo=vercel)](https://samimelhem.com)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-kartikchaudhary.com-blue?style=for-the-badge&logo=vercel)](https://kartikchaudhary.com)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 
-## ✨ Features
+## 👨‍💻 About Me
+
+I'm **Kartik Chaudhary**, a Computer Science student at the University of South Florida with a passion for building scalable backend systems and automating complex engineering challenges. Currently working as a Software Development Intern at Citi, I specialize in Java, Python, and cloud platforms.
+
+### 🎯 Current Focus
+- **Backend Development**: Building robust APIs with Spring Boot and Java
+- **Automation**: Streamlining development workflows and CI/CD pipelines
+- **Cloud Computing**: Leveraging AWS and Google Cloud for scalable solutions
+- **Full-Stack Development**: Creating end-to-end applications with modern technologies
+
+## ✨ Portfolio Features
 
 ### 🎨 **Professional Design**
 - **Smooth Animations**: Timeline-based Framer Motion animations with optimized performance
@@ -32,11 +42,70 @@ A high-performance, fully customizable developer portfolio built with **Next.js 
 - **SEO Optimized**: Meta tags, structured data, and sitemap generation
 - **Core Web Vitals**: Optimized for speed and user experience metrics
 
-### 🔧 **Developer Experience**
-- **Automated CI/CD**: GitHub Actions deployment to GitHub Pages
-- **TypeScript**: Complete type safety with custom interfaces
-- **ESLint & Prettier**: Code quality and formatting enforcement
-- **Hot Reload**: Instant development feedback with Vite integration
+## 🎓 Education
+
+**University of South Florida** | Tampa, FL  
+*Bachelor of Science in Computer Science, Dean's List Scholar* | May 2026  
+*GPA: 3.5/4.0*
+
+## 💼 Professional Experience
+
+### Software Development Intern | Citi | Tampa, FL | May 2025 – Present
+- Engineered a command-line utility using Java & Spring Boot to automate Git branch comparisons for applications
+- Reduced manual code validation time by over 25%, mitigating deployment risks and ensuring code consistency
+- Prototyped a Google Custom Search API integration to evaluate enhancing internal, data-driven tools
+- Streamlined the software development lifecycle (SDLC) by contributing to CI/CD pipelines in Azure DevOps
+
+### Software Engineering Intern | Vivint | Provo, UT | May 2024 – Aug 2024
+- Automated real-time sensor data consolidation from thousands of smart home devices using Python and MongoDB
+- Improved data availability for engineering team analysis by over 40%, enabling faster data-driven decision-making
+- Increased data processing efficiency by 10% and cut signal response time by 12% with optimized PyMongo scripts
+- Implemented a monitoring solution that provided real-time alerts on pipeline health, reducing downtime by 15%
+
+### Testing Associate Intern | Capgemini | Noida, IN | May 2023 – July 2023
+- Ensured enterprise software quality for applications by designing and executing over 200 test cases with HP ALM
+- Identified & tracked 30+ critical software defects to resolution, improving application stability in production by 15%
+- Boosted legacy application efficiency by 13% by collaborating on a GenAI codebase modernization initiative
+
+## 🚀 Featured Projects
+
+### Trace the Change | Java, Spring Boot, AstraDB, MetaMask, Vercel
+*June 2025 – Present*
+- Architected a secure and scalable backend using Java & SpringBoot for a multi-payment donation platform
+- Engineered REST APIs for real-time processing and managed the full-stack application's CI/CD pipeline on Vercel
+- Achieved recognition among 50+ teams at a Citi Internal Hackathon for a trusted, blockchain-based solution
+
+### Bull Mart | HTML/CSS, MongoDB, React.js, Node.js, Bootstrap
+*May 2021 – July 2021*
+- Launched a full-stack MERN application from concept to deployment, acquiring over 50+ active users
+- Designed a responsive UI with Bootstrap & integrated Google Maps API for location-based listings
+- Engineered a secure authentication system using JWT to protect over 10+ REST API endpoints
+
+## 🏆 Leadership
+
+### Co-Founder | AI Society at USF | Tampa, FL | April 2024 – Present
+- Co-founded the AI Society, growing the technical community to over 150 students while managing a $120,000 budget
+- Drove a 70% increase in member engagement by organizing expert-led workshops on Machine Learning & AI
+
+### Chief of Staff | USF Student Government
+### Vice President | Society of Asian Scientists and Engineers (SASE)
+
+## 🛠️ Technical Skills
+
+### **Core Skills**
+- Full-Stack Development, Object-Oriented Programming (OOP), DevOps, Automation
+- Cloud Computing, Data Structures & Algorithms, Database Design, Software Engineering
+
+### **Programming Languages & Technologies**
+- **Languages**: Java, Python, C/C++, HTML/CSS, JavaScript, SQL
+- **Frameworks & Libraries**: Spring Boot, React.js, Node.js, Express.js, Pandas, NumPy
+- **Cloud & DevOps**: AWS, Google Cloud, MongoDB, Linux/Unix, GitHub
+- **Tools**: Azure DevOps, HP ALM, JWT, Bootstrap, MetaMask
+
+### **Relevant Coursework**
+- Data Structures and Algorithms, Programming Concepts (Python), Intro to AI
+- Analysis of Algorithms, Operating Systems, Software Engineering
+- Secure Coding, Software System Development, Program Design
 
 ## 📋 Table of Contents
 
@@ -52,7 +121,7 @@ A high-performance, fully customizable developer portfolio built with **Next.js 
 
 ### Option 1: Fork This Repository (Recommended)
 
-1. **Fork this repository** by clicking the "Fork" button at the top right of [https://github.com/SamiMelhem/samimelhem.github.io](https://github.com/SamiMelhem/samimelhem.github.io)
+1. **Fork this repository** by clicking the "Fork" button at the top right of [https://github.com/Chaudhary-CS/kartik-portfolio](https://github.com/Chaudhary-CS/kartik-portfolio)
 2. **Rename your fork** to `your-username.github.io` in the repository settings
 3. **Clone your fork**:
    ```bash
@@ -62,7 +131,7 @@ A high-performance, fully customizable developer portfolio built with **Next.js 
 
 ### Option 2: Use as Template
 
-1. Visit [https://github.com/SamiMelhem/samimelhem.github.io](https://github.com/SamiMelhem/samimelhem.github.io)
+1. Visit [https://github.com/Chaudhary-CS/kartik-portfolio](https://github.com/Chaudhary-CS/kartik-portfolio)
 2. Click **"Use this template"** → **"Create a new repository"**
 3. Name it `your-username.github.io`
 4. Clone and set up as above
@@ -88,8 +157,8 @@ Update your basic information in these key locations:
 **`src/app/layout.tsx`** - Site metadata:
 ```typescript
 export const metadata: Metadata = {
-  title: 'Your Name - Full Stack Developer',
-  description: 'Your compelling description here',
+  title: 'Kartik Chaudhary - Software Developer',
+  description: 'Computer Science student and Software Development Intern at Citi',
   // ... other metadata
 }
 ```
@@ -97,8 +166,8 @@ export const metadata: Metadata = {
 **`components/Hero.tsx`** - Landing page content:
 ```typescript
 // Update name, title, and introduction
-<h1>Hi, I'm Your Name</h1>
-<p>Your professional tagline</p>
+<h1>Hi, I'm Kartik Chaudhary</h1>
+<p>Computer Science Student & Software Developer</p>
 ```
 
 **`components/ContactIcons.tsx`** - Social media links:
@@ -122,18 +191,18 @@ Edit `data/projects.ts` to showcase your work:
 ```typescript
 const projects: Project[] = [
   {
-    slug: 'your-project',
-    title: 'Your Project Name',
-    description: 'Brief description',
-    longDescription: 'Detailed explanation...',
-    image: '/images/projects/your-image.png',
-    techs: ['React', 'TypeScript', 'Node.js'],
-    github: 'https://github.com/you/repo',
-    liveDemo: 'https://your-demo.com',
-    featured: true, // Shows on homepage
+    slug: 'trace-the-change',
+    title: 'Trace the Change',
+    description: 'Multi-payment donation platform with blockchain integration',
+    longDescription: 'Architected a secure and scalable backend using Java & SpringBoot...',
+    image: '/images/projects/trace-change.png',
+    techs: ['Java', 'Spring Boot', 'AstraDB', 'MetaMask', 'Vercel'],
+    github: 'https://github.com/Chaudhary-CS/trace-change',
+    liveDemo: 'https://trace-change.vercel.app',
+    featured: true,
     achievements: [
-      'Specific achievement with metrics',
-      'Another quantified result'
+      'Achieved recognition among 50+ teams at Citi Internal Hackathon',
+      'Engineered REST APIs for real-time processing'
     ]
   }
 ]
@@ -146,11 +215,11 @@ Update `data/skills.ts` with your technical expertise:
 ```typescript
 const skills: Skill[] = [
   {
-    name: 'Your Skill',
-    category: 'Programming Languages', // or 'Frameworks', 'Tools', etc.
-    proficiency: 'Advanced', // Beginner, Intermediate, Advanced, Expert
+    name: 'Java',
+    category: 'Programming Languages',
+    proficiency: 'Advanced',
     experience: '3+ years',
-    description: 'Your experience with this technology...',
+    description: 'Extensive experience with Spring Boot, building REST APIs and backend systems',
     // ... more details
   }
 ]
@@ -213,7 +282,7 @@ NET({
 
 Replace images in `public/images/`:
 - **Projects**: Add your project screenshots to `public/images/projects/`
-- **Profile**: Update `public/images/sami.jpg` with your photo
+- **Profile**: Update `public/images/kartik.jpg` with your photo
 - **Favicon**: Replace `public/favicon.ico` with your custom icon
 
 ## 🚀 Deployment
@@ -253,7 +322,7 @@ npm run export
 ## 📁 Project Structure
 
 ```
-samimelhem-portfolio/
+kartik-portfolio/
 ├── components/              # Reusable UI components
 │   ├── Hero.tsx            # Landing page hero section
 │   ├── Navbar.tsx          # Navigation header
@@ -336,9 +405,10 @@ npm run lint
 
 ### Getting Help
 
-- 📧 **Email**: [samilmelhem23@gmail.com](mailto:samilmelhem23@gmail.com)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/SamiMelhem/samimelhem-portfolio/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/SamiMelhem/samimelhem-portfolio/discussions)
+- 📧 **Email**: [chaudhary417@usf.edu](mailto:chaudhary417@usf.edu)
+- 📱 **Phone**: [646-476-1144](tel:646-476-1144)
+- 💼 **LinkedIn**: [linkedin.com/in/Chaudhary-CS](https://linkedin.com/in/Chaudhary-CS)
+- 🐙 **GitHub**: [github.com/Chaudhary-CS](https://github.com/Chaudhary-CS)
 
 ## 📄 License
 

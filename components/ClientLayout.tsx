@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 import VantaNet from "./VantaNet"
+import AIChatbot from "./AIChatbot"
 
 export default function ClientLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
@@ -27,6 +28,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
         </motion.main>
       </AnimatePresence>
       <Footer />
+      <AIChatbot />
     </>
   )
 } 
