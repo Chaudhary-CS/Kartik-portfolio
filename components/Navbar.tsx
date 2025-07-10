@@ -69,7 +69,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               <Image
-                src="/images/Kartik.jpg"
+                src="/images/kartik.jpg"
                 alt="Kartik Chaudhary Logo"
                 width={40}
                 height={40}
