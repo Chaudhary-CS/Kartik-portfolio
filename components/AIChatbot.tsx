@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FaRobot, FaUser, FaPaperPlane, FaTimes, FaComments } from 'react-icons/fa'
+import { FaRobot, FaPaperPlane, FaTimes, FaComments } from 'react-icons/fa'
 
 interface Message {
   id: string
@@ -108,7 +108,7 @@ export default function AIChatbot() {
       }
 
       setMessages(prev => [...prev, botMessage])
-    } catch (error) {
+    } catch {
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),
         text: "I'm sorry, I'm having trouble connecting right now. Please try again later or contact Kartik directly.",
@@ -156,8 +156,8 @@ export default function AIChatbot() {
                   <FaRobot className="w-4 h-4 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-white font-semibold">Kartik's AI Assistant</h3>
-                  <p className="text-gray-400 text-sm">Ask me about Kartik's experience, projects, and skills</p>
+                  <h3 className="text-white font-semibold">Kartik&apos;s AI Assistant</h3>
+                  <p className="text-gray-400 text-sm">Ask me about Kartik&apos;s experience, projects, and skills</p>
                 </div>
               </div>
             </div>
@@ -201,7 +201,7 @@ export default function AIChatbot() {
                   value={inputValue}
                   onChange={(e) => setInputValue(e.target.value)}
                   onKeyPress={handleKeyPress}
-                  placeholder="Ask about Kartik's experience, projects, or skills..."
+                  placeholder="Ask about Kartik&apos;s experience, projects, or skills..."
                   className="flex-1 bg-gray-800 text-white px-3 py-2 rounded-lg border border-gray-600 focus:border-teal-500 focus:outline-none text-sm"
                   disabled={isLoading || isTyping}
                 />

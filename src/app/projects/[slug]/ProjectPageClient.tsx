@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Project } from '../../../../data/projects'
 import ContactIcons from '../../../../components/ContactIcons'
-import { FaExternalLinkAlt as ExternalLink, FaGithub as Github, FaArrowLeft as ArrowLeft, FaCalendarAlt as Calendar, FaBullseye as Target, FaCog as Cog, FaChartBar as BarChart3, FaCheckCircle as CheckCircle } from 'react-icons/fa'
+import { FaGithub as Github, FaArrowLeft as ArrowLeft, FaCalendarAlt as Calendar, FaBullseye as Target, FaCog as Cog, FaChartBar as BarChart3, FaCheckCircle as CheckCircle } from 'react-icons/fa'
 
 interface ProjectPageClientProps {
   project: Project
