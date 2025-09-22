@@ -10,26 +10,15 @@ function generateResponse(userMessage: string): string {
   
   // Experience questions
   if (message.includes('citi') || message.includes('current') || message.includes('present')) {
-    return `Kartik is currently working as a Software Development Intern at Citi in Tampa, FL (May 2025 - Present). His key achievements include:
-• Engineered a command-line utility using Java & Spring Boot to automate Git branch comparisons
-• Reduced manual code validation time by over 25%
-• Prototyped Google Custom Search API integration
-• Streamlined SDLC by contributing to CI/CD pipelines in Azure DevOps`
+    return `Kartik is currently working as a Software Development Intern at Citi in Tampa, FL (May 2025 - Present). He works on backend development within a financial technology team focused on compliance and risk tooling, and contributes to frontend work and CI/CD pipeline improvements.`
   }
   
   if (message.includes('vivint')) {
-    return `At Vivint (May 2024 - Aug 2024), Kartik worked as a Software Engineering Intern in Provo, UT. His achievements include:
-• Automated real-time sensor data consolidation from thousands of smart home devices using Python and MongoDB
-• Improved data availability for engineering team analysis by over 40%
-• Increased data processing efficiency by 10% and cut signal response time by 12%
-• Implemented monitoring solution reducing downtime by 15%`
+    return `At Vivint (May 2024 - Aug 2024), Kartik worked as a Software Engineering Intern in Provo, UT. He worked on data engineering projects within a smart home platform team and contributed to backend services and internal tooling to support real-time data operations.`
   }
   
   if (message.includes('capgemini')) {
-    return `At Capgemini (May 2023 - July 2023), Kartik worked as a Testing Associate Intern in Noida, IN. His achievements include:
-• Designed and executed over 200 test cases with HP ALM
-• Identified & tracked 30+ critical software defects to resolution
-• Boosted legacy application efficiency by 13% through GenAI codebase modernization`
+    return `At Capgemini (May 2023 - July 2023), Kartik worked as a Testing Associate Intern in Noida, IN. He supported the QA team in software testing and defect tracking for enterprise applications and participated in a codebase modernization initiative.`
   }
   
   // Project questions
@@ -69,9 +58,7 @@ function generateResponse(userMessage: string): string {
   
   // Leadership questions
   if (message.includes('leadership') || message.includes('ai society') || message.includes('co-founder')) {
-    return `Kartik is the Co-Founder of the AI Society at USF (April 2024 - Present). His leadership achievements include:
-• Co-founded the AI Society, growing the technical community to over 150 students while managing a $120,000 budget
-• Drove a 70% increase in member engagement by organizing expert-led workshops on Machine Learning & AI`
+    return `Kartik is the Co-Founder of the AI Society at USF (April 2024 - Present). He co-founded the organization to build a student community around artificial intelligence and machine learning, organizing workshops and events for students interested in AI.`
   }
   
   // General questions

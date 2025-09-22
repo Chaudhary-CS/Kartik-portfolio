@@ -6,10 +6,8 @@ export const workExperience = [
     dates: 'May 2025 – Present',
     logo: '/images/logos/citi.png',
     description: [
-      'Engineered a command-line utility using Java & Spring Boot to automate Git branch comparisons for applications.',
-      'Reduced manual code validation time by over 25%, mitigating deployment risks and ensuring code consistency.',
-      'Prototyped a Google Custom Search API integration to evaluate enhancing internal, data-driven tools.',
-      'Streamlined the software development lifecycle (SDLC) by contributing to CI/CD pipelines in Azure DevOps.',
+      'Backend development within a financial technology team focused on compliance and risk tooling.',
+      'Contributed to frontend work and CI/CD pipeline improvements as part of the software delivery lifecycle.',
     ],
   },
   {
@@ -18,10 +16,8 @@ export const workExperience = [
     dates: 'May 2024 – Aug 2024',
     logo: '/images/logos/vivint.png',
     description: [
-      'Automated real-time sensor data consolidation from thousands of smart home devices using Python and MongoDB.',
-      'Improved data availability for engineering team analysis by over 40%, enabling faster data-driven decision-making.',
-      'Increased data processing efficiency by 10% and cut signal response time by 12% with optimized PyMongo scripts.',
-      'Implemented a monitoring solution that provided real-time alerts on pipeline health, reducing downtime by 15%.',
+      'Worked on data engineering projects within a smart home platform team.',
+      'Contributed to backend services and internal tooling to support real-time data operations.',
     ],
   },
   {
@@ -30,9 +26,8 @@ export const workExperience = [
     dates: 'May 2023 – July 2023',
     logo: '/images/logos/capgemini.png',
     description: [
-      'Ensured enterprise software quality for applications by designing and executing over 200 test cases with HP ALM.',
-      'Identified & tracked 30+ critical software defects to resolution, improving application stability in production by 15%.',
-      'Boosted legacy application efficiency by 13% by collaborating on a GenAI codebase modernization initiative.',
+      'Supported the QA team in software testing and defect tracking for enterprise applications.',
+      'Participated in a team initiative to modernize legacy codebases and improve overall compatibility.',
     ],
   },
   {
@@ -41,8 +36,8 @@ export const workExperience = [
     dates: 'April 2024 – Present',
     logo: '/images/logos/usf.png',
     description: [
-      'Co-founded the AI Society, growing the technical community to over 150 students while managing a $120,000 budget.',
-      'Drove a 70% increase in member engagement by organizing expert-led workshops on Machine Learning & AI.',
+      'Co-founded a student organization at USF centered around artificial intelligence and machine learning.',
+      'Organized community workshops and events to support students interested in AI.',
     ],
   },
 ];
