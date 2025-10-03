@@ -22,6 +22,18 @@ function generateResponse(userMessage: string): string {
   }
   
   // Project questions
+  if (message.includes('navai') || message.includes('nav ai') || message.includes('getnav') || message.includes('macos agent')) {
+    return `NavAI is an on-device AI agent for macOS that interprets what's on your screen and performs actions — clicking, typing, and navigating — across 50+ apps without any setup. It uses a multimodal system combining vision and language understanding, runs entirely locally for privacy, and is live at getnav.app.`
+  }
+
+  if (message.includes('applytune') || message.includes('apply tune') || message.includes('ats') || message.includes('resume optimizer')) {
+    return `ApplyTune is an AI-powered resume optimizer Kartik built that parses resumes and job descriptions, extracts relevant keywords using LLMs, and scores and rewrites content for ATS compatibility — all while preserving the original resume format. It has a React frontend and Python backend.`
+  }
+
+  if (message.includes('flowai') || message.includes('flow ai') || message.includes('chrome extension') || message.includes('memory layer')) {
+    return `FlowAI is a Chrome extension Kartik built that acts as a universal memory layer across ChatGPT, Claude, and Perplexity. Users store personal contexts in named "Buckets" and inject them into any AI chat with one click. All data lives in the browser — zero server dependency — with a glassmorphic UI.`
+  }
+
   if (message.includes('trace') || message.includes('change') || message.includes('donation') || message.includes('blockchain')) {
     return `Trace the Change is Kartik's blockchain-based donation platform project. It's a secure and scalable multi-payment donation platform built with Java, Spring Boot, AstraDB, MetaMask, and Vercel. Key achievements:
 • Achieved recognition among 50+ teams at Citi Internal Hackathon
@@ -63,14 +75,14 @@ function generateResponse(userMessage: string): string {
   
   // General questions
   if (message.includes('who') || message.includes('what') || message.includes('tell me about')) {
-    return `Kartik Chaudhary is a Computer Science student at the University of South Florida with experience in building and automating backend systems. He's currently a Software Development Intern at Citi, specializing in Java, Python, and cloud platforms. He has worked at Vivint and Capgemini, and has built projects like Trace the Change (blockchain donation platform), Bull-Mart (e-commerce marketplace), and a Client Data Management System. He's also the Co-Founder of the AI Society at USF.`
+    return `Kartik Chaudhary is a Computer Science student at the University of South Florida with experience in building and automating backend systems. He's currently a Software Development Intern at Citi, specializing in Java, Python, and cloud platforms. He has worked at Vivint and Capgemini, and has built projects like NavAI (macOS AI agent), ApplyTune (AI resume optimizer), FlowAI (Chrome extension), Trace the Change (blockchain donation platform), and Bull-Mart (e-commerce marketplace). He's also the Co-Founder of the AI Society at USF.`
   }
   
   // Default response
   return `I can help you learn about Kartik's experience, projects, skills, and background. Try asking about:
 • His education at USF
 • His work experience at Citi, Vivint, or Capgemini
-• His projects like Trace the Change, Bull-Mart, or Client Data Management
+• His projects like NavAI, ApplyTune, FlowAI, Trace the Change, or Bull-Mart
 • His technical skills and technologies
 • His leadership role at AI Society`
 }
