@@ -46,7 +46,7 @@ I'm **Kartik Chaudhary**, a Computer Science student at the University of South 
 
 **University of South Florida** | Tampa, FL  
 *Bachelor of Science in Computer Science, Dean's List Scholar* | May 2026  
-*GPA: 3.5/4.0*
+*GPA: 3.7/4.0*
 
 ## 💼 Professional Experience
 

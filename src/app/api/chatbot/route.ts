@@ -5,7 +5,7 @@ function generateResponse(userMessage: string): string {
   
   // Education questions
   if (message.includes('education') || message.includes('school') || message.includes('university') || message.includes('degree') || message.includes('gpa')) {
-    return `Kartik is currently pursuing a Bachelor of Science in Computer Science at the University of South Florida in Tampa, FL. He's a Dean's List Scholar with a GPA of 3.5/4.0 and is expected to graduate in May 2026.`
+    return `Kartik is currently pursuing a Bachelor of Science in Computer Science at the University of South Florida in Tampa, FL. He's a Dean's List Scholar with a GPA of 3.7/4.0 and is expected to graduate in May 2026.`
   }
   
   // Experience questions
