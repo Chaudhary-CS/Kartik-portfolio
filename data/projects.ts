@@ -37,6 +37,7 @@ const projects: Project[] = [
     title: 'ApplyTune',
     description: 'An AI-powered tool that optimizes resumes for ATS compatibility with job descriptions.',
     longDescription: 'ApplyTune is a full-stack AI application that parses resumes and job descriptions, extracts relevant keywords using LLMs, and scores and rewrites content for ATS compatibility. It preserves the original resume format while intelligently surfacing the most relevant experience for each role.',
+    image: '/images/projects/applytune.png',
     techs: ['Python', 'React.js', 'Node.js', 'LLM', 'NLP', 'ATS Parsing'],
     github: 'https://github.com/Chaudhary-CS/ApplyTune',
     featured: true,
