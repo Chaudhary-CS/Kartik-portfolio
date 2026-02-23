@@ -20,6 +20,7 @@ const projects: Project[] = [
     title: 'NavAI',
     description: 'An on-device AI agent for macOS that navigates apps and performs actions like a human user.',
     longDescription: 'NavAI is a macOS AI agent that interprets what is visible on your screen, plans a sequence of steps, and executes actions — clicking, typing, and navigating — across 50+ apps without any setup. It uses a multimodal system combining visual understanding with language context, running entirely on-device for full privacy.',
+    image: '/images/projects/navai.png',
     techs: ['Python', 'macOS', 'Multimodal AI', 'Computer Vision', 'LLM'],
     liveDemo: 'https://getnav.app',
     featured: true,
