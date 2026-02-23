@@ -53,6 +53,7 @@ const projects: Project[] = [
     title: 'FlowAI',
     description: 'A Chrome extension that acts as a universal memory layer across ChatGPT, Claude, and Perplexity.',
     longDescription: 'FlowAI is a browser extension that lets users store personal contexts, project details, and preferences in named "Buckets" and inject them into any AI chat with a single click. All data lives in the browser via Chrome Storage API with no server dependency, and a glassmorphic UI integrates seamlessly into ChatGPT, Claude, and Perplexity.',
+    image: '/images/projects/flowai.png',
     techs: ['React', 'Vite', 'Tailwind CSS', 'Chrome Extension API', 'JavaScript'],
     github: 'https://github.com/Chaudhary-CS/FlowAI',
     featured: true,
